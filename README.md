@@ -4,7 +4,7 @@ Avtor: Veronika Nabergoj
 
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2015/16.
 
-## Tematika: ### Analiza preseljevanje in izseljevanja
+## Tematika: Analiza preseljevanje in izseljevanja
 
 V tem projektu bom raziskala in analizirala preseljevanje in izseljevanje prebivalstva, od leta 1995 do leta 2014, po posameznih regijah Slovenije. Primerjala bom podatke Slovenije s podatki v Evropi in analizirala ali je prišlo do porasta preseljevanja v celotni Evropi ali samo pri nas.
 
