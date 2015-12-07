@@ -34,13 +34,13 @@ for (i in 1223:2442){
   tabela[i,1]<-tabela[1222,1]
   } 
 
-###funkcija, ki nam pomaga zapisati v vse prazne vrstice, kar mora tam biti:
-
+####funkcija, ki prepiše besede v 2. stolpcu:
 uredi<-function(x,y){
-  for (i in x:x+60){
+  for(i in x:(x+60){
     tabela[i,y]<-tabela[x,y]
     } 
 }
+
 
 uredi(2,2)                
 
