@@ -25,9 +25,22 @@ tabela<-uvozi()
 
 ###uredimo prazna mesta:
 
-for (i in 2:1221){tabela[i,1]<-tabela[1,1]} 
+for (i in 2:1221){
+  tabela[i,1]<-tabela[1,1]
+  } 
 
 for (i in 1223:2442){
-tabela[i,1]<-tabela[1222,1]
-} 
-                    
+  tabela[i,1]<-tabela[1222,1]
+  } 
+
+####funkcija, ki nam pomaga zapisati v vse prazne vrstice, kar mora tam biti:
+
+uredi<-function(x,y){
+  for (i in x:x+60){
+    tabela[i,y]<-tabela[x,y]
+    } 
+}
+
+uredi(2,2)                
+
+
