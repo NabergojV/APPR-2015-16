@@ -23,6 +23,7 @@ uvozi<-function(){
                     }
 tabela<-uvozi()
 
+<<<<<<< HEAD
 ###uredimo prazna mesta:
 
 for (i in 2:1221){
@@ -33,7 +34,7 @@ for (i in 1223:2442){
   tabela[i,1]<-tabela[1222,1]
   } 
 
-####funkcija, ki nam pomaga zapisati v vse prazne vrstice, kar mora tam biti:
+###funkcija, ki nam pomaga zapisati v vse prazne vrstice, kar mora tam biti:
 
 uredi<-function(x,y){
   for (i in x:x+60){
