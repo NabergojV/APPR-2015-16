@@ -2444,31 +2444,3 @@
 " ";" ";"2014"
 " ";" ";" ";"Državljani Republike Slovenije";34.1;34.5;33.6
 " ";" ";" ";"Tuji državljani";37.5;39.1;34.1
-
-"Vir: Statistični urad Republike Slovenije. "
-" "
-"Za leto 2008 in naprej so podatki pripravljeni skladno z definicijo "
-"prebivalstva Slovenije, objavljeno leta 2008. "
-" "
-"Do konca leta 2007 so podatki o odseljenih tujih državljanih ocena "
-"Statističnega urada Republike Slovenije. "
-" "
-
-"Povezane vsebine: "
-" "
-"- (seznam HREF=http://www.stat.si/metodoloska.asp?podrocje=5 "
-"target=_blank) Metodološka pojasnila "
-"- (seznam "
-"HREF=http://www.stat.si/koledar.asp?pod=5&kon=021&DatumOd=1.1.2005&Da-"
-"tumDo=Date() target=_blank) Koledar objav "
-"- (seznam HREF=http://www.stat.si/metodologija_vpr.asp?pod=5&kon=021 "
-"target=_blank) Vprašalniki statističnega raziskovanja"
-
-"Starost je čas, ki je pretekel od rojstva osebe do opazovanega "
-"dogodka (selitve). Prikazana je v dopolnjenih letih starosti."
-
-"Povprečna starost oseb ob določenih dogodkih oziroma časovnih "
-"presekih je tehtana aritmetična sredina starosti določene skupine "
-"prebivalstva. Izračunavamo jo iz absolutnih podatkov. Pri izračunu "
-"upoštevamo kot uteži sredine starostnih razredov. "
-" "
