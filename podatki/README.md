@@ -35,13 +35,12 @@ for (i in 1223:2442){
   } 
 
 ####funkcija, ki prepiše besede v 2. stolpcu:
-uredi<-function(x,y){
-  for(i in x:(x+60){
+uredi<-function(x,y,z){
+  m=(x+z)
+  for(i in x:m){
     tabela[i,y]<-tabela[x,y]
-    } 
+    }
 }
-
-
-uredi(2,2)                
-
-
+               
+uredi(2,2,60)
+uredi(3,3,2)
