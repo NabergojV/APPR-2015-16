@@ -29,29 +29,45 @@ tabela<-uvozi()
 
 #uredimo prazna mesta:
 
-for (i in 2:1221){
-  tabela[i,1]<-tabela[1,1]
-} 
-tabela[1223:2442,1]<-tabela[1222,1]
- 
+tabela[2:1540,1]<-tabela[1,1]
+tabela[1541:length(tabela[,1]),1]<-tabela[1541,1]
 
-tabela[2:62, 2] <- tabela[2, 2]
-
-#funkcija:
+#funkcija za preseljene:
 uredi<-function(x,y,z){
-  while(x<length(tabela[,y])){ 
+  while(x<1540){ 
     tabela[x:(x+z),y]<-tabela[x,y]
     x<-x+z+1
   }
   return(tabela)
 }
 
+#preseljeni:
 #2. stolpec:
-tabela<-uredi(2,2,60)
+tabela<-uredi(2,2,80)
 
 #3. stolpec:
-tabela<-uredi(3,3,2)
+tabela<-uredi(3,3,3)
 
 
+#funkcija za odseljene:
+uredi2<-function(x,y,z){
+  while(x<3080){ 
+    tabela[x:(x+z),y]<-tabela[x,y]
+    x<-x+z+1
+  }
+  return(tabela)
+}
 
+#odseljeni:
+#2.stolpec:
+tabela<-uredi2(1542,2,80)
+
+#odstranimo vmesne prazne vrstice:
+tabela<-tabela[-(1:3),]
+tabela<-tabela[]
+
+#oblika izpisa:
+tabela[,5]<-as.integer(tabela[,5])
+tabela[,6]<-as.integer(tabela[,6])
+tabela[,7]<-as.integer(tabela[,7])
 
