@@ -64,7 +64,16 @@ tabela<-uredi2(1542,2,80)
 
 #odstranimo vmesne prazne vrstice:
 tabela<-tabela[-(1:3),]
-tabela<-tabela[]
+
+
+#funkcija za prazne vrstice:
+briši<-function(x){
+  while(x<1540){
+    tabela<-tabela[-x,]
+    x<-x+81
+  }
+}
+briši(2)
 
 #oblika izpisa:
 tabela[,5]<-as.integer(tabela[,5])
