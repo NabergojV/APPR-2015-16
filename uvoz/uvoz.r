@@ -27,7 +27,19 @@ uvozi<-function(){
 
 tabela<-uvozi()
 
+uredi <- function(tabela, x, y, z, max = nrow(tabela)) {
+  s <- seq(x, max, z+1)
+  tabela[t(matrix(x:max, ncol=length(s))), y] <- tabela[s, y]
+  tabela <- tabela[-s,]
+  return(tabela)
+}
+
 #uredimo prazna mesta:
+
+tabela <- uredi(tabela, 1, 1, 1539)
+tabela <- uredi(tabela, 1, 2, 80)
+tabela <- uredi(tabela, 1, 3, 3)
+
 
 tabela[2:1540,1]<-tabela[1,1]
 tabela[1541:length(tabela[,1]),1]<-tabela[1541,1]
@@ -69,7 +81,7 @@ tabela<-tabela[-(1:3),]
 #funkcija za prazne vrstice:
 briši<-function(x){
   while(x<1540){
-    tabela<-tabela[-x,]
+    tabela<-tabela[-x,]seq[1,nrow,81]-
     x<-x+81
   }
 }
