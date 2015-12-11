@@ -10,12 +10,13 @@
 library(dplyr)
 library(gsubfn)
 library(ggplot2)
+library(XML)
 
 #1.tabela: PODATKI O PRESELJEVANJU - STAROSTNE SKUPINE:
 
 #poimenujemo stolpce:
 
-stolpci<-c("priseljeni_ali_odseljeni","leto","starostna_skupina","državljanstvo","skupaj","moški","ženske")
+stolpci<-c("priseljeni.ali.odseljeni","leto","starostna.skupina","državljanstvo","skupaj","moški","ženske")
 
 #uvozimo podatke:
 
@@ -52,12 +53,12 @@ tabela[,3]<-as.character(tabela[,3])
 tabela[,4]<-as.character(tabela[,4])
 
 #filtriramo podatke po določenih lastnostih:
-priseljeni<-filter(tabela,priseljeni_ali_odseljeni=="Priseljeni iz tujine")
-odseljeni<-filter(tabela,priseljeni_ali_odseljeni=="Odseljeni v tujino")
+priseljeni<-filter(tabela,priseljeni.ali.odseljeni=="Priseljeni iz tujine")
+odseljeni<-filter(tabela,priseljeni.ali.odseljeni=="Odseljeni v tujino")
 
 #funkcija za razbiranje natančnejših tabele:
 razberi <- function(x,y,podatki){
-  razberix<-filter(podatki, y=="x")
+  razberix<-filter(podatki, y==x)
   končna<-razberix[,-y]
   return(končna)
 }
@@ -65,5 +66,11 @@ razberi <- function(x,y,podatki){
 
 
 
+#2.tabela: PRESELJENI V TUJINO-PO REGIJAH:
 
+#uvozimo html:
+html <- file("podatki/preseljevanje-v-tujino-po-regijah") %>% readLines()
+
+imenastolpcev<-grep("var dataValues",html) %>% 
+  strapplyc('var dataValues="(=1>)([a-z]+ )[0-9]+\\w+</TH>$"')%>% .[[1]]
 
