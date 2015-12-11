@@ -8,12 +8,14 @@
 
 #odpremo pakete:
 library(dplyr)
+library(gsubfn)
+library(ggplot2)
 
 #1.tabela: PODATKI O PRESELJEVANJU - STAROSTNE SKUPINE:
 
 #poimenujemo stolpce:
 
-stolpci<-c("priseljeni_ali_odseljeni","starostna_skupina","leto","državljanstvo","skupaj","moški","ženske")
+stolpci<-c("priseljeni_ali_odseljeni","leto","starostna_skupina","državljanstvo","skupaj","moški","ženske")
 
 #uvozimo podatke:
 
@@ -28,7 +30,7 @@ uvozi<-function(){
 tabela<-uvozi()
 
 #funkcija za urejanje vrstic:
-uredi <- function(tabela, x, y, z, max = nrow(tabela)) {
+uredimo <- function(tabela, x, y, z, max = nrow(tabela)) {
   s <- seq(x, max, z+1)
   tabela[t(matrix(x:max, ncol=length(s))), y] <- tabela[s, y]
   tabela <- tabela[-s,]
@@ -36,9 +38,9 @@ uredi <- function(tabela, x, y, z, max = nrow(tabela)) {
 }
 
 #uredimo prazna mesta:
-tabela <- uredi(tabela, 1, 1, 1539)
-tabela <- uredi(tabela, 1, 2, 80)
-tabela <- uredi(tabela, 1, 3, 3)
+tabela <- uredimo(tabela, 1, 1, 1540)
+tabela <- uredimo(tabela, 1, 2, 76)
+tabela <- uredimo(tabela, 1, 3, 3)
 
 #oblika izpisa:
 tabela[,5]<-as.integer(tabela[,5])
@@ -49,5 +51,19 @@ tabela[,2]<-as.character(tabela[,2])
 tabela[,3]<-as.character(tabela[,3])
 tabela[,4]<-as.character(tabela[,4])
 
-priseljeni<-data.frame(priseljeni=table("priseljeni_ali_odseljeni"["priseljeni"]),starostna.skupina=tabela[["starostna_skupina"]],leto=tabela[["leto"]],državljanstvo=tabela[["državljanstvo"]])
+#filtriramo podatke po določenih lastnostih:
+priseljeni<-filter(tabela,priseljeni_ali_odseljeni=="Priseljeni iz tujine")
+odseljeni<-filter(tabela,priseljeni_ali_odseljeni=="Odseljeni v tujino")
+
+#funkcija za razbiranje natančnejših tabele:
+razberi <- function(x,y,podatki){
+  razberix<-filter(podatki, y=="x")
+  končna<-razberix[,-y]
+  return(končna)
+}
+
+
+
+
+
 
