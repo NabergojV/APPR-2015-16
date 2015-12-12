@@ -11,6 +11,7 @@ library(dplyr)
 library(gsubfn)
 library(ggplot2)
 library(XML)
+library(eeptools)
 
 #1.tabela: PODATKI O PRESELJEVANJU - STAROSTNE SKUPINE:
 
@@ -167,10 +168,23 @@ skupajpriseljeni <- as.numeric(priseljeni.slo[,4])
 skupajodseljeni <- as.numeric(odseljeni.slo[,4])
 skupajrazlika <- as.numeric(skupajpriseljeni-skupajodseljeni) 
 
+
+povrsti<-c("pozitiven prirast","ni prirasta","negativen prirast")
+prirastskupaj<-factor(rep("ni prirasta",length(skupajrazlika)),
+                                    levels=povrsti,ordered=TRUE)
+prirastskupaj[skupajrazlika<0] <- "negativen prirast"
+prirastskupaj[skupajrazlika>0] <- "pozitiven prirast"
+
+
 #tabela razlike priseljenih-odseljenih:
-priseljeni.minus.odseljeni <- data.frame("leto"=as.numeric(priseljeni.slo[,2]),"starostna.skupina"=as.character(priseljeni.slo[,3]),"razlika skupaj"=skupajrazlika,"moški(razlika)"=moškirazlika,"ženske(razlika)"=ženskerazlika)
+priseljeni.minus.odseljeni <- data.frame("leto"=as.numeric(priseljeni.slo[,2]),
+                                         "starostna.skupina"=as.character(priseljeni.slo[,3]),
+                                         "moški(razlika)"=moškirazlika,
+                                         "ženske(razlika)"=ženskerazlika,
+                                         "razlika skupaj"=skupajrazlika,
+                                         "prirast(skupaj)"=prirastskupaj)
 
-
+priseljeni.minus.odseljeni <- priseljeni.minus.odseljeni[order(priseljeni.minus.odseljeni$razlika.skupaj),]
 
 #2.tabela: PRESELJENI V TUJINO-PO REGIJAH:
 
