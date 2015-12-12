@@ -52,18 +52,17 @@ tabela[,2]<-as.character(tabela[,2])
 tabela[,3]<-as.character(tabela[,3])
 tabela[,4]<-as.character(tabela[,4])
 
-#filtriramo podatke po določenih lastnostih:
+#filtriramo podatke po smeri preseljevanja:
 priseljeni<-filter(tabela,priseljeni.ali.odseljeni=="Priseljeni iz tujine")
 odseljeni<-filter(tabela,priseljeni.ali.odseljeni=="Odseljeni v tujino")
 
 #funkcija za razbiranje natančnejših tabele:
 razberi <- function(x,y,podatki){
-  razberix<-filter(podatki, y==x)
-  končna<-razberix[,-y]
-  return(končna)
+  return(podatki[podatki[y] == x, names(podatki) != y])
 }
 
-
+#tabela za preseljene po letih:
+pri.leto1995 <- razberi(1995,"leto",priseljeni)
 
 
 #2.tabela: PRESELJENI V TUJINO-PO REGIJAH:
