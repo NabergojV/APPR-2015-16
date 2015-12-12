@@ -61,8 +61,115 @@ razberi <- function(x,y,podatki){
   return(podatki[podatki[y] == x, names(podatki) != y])
 }
 
-#tabela za preseljene po letih:
-pri.leto1995 <- razberi(1995,"leto",priseljeni)
+#PRISELJENI:
+#po letih:
+pri.1995 <- razberi(1995,"leto",priseljeni)
+pri.1996 <- razberi(1996,"leto",priseljeni)
+pri.1997 <- razberi(1997,"leto",priseljeni)
+pri.1998 <- razberi(1998,"leto",priseljeni)
+pri.1999 <- razberi(1999,"leto",priseljeni)
+pri.2000 <- razberi(2000,"leto",priseljeni)
+pri.2001 <- razberi(2001,"leto",priseljeni)
+pri.2002 <- razberi(2002,"leto",priseljeni)
+pri.2003 <- razberi(2003,"leto",priseljeni)
+pri.2004 <- razberi(2004,"leto",priseljeni)
+pri.2005 <- razberi(2005,"leto",priseljeni)
+pri.2006 <- razberi(2006,"leto",priseljeni)
+pri.2007 <- razberi(2007,"leto",priseljeni)
+pri.2008 <- razberi(2008,"leto",priseljeni)
+pri.2009 <- razberi(2009,"leto",priseljeni)
+pri.2010 <- razberi(2010,"leto",priseljeni)
+pri.2011 <- razberi(2011,"leto",priseljeni)
+pri.2012 <- razberi(2012,"leto",priseljeni)
+pri.2013 <- razberi(2013,"leto",priseljeni)
+pri.2014 <- razberi(2014,"leto",priseljeni)
+
+# po državljanstvu:
+slo.p.1995 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.1995)
+slo.p.1996 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.1996)
+slo.p.1997 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.1997)
+slo.p.1998 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.1998)
+slo.p.1999 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.1999)
+slo.p.2000 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2000)
+slo.p.2001 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2001)
+slo.p.2002 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2002)
+slo.p.2003 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2003)
+slo.p.2004 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2004)
+slo.p.2005 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2005)
+slo.p.2006 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2006)
+slo.p.2007 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2007)
+slo.p.2008 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2008)
+slo.p.2009 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2009)
+slo.p.2010 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2010)
+slo.p.2011 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2011)
+slo.p.2012 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2012)
+slo.p.2013 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2013)
+slo.p.2014 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2014)
+
+#ODSELJENI:
+#po letih:
+ods.1995 <- razberi(1995,"leto",odseljeni)
+ods.1996 <- razberi(1996,"leto",odseljeni)
+ods.1997 <- razberi(1997,"leto",odseljeni)
+ods.1998 <- razberi(1998,"leto",odseljeni)
+ods.1999 <- razberi(1999,"leto",odseljeni)
+ods.2000 <- razberi(2000,"leto",odseljeni)
+ods.2001 <- razberi(2001,"leto",odseljeni)
+ods.2002 <- razberi(2002,"leto",odseljeni)
+ods.2003 <- razberi(2003,"leto",odseljeni)
+ods.2004 <- razberi(2004,"leto",odseljeni)
+ods.2005 <- razberi(2005,"leto",odseljeni)
+ods.2006 <- razberi(2006,"leto",odseljeni)
+ods.2007 <- razberi(2007,"leto",odseljeni)
+ods.2008 <- razberi(2008,"leto",odseljeni)
+ods.2009 <- razberi(2009,"leto",odseljeni)
+ods.2010 <- razberi(2010,"leto",odseljeni)
+ods.2011 <- razberi(2011,"leto",odseljeni)
+ods.2012 <- razberi(2012,"leto",odseljeni)
+ods.2013 <- razberi(2013,"leto",odseljeni)
+ods.2014 <- razberi(2014,"leto",odseljeni)
+
+#po državljanstvu:
+slo.o.1995 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.1995)
+slo.o.1996 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.1996)
+slo.o.1997 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.1997)
+slo.o.1998 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.1998)
+slo.o.1999 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.1999)
+slo.o.2000 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2000)
+slo.o.2001 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2001)
+slo.o.2002 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2002)
+slo.o.2003 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2003)
+slo.o.2004 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2004)
+slo.o.2005 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2005)
+slo.o.2006 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2006)
+slo.o.2007 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2007)
+slo.o.2008 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2008)
+slo.o.2009 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2009)
+slo.o.2010 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2010)
+slo.o.2011 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2011)
+slo.o.2012 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2012)
+slo.o.2013 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2013)
+slo.o.2014 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2014)
+
+#RAZLIKA MED PRISELJENIMI IN ODSELJENIMI (gledano samo državljani Republike Slovenije):
+priseljeni.slo <- razberi("Državljani Republike Slovenije","državljanstvo",priseljeni)
+odseljeni.slo <- razberi("Državljani Republike Slovenije","državljanstvo",odseljeni)
+#moški:
+moškipriseljeni <- as.numeric(priseljeni.slo[,5])
+moškiodseljeni <- as.numeric(odseljeni.slo[,5])
+moškirazlika <- as.numeric(moškipriseljeni-moškiodseljeni) 
+#ženske:
+ženskepriseljeni <- as.numeric(priseljeni.slo[,6])
+ženskeodseljeni <- as.numeric(odseljeni.slo[,6])
+ženskerazlika <- as.numeric(ženskepriseljeni-ženskeodseljeni) 
+#skupaj:
+skupajpriseljeni <- as.numeric(priseljeni.slo[,4])
+skupajodseljeni <- as.numeric(odseljeni.slo[,4])
+skupajrazlika <- as.numeric(skupajpriseljeni-skupajodseljeni) 
+
+#tabela razlike priseljenih-odseljenih:
+priseljeni.minus.odseljeni <- data.frame("leto"=as.numeric(priseljeni.slo[,2]),"starostna.skupina"=as.character(priseljeni.slo[,3]),"razlika skupaj"=skupajrazlika,"moški(razlika)"=moškirazlika,"ženske(razlika)"=ženskerazlika)
+
 
 
 #2.tabela: PRESELJENI V TUJINO-PO REGIJAH:
