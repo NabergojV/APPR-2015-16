@@ -186,6 +186,13 @@ priseljeni.minus.odseljeni <- data.frame("leto"=as.numeric(priseljeni.slo[,2]),
 
 priseljeni.minus.odseljeni <- priseljeni.minus.odseljeni[order(priseljeni.minus.odseljeni$razlika.skupaj),]
 
+priseljeni.slovenci <- data.frame("leto"=as.numeric(priseljeni.minus.odseljeni [,1]),
+                                 "starostna.skupina"=as.character(priseljeni.minus.odseljeni [,2]),
+                                 "razlika skupaj"=(priseljeni.minus.odseljeni [,5]))
+
+#graf za negativen prirast slovenskega prebivalstva:
+ggplot(data=priseljeni.slovenci, aes(x=leto, y=starostna.skupina)) + geom_point()
+
 #2.tabela: PRESELJENI V TUJINO-PO REGIJAH:
 
 #uvozimo html:
