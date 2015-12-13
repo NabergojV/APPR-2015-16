@@ -222,3 +222,17 @@ colnames(tabela2)<- c("regija","leto","Priseljeni iz tujine - Skupaj","Priseljen
 tabela2<-tabela2[-1,]
 
 #funkcija za podvajanje regije:
+podvoji<-function(tabela, x, y, z, max = nrow(tabela)){
+  s <- seq(x, max, z+1)
+  tabela[t(matrix(x:max, ncol=length(s))), y] <- tabela[s, y]
+  return(tabela)
+}
+podvoji<-function(tabela,x,y,z){
+  for(i in length(tabela)){
+    tabela[x:(x+z),]<-tabela[x,y]
+    i<-x+z+1
+  }
+  return(tabela)
+}
+
+podvoji(tabela2,1,1,19)
