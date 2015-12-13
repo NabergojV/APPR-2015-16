@@ -13,6 +13,7 @@ library(ggplot2)
 library(XML)
 library(eeptools)
 library(labeling)
+library(rvest)
 
 #1.tabela: PODATKI O PRESELJEVANJU - STAROSTNE SKUPINE:
 
@@ -200,14 +201,24 @@ priseljeni.slovenci <- data.frame("leto"=as.numeric(priseljeni.minus.odseljeni [
 ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
        aes(x=leto, y=razlika.skupaj,color=prirast.skupaj, size=starostna.skupina)) + geom_point()
 
-ggplot(data=priseljeni.minus.odseljeni %>% filter(leto==2014),
-       aes(x=ženske.razlika, y=moški.razlika,size=starostna.skupina)) + geom_point()
+moški.slovenci.p.m.o<-priseljeni.minus.odseljeni[,-(5:7)]
+
+ggplot(data=moški.slovenci.p.m.o %>% filter(starostna.skupina=="25-29 let"),
+       aes(x=leto, fill=moški.razlika,color=prirast.moški)) + geom_bar()
 
 #2.tabela: PRESELJENI V TUJINO-PO REGIJAH:
 
 #uvozimo html:
-html <- file("podatki/preseljevanje-v-tujino-po-regijah") %>% readLines()
+library(rvest)
+html <- file("podatki/preseljevanje-v-tujino-po-regijah") %>% read_html()
+tabela2 <- html %>% html_nodes(xpath="//table[1]") %>%
+  html_table(fill = TRUE) %>% .[[1]] %>%
+  apply(1, function(x) c(x[is.na(x)], x[!is.na(x)])) %>% t()
 
-imenastolpcev<-grep("var dataValues",html) %>% 
-  strapplyc('var dataValues="(=1>)([a-z]+ )[0-9]+\\w+</TH>$"')%>% .[[1]]
+colnames(tabela2)<- c("regija","leto","Priseljeni iz tujine - Skupaj","Priseljeni iz tujine-moški",
+                  "Priseljeni iz tujine-ženske","Odseljeni v tujino-skupaj","Odseljeni v tujino-moški","Odseljeni v tujino-ženske",
+                  "Priseljeni iz tujine na 1000 prebivalcev","Odseljeni v tujino na 1000 prebivalcev")
 
+tabela2<-tabela2[-1,]
+
+#funkcija za podvajanje regije:
