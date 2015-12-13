@@ -202,10 +202,10 @@ priseljeni.slovenci <- data.frame("leto"=as.numeric(priseljeni.minus.odseljeni [
 ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
        aes(x=leto, y=razlika.skupaj,color=prirast.skupaj, size=starostna.skupina)) + geom_point()
 
-moški.slovenci.p.m.o<-priseljeni.minus.odseljeni[,-(5:7)]
-
-ggplot(data=moški.slovenci.p.m.o %>% filter(starostna.skupina=="25-29 let"),
-       aes(x=leto, fill=moški.razlika,color=prirast.moški)) + geom_bar()
+#graf za odseljene prebivalce leta 2014 po državljanstvu in skupaj:
+ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
+       aes(starostna.skupina,skupaj))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
+       coord_flip()+ facet_wrap(~ državljanstvo)
 
 #2.tabela: PRESELJENI V TUJINO-PO REGIJAH:
 
@@ -220,20 +220,27 @@ colnames(tabela2)<- c("regija","leto","Priseljeni iz tujine - Skupaj","Priseljen
                   "Priseljeni iz tujine-ženske","Odseljeni v tujino-skupaj","Odseljeni v tujino-moški","Odseljeni v tujino-ženske",
                   "Priseljeni iz tujine na 1000 prebivalcev","Odseljeni v tujino na 1000 prebivalcev")
 
+#znebimo se določenih vrstic:
 tabela2<-tabela2[-1,]
+tabela2<-tabela2[-241,]
 
 #funkcija za podvajanje regije:
-podvoji<-function(tabela, x, y, z, max = nrow(tabela)){
+podvoji<-function(tab, x, y, z, max = nrow(tab)){
   s <- seq(x, max, z+1)
-  tabela[t(matrix(x:max, ncol=length(s))), y] <- tabela[s, y]
-  return(tabela)
-}
-podvoji<-function(tabela,x,y,z){
-  for(i in length(tabela)){
-    tabela[x:(x+z),]<-tabela[x,y]
-    i<-x+z+1
-  }
-  return(tabela)
+  tab[t(matrix(x:max, ncol=length(s))), y] <- tab[s, y]
+  return(tab)
 }
 
-podvoji(tabela2,1,1,19)
+#uredimo prazna mesta:
+tabela2<-podvoji(tabela2,1,1,19)
+
+
+#oblika izpisa:
+tabela2[,2:8]<-as.numeric(tabela2[,2:8])
+tabela2[,2]<-as.integer(tabela2[,2])
+tabela2[,7]<-as.integer(tabela2[,7])
+tabela2[,1]<-as.character(tabela2[,1])
+tabela2[,2]<-as.character(tabela2[,2])
+tabela2[,3]<-as.character(tabela2[,3])
+tabela2[,4]<-as.character(tabela2[,4])
+
