@@ -14,6 +14,7 @@ library(XML)
 library(eeptools)
 library(labeling)
 library(rvest)
+library(extrafont)
 
 #1.tabela: PODATKI O PRESELJEVANJU - STAROSTNE SKUPINE:
 
