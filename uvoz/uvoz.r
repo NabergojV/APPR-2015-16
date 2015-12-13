@@ -12,6 +12,7 @@ library(gsubfn)
 library(ggplot2)
 library(XML)
 library(eeptools)
+library(labeling)
 
 #1.tabela: PODATKI O PRESELJEVANJU - STAROSTNE SKUPINE:
 
@@ -175,23 +176,32 @@ prirastskupaj<-factor(rep("ni prirasta",length(skupajrazlika)),
 prirastskupaj[skupajrazlika<0] <- "negativen prirast"
 prirastskupaj[skupajrazlika>0] <- "pozitiven prirast"
 
+prirastmoški<-factor(rep("ni prirasta",length(moškirazlika)),
+                                  levels=povrsti,ordered=TRUE)
+prirastmoški[moškirazlika<0] <- "negativen prirast"
+prirastmoški[moškirazlika>0] <- "pozitiven prirast"
 
 #tabela razlike priseljenih-odseljenih:
-priseljeni.minus.odseljeni <- data.frame("leto"=as.numeric(priseljeni.slo[,2]),
-                                         "starostna.skupina"=as.character(priseljeni.slo[,3]),
-                                         "moški(razlika)"=moškirazlika,
-                                         "ženske(razlika)"=ženskerazlika,
-                                         "razlika skupaj"=skupajrazlika,
-                                         "prirast(skupaj)"=prirastskupaj)
+priseljeni.minus.odseljeni <- data.frame(leto=(priseljeni.slo[,2]),
+                                         starostna.skupina=priseljeni.slo[,3],
+                                         moški.razlika=moškirazlika,
+                                         prirast.moški=prirastmoški,
+                                         ženske.razlika=ženskerazlika,
+                                         razlika.skupaj=skupajrazlika,
+                                         prirast.skupaj=prirastskupaj)
 
-priseljeni.minus.odseljeni <- priseljeni.minus.odseljeni[order(priseljeni.minus.odseljeni$razlika.skupaj),]
+priseljeni.minus.odseljeni.order <- priseljeni.minus.odseljeni[order(priseljeni.minus.odseljeni$razlika.skupaj),]
 
 priseljeni.slovenci <- data.frame("leto"=as.numeric(priseljeni.minus.odseljeni [,1]),
-                                 "starostna.skupina"=as.character(priseljeni.minus.odseljeni [,2]),
-                                 "razlika skupaj"=(priseljeni.minus.odseljeni [,5]))
+                                "starostna.skupina"=as.character(priseljeni.minus.odseljeni [,2]),
+                                "razlika skupaj"=as.numeric(priseljeni.minus.odseljeni [,5]))
 
 #graf za negativen prirast slovenskega prebivalstva:
-ggplot(data=priseljeni.slovenci, aes(x=leto, y=starostna.skupina)) + geom_point()
+ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
+       aes(x=leto, y=razlika.skupaj,color=prirast.skupaj, size=starostna.skupina)) + geom_point()
+
+ggplot(data=priseljeni.minus.odseljeni %>% filter(leto==2014),
+       aes(x=ženske.razlika, y=moški.razlika,size=starostna.skupina)) + geom_point()
 
 #2.tabela: PRESELJENI V TUJINO-PO REGIJAH:
 
