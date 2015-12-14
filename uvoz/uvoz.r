@@ -202,7 +202,7 @@ priseljeni.slovenci <- data.frame("leto"=as.numeric(priseljeni.minus.odseljeni [
 ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
        aes(x=leto, y=razlika.skupaj,color=prirast.skupaj, size=starostna.skupina)) + geom_point()
 
-#graf za odseljene prebivalce leta 2014 po državljanstvu in skupaj:
+#graf za odseljene prebivalce leta 2014 po državljanstvu in vsi skupaj:
 ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
        aes(starostna.skupina,skupaj))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
        coord_flip()+ facet_wrap(~ državljanstvo)
@@ -211,7 +211,7 @@ ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
 
 #uvozimo html:
 library(rvest)
-html <- file("podatki/preseljevanje-v-tujino-po-regijah") %>% read_html()
+html <- file("podatki/preseljevanje-v-tujino-po-regijah") %>% read_html(encoding = "UTF-8")
 tabela2 <- html %>% html_nodes(xpath="//table[1]") %>%
   html_table(fill = TRUE) %>% .[[1]] %>%
   apply(1, function(x) c(x[is.na(x)], x[!is.na(x)])) %>% t()
@@ -219,6 +219,9 @@ tabela2 <- html %>% html_nodes(xpath="//table[1]") %>%
 colnames(tabela2)<- c("regija","leto","Priseljeni iz tujine - Skupaj","Priseljeni iz tujine-moški",
                   "Priseljeni iz tujine-ženske","Odseljeni v tujino-skupaj","Odseljeni v tujino-moški","Odseljeni v tujino-ženske",
                   "Priseljeni iz tujine na 1000 prebivalcev","Odseljeni v tujino na 1000 prebivalcev")
+
+#uredimo šumnike:
+Encoding(tabela2[,"regija"]) <- "UTF-8"
 
 #znebimo se določenih vrstic:
 tabela2<-tabela2[-1,]
@@ -234,13 +237,5 @@ podvoji<-function(tab, x, y, z, max = nrow(tab)){
 #uredimo prazna mesta:
 tabela2<-podvoji(tabela2,1,1,19)
 
-
 #oblika izpisa:
-tabela2[,2:8]<-as.numeric(tabela2[,2:8])
-tabela2[,2]<-as.integer(tabela2[,2])
-tabela2[,7]<-as.integer(tabela2[,7])
-tabela2[,1]<-as.character(tabela2[,1])
-tabela2[,2]<-as.character(tabela2[,2])
-tabela2[,3]<-as.character(tabela2[,3])
-tabela2[,4]<-as.character(tabela2[,4])
-
+tabela2[,2:8]<-as.numeric(tabela2[,2:10])
