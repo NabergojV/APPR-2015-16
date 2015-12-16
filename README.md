@@ -6,14 +6,14 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2015/16.
 
 ## Tematika: Analiza preseljevanje in izseljevanja
 
-V tem projektu bom raziskala in analizirala preseljevanje in izseljevanje prebivalstva, od leta 1995 do leta 2014, po posameznih regijah Slovenije. Primerjala bom podatke Slovenije s podatki v Evropi in analizirala ali je prišlo do porasta preseljevanja v celotni Evropi ali samo pri nas.
+V tem projektu bom raziskala in analizirala priseljevanje in izseljevanje prebivalstva, od leta 1995 do leta 2014, po posameznih regijah Slovenije in po starostnih skupinah. Pregledala bom podatke Slovenije in analizirala v katerih starostnih skupinah in v katerih regiajh je prišlo do porasta preseljevanja. Ločila bom preseljevanje tudi po državljanstvu in tako natančneje določila koliko slovenskih državljanov se je izselilo iz Slovenije ali priselilo nazaj v Slovenijo.
 
 Podatke sem dobila na naslednjih straneh:
 * Statistični urad RS: `http://www.stat.si/StatWeb/pregled-podrocja?idp=17&headerbar=15`
 * Eurostat: `http://ec.europa.eu/eurostat/data/database`
 
 Cilji tega projekta so:
-* natančnejše vedenje o preseljevanju in izseljevanju v Sloveniji, ter primerjava s preostalo Evropo
+* natančnejše vedenje o priseljevanju in izseljevanju v Sloveniji
 * 
 
 ## Program
