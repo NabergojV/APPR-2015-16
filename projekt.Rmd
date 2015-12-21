@@ -29,14 +29,13 @@ Izbrala sem si temo preseljevanja v Sloveniji. V tem projektu bom raziskala in a
 source("uvoz/uvoz.r", encoding = "UTF-8")
 ```
 
-Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki HTML
-z Wikipedije. Poglejmo si začetka obeh uvoženih razpredelnic.
+Uvozila sem podatke o preseljevanju iz Slovenije ter v Slovenijo v obliki CSV iz splene strani statističnega urada RS. Podatki so ločeni glede na leto, državljanstvo, starostno skupino in spol.
 
 ```{r razpredelnice}
-kable(head(druzine))
-head(obcine)
+kable(head(tabela))
 ```
 
+Kot drugo tabelo sem uvozila še podatke o 
 Slika \ref{fig:histogram} prikazuje porazdelitev števila naselij v občinah.
 
 ```{r histogram, echo=FALSE, fig.align='center', fig.cap='Histogram števila naselij v občinah'}
