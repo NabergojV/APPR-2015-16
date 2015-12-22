@@ -171,17 +171,22 @@ skupajpriseljeni <- as.numeric(priseljeni.slo[,4])
 skupajodseljeni <- as.numeric(odseljeni.slo[,4])
 skupajrazlika <- as.numeric(skupajpriseljeni-skupajodseljeni) 
 
-
+##skupaj
 povrsti<-c("pozitiven prirast","ni prirasta","negativen prirast")
 prirastskupaj<-factor(rep("ni prirasta",length(skupajrazlika)),
                                     levels=povrsti,ordered=TRUE)
 prirastskupaj[skupajrazlika<0] <- "negativen prirast"
 prirastskupaj[skupajrazlika>0] <- "pozitiven prirast"
-
+##moški
 prirastmoški<-factor(rep("ni prirasta",length(moškirazlika)),
                                   levels=povrsti,ordered=TRUE)
 prirastmoški[moškirazlika<0] <- "negativen prirast"
 prirastmoški[moškirazlika>0] <- "pozitiven prirast"
+##ženske
+prirastženske<-factor(rep("ni prirasta",length(ženskerazlika)),
+                     levels=povrsti,ordered=TRUE)
+prirastženske[ženskerazlika<0] <- "negativen prirast"
+prirastženske[ženskerazlika>0] <- "pozitiven prirast"
 
 #tabela razlike priseljenih-odseljenih:
 priseljeni.minus.odseljeni <- data.frame(leto=(priseljeni.slo[,2]),
@@ -189,6 +194,7 @@ priseljeni.minus.odseljeni <- data.frame(leto=(priseljeni.slo[,2]),
                                          moški.razlika=moškirazlika,
                                          prirast.moški=prirastmoški,
                                          ženske.razlika=ženskerazlika,
+                                         prirast.ženske=prirastženske,
                                          razlika.skupaj=skupajrazlika,
                                          prirast.skupaj=prirastskupaj)
 
@@ -250,7 +256,7 @@ ggplot(data=regije2014,
        aes(regija,Priseljeni.iz.tujine.skupaj))+ geom_bar(stat="identity",fill="deeppink3",size=10)+
        coord_flip()
 
-#graf
+#graf za odseljene v tujino za regijo Goriška:
 ggplot(data=Goriška,
        aes(x=leto, y=Odseljeni.v.tujino.skupaj,size=Odseljeni.v.tujino.na.1000.prebivalcev)) + geom_point()
 

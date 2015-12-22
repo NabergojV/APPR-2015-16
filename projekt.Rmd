@@ -1,11 +1,12 @@
 ---
 title: "Poročilo pri predmetu Analiza podatkov s programom R"
-author: Veronika Nabergoj
+author: "Veronika Nabergoj"
 output:
+  html_document: default
   pdf_document:
-    latex_engine: xelatex
     includes:
       in_header: lib/styles.sty
+    latex_engine: xelatex
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE}
@@ -29,19 +30,51 @@ Izbrala sem si temo preseljevanja v Sloveniji. V tem projektu bom raziskala in a
 source("uvoz/uvoz.r", encoding = "UTF-8")
 ```
 
+Najprej sem poiskala podatke. Našla sem jih na spletni strani: 
+  * Statistični urad RS: `http://www.stat.si/StatWeb/pregled-podrocja?idp=17&headerbar=15`
+
 Uvozila sem podatke o preseljevanju iz Slovenije ter v Slovenijo v obliki CSV iz splene strani statističnega urada RS. Podatki so ločeni glede na leto, državljanstvo, starostno skupino in spol.
 
 ```{r razpredelnice}
 kable(head(tabela))
 ```
 
-Kot drugo tabelo sem uvozila še podatke o 
-Slika \ref{fig:histogram} prikazuje porazdelitev števila naselij v občinah.
+V tej tabeli so v zadnjih treh stolpcih številske spremenljivke, v preostalih pa so imenske spremenljivke. 
 
-```{r histogram, echo=FALSE, fig.align='center', fig.cap='Histogram števila naselij v občinah'}
-hist(obcine[,4], main = "Pogostost števila naselij",
-     xlab = "Število naselij", ylab = "Število občin")
+Najprej sem morala tabelo očistiti praznih vrstic, ki jih je uvozilo iz spletne strani, zato sem uporabila sledečo funkcijo:
+
+```{r funkcija uredimo}
+uredimo <- function(tabela, x, y, z, max = nrow(tabela)) {
+  s <- seq(x, max, z+1)
+  tabela[t(matrix(x:max, ncol=length(s))), y] <- tabela[s, y]
+  tabela <- tabela[-s,]
+  return(tabela)
+}
 ```
+
+Ta funkcija je tudi zapisala v vsako vrstico tisto imensko spremenljvko, ki bi tam morala biti. 
+Nato sem še preverila da so številske spremenljivke zares številke.
+
+Ko je bila tabela urejena in so bili vsi podatki zbrani, sem najprej fitrirala tabelo po prvi spremenljivki: priseljeni iz tujine in odseljeni v tujino in tako dobila dve tabeli: priseljeni in odseljeni.
+
+Da bi nato lažje in učinkoviteje filtrirala tabele po različnih spremenljivkah sem sestavila sledečo funkcijo:
+
+```{r funkcija razberi}
+razberi <- function(x,y,podatki){
+  return(podatki[podatki[y] == x, names(podatki) != y])
+}
+```
+
+S to funkcijo sem dobila podtabele po letih, državljanstvu in starostnih skupinah.
+
+V tabeli priseljen
+
+Kot drugo tabelo sem uvozila še podatke o priseljevanju iz tujine in priseljevanju v tujino po regijah in letih v obliki html.
+
+```{r razpredelnice}
+kable(head(tabela2))
+```
+
 
 ***
 
@@ -51,14 +84,22 @@ hist(obcine[,4], main = "Pogostost števila naselij",
 source("vizualizacija/vizualizacija.r", encoding = "UTF-8")
 ```
 
-Slika \ref{fig:zemljevid} prikazuje povprečno velikost družine za vsako občino.
+Slika \ref{fig:graf} prikazuje razliko med priseljenimi Slovenci in odseljenimi Slovenci po letih in starostnih skupinah (te so prikazane z različnimi velikostmi pik) ter prirast,ki je prikazan z barvami. Prirast je lahko pozitiven, negativen ali enak 0.
 
-```{r zemljevid, echo=FALSE, fig.align='center', fig.cap='Zemljevid povprečnega števila otrok v družini'}
-n <- 100
-barve <- topo.colors(n)[1+(n-1)*(druzine$povprecje-min.povprecje)/(max.povprecje-min.povprecje)]
-plot(zemljevid, col = barve)
-title("Povprečno število otrok v družini")
+```{r graf, echo=FALSE, fig.align='center', fig.cap='Graf razlike priseljenih Slovencev in odseljeni Slovenci'}
+ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
+       aes(x=leto, y=razlika.skupaj,color=prirast.skupaj, size=starostna.skupina)) + geom_point()
 ```
+
+
+Slika \ref{graf2} pa nam predstavi 3 grafe odseljenih prebivalcev, ki jih ločimo po državljanstvu. V grafih vidimo da so prebivalci nato ločeni še po starostnih skupinah. Vsi podatki so za leto 2014.
+
+```{r graf2, echo=FALSE, fig.align='center', fig.cap='Graf'}
+ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
+       aes(starostna.skupina,skupaj))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
+       coord_flip()+ facet_wrap(~ državljanstvo)
+```
+
 
 ***
 
@@ -68,17 +109,5 @@ title("Povprečno število otrok v družini")
 source("analiza/analiza.r", encoding = "UTF-8")
 ```
 
-Slika \ref{fig:graf} prikazuje povezavo med številom naselij in površino občine.
-
-```{r graf, echo=FALSE, fig.align='center', fig.cap='Povezava med številom naselij in površino občine'}
-plot(obcine[[1]], obcine[[4]],
-     main = "Število naselij glede na površino občine",
-     xlab = expression("Površina (km"^2 * ")"),
-     ylab = "Št. naselij",
-     col = barve[obcine[[7]]],
-     pch = 18)
-legend("topright", legend = names(barve), col = barve,
-       pch = 18, cex = 0.5, bg = "white")
-```
 
 ***
