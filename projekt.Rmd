@@ -7,6 +7,7 @@ output:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
+runtime: shiny
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE}
@@ -33,6 +34,8 @@ source("uvoz/uvoz.r", encoding = "UTF-8")
 Najprej sem poiskala podatke. Našla sem jih na spletni strani: 
   * Statistični urad RS: `http://www.stat.si/StatWeb/pregled-podrocja?idp=17&headerbar=15`
 
+###Tabela 1
+
 Uvozila sem podatke o preseljevanju iz Slovenije ter v Slovenijo v obliki CSV iz splene strani statističnega urada RS. Podatki so ločeni glede na leto, državljanstvo, starostno skupino in spol.
 
 ```{r razpredelnice}
@@ -42,7 +45,7 @@ kable(head(tabela))
 V tej tabeli so v zadnjih treh stolpcih številske spremenljivke, v preostalih pa so imenske spremenljivke. 
 
 Najprej sem morala tabelo očistiti praznih vrstic, ki jih je uvozilo iz spletne strani, zato sem uporabila sledečo funkcijo:
-
+#####Funkcija za urejanje tabel
 ```{r funkcija uredimo}
 uredimo <- function(tabela, x, y, z, max = nrow(tabela)) {
   s <- seq(x, max, z+1)
@@ -58,7 +61,7 @@ Nato sem še preverila da so številske spremenljivke zares številke.
 Ko je bila tabela urejena in so bili vsi podatki zbrani, sem najprej fitrirala tabelo po prvi spremenljivki: priseljeni iz tujine in odseljeni v tujino in tako dobila dve tabeli: priseljeni in odseljeni.
 
 Da bi nato lažje in učinkoviteje filtrirala tabele po različnih spremenljivkah sem sestavila sledečo funkcijo:
-
+#####Funkcij za filtriranje podatkov iz tabel
 ```{r funkcija razberi}
 razberi <- function(x,y,podatki){
   return(podatki[podatki[y] == x, names(podatki) != y])
@@ -67,7 +70,7 @@ razberi <- function(x,y,podatki){
 
 S to funkcijo sem dobila podtabele po letih, državljanstvu in starostnih skupinah.
 
-V tabeli priseljen
+###Tabela 2
 
 Kot drugo tabelo sem uvozila še podatke o priseljevanju iz tujine in priseljevanju v tujino po regijah in letih v obliki html.
 
@@ -75,6 +78,7 @@ Kot drugo tabelo sem uvozila še podatke o priseljevanju iz tujine in priseljeva
 kable(head(tabela2))
 ```
 
+Tudi tu sem morala najprej prečistiti podatke, izbrisati določene vrstice in nato s funkcijo uredimo pretvorila v želene tabele. 
 
 ***
 
@@ -111,3 +115,4 @@ source("analiza/analiza.r", encoding = "UTF-8")
 
 
 ***
+
