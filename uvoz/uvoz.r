@@ -206,13 +206,23 @@ priseljeni.slovenci <- data.frame("leto"=as.numeric(priseljeni.minus.odseljeni [
 
 #graf za negativen prirast slovenskega prebivalstva:
 ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
-       aes(x=leto, y=razlika.skupaj,color=prirast.skupaj, size=starostna.skupina)) + geom_point()
+       aes(x=leto, y=razlika.skupaj,color=starostna.skupina)) + geom_point(size=6) +
+       coord_flip() 
 
 #graf za odseljene prebivalce leta 2014 po državljanstvu in vsi skupaj:
 ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
        aes(starostna.skupina,skupaj))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
        coord_flip()+ facet_wrap(~ državljanstvo)
 
+odseljeni2 <- filter(odseljeni,starostna.skupina =="Starostne skupine - SKUPAJ")
+odseljeni3 <- filter(odseljeni2,državljanstvo =="Selitve - SKUPAJ")
+maxodseljeni <- sort(filter(odseljeni3,"skupaj">0),"skupaj",decreasing = TRUE)
+
+#graf za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj:
+ggplot(data=maxodseljeni,
+       aes(leto,skupaj))+ geom_bar(stat="identity",fill="mediumorchid3",size=4) + 
+       coord_flip()
+  
 #2.tabela: PRESELJENI V TUJINO-PO REGIJAH:
 
 #uvozimo html:
@@ -228,7 +238,6 @@ colnames(tabela2)<- c("regija","leto","Priseljeni.iz.tujine.skupaj","Priseljeni.
 
 #uredimo šumnike:
 Encoding(tabela2[,"regija"]) <- "UTF-8"
-#Encoding(colnames(tabela2)) <- "UTF-8"
 
 #znebimo se določenih vrstic:
 tabela2<-tabela2[-1,]
@@ -249,14 +258,15 @@ tabela2[2:10]<-apply(tabela2[2:10], 2, as.numeric)
 
 #tabele:
 regije2014 <- razberi(2014,"leto",tabela2)
-Goriška <- razberi("Goriška","regija",tabela2)
+Goriska <- razberi("Goriška","regija",tabela2)
 
 #graf za leto 2014 za vse regije, priseljeni skupaj:
 ggplot(data=regije2014,
        aes(regija,Priseljeni.iz.tujine.skupaj))+ geom_bar(stat="identity",fill="deeppink3",size=10)+
-       coord_flip()
+       coord_flip() 
 
 #graf za odseljene v tujino za regijo Goriška:
-ggplot(data=Goriška,
-       aes(x=leto, y=Odseljeni.v.tujino.skupaj,size=Odseljeni.v.tujino.na.1000.prebivalcev)) + geom_point()
+ggplot(data=Goriska,
+       aes(x=leto, y=Odseljeni.v.tujino.skupaj,alpha=Odseljeni.v.tujino.na.1000.prebivalcev)) + 
+       geom_point(size=10,color="firebrick3")
 
