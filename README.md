@@ -10,11 +10,9 @@ V tem projektu bom raziskala in analizirala priseljevanje in izseljevanje prebiv
 
 Podatke sem dobila na naslednjih straneh:
 * Statistični urad RS: `http://www.stat.si/StatWeb/pregled-podrocja?idp=17&headerbar=15`
-* Eurostat: `http://ec.europa.eu/eurostat/data/database`
 
 Cilji tega projekta so:
 * natančnejše vedenje o priseljevanju in izseljevanju v Sloveniji
-* 
 
 ## Program
 

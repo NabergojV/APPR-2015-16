@@ -171,17 +171,22 @@ skupajpriseljeni <- as.numeric(priseljeni.slo[,4])
 skupajodseljeni <- as.numeric(odseljeni.slo[,4])
 skupajrazlika <- as.numeric(skupajpriseljeni-skupajodseljeni) 
 
-
+##skupaj
 povrsti<-c("pozitiven prirast","ni prirasta","negativen prirast")
 prirastskupaj<-factor(rep("ni prirasta",length(skupajrazlika)),
                                     levels=povrsti,ordered=TRUE)
 prirastskupaj[skupajrazlika<0] <- "negativen prirast"
 prirastskupaj[skupajrazlika>0] <- "pozitiven prirast"
-
+##moški
 prirastmoški<-factor(rep("ni prirasta",length(moškirazlika)),
                                   levels=povrsti,ordered=TRUE)
 prirastmoški[moškirazlika<0] <- "negativen prirast"
 prirastmoški[moškirazlika>0] <- "pozitiven prirast"
+##ženske
+prirastženske<-factor(rep("ni prirasta",length(ženskerazlika)),
+                     levels=povrsti,ordered=TRUE)
+prirastženske[ženskerazlika<0] <- "negativen prirast"
+prirastženske[ženskerazlika>0] <- "pozitiven prirast"
 
 #tabela razlike priseljenih-odseljenih:
 priseljeni.minus.odseljeni <- data.frame(leto=(priseljeni.slo[,2]),
@@ -189,6 +194,7 @@ priseljeni.minus.odseljeni <- data.frame(leto=(priseljeni.slo[,2]),
                                          moški.razlika=moškirazlika,
                                          prirast.moški=prirastmoški,
                                          ženske.razlika=ženskerazlika,
+                                         prirast.ženske=prirastženske,
                                          razlika.skupaj=skupajrazlika,
                                          prirast.skupaj=prirastskupaj)
 
@@ -200,29 +206,38 @@ priseljeni.slovenci <- data.frame("leto"=as.numeric(priseljeni.minus.odseljeni [
 
 #graf za negativen prirast slovenskega prebivalstva:
 ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
-       aes(x=leto, y=razlika.skupaj,color=prirast.skupaj, size=starostna.skupina)) + geom_point()
+       aes(x=leto, y=razlika.skupaj,color=starostna.skupina)) + geom_point(size=6) +
+       coord_flip() 
 
 #graf za odseljene prebivalce leta 2014 po državljanstvu in vsi skupaj:
 ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
        aes(starostna.skupina,skupaj))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
        coord_flip()+ facet_wrap(~ državljanstvo)
 
+odseljeni2 <- filter(odseljeni,starostna.skupina =="Starostne skupine - SKUPAJ")
+odseljeni3 <- filter(odseljeni2,državljanstvo =="Selitve - SKUPAJ")
+maxodseljeni <- sort(filter(odseljeni3,"skupaj">0),"skupaj",decreasing = TRUE)
+
+#graf za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj:
+ggplot(data=maxodseljeni,
+       aes(leto,skupaj))+ geom_bar(stat="identity",fill="mediumorchid3",size=4) + 
+       coord_flip()
+  
 #2.tabela: PRESELJENI V TUJINO-PO REGIJAH:
 
 #uvozimo html:
 library(rvest)
-html <- file("podatki/preseljevanje-v-tujino-po-regijah") %>% read_html(encoding = "Windows-1250")
+html <- file("podatki/preseljevanje-v-tujino-po-regijah") %>% read_html(encoding = "UTF-8")
 tabela2 <- html %>% html_nodes(xpath="//table[1]") %>%
   html_table(fill = TRUE) %>% .[[1]] %>%
   apply(1, function(x) c(x[is.na(x)], x[!is.na(x)])) %>% t() %>% data.frame(stringsAsFactors = FALSE)
 
-colnames(tabela2)<- c("regija","leto","Priseljeni iz tujine - Skupaj","Priseljeni iz tujine-moški",
-                  "Priseljeni iz tujine-ženske","Odseljeni v tujino-skupaj","Odseljeni v tujino-moški","Odseljeni v tujino-ženske",
-                  "Priseljeni iz tujine na 1000 prebivalcev","Odseljeni v tujino na 1000 prebivalcev")
+colnames(tabela2)<- c("regija","leto","Priseljeni.iz.tujine.skupaj","Priseljeni.iz.tujine.moški",
+                  "Priseljeni.iz.tujine.ženske","Odseljeni.v.tujino.skupaj","Odseljeni.v.tujino.moški","Odseljeni.v.tujino.ženske",
+                  "Priseljeni.iz.tujine.na.1000.prebivalcev","Odseljeni.v.tujino.na.1000.prebivalcev")
 
 #uredimo šumnike:
 Encoding(tabela2[,"regija"]) <- "UTF-8"
-#Encoding(colnames(tabela2)) <- "UTF-8"
 
 #znebimo se določenih vrstic:
 tabela2<-tabela2[-1,]
@@ -241,96 +256,17 @@ tabela2<-podvoji(tabela2,1,1,19)
 #oblika izpisa:
 tabela2[2:10]<-apply(tabela2[2:10], 2, as.numeric)
 
+#tabele:
+regije2014 <- razberi(2014,"leto",tabela2)
+Goriska <- razberi("Goriška","regija",tabela2)
 
+#graf za leto 2014 za vse regije, priseljeni skupaj:
+ggplot(data=regije2014,
+       aes(regija,Priseljeni.iz.tujine.skupaj))+ geom_bar(stat="identity",fill="deeppink3",size=10)+
+       coord_flip() 
 
-####zemljevidi ggplot2:
-source("lib/uvozi.zemljevid.r", encoding = "UTF-8")
-library(ggplot2)
-library(dplyr)
-
-pretvori.zemljevid <- function(zemljevid) {
-  fo <- fortify(zemljevid)
-  data <- zemljevid@data
-  data$id <- as.character(0:(nrow(data)-1))
-  return(inner_join(fo, data, by="id"))
-}
-
-# 1. Slovenske občine
-
-obcine <- uvozi.zemljevid("http://e-prostor.gov.si/fileadmin/BREZPLACNI_POD/RPE/OB.zip",
-                          "OB/OB", encoding = "Windows-1250")
-obcine$povrsina <- obcine$POVRSINA / 1000000
-ob <- pretvori.zemljevid(obcine)
-
-## Zemljevid z barvami za površino
-zem <- ggplot() + geom_polygon(data = ob, aes(x=long, y=lat, group=group,
-                                              fill=povrsina),
-                               color = "grey") +
-  scale_fill_gradient(low="#3F7F3F", high="#00FF00") +
-  guides(fill = guide_colorbar(title = "Površina"))
-print(zem)
-
-## Dodamo pike za mesta po tipu občine
-zem2 <- zem + geom_point(data = obcine@data, aes(x = Y_C, y = X_C, color = OB_TIP)) +
-  scale_color_manual(name="Tip", breaks = c("D", "N"),
-                     labels = c("Mestna občina", "Občina"),
-                     values = c("red", "blue"))
-print(zem2)
-
-## Dodamo imena glavnih mest mestnih občin
-zem3 <- zem2 + geom_text(data = obcine@data %>% filter(OB_TIP == "D"),
-                         aes(x = Y_C, y = X_C, label = OB_UIME),
-                         size = 3, vjust = 2)
-print(zem3)
-
-# 2. Zvezne države ZDA
-
-zda <- uvozi.zemljevid("http://baza.fmf.uni-lj.si/states_21basic.zip", "states")
-capitals <- read.csv("podatki/uscapitals.csv")
-row.names(capitals) <- capitals$state
-capitals <- preuredi(capitals, zda, "STATE_NAME")
-capitals$US.capital <- capitals$capital == "Washington"
-
-## Dodamo podatke o predsedniških volitvah v zemljevid
-zda$vote.2012 <- capitals$vote.2012
-zda$electoral.votes <- capitals$electoral.votes
-usa <- pretvori.zemljevid(zda)
-
-# Zemljevid elektorskih glasov
-map1 <- ggplot() + geom_polygon(data = usa, aes(x = long, y = lat, group = group,
-                                                fill = electoral.votes))
-print(map1)
-
-usa.cont <- usa %>% filter(! STATE_NAME %in% c("Alaska", "Hawaii"))
-capitals.cont <- capitals %>% filter(! state %in% c("Alaska", "Hawaii"))
-
-map2 <- ggplot() + geom_polygon(data = usa.cont,
-                                aes(x = long, y = lat,
-                                    group = group, fill = vote.2012)) +
-  scale_fill_manual(values = c("blue", "red")) +
-  guides(fill = guide_legend("Volitve 2012"))
-print(map2)
-
-map3 <- map2 + geom_polygon(data = usa.cont, fill = "black",
-                            aes(x = long, y = lat, group = group,
-                                alpha = electoral.votes)) +
-  scale_alpha(range = c(0.4, 0)) +
-  guides(alpha = guide_legend("Elektorski glasovi"))
-print(map3)
-
-map4 <- map3 + geom_polygon(data = usa.cont, alpha = 0, color = "gray",
-                            aes(x = long, y = lat, group = group))
-print(map4)
-
-map5 <- map4 + geom_point(data = capitals.cont, color = "green",
-                          aes(x = long, y = lat,
-                              shape = US.capital, size = US.capital)) +
-  geom_text(data = capitals.cont,
-            aes(x = long, y = lat, label = capital,
-                vjust = US.capital, size = US.capital)) +
-  scale_shape_manual(values = c(20, 15), guide = FALSE) +
-  scale_size_manual(values = c(3, 5), guide = FALSE) +
-  discrete_scale(aesthetics = "vjust", scale_name = NULL,
-                 palette = . %>% c(0, 2), guide = FALSE)
-print(map5)
+#graf za odseljene v tujino za regijo Goriška:
+ggplot(data=Goriska,
+       aes(x=leto, y=Odseljeni.v.tujino.skupaj,alpha=Odseljeni.v.tujino.na.1000.prebivalcev)) + 
+       geom_point(size=10,color="firebrick3")
 
