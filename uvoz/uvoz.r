@@ -20,13 +20,13 @@ library(extrafont)
 
 #poimenujemo stolpce:
 
-stolpci<-c("priseljeni.ali.odseljeni","leto","starostna.skupina","državljanstvo","skupaj","moški","ženske")
+stolpci<-c("priseljeni.ali.odseljeni","leto","starostna.skupina","državljanstvo","spol","stevilka")
 
 #uvozimo podatke:
 
 uvozi<-function(){
   return(read.csv2(file="podatki/podatki-o-preseljevanju-starostneskupine",
-                   skip=4,
+                   skip=3,
                    col.names=stolpci,
                    header=FALSE,
                    fileEncoding = "UTF-8"))
@@ -43,14 +43,14 @@ uredimo <- function(tabela, x, y, z, max = nrow(tabela)) {
 }
 
 #uredimo prazna mesta:
-tabela <- uredimo(tabela, 1, 1, 1540)
-tabela <- uredimo(tabela, 1, 2, 76)
-tabela <- uredimo(tabela, 1, 3, 3)
+tabela <- uredimo(tabela, 1, 1, 4960)
+tabela <- uredimo(tabela, 1, 2, 247)
+tabela <- uredimo(tabela, 1, 3, 12)
+tabela <- uredimo(tabela, 1, 4, 3)
 
 #oblika izpisa:
-tabela[,5]<-as.integer(tabela[,5])
+tabela[,5]<-as.character(tabela[,5])
 tabela[,6]<-as.integer(tabela[,6])
-tabela[,7]<-as.integer(tabela[,7])
 tabela[,1]<-as.character(tabela[,1])
 tabela[,2]<-as.character(tabela[,2])
 tabela[,3]<-as.character(tabela[,3])
@@ -64,6 +64,16 @@ odseljeni<-filter(tabela,priseljeni.ali.odseljeni=="Odseljeni v tujino")
 razberi <- function(x,y,podatki){
   return(podatki[podatki[y] == x, names(podatki) != y])
 }
+
+
+
+#TIDY DATA oblika:
+tidytabela <- tabela %>% filter(starostna.skupina != "Starostne skupine - SKUPAJ") %>% 
+  filter(državljanstvo != "Selitve - SKUPAJ") %>%
+  filter(spol != "Spol - SKUPAJ")
+
+
+
 
 #PRISELJENI:
 #po letih:
@@ -158,47 +168,26 @@ slo.o.2014 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.201
 #RAZLIKA MED PRISELJENIMI IN ODSELJENIMI (gledano samo državljani Republike Slovenije):
 priseljeni.slo <- razberi("Državljani Republike Slovenije","državljanstvo",priseljeni)
 odseljeni.slo <- razberi("Državljani Republike Slovenije","državljanstvo",odseljeni)
-#moški:
-moškipriseljeni <- as.numeric(priseljeni.slo[,5])
-moškiodseljeni <- as.numeric(odseljeni.slo[,5])
-moškirazlika <- as.numeric(moškipriseljeni-moškiodseljeni) 
-#ženske:
-ženskepriseljeni <- as.numeric(priseljeni.slo[,6])
-ženskeodseljeni <- as.numeric(odseljeni.slo[,6])
-ženskerazlika <- as.numeric(ženskepriseljeni-ženskeodseljeni) 
-#skupaj:
-skupajpriseljeni <- as.numeric(priseljeni.slo[,4])
-skupajodseljeni <- as.numeric(odseljeni.slo[,4])
-skupajrazlika <- as.numeric(skupajpriseljeni-skupajodseljeni) 
 
-##skupaj
-povrsti<-c("pozitiven prirast","ni prirasta","negativen prirast")
-prirastskupaj<-factor(rep("ni prirasta",length(skupajrazlika)),
+##razlika:
+razlika.slo <- as.numeric(priseljeni.slo[,5]-odseljeni.slo[,5])
+
+##prirast:
+povrsti<-c("pozitiven","ga ni","negativen")
+prirastslo<-factor(rep("ga ni",length(razlika.slo)),
                                     levels=povrsti,ordered=TRUE)
-prirastskupaj[skupajrazlika<0] <- "negativen prirast"
-prirastskupaj[skupajrazlika>0] <- "pozitiven prirast"
-##moški
-prirastmoški<-factor(rep("ni prirasta",length(moškirazlika)),
-                                  levels=povrsti,ordered=TRUE)
-prirastmoški[moškirazlika<0] <- "negativen prirast"
-prirastmoški[moškirazlika>0] <- "pozitiven prirast"
-##ženske
-prirastženske<-factor(rep("ni prirasta",length(ženskerazlika)),
-                     levels=povrsti,ordered=TRUE)
-prirastženske[ženskerazlika<0] <- "negativen prirast"
-prirastženske[ženskerazlika>0] <- "pozitiven prirast"
+prirastslo[razlika.slo<0] <- "negativen"
+prirastslo[razlika.slo>0] <- "pozitiven"
+prirastslo[razlika.slo==0] <- "ga ni"
 
 #tabela razlike priseljenih-odseljenih:
 priseljeni.minus.odseljeni <- data.frame(leto=(priseljeni.slo[,2]),
                                          starostna.skupina=priseljeni.slo[,3],
-                                         moški.razlika=moškirazlika,
-                                         prirast.moški=prirastmoški,
-                                         ženske.razlika=ženskerazlika,
-                                         prirast.ženske=prirastženske,
-                                         razlika.skupaj=skupajrazlika,
-                                         prirast.skupaj=prirastskupaj)
+                                         spol=priseljeni.slo[,4],
+                                         razlika=razlika.slo,
+                                         prirast=prirastslo)
 
-priseljeni.minus.odseljeni.order <- priseljeni.minus.odseljeni[order(priseljeni.minus.odseljeni$razlika.skupaj),]
+priseljeni.minus.odseljeni.order <- priseljeni.minus.odseljeni[order(priseljeni.minus.odseljeni$razlika),]
 
 priseljeni.slovenci <- data.frame("leto"=as.numeric(priseljeni.minus.odseljeni [,1]),
                                 "starostna.skupina"=as.character(priseljeni.minus.odseljeni [,2]),
@@ -206,23 +195,34 @@ priseljeni.slovenci <- data.frame("leto"=as.numeric(priseljeni.minus.odseljeni [
 
 #graf za negativen prirast slovenskega prebivalstva:
 ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
-       aes(x=leto, y=razlika.skupaj,color=starostna.skupina)) + geom_point(size=6) +
+       aes(x=leto, y=razlika,color=starostna.skupina)) + geom_point(size=6) +
        coord_flip() 
 
 #graf za odseljene prebivalce leta 2014 po državljanstvu in vsi skupaj:
-ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
-       aes(starostna.skupina,skupaj))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
+ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ")%>%filter(spol=="Spol - SKUPAJ"),
+       aes(starostna.skupina,stevilka))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
        coord_flip()+ facet_wrap(~ državljanstvo)
 
 odseljeni2 <- filter(odseljeni,starostna.skupina =="Starostne skupine - SKUPAJ")
-odseljeni3 <- filter(odseljeni2,državljanstvo =="Selitve - SKUPAJ")
-maxodseljeni <- sort(filter(odseljeni3,"skupaj">0),"skupaj",decreasing = TRUE)
+odseljeni3 <- filter(odseljeni2,spol != "Spol - SKUPAJ")
+odseljeni4 <- filter(odseljeni3,državljanstvo =="Selitve - SKUPAJ")
+
+maxodseljeni <- sort(filter(odseljeni4,"stevilka">0),"stevilka",decreasing = TRUE)
 
 #graf za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj:
-ggplot(data=maxodseljeni,
-       aes(leto,skupaj))+ geom_bar(stat="identity",fill="mediumorchid3",size=4) + 
-       coord_flip()
-  
+ggplot(data=odseljeni4,
+       aes(leto,stevilka,fill=spol))+ geom_bar(stat="identity",size=6) + coord_flip()
+
+odseljeni5 <- filter(odseljeni3,državljanstvo!="Selitve - SKUPAJ")
+
+#graf za odseljene prebivalce po starostnih skupinah skupaj in spolu:
+ggplot(data=odseljeni5,
+       aes(leto,stevilka,fill=spol))+ geom_bar(stat="identity",size=6) + coord_flip()+
+       facet_wrap(~ državljanstvo)
+
+
+
+
 #2.tabela: PRESELJENI V TUJINO-PO REGIJAH:
 
 #uvozimo html:
