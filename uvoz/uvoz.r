@@ -223,6 +223,7 @@ ggplot(data=odseljeni5,
 
 
 
+
 #2.tabela: PRESELJENI V TUJINO-PO REGIJAH:
 
 #uvozimo html:
