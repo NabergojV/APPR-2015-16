@@ -38,7 +38,7 @@ Najprej sem poiskala podatke. Našla sem jih na spletni strani:
 
 Uvozila sem podatke o preseljevanju iz Slovenije ter v Slovenijo v obliki CSV iz splene strani statističnega urada RS. Podatki so ločeni glede na leto, državljanstvo, starostno skupino in spol.
 
-```{r tabela 1}
+```{r tabela1 }
 kable(head(tabela))
 ```
 
@@ -61,10 +61,6 @@ Nato sem še preverila da so številske spremenljivke zares številke.
 
 Ko je bila tabela urejena in so bili vsi podatki zbrani, sem najprej fitrirala tabelo po prvi spremenljivki: priseljeni iz tujine in odseljeni v tujino in tako dobila dve tabeli: priseljeni in odseljeni.
 
-<<<<<<< HEAD
-```{r razpredelnice}
-kable(head(druzine))
-=======
 Da bi nato lažje in učinkoviteje filtrirala tabele po različnih spremenljivkah sem sestavila sledečo funkcijo _razberi_:
 
 #####Funkcija za filtriranje podatkov iz tabel
@@ -72,7 +68,6 @@ Da bi nato lažje in učinkoviteje filtrirala tabele po različnih spremenljivka
 razberi <- function(x,y,podatki){
   return(podatki[podatki[y] == x, names(podatki) != y])
 }
->>>>>>> fa0d273194fc37e57a0cc5ffaef2e306dfa06c64
 ```
 
 S to funkcijo sem dobila podtabele po letih, državljanstvu in starostnih skupinah.
@@ -81,7 +76,7 @@ S to funkcijo sem dobila podtabele po letih, državljanstvu in starostnih skupin
 
 Kot drugo tabelo sem uvozila še podatke o priseljevanju iz tujine in priseljevanju v tujino po regijah in letih v obliki html.
 
-```{r tabela 2}
+```{r tabela2}
 kable(head(tabela2))
 ```
 
@@ -108,8 +103,8 @@ Iz grafa je razvidno da je največji negativen prirast postajal vedno bolj negat
 Slika \ref{fig:graf2} nam predstavi 3 grafe odseljenih prebivalcev, ki jih ločimo po državljanstvu. V grafih vidimo da so prebivalci nato ločeni še po starostnih skupinah. Vsi podatki so za leto 2014.
 
 ```{r graf2, echo=FALSE, fig.align='center', fig.cap='Graf odseljenih prebivalcev ločenih po državljanstvu za leto 2014'}
-ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
-       aes(starostna.skupina,skupaj))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
+ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ")%>%filter(spol=="Spol - SKUPAJ"),
+       aes(starostna.skupina,stevilka))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
        coord_flip()+ facet_wrap(~ državljanstvo)
 ```
 
