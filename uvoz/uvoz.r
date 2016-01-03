@@ -271,3 +271,7 @@ ggplot(data=Goriska,
        aes(x=leto, y=Odseljeni.v.tujino.skupaj,alpha=Odseljeni.v.tujino.na.1000.prebivalcev)) + 
        geom_point(size=10,color="firebrick3")
 
+
+
+
+#zemljevidi:

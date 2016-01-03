@@ -38,7 +38,7 @@ Najprej sem poiskala podatke. Našla sem jih na spletni strani:
 
 Uvozila sem podatke o preseljevanju iz Slovenije ter v Slovenijo v obliki CSV iz splene strani statističnega urada RS. Podatki so ločeni glede na leto, državljanstvo, starostno skupino in spol.
 
-```{r tabela1 }
+```{r tabela1}
 kable(head(tabela))
 ```
 
