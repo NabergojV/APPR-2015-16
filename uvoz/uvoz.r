@@ -275,3 +275,18 @@ ggplot(data=Goriska,
 
 
 #zemljevidi:
+source("lib/uvozi.zemljevid.r", encoding = "UTF-8")
+
+pretvori.zemljevid <- function(zemljevid) {
+  fo <- fortify(zemljevid)
+  data <- zemljevid@data
+  data$id <- as.character(0:(nrow(data)-1))
+  return(inner_join(fo, data, by="id"))
+}
+
+# 1. Slovenske občine
+
+obcine <- uvozi.zemljevid("http://e-prostor.gov.si/fileadmin/BREZPLACNI_POD/RPE/OB.zip",
+                          "OB/OB", encoding = "Windows-1250")
+obcine$povrsina <- obcine$POVRSINA / 1000000
+ob <- pretvori.zemljevid(obcine)
