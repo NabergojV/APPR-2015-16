@@ -1,11 +1,5 @@
 # 2. faza: Uvoz podatkov
 
-# Če bi imeli več funkcij za uvoz in nekaterih npr. še ne bi
-# potrebovali v 3. fazi, bi bilo smiselno funkcije dati v svojo
-# datoteko, tukaj pa bi klicali tiste, ki jih potrebujemo v
-# 2. fazi. Seveda bi morali ustrezno datoteko uvoziti v prihodnjih
-# fazah.
-
 #odpremo pakete:
 library(dplyr)
 library(gsubfn)
@@ -215,10 +209,11 @@ ggplot(data=odseljeni4,
 
 odseljeni5 <- filter(odseljeni3,državljanstvo!="Selitve - SKUPAJ")
 
-#graf za odseljene prebivalce po starostnih skupinah skupaj in spolu:
+#graf za odseljene prebivalce po starostnih skupinah skupaj in spolu in državljanstvu:
 ggplot(data=odseljeni5,
        aes(leto,stevilka,fill=spol))+ geom_bar(stat="identity",size=6) + coord_flip()+
        facet_wrap(~ državljanstvo)
+
 
 
 
@@ -270,8 +265,3 @@ ggplot(data=regije2014,
 ggplot(data=Goriska,
        aes(x=leto, y=Odseljeni.v.tujino.skupaj,alpha=Odseljeni.v.tujino.na.1000.prebivalcev)) + 
        geom_point(size=10,color="firebrick3")
-
-
-
-
-#zemljevidi:
