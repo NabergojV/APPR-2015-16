@@ -31,7 +31,8 @@ source("uvoz/uvoz.r", encoding = "UTF-8")
 ```
 
 Najprej sem poiskala podatke. Našla sem jih na spletni strani: 
-+Statistični urad RS: `http://www.stat.si/StatWeb/pregled-podrocja?idp=17&headerbar=15`
+
+* Statistični urad RS: `http://www.stat.si/StatWeb/pregled-podrocja?idp=17&headerbar=15`
 
 
 ###Tabela 1
@@ -83,13 +84,13 @@ kable(head(tidytabela1))
 ####Spremenljivke:
 
 * Stolpci v tabeli 1:
-* priseljeni.ali.odseljeni: imenska spremenljivka
-* leto: številska spremenljivka
--starostna.skupina: imenska spremenljivka
--državljanstvo: imenska spremenljivka
--spol: imenska spremenljivka
--stevilka: številska spremenljivka
--priseljeni.minus.odseljeni.prirast: urejenostna spremenljivka
+* priseljeni.ali.odseljeni: _imenska spremenljivka_
+* leto: _številska spremenljivka_
+* starostna.skupina: _imenska spremenljivka_
+* državljanstvo: _imenska spremenljivka_
+* spol: _imenska spremenljivka_
+* stevilka: _številska spremenljivka_
+* priseljeni.minus.odseljeni.prirast: _urejenostna spremenljivka_
 
 ###Tabela 2
 
@@ -108,15 +109,17 @@ kable(head(tidytabela2))
 ```
 
 ####Spremenljivke:
+
 Stolpci v tabeli 2 imajo sledeče značilnosti:
--regija: imenska spremenljivka
--leto: številska spremenljivka
--Priseljeni.iz.tujine.moški: številska spremenljivka
--Priseljeni.iz.tujine.ženske: številska spremenljivka
--Odseljeni.v.tujino.moški: številska spremenljivka
--Odseljeni.v.tujino.ženske: številska spremenljivka
--Priseljeni.iz.tujine.na.1000.prebivalcev: številska spremenljivka
--Odseljeni.v.tujino.na.1000.prebivalcev: številska spremenljivka
+
+* regija: _imenska spremenljivka_
+* leto: _številska spremenljivka_
+* Priseljeni.iz.tujine.moški: _številska spremenljivka_
+* Priseljeni.iz.tujine.ženske: _številska spremenljivka_
+* Odseljeni.v.tujino.moški: _številska spremenljivka_
+* Odseljeni.v.tujino.ženske: _številska spremenljivka_
+* Priseljeni.iz.tujine.na.1000.prebivalcev: _številska spremenljivka_
+* Odseljeni.v.tujino.na.1000.prebivalcev: _številska spremenljivka_
 
 ***
 
@@ -124,7 +127,7 @@ Stolpci v tabeli 2 imajo sledeče značilnosti:
 
 ####Graf razlike priseljenih Slovencev in odseljenih Slovencev
 
-Slika \ref{fig:graf} prikazuje razliko med priseljenimi Slovenci in odseljenimi Slovenci po letih in starostnih skupinah (te so prikazane z različnimi velikostmi pik) ter prirast, ki je prikazan očitno, saj je lahko pozitiven, negativen ali enak 0.
+Slika \ref{fig:graf} prikazuje razliko med priseljenimi Slovenci in odseljenimi Slovenci po letih in starostnih skupinah (te so prikazane z različnimi barvami) ter prirast (oblika), ki je očiten, saj je lahko pozitiven, negativen ali enak 0.
 
 ```{r graf, echo=FALSE, fig.align='center', fig.cap='Graf razlike priseljenih Slovencev in odseljenih Slovencev'}
 ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
