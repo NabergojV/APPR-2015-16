@@ -83,7 +83,8 @@ kable(head(tidytabela1))
 
 ####Spremenljivke:
 
-* Stolpci v tabeli 1:
+Stolpci v tabeli 1:
+
 * priseljeni.ali.odseljeni: _imenska spremenljivka_
 * leto: _številska spremenljivka_
 * starostna.skupina: _imenska spremenljivka_
