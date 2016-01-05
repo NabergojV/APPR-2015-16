@@ -2,11 +2,11 @@
 title: "Poročilo pri predmetu Analiza podatkov s programom R"
 author: "Veronika Nabergoj"
 output:
+  html_document: default
   pdf_document:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
-  html_document: default
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE,warning=FALSE}
@@ -38,7 +38,7 @@ Najprej sem poiskala podatke. Našla sem jih na spletni strani:
 
 Uvozila sem podatke o preseljevanju iz Slovenije ter v Slovenijo v obliki CSV iz splene strani statističnega urada RS. Podatki so ločeni glede na leto, državljanstvo, starostno skupino in spol.
 
-```{r tabela1}
+```{r tabela1, echo=FALSE}
 kable(head(tabela))
 ```
 
@@ -72,15 +72,51 @@ razberi <- function(x,y,podatki){
 
 S to funkcijo sem dobila podtabele po letih, državljanstvu in starostnih skupinah.
 
+###Tabela 1 v tidy data obliki
+
+Tabelo 1 sem pretvorila v tidy data obliko tako, da sem odstranila stolpce skupaj, ki so mi bili v pomoč pri risanju grafov. Dodala sem ji tudi stolpec, v katerem je urejenostna spremenljivka, ki prikaže prirast ljudi (odštejemo odseljene od priseljenih).
+
+```{r tabela1tidy, echo=FALSE}
+kable(head(tidytabela1))
+```
+
+####Spremenljivke:
+
+* Stolpci v tabeli 1:
+* priseljeni.ali.odseljeni: imenska spremenljivka
+* leto: številska spremenljivka
+-starostna.skupina: imenska spremenljivka
+-državljanstvo: imenska spremenljivka
+-spol: imenska spremenljivka
+-stevilka: številska spremenljivka
+-priseljeni.minus.odseljeni.prirast: urejenostna spremenljivka
+
 ###Tabela 2
 
 Kot drugo tabelo sem uvozila še podatke o priseljevanju iz tujine in priseljevanju v tujino po regijah in letih v obliki html.
 
-```{r tabela2}
+```{r tabela2, echo=FALSE}
 kable(head(tabela2))
 ```
 
 Tudi tu sem morala najprej prečistiti podatke, izbrisati določene vrstice in nato s funkcijo _uredimo_ pretvorila v želene tabele. 
+
+###Tabela 2 v tidy data obliki
+
+```{r tabela2tidy, echo=FALSE}
+kable(head(tidytabela2))
+```
+
+####Spremenljivke:
+Stolpci v tabeli 2 imajo sledeče značilnosti:
+-regija: imenska spremenljivka
+-leto: številska spremenljivka
+-Priseljeni.iz.tujine.moški: številska spremenljivka
+-Priseljeni.iz.tujine.ženske: številska spremenljivka
+-Odseljeni.v.tujino.moški: številska spremenljivka
+-Odseljeni.v.tujino.ženske: številska spremenljivka
+-Priseljeni.iz.tujine.na.1000.prebivalcev: številska spremenljivka
+-Odseljeni.v.tujino.na.1000.prebivalcev: številska spremenljivka
 
 ***
 

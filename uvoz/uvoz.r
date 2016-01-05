@@ -46,7 +46,7 @@ tabela <- uredimo(tabela, 1, 4, 3)
 tabela[,5]<-as.character(tabela[,5])
 tabela[,6]<-as.integer(tabela[,6])
 tabela[,1]<-as.character(tabela[,1])
-tabela[,2]<-as.character(tabela[,2])
+tabela[,2]<-as.integer(tabela[,2])
 tabela[,3]<-as.character(tabela[,3])
 tabela[,4]<-as.character(tabela[,4])
 
@@ -59,10 +59,24 @@ razberi <- function(x,y,podatki){
   return(podatki[podatki[y] == x, names(podatki) != y])
 }
 
+#dodamo stolpec prirast priseljeni-odseljeni:
+p.minus.o1 <-filter(tabela,priseljeni.ali.odseljeni=="Priseljeni iz tujine")
+p.minus.o1$priseljeni.minus.odseljeni.st <- priseljeni[,6] - odseljeni[,6]
+povrsti<-c("pozitiven","ga ni","negativen")
+prir<-factor(rep("ga ni",length(p.minus.o1)),
+                                   levels=povrsti,ordered=TRUE)
+prir[p.minus.o1[,7]<0] <- "negativen"
+prir[p.minus.o1[,7]>0] <- "pozitiven"
+prir[p.minus.o1[,7]==0] <- "ga ni"
+p.minus.o1$priseljeni.minus.odseljeni.prirast<-prir
+
+p.minus.o <- p.minus.o1[,-7]
+
+
 
 
 #TIDY DATA oblika:
-tidytabela <- tabela %>% filter(starostna.skupina != "Starostne skupine - SKUPAJ") %>% 
+tidytabela1 <- p.minus.o %>% filter(starostna.skupina != "Starostne skupine - SKUPAJ") %>% 
   filter(državljanstvo != "Selitve - SKUPAJ") %>%
   filter(spol != "Spol - SKUPAJ")
 
@@ -251,6 +265,15 @@ tabela2<-podvoji(tabela2,1,1,19)
 
 #oblika izpisa:
 tabela2[2:10]<-apply(tabela2[2:10], 2, as.numeric)
+
+
+
+#TIDY DATA oblika:
+tidytabela <- tabela2[,-3]
+tidytabela2 <- tidytabela[,-5]
+
+
+
 
 #tabele:
 regije2014 <- razberi(2014,"leto",tabela2)
