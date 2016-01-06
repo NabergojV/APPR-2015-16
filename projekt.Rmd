@@ -35,7 +35,7 @@ Najprej sem poiskala podatke. Našla sem jih na spletni strani:
 * Statistični urad RS: `http://www.stat.si/StatWeb/pregled-podrocja?idp=17&headerbar=15`
 
 
-###Tabela 1
+### Tabela 1
 
 Uvozila sem podatke o preseljevanju iz Slovenije ter v Slovenijo v obliki CSV iz splene strani statističnega urada RS. Podatki so ločeni glede na leto, državljanstvo, starostno skupino in spol.
 
@@ -47,7 +47,7 @@ V tej tabeli so v zadnjem, šestem stolpcu številske spremenljivke, v preostali
 
 Najprej sem morala tabelo očistiti praznih vrstic, ki jih je uvozilo iz spletne strani, zato sem uporabila sledečo funkcijo:
 
-#####Funkcija za urejanje tabel:
+##### Funkcija za urejanje tabel:
 ```{r uredimo}
 uredimo <- function(tabela, x, y, z, max = nrow(tabela)) {
   s <- seq(x, max, z+1)
@@ -64,7 +64,7 @@ Ko je bila tabela urejena in so bili vsi podatki zbrani, sem najprej fitrirala t
 
 Da bi nato lažje in učinkoviteje filtrirala tabele po različnih spremenljivkah sem sestavila sledečo funkcijo _razberi_:
 
-#####Funkcija za filtriranje podatkov iz tabel
+##### Funkcija za filtriranje podatkov iz tabel
 ```{r razberi}
 razberi <- function(x,y,podatki){
   return(podatki[podatki[y] == x, names(podatki) != y])
@@ -73,7 +73,7 @@ razberi <- function(x,y,podatki){
 
 S to funkcijo sem dobila podtabele po letih, državljanstvu in starostnih skupinah.
 
-###Tabela 1 v tidy data obliki
+### Tabela 1 v tidy data obliki
 
 Tabelo 1 sem pretvorila v tidy data obliko tako, da sem odstranila stolpce skupaj, ki so mi bili v pomoč pri risanju grafov. Dodala sem ji tudi stolpec, v katerem je urejenostna spremenljivka, ki prikaže prirast ljudi (odštejemo odseljene od priseljenih).
 
@@ -81,7 +81,7 @@ Tabelo 1 sem pretvorila v tidy data obliko tako, da sem odstranila stolpce skupa
 kable(head(tidytabela1))
 ```
 
-####Spremenljivke:
+#### Spremenljivke:
 
 Stolpci v tabeli 1:
 
@@ -93,7 +93,7 @@ Stolpci v tabeli 1:
 * stevilka: _številska spremenljivka_
 * priseljeni.minus.odseljeni.prirast: _urejenostna spremenljivka_
 
-###Tabela 2
+### Tabela 2
 
 Kot drugo tabelo sem uvozila še podatke o priseljevanju iz tujine in priseljevanju v tujino po regijah in letih v obliki html.
 
@@ -103,13 +103,13 @@ kable(head(tabela2))
 
 Tudi tu sem morala najprej prečistiti podatke, izbrisati določene vrstice in nato s funkcijo _uredimo_ pretvorila v želene tabele. 
 
-###Tabela 2 v tidy data obliki
+### Tabela 2 v tidy data obliki
 
 ```{r tabela2tidy, echo=FALSE}
 kable(head(tidytabela2))
 ```
 
-####Spremenljivke:
+#### Spremenljivke:
 
 Stolpci v tabeli 2 imajo sledeče značilnosti:
 
@@ -124,9 +124,7 @@ Stolpci v tabeli 2 imajo sledeče značilnosti:
 
 ***
 
-# Analiza in vizualizacija podatkov
-
-####Graf razlike priseljenih Slovencev in odseljenih Slovencev
+#### Graf razlike priseljenih Slovencev in odseljenih Slovencev
 
 Slika \ref{fig:graf} prikazuje razliko med priseljenimi Slovenci in odseljenimi Slovenci po letih in starostnih skupinah (te so prikazane z različnimi barvami) ter prirast (oblika), ki je očiten, saj je lahko pozitiven, negativen ali enak 0.
 
@@ -138,7 +136,7 @@ ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne s
  
 Iz grafa je razvidno da je največji negativen prirast postajal vedno bolj negativen in je 2014 tudi dosegel največjo stopnjo izseljevanja. Če pogledamo še starostne skupine, padejo v kategorijo **25-29 let** in kategorijo **30-35 let**. 
 
-####Graf odseljenih prebivalcev ločenih po državljanstvu za leto 2014
+#### Graf odseljenih prebivalcev ločenih po državljanstvu za leto 2014
 
 Slika \ref{fig:graf2} nam predstavi 3 grafe odseljenih prebivalcev, ki jih ločimo po državljanstvu. V grafih vidimo da so prebivalci nato ločeni še po starostnih skupinah. Vsi podatki so za leto 2014.
 
@@ -148,7 +146,7 @@ ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ")%
        coord_flip()+ facet_wrap(~ državljanstvo)
 ```
 
-####Graf za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj
+#### Graf za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj
 
 Tu \ref{fig:graf3} vidimo je bilo odseljevanje najmočnejše leta 2009.
 
@@ -157,7 +155,7 @@ ggplot(data=odseljeni4,
        aes(leto,stevilka,fill=spol))+ geom_bar(stat="identity",size=6) + coord_flip()
 ```
 
-####Graf za priseljene skupaj za vse regije za leto 2014
+#### Graf za priseljene skupaj za vse regije za leto 2014
 
 Na sliki \ref{fig:graf4} je opaziti da je največ priseljenih v Osrednjeslovensko regijo. Razlog za to je najverjetneje v največji ponudbi služb in možosti za šolanje, kariero, družine,...
 
@@ -168,7 +166,7 @@ ggplot(data=regije2014,
 ```
 
 
-####Graf za odseljene v tujino za Goriško regijo po letih:
+#### Graf za odseljene v tujino za Goriško regijo po letih:
 
 Ta slika \ref{fig:graf5} nam predstavi odseljene prebivalce Goriške regije v letih od 1995-2014. Razvidno je bilo leta 2009 največje odseljevanje. V _Grafu za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj_ smo prav tako omenili, da je bilo preseljevanje najmočnejše let 2009.
 
@@ -177,3 +175,31 @@ ggplot(data=Goriska,
        aes(x=leto, y=Odseljeni.v.tujino.skupaj,alpha=Odseljeni.v.tujino.na.1000.prebivalcev)) + 
        geom_point(size=10,color="firebrick3")
 ```
+
+***
+
+# Analiza in vizualizacija podatkov
+
+```{r ainv, echo=FALSE, results='hide', message=FALSE,warning=FALSE}
+source("vizualizacija/vizualizacija.r", encoding = "UTF-8")
+```
+
+### Zemljevid regij Slovenije obarvanih glede na intenzivnost priseljevanje iz tujine leta 2014:
+
+Zemljevid nam prikazuje priseljevanje iz tujine, skupaj po spolu, za leto 2014. Kot je razvidno se največ priseljevanja kot nam je že pokazal graf 5, dogaja v Osrednjeslovenski regiji. Druga taka regija pa je Posavska
+
+```{r zemljevid1, echo=FALSE, fig.align='center', fig.cap='Zemljevid priseljevanja iz tujine leta 2014'}
+zem.reg2014 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
+                                              fill=priseljeni),color = "grey30") +
+  scale_fill_gradient(low="hotpink4", high="hotpink") +
+  guides(fill = guide_colorbar(title = "Priseljeni iz tujine v letu 2014"))
+```
+
+
+
+
+
+
+
+
+
