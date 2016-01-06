@@ -1,11 +1,15 @@
 # 3. faza: Izdelava zemljevida
 
+source("lib/uvozi.zemljevid.r", encoding = "UTF-8")
+library(ggplot2)
+library(dplyr)
+
 # Uvozimo zemljevid.
 zemljevid <- uvozi.zemljevid("http://biogeo.ucdavis.edu/data/gadm2.8/shp/SVN_adm_shp.zip",
                              "SVN_adm1", encoding = "UTF-8")
 
 # Preuredimo podatke, da jih bomo lahko izrisali na zemljevid.
-druzine <- preuredi(druzine, zemljevid, "OB_UIME", c("Ankaran", "Mirna"))
+reg2014 <- preuredi(regije2014, zemljevid, "NAME_1")
 
 
 pretvori.zemljevid <- function(zemljevid) {
@@ -15,9 +19,12 @@ pretvori.zemljevid <- function(zemljevid) {
   return(inner_join(fo, data, by="id"))
 }
 
-# 1. Slovenske občine
+#regije:
+reg14 <- pretvori.zemljevid(reg2014)
 
-obcine <- uvozi.zemljevid("http://e-prostor.gov.si/fileadmin/BREZPLACNI_POD/RPE/OB.zip",
-                          "OB/OB", encoding = "Windows-1250")
-obcine$povrsina <- obcine$POVRSINA / 1000000
-ob <- pretvori.zemljevid(obcine)
+zem.reg2014 <- ggplot() + geom_polygon(data = reg2014, aes(x=long, y=lat, group=group,
+                                              fill=Priseljeni.iz.tujine.skupaj),
+                               color = "grey") +
+  scale_fill_gradient(low="#3F7F3F", high="#00FF00") +
+  guides(fill = guide_colorbar(title = "Površina"))
+print(zem.reg2014)
