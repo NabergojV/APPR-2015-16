@@ -20,14 +20,17 @@ pretvori.zemljevid <- function(zemljevid) {
   return(inner_join(fo, data, by="id"))
 }
 
-# Regije:
-zemljevid$priseljeni <- reg2014$Priseljeni.iz.tujine.skupaj
+# Dodani stolpci:
+zemljevid$priseljeniskupaj <- reg2014$Priseljeni.iz.tujine.skupaj
+zemljevid$priseljeni.iz.tujine.na.1000.prebivalcev <-reg2014$Priseljeni.iz.tujine.na.1000.prebivalcev
 reg14 <- pretvori.zemljevid(zemljevid)
 
-# Zemljevid:
+# Zemljevid 1:
 zem.reg2014 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
-                                              fill=priseljeni),color = "grey30") +
-  scale_fill_gradient(low="hotpink4", high="hotpink") +
+                                              fill=priseljeniskupaj,
+                                              alpha=priseljeni.iz.tujine.na.1000.prebivalcev),
+                                              color = "grey30") +
+  scale_fill_gradient(low="violetred4", high="violet") +
   guides(fill = guide_colorbar(title = "Priseljeni iz tujine v letu 2014"))
 print(zem.reg2014)
 

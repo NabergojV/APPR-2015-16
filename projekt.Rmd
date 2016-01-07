@@ -186,12 +186,14 @@ source("vizualizacija/vizualizacija.r", encoding = "UTF-8")
 
 ### Zemljevid regij Slovenije obarvanih glede na intenzivnost priseljevanje iz tujine leta 2014:
 
-Zemljevid nam prikazuje priseljevanje iz tujine, skupaj po spolu, za leto 2014. Kot je razvidno se največ priseljevanja kot nam je že pokazal graf 5, dogaja v Osrednjeslovenski regiji. Druga taka regija pa je Posavska
+Zemljevid nam prikazuje priseljevanje iz tujine, skupaj po spolu, za leto 2014. Kot je razvidno se največ priseljevanja kot nam je že pokazal graf 5, dogaja v Osrednjeslovenski regiji. S prosojnostjo barv pa je prikazano, kliko je priseljenih iz tujine na 1000 prebivalcev.
 
 ```{r zemljevid1, echo=FALSE, fig.align='center', fig.cap='Zemljevid priseljevanja iz tujine leta 2014'}
 zem.reg2014 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
-                                              fill=priseljeni),color = "grey30") +
-  scale_fill_gradient(low="hotpink4", high="hotpink") +
+                                              fill=priseljeniskupaj,
+                                              alpha=priseljeni.iz.tujine.na.1000.prebivalcev),
+                                              color = "grey30") +
+  scale_fill_gradient(low="violetred4", high="violet") +
   guides(fill = guide_colorbar(title = "Priseljeni iz tujine v letu 2014"))
 ```
 
