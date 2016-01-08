@@ -21,16 +21,39 @@ pretvori.zemljevid <- function(zemljevid) {
 }
 
 # Dodani stolpci:
-zemljevid$priseljeniskupaj <- reg2014$Priseljeni.iz.tujine.skupaj
+zemljevid$priseljeni.skupaj <- reg2014$Priseljeni.iz.tujine.skupaj
 zemljevid$priseljeni.iz.tujine.na.1000.prebivalcev <-reg2014$Priseljeni.iz.tujine.na.1000.prebivalcev
+zemljevid$priseljeni.ženske <- reg2014$Priseljeni.iz.tujine.ženske
+zemljevid$priseljeni.moški <- reg2014$Priseljeni.iz.tujine.moški
+zemljevid$odseljeni.skupaj <- reg2014$Odseljeni.v.tujino.skupaj
+zemljevid$odseljeni.ženske <- reg2014$Odseljeni.v.tujino.ženske
+zemljevid$odseljeni.moški <- reg2014$Odseljeni.v.tujino.moški
+zemljevid$odseljeni.v.tujino.na.1000.prebivalcev <- reg2014$Odseljeni.v.tujino.na.1000.prebivalcev
 reg14 <- pretvori.zemljevid(zemljevid)
 
 # Zemljevid 1:
-zem.reg2014 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
-                                              fill=priseljeniskupaj,
+zem.reg2014.priseljeni<- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
+                                              fill=priseljeni.skupaj,
                                               alpha=priseljeni.iz.tujine.na.1000.prebivalcev),
-                                              color = "grey30") +
+                                              color = "grey35") +
   scale_fill_gradient(low="violetred4", high="violet") +
   guides(fill = guide_colorbar(title = "Priseljeni iz tujine v letu 2014"))
-print(zem.reg2014)
+print(zem.reg2014.priseljeni)
+
+# Zemljevid 2:
+zem.reg2014.odseljeni <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
+                                                        fill=odseljeni.skupaj),
+                                                        color = "grey35") +
+  scale_fill_gradient(low="aquamarine4", high="aquamarine") +
+  guides(fill = guide_colorbar(title = "Odseljeni v tujino v letu 2014"))
+print(zem.reg2014.odseljeni)
+
+# Zemljevid 2.2, dodan še alpha:
+zem.reg2014.odseljeni2 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
+                                                                   fill=odseljeni.skupaj,
+                                                                   alpha=priseljeni.iz.tujine.na.1000.prebivalcev),
+                                                                   color = "grey35") +
+  scale_fill_gradient(low="aquamarine4", high="aquamarine") +
+  guides(fill = guide_colorbar(title = "Odseljeni v tujino v letu 2014"))
+print(zem.reg2014.odseljeni2)
 
