@@ -168,7 +168,7 @@ ggplot(data=regije2014,
 
 #### Graf za odseljene v tujino za Goriško regijo po letih:
 
-Ta slika \ref{fig:graf5} nam predstavi odseljene prebivalce Goriške regije v letih od 1995-2014. Razvidno je bilo leta 2009 največje odseljevanje. V _Grafu za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj_ smo prav tako omenili, da je bilo preseljevanje najmočnejše let 2009.
+Ta slika \ref{fig:graf5} nam predstavi odseljene prebivalce Goriške regije v letih od 1995-2014. Razvidno je bilo leta 2009 največje odseljevanje. V _Grafu za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj_ smo prav tako omenili, da je bilo preseljevanje najmočnejše leta 2009.
 
 ```{r graf5, echo=FALSE, fig.align='center', fig.cap='Graf za odseljene v tujino za Goriško regijo po letih'}
 ggplot(data=Goriska,
@@ -180,7 +180,7 @@ ggplot(data=Goriska,
 
 # Analiza in vizualizacija podatkov
 
-```{r ainv, echo=FALSE, results='hide', message=FALSE,warning=FALSE}
+```{r ainv, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 source("vizualizacija/vizualizacija.r", encoding = "UTF-8")
 ```
 
@@ -190,32 +190,58 @@ Zemljevid nam prikazuje priseljevanje iz tujine, skupaj po spolu, za leto 2014. 
 
 ```{r zemljevid1, echo=FALSE, fig.align='center', fig.cap='Zemljevid priseljevanja iz tujine leta 2014'}
 zem.reg2014.priseljeni <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
-                                              fill=priseljeniskupaj,
-                                              alpha=priseljeni.iz.tujine.na.1000.prebivalcev),
+                                              fill=priseljeniskupaj),
                                               color = "grey35") +
   scale_fill_gradient(low="violetred4", high="violet") +
   guides(fill = guide_colorbar(title = "Priseljeni iz tujine v letu 2014"))
 ```
 
-
-### Zemljevid regij Slovenije obarvanih glede na intenzivnost odseljevanja v tujino leta 2014:
-
-Zemljevid nam prikazuje odseljevanje v tujino, skupaj po spolu, za leto 2014. Kot je razvidno se največ odseljevanja dogaja v Osrednjeslovenski regiji. S prosojnostjo barv pa je prikazano, koliko je odseljenih v tujino na 1000 prebivalcev.
-
-
-```{r zemljevid2,echo=FALSE, fig.align='center', fig.cap='Zemljevid odseljevanja v tujino leta 2014'}
-zem.reg2014.odseljeni <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
-                                                         fill=odseljeni.skupaj,
-                                                         alpha=odseljeni.v.tujino.na.1000.prebivalcev),
-                                       color = "grey35") +
-  scale_fill_gradient(low="aquamarine4", high="aquamarine") +
-  guides(fill = guide_colorbar(title = "Odseljeni v tujino v letu 2014"))
-print(zem.reg2014.odseljeni)
+```{r zemljevid1.2, echo=FALSE, fig.align='center', fig.cap='Zemljevid priseljevanja iz tujine leta 2014'}
+zem.reg2014.priseljeni2 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
+                                                  fill=priseljeni.skupaj,
+                                                  alpha=priseljeni.iz.tujine.na.1000.prebivalcev),
+                                                  color = "grey35") +
+  scale_fill_gradient(low="violetred4", high="violet") +
+  guides(fill = guide_colorbar(title = "Priseljeni iz tujine v letu 2014"))
+print(zem.reg2014.priseljeni2)
 ```
 
 
+### Zemljevid regij Slovenije obarvanih glede na intenzivnost odseljevanja v tujino leta 2014:
 
+Zemljevid nam prikazuje odseljevanje v tujino, skupaj po spolu, za leto 2014. Kot je razvidno se največ odseljevanja dogaja v Osrednjeslovenski regiji. 
 
+```{r zemljevid2,echo=FALSE, fig.align='center', fig.cap='Zemljevid odseljevanja v tujino leta 2014'}
+zem.reg2014.odseljeni <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
+                                                        fill=odseljeni.skupaj),
+                                                        color = "grey35") +
+  scale_fill_gradient(low="aquamarine4", high="aquamarine") +
+  guides(fill = guide_colorbar(title = "Odseljeni v tujino v letu 2014"))
+print(zem.reg2014.odseljeni)
 
+```
 
+Tu pa nam je še s prosojnostjo barv je prikazano, koliko je odseljenih v tujino na 1000 prebivalcev.
 
+```{r zemljevid2.2,echo=FALSE, fig.align='center', fig.cap='Zemljevid odseljevanja v tujino leta 2014'}
+zem.reg2014.odseljeni2 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
+                                                    fill=odseljeni.skupaj,
+                                                    alpha=odseljeni.v.tujino.na.1000.prebivalcev),
+                                       color = "grey35") +
+  scale_fill_gradient(low="aquamarine4", high="aquamarine") +
+  guides(fill = guide_colorbar(title = "Odseljeni v tujino v letu 2014"))
+print(zem.reg2014.odseljeni2)
+```
+
+### Zemljevid regij Slovenije obarvanih glede na prirast leta 2014:
+
+Tu vidimo zemljevi prirasta v letu 2014. Kot je razvidno je najbolj negativen prirast v severnih regijah. 
+
+```{r zemljevid3,echo=FALSE, fig.align='center', fig.cap='Zemljevid prirasta leta 2014'}
+zem.reg2014.odsteto<- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
+                                                fill=priseljeni.minus.odseljeni),
+                                                color = "grey35") +
+  scale_fill_gradient(low="olivedrab4", high="olivedrab1") +
+  guides(fill = guide_colorbar(title = "Priseljeni minus odseljeni v letu 2014"))
+print(zem.reg2014.odsteto)
+```

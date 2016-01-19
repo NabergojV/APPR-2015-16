@@ -29,16 +29,27 @@ zemljevid$odseljeni.skupaj <- reg2014$Odseljeni.v.tujino.skupaj
 zemljevid$odseljeni.ženske <- reg2014$Odseljeni.v.tujino.ženske
 zemljevid$odseljeni.moški <- reg2014$Odseljeni.v.tujino.moški
 zemljevid$odseljeni.v.tujino.na.1000.prebivalcev <- reg2014$Odseljeni.v.tujino.na.1000.prebivalcev
+zemljevid$priseljeni.minus.odseljeni <-zemljevid$priseljeni.skupaj-zemljevid$odseljeni.skupaj
+
 reg14 <- pretvori.zemljevid(zemljevid)
 
 # Zemljevid 1:
 zem.reg2014.priseljeni<- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
-                                              fill=priseljeni.skupaj,
-                                              alpha=priseljeni.iz.tujine.na.1000.prebivalcev),
+                                              fill=priseljeni.skupaj),
                                               color = "grey35") +
   scale_fill_gradient(low="violetred4", high="violet") +
   guides(fill = guide_colorbar(title = "Priseljeni iz tujine v letu 2014"))
 print(zem.reg2014.priseljeni)
+
+# Zemljevid 1:
+zem.reg2014.priseljeni2 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
+                                                  fill=priseljeni.skupaj,
+                                                  alpha=priseljeni.iz.tujine.na.1000.prebivalcev),
+                                                  color = "grey35") +
+  scale_fill_gradient(low="violetred4", high="violet") +
+  guides(fill = guide_colorbar(title = "Priseljeni iz tujine v letu 2014"))
+print(zem.reg2014.priseljeni2)
+
 
 # Zemljevid 2:
 zem.reg2014.odseljeni <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
@@ -57,3 +68,10 @@ zem.reg2014.odseljeni2 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=la
   guides(fill = guide_colorbar(title = "Odseljeni v tujino v letu 2014"))
 print(zem.reg2014.odseljeni2)
 
+# Zemljevid 3: odšteto priseljeni-odseljeni
+zem.reg2014.odsteto<- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
+                                                                   fill=priseljeni.minus.odseljeni),
+                                                 color = "grey35") +
+  scale_fill_gradient(low="olivedrab4", high="olivedrab1") +
+  guides(fill = guide_colorbar(title = "Priseljeni minus odseljeni v letu 2014"))
+print(zem.reg2014.odsteto)
