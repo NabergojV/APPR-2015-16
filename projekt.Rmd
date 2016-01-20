@@ -2,11 +2,11 @@
 title: "Poročilo pri predmetu Analiza podatkov s programom R"
 author: "Veronika Nabergoj"
 output:
-  html_document: default
   pdf_document:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
+  html_document: default
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE,warning=FALSE}
@@ -199,7 +199,7 @@ print(zem.reg2014.priseljeni)
 
 S prosojnostjo barv pa je prikazano, koliko je priseljenih iz tujine na 1000 prebivalcev.
  
-```{r zemljevid1.2, echo=FALSE, fig.align='center', fig.cap='Zemljevid priseljevanja iz tujine leta 2014'}
+```{r zemljevid1_2, echo=FALSE, fig.align='center', fig.cap='Zemljevid priseljevanja iz tujine leta 2014'}
 zem.reg2014.priseljeni2 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
                                                   fill=priseljeni.skupaj,
                                                   alpha=priseljeni.iz.tujine.na.1000.prebivalcev),
@@ -226,7 +226,7 @@ print(zem.reg2014.odseljeni)
 
 Tu pa nam je še s prosojnostjo barv je prikazano, koliko je odseljenih v tujino na 1000 prebivalcev.
 
-```{r zemljevid2.2,echo=FALSE, fig.align='center', fig.cap='Zemljevid odseljevanja v tujino leta 2014'}
+```{r zemljevid2_2,echo=FALSE, fig.align='center', fig.cap='Zemljevid odseljevanja v tujino leta 2014'}
 zem.reg2014.odseljeni2 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
                                                     fill=odseljeni.skupaj,
                                                     alpha=odseljeni.v.tujino.na.1000.prebivalcev),
