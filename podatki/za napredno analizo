@@ -1,2446 +1,3086 @@
-"Meddržavne selitve po: SELITVE, LETO, DRŽAVLJANSTVO, STAROSTNE SKUPINE"
+"Meddržavne selitve po: SELITVE, LETO, STAROSTNE SKUPINE, DRŽAVLJANSTVO"
 ", SPOL"
 
 " ";" ";" ";" ";"Moški";"Ženske"
 "Priseljeni iz tujine"
 " ";"1995"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";3656;2223
-" ";" ";" ";"0-4 let";209;203
-" ";" ";" ";"5-9 let";176;169
-" ";" ";" ";"10-14 let";142;119
-" ";" ";" ";"15-19 let";289;130
-" ";" ";" ";"20-24 let";362;228
-" ";" ";" ";"25-29 let";501;278
-" ";" ";" ";"30-34 let";514;238
-" ";" ";" ";"35-39 let";398;167
-" ";" ";" ";"40-44 let";349;128
-" ";" ";" ";"45-49 let";230;118
-" ";" ";" ";"50-54 let";135;75
-" ";" ";" ";"55-59 let";121;84
-" ";" ";" ";"60-64 let";78;81
-" ";" ";" ";"65-69 let";70;72
-" ";" ";" ";"70-74 let";44;56
-" ";" ";" ";"75-79 let";17;35
-" ";" ";" ";"80-84 let";14;23
-" ";" ";" ";"85 + let";7;19
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1135;1056
-" ";" ";" ";"0-4 let";89;80
-" ";" ";" ";"5-9 let";80;79
-" ";" ";" ";"10-14 let";76;69
-" ";" ";" ";"15-19 let";75;62
-" ";" ";" ";"20-24 let";67;66
-" ";" ";" ";"25-29 let";103;108
-" ";" ";" ";"30-34 let";132;99
-" ";" ";" ";"35-39 let";115;69
-" ";" ";" ";"40-44 let";109;69
-" ";" ";" ";"45-49 let";57;67
-" ";" ";" ";"50-54 let";41;50
-" ";" ";" ";"55-59 let";55;57
-" ";" ";" ";"60-64 let";43;58
-" ";" ";" ";"65-69 let";45;46
-" ";" ";" ";"70-74 let";23;38
-" ";" ";" ";"75-79 let";11;22
-" ";" ";" ";"80-84 let";10;11
-" ";" ";" ";"85 + let";4;6
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";2521;1167
-" ";" ";" ";"0-4 let";120;123
-" ";" ";" ";"5-9 let";96;90
-" ";" ";" ";"10-14 let";66;50
-" ";" ";" ";"15-19 let";214;68
-" ";" ";" ";"20-24 let";295;162
-" ";" ";" ";"25-29 let";398;170
-" ";" ";" ";"30-34 let";382;139
-" ";" ";" ";"35-39 let";283;98
-" ";" ";" ";"40-44 let";240;59
-" ";" ";" ";"45-49 let";173;51
-" ";" ";" ";"50-54 let";94;25
-" ";" ";" ";"55-59 let";66;27
-" ";" ";" ";"60-64 let";35;23
-" ";" ";" ";"65-69 let";25;26
-" ";" ";" ";"70-74 let";21;18
-" ";" ";" ";"75-79 let";6;13
-" ";" ";" ";"80-84 let";4;12
-" ";" ";" ";"85 + let";3;13
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";3656;2223
+" ";" ";" ";"Državljani Republike Slovenije";1135;1056
+" ";" ";" ";"Tuji državljani";2521;1167
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";209;203
+" ";" ";" ";"Državljani Republike Slovenije";89;80
+" ";" ";" ";"Tuji državljani";120;123
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";176;169
+" ";" ";" ";"Državljani Republike Slovenije";80;79
+" ";" ";" ";"Tuji državljani";96;90
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";142;119
+" ";" ";" ";"Državljani Republike Slovenije";76;69
+" ";" ";" ";"Tuji državljani";66;50
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";289;130
+" ";" ";" ";"Državljani Republike Slovenije";75;62
+" ";" ";" ";"Tuji državljani";214;68
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";362;228
+" ";" ";" ";"Državljani Republike Slovenije";67;66
+" ";" ";" ";"Tuji državljani";295;162
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";501;278
+" ";" ";" ";"Državljani Republike Slovenije";103;108
+" ";" ";" ";"Tuji državljani";398;170
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";514;238
+" ";" ";" ";"Državljani Republike Slovenije";132;99
+" ";" ";" ";"Tuji državljani";382;139
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";398;167
+" ";" ";" ";"Državljani Republike Slovenije";115;69
+" ";" ";" ";"Tuji državljani";283;98
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";349;128
+" ";" ";" ";"Državljani Republike Slovenije";109;69
+" ";" ";" ";"Tuji državljani";240;59
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";230;118
+" ";" ";" ";"Državljani Republike Slovenije";57;67
+" ";" ";" ";"Tuji državljani";173;51
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";135;75
+" ";" ";" ";"Državljani Republike Slovenije";41;50
+" ";" ";" ";"Tuji državljani";94;25
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";121;84
+" ";" ";" ";"Državljani Republike Slovenije";55;57
+" ";" ";" ";"Tuji državljani";66;27
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";78;81
+" ";" ";" ";"Državljani Republike Slovenije";43;58
+" ";" ";" ";"Tuji državljani";35;23
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";70;72
+" ";" ";" ";"Državljani Republike Slovenije";45;46
+" ";" ";" ";"Tuji državljani";25;26
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";44;56
+" ";" ";" ";"Državljani Republike Slovenije";23;38
+" ";" ";" ";"Tuji državljani";21;18
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";17;35
+" ";" ";" ";"Državljani Republike Slovenije";11;22
+" ";" ";" ";"Tuji državljani";6;13
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";14;23
+" ";" ";" ";"Državljani Republike Slovenije";10;11
+" ";" ";" ";"Tuji državljani";4;12
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";7;19
+" ";" ";" ";"Državljani Republike Slovenije";4;6
+" ";" ";" ";"Tuji državljani";3;13
 " ";"1996"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";5979;3516
-" ";" ";" ";"0-4 let";264;223
-" ";" ";" ";"5-9 let";330;308
-" ";" ";" ";"10-14 let";259;246
-" ";" ";" ";"15-19 let";507;232
-" ";" ";" ";"20-24 let";687;412
-" ";" ";" ";"25-29 let";824;464
-" ";" ";" ";"30-34 let";792;427
-" ";" ";" ";"35-39 let";677;283
-" ";" ";" ";"40-44 let";583;214
-" ";" ";" ";"45-49 let";399;148
-" ";" ";" ";"50-54 let";201;140
-" ";" ";" ";"55-59 let";170;131
-" ";" ";" ";"60-64 let";143;112
-" ";" ";" ";"65-69 let";60;80
-" ";" ";" ";"70-74 let";45;41
-" ";" ";" ";"75-79 let";16;16
-" ";" ";" ";"80-84 let";14;20
-" ";" ";" ";"85 + let";8;19
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";768;732
-" ";" ";" ";"0-4 let";76;67
-" ";" ";" ";"5-9 let";50;46
-" ";" ";" ";"10-14 let";45;35
-" ";" ";" ";"15-19 let";59;41
-" ";" ";" ";"20-24 let";45;52
-" ";" ";" ";"25-29 let";48;60
-" ";" ";" ";"30-34 let";84;67
-" ";" ";" ";"35-39 let";57;44
-" ";" ";" ";"40-44 let";57;48
-" ";" ";" ";"45-49 let";50;43
-" ";" ";" ";"50-54 let";29;49
-" ";" ";" ";"55-59 let";41;40
-" ";" ";" ";"60-64 let";47;49
-" ";" ";" ";"65-69 let";31;40
-" ";" ";" ";"70-74 let";26;23
-" ";" ";" ";"75-79 let";10;10
-" ";" ";" ";"80-84 let";8;8
-" ";" ";" ";"85 + let";5;10
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";5211;2784
-" ";" ";" ";"0-4 let";188;156
-" ";" ";" ";"5-9 let";280;262
-" ";" ";" ";"10-14 let";214;211
-" ";" ";" ";"15-19 let";448;191
-" ";" ";" ";"20-24 let";642;360
-" ";" ";" ";"25-29 let";776;404
-" ";" ";" ";"30-34 let";708;360
-" ";" ";" ";"35-39 let";620;239
-" ";" ";" ";"40-44 let";526;166
-" ";" ";" ";"45-49 let";349;105
-" ";" ";" ";"50-54 let";172;91
-" ";" ";" ";"55-59 let";129;91
-" ";" ";" ";"60-64 let";96;63
-" ";" ";" ";"65-69 let";29;40
-" ";" ";" ";"70-74 let";19;18
-" ";" ";" ";"75-79 let";6;6
-" ";" ";" ";"80-84 let";6;12
-" ";" ";" ";"85 + let";3;9
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";5979;3516
+" ";" ";" ";"Državljani Republike Slovenije";768;732
+" ";" ";" ";"Tuji državljani";5211;2784
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";264;223
+" ";" ";" ";"Državljani Republike Slovenije";76;67
+" ";" ";" ";"Tuji državljani";188;156
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";330;308
+" ";" ";" ";"Državljani Republike Slovenije";50;46
+" ";" ";" ";"Tuji državljani";280;262
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";259;246
+" ";" ";" ";"Državljani Republike Slovenije";45;35
+" ";" ";" ";"Tuji državljani";214;211
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";507;232
+" ";" ";" ";"Državljani Republike Slovenije";59;41
+" ";" ";" ";"Tuji državljani";448;191
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";687;412
+" ";" ";" ";"Državljani Republike Slovenije";45;52
+" ";" ";" ";"Tuji državljani";642;360
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";824;464
+" ";" ";" ";"Državljani Republike Slovenije";48;60
+" ";" ";" ";"Tuji državljani";776;404
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";792;427
+" ";" ";" ";"Državljani Republike Slovenije";84;67
+" ";" ";" ";"Tuji državljani";708;360
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";677;283
+" ";" ";" ";"Državljani Republike Slovenije";57;44
+" ";" ";" ";"Tuji državljani";620;239
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";583;214
+" ";" ";" ";"Državljani Republike Slovenije";57;48
+" ";" ";" ";"Tuji državljani";526;166
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";399;148
+" ";" ";" ";"Državljani Republike Slovenije";50;43
+" ";" ";" ";"Tuji državljani";349;105
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";201;140
+" ";" ";" ";"Državljani Republike Slovenije";29;49
+" ";" ";" ";"Tuji državljani";172;91
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";170;131
+" ";" ";" ";"Državljani Republike Slovenije";41;40
+" ";" ";" ";"Tuji državljani";129;91
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";143;112
+" ";" ";" ";"Državljani Republike Slovenije";47;49
+" ";" ";" ";"Tuji državljani";96;63
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";60;80
+" ";" ";" ";"Državljani Republike Slovenije";31;40
+" ";" ";" ";"Tuji državljani";29;40
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";45;41
+" ";" ";" ";"Državljani Republike Slovenije";26;23
+" ";" ";" ";"Tuji državljani";19;18
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";16;16
+" ";" ";" ";"Državljani Republike Slovenije";10;10
+" ";" ";" ";"Tuji državljani";6;6
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";14;20
+" ";" ";" ";"Državljani Republike Slovenije";8;8
+" ";" ";" ";"Tuji državljani";6;12
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";8;19
+" ";" ";" ";"Državljani Republike Slovenije";5;10
+" ";" ";" ";"Tuji državljani";3;9
 " ";"1997"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";5388;2501
-" ";" ";" ";"0-4 let";209;182
-" ";" ";" ";"5-9 let";154;152
-" ";" ";" ";"10-14 let";114;118
-" ";" ";" ";"15-19 let";433;186
-" ";" ";" ";"20-24 let";1141;383
-" ";" ";" ";"25-29 let";900;385
-" ";" ";" ";"30-34 let";701;254
-" ";" ";" ";"35-39 let";555;180
-" ";" ";" ";"40-44 let";432;161
-" ";" ";" ";"45-49 let";276;125
-" ";" ";" ";"50-54 let";153;86
-" ";" ";" ";"55-59 let";118;73
-" ";" ";" ";"60-64 let";93;75
-" ";" ";" ";"65-69 let";50;48
-" ";" ";" ";"70-74 let";31;52
-" ";" ";" ";"75-79 let";15;21
-" ";" ";" ";"80-84 let";8;13
-" ";" ";" ";"85 + let";5;7
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";534;559
-" ";" ";" ";"0-4 let";39;34
-" ";" ";" ";"5-9 let";38;41
-" ";" ";" ";"10-14 let";32;34
-" ";" ";" ";"15-19 let";30;38
-" ";" ";" ";"20-24 let";48;36
-" ";" ";" ";"25-29 let";36;58
-" ";" ";" ";"30-34 let";61;46
-" ";" ";" ";"35-39 let";45;33
-" ";" ";" ";"40-44 let";28;38
-" ";" ";" ";"45-49 let";37;39
-" ";" ";" ";"50-54 let";26;30
-" ";" ";" ";"55-59 let";31;35
-" ";" ";" ";"60-64 let";41;34
-" ";" ";" ";"65-69 let";22;21
-" ";" ";" ";"70-74 let";8;27
-" ";" ";" ";"75-79 let";6;8
-" ";" ";" ";"80-84 let";4;5
-" ";" ";" ";"85 + let";2;2
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";4854;1942
-" ";" ";" ";"0-4 let";170;148
-" ";" ";" ";"5-9 let";116;111
-" ";" ";" ";"10-14 let";82;84
-" ";" ";" ";"15-19 let";403;148
-" ";" ";" ";"20-24 let";1093;347
-" ";" ";" ";"25-29 let";864;327
-" ";" ";" ";"30-34 let";640;208
-" ";" ";" ";"35-39 let";510;147
-" ";" ";" ";"40-44 let";404;123
-" ";" ";" ";"45-49 let";239;86
-" ";" ";" ";"50-54 let";127;56
-" ";" ";" ";"55-59 let";87;38
-" ";" ";" ";"60-64 let";52;41
-" ";" ";" ";"65-69 let";28;27
-" ";" ";" ";"70-74 let";23;25
-" ";" ";" ";"75-79 let";9;13
-" ";" ";" ";"80-84 let";4;8
-" ";" ";" ";"85 + let";3;5
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";5388;2501
+" ";" ";" ";"Državljani Republike Slovenije";534;559
+" ";" ";" ";"Tuji državljani";4854;1942
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";209;182
+" ";" ";" ";"Državljani Republike Slovenije";39;34
+" ";" ";" ";"Tuji državljani";170;148
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";154;152
+" ";" ";" ";"Državljani Republike Slovenije";38;41
+" ";" ";" ";"Tuji državljani";116;111
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";114;118
+" ";" ";" ";"Državljani Republike Slovenije";32;34
+" ";" ";" ";"Tuji državljani";82;84
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";433;186
+" ";" ";" ";"Državljani Republike Slovenije";30;38
+" ";" ";" ";"Tuji državljani";403;148
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";1141;383
+" ";" ";" ";"Državljani Republike Slovenije";48;36
+" ";" ";" ";"Tuji državljani";1093;347
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";900;385
+" ";" ";" ";"Državljani Republike Slovenije";36;58
+" ";" ";" ";"Tuji državljani";864;327
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";701;254
+" ";" ";" ";"Državljani Republike Slovenije";61;46
+" ";" ";" ";"Tuji državljani";640;208
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";555;180
+" ";" ";" ";"Državljani Republike Slovenije";45;33
+" ";" ";" ";"Tuji državljani";510;147
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";432;161
+" ";" ";" ";"Državljani Republike Slovenije";28;38
+" ";" ";" ";"Tuji državljani";404;123
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";276;125
+" ";" ";" ";"Državljani Republike Slovenije";37;39
+" ";" ";" ";"Tuji državljani";239;86
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";153;86
+" ";" ";" ";"Državljani Republike Slovenije";26;30
+" ";" ";" ";"Tuji državljani";127;56
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";118;73
+" ";" ";" ";"Državljani Republike Slovenije";31;35
+" ";" ";" ";"Tuji državljani";87;38
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";93;75
+" ";" ";" ";"Državljani Republike Slovenije";41;34
+" ";" ";" ";"Tuji državljani";52;41
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";50;48
+" ";" ";" ";"Državljani Republike Slovenije";22;21
+" ";" ";" ";"Tuji državljani";28;27
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";31;52
+" ";" ";" ";"Državljani Republike Slovenije";8;27
+" ";" ";" ";"Tuji državljani";23;25
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";15;21
+" ";" ";" ";"Državljani Republike Slovenije";6;8
+" ";" ";" ";"Tuji državljani";9;13
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";8;13
+" ";" ";" ";"Državljani Republike Slovenije";4;5
+" ";" ";" ";"Tuji državljani";4;8
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";5;7
+" ";" ";" ";"Državljani Republike Slovenije";2;2
+" ";" ";" ";"Tuji državljani";3;5
 " ";"1998"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";2817;1786
-" ";" ";" ";"0-4 let";129;148
-" ";" ";" ";"5-9 let";127;102
-" ";" ";" ";"10-14 let";104;90
-" ";" ";" ";"15-19 let";168;130
-" ";" ";" ";"20-24 let";384;283
-" ";" ";" ";"25-29 let";424;236
-" ";" ";" ";"30-34 let";337;186
-" ";" ";" ";"35-39 let";349;139
-" ";" ";" ";"40-44 let";258;96
-" ";" ";" ";"45-49 let";200;83
-" ";" ";" ";"50-54 let";112;64
-" ";" ";" ";"55-59 let";78;65
-" ";" ";" ";"60-64 let";61;41
-" ";" ";" ";"65-69 let";38;44
-" ";" ";" ";"70-74 let";25;39
-" ";" ";" ";"75-79 let";13;22
-" ";" ";" ";"80-84 let";3;10
-" ";" ";" ";"85 + let";7;8
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";446;411
-" ";" ";" ";"0-4 let";22;22
-" ";" ";" ";"5-9 let";37;24
-" ";" ";" ";"10-14 let";28;25
-" ";" ";" ";"15-19 let";36;31
-" ";" ";" ";"20-24 let";29;20
-" ";" ";" ";"25-29 let";36;27
-" ";" ";" ";"30-34 let";39;35
-" ";" ";" ";"35-39 let";40;26
-" ";" ";" ";"40-44 let";27;27
-" ";" ";" ";"45-49 let";33;41
-" ";" ";" ";"50-54 let";16;30
-" ";" ";" ";"55-59 let";27;33
-" ";" ";" ";"60-64 let";32;19
-" ";" ";" ";"65-69 let";18;24
-" ";" ";" ";"70-74 let";11;12
-" ";" ";" ";"75-79 let";8;8
-" ";" ";" ";"80-84 let";3;4
-" ";" ";" ";"85 + let";4;3
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";2371;1375
-" ";" ";" ";"0-4 let";107;126
-" ";" ";" ";"5-9 let";90;78
-" ";" ";" ";"10-14 let";76;65
-" ";" ";" ";"15-19 let";132;99
-" ";" ";" ";"20-24 let";355;263
-" ";" ";" ";"25-29 let";388;209
-" ";" ";" ";"30-34 let";298;151
-" ";" ";" ";"35-39 let";309;113
-" ";" ";" ";"40-44 let";231;69
-" ";" ";" ";"45-49 let";167;42
-" ";" ";" ";"50-54 let";96;34
-" ";" ";" ";"55-59 let";51;32
-" ";" ";" ";"60-64 let";29;22
-" ";" ";" ";"65-69 let";20;20
-" ";" ";" ";"70-74 let";14;27
-" ";" ";" ";"75-79 let";5;14
-" ";" ";" ";"80-84 let";0;6
-" ";" ";" ";"85 + let";3;5
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";2817;1786
+" ";" ";" ";"Državljani Republike Slovenije";446;411
+" ";" ";" ";"Tuji državljani";2371;1375
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";129;148
+" ";" ";" ";"Državljani Republike Slovenije";22;22
+" ";" ";" ";"Tuji državljani";107;126
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";127;102
+" ";" ";" ";"Državljani Republike Slovenije";37;24
+" ";" ";" ";"Tuji državljani";90;78
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";104;90
+" ";" ";" ";"Državljani Republike Slovenije";28;25
+" ";" ";" ";"Tuji državljani";76;65
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";168;130
+" ";" ";" ";"Državljani Republike Slovenije";36;31
+" ";" ";" ";"Tuji državljani";132;99
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";384;283
+" ";" ";" ";"Državljani Republike Slovenije";29;20
+" ";" ";" ";"Tuji državljani";355;263
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";424;236
+" ";" ";" ";"Državljani Republike Slovenije";36;27
+" ";" ";" ";"Tuji državljani";388;209
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";337;186
+" ";" ";" ";"Državljani Republike Slovenije";39;35
+" ";" ";" ";"Tuji državljani";298;151
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";349;139
+" ";" ";" ";"Državljani Republike Slovenije";40;26
+" ";" ";" ";"Tuji državljani";309;113
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";258;96
+" ";" ";" ";"Državljani Republike Slovenije";27;27
+" ";" ";" ";"Tuji državljani";231;69
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";200;83
+" ";" ";" ";"Državljani Republike Slovenije";33;41
+" ";" ";" ";"Tuji državljani";167;42
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";112;64
+" ";" ";" ";"Državljani Republike Slovenije";16;30
+" ";" ";" ";"Tuji državljani";96;34
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";78;65
+" ";" ";" ";"Državljani Republike Slovenije";27;33
+" ";" ";" ";"Tuji državljani";51;32
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";61;41
+" ";" ";" ";"Državljani Republike Slovenije";32;19
+" ";" ";" ";"Tuji državljani";29;22
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";38;44
+" ";" ";" ";"Državljani Republike Slovenije";18;24
+" ";" ";" ";"Tuji državljani";20;20
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";25;39
+" ";" ";" ";"Državljani Republike Slovenije";11;12
+" ";" ";" ";"Tuji državljani";14;27
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";13;22
+" ";" ";" ";"Državljani Republike Slovenije";8;8
+" ";" ";" ";"Tuji državljani";5;14
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";3;10
+" ";" ";" ";"Državljani Republike Slovenije";3;4
+" ";" ";" ";"Tuji državljani";0;6
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";7;8
+" ";" ";" ";"Državljani Republike Slovenije";4;3
+" ";" ";" ";"Tuji državljani";3;5
 " ";"1999"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";3683;1258
-" ";" ";" ";"0-4 let";58;60
-" ";" ";" ";"5-9 let";59;74
-" ";" ";" ";"10-14 let";78;67
-" ";" ";" ";"15-19 let";142;107
-" ";" ";" ";"20-24 let";598;166
-" ";" ";" ";"25-29 let";609;167
-" ";" ";" ";"30-34 let";581;163
-" ";" ";" ";"35-39 let";502;110
-" ";" ";" ";"40-44 let";424;78
-" ";" ";" ";"45-49 let";262;67
-" ";" ";" ";"50-54 let";131;53
-" ";" ";" ";"55-59 let";100;29
-" ";" ";" ";"60-64 let";64;35
-" ";" ";" ";"65-69 let";40;32
-" ";" ";" ";"70-74 let";20;26
-" ";" ";" ";"75-79 let";9;14
-" ";" ";" ";"80-84 let";2;6
-" ";" ";" ";"85 + let";4;4
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";729;633
-" ";" ";" ";"0-4 let";29;38
-" ";" ";" ";"5-9 let";37;46
-" ";" ";" ";"10-14 let";51;40
-" ";" ";" ";"15-19 let";44;48
-" ";" ";" ";"20-24 let";47;48
-" ";" ";" ";"25-29 let";56;54
-" ";" ";" ";"30-34 let";94;82
-" ";" ";" ";"35-39 let";81;62
-" ";" ";" ";"40-44 let";66;31
-" ";" ";" ";"45-49 let";50;45
-" ";" ";" ";"50-54 let";36;28
-" ";" ";" ";"55-59 let";38;24
-" ";" ";" ";"60-64 let";40;26
-" ";" ";" ";"65-69 let";28;24
-" ";" ";" ";"70-74 let";18;22
-" ";" ";" ";"75-79 let";8;6
-" ";" ";" ";"80-84 let";2;5
-" ";" ";" ";"85 + let";4;4
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";2954;625
-" ";" ";" ";"0-4 let";29;22
-" ";" ";" ";"5-9 let";22;28
-" ";" ";" ";"10-14 let";27;27
-" ";" ";" ";"15-19 let";98;59
-" ";" ";" ";"20-24 let";551;118
-" ";" ";" ";"25-29 let";553;113
-" ";" ";" ";"30-34 let";487;81
-" ";" ";" ";"35-39 let";421;48
-" ";" ";" ";"40-44 let";358;47
-" ";" ";" ";"45-49 let";212;22
-" ";" ";" ";"50-54 let";95;25
-" ";" ";" ";"55-59 let";62;5
-" ";" ";" ";"60-64 let";24;9
-" ";" ";" ";"65-69 let";12;8
-" ";" ";" ";"70-74 let";2;4
-" ";" ";" ";"75-79 let";1;8
-" ";" ";" ";"80-84 let";0;1
-" ";" ";" ";"85 + let";0;0
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";3683;1258
+" ";" ";" ";"Državljani Republike Slovenije";729;633
+" ";" ";" ";"Tuji državljani";2954;625
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";58;60
+" ";" ";" ";"Državljani Republike Slovenije";29;38
+" ";" ";" ";"Tuji državljani";29;22
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";59;74
+" ";" ";" ";"Državljani Republike Slovenije";37;46
+" ";" ";" ";"Tuji državljani";22;28
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";78;67
+" ";" ";" ";"Državljani Republike Slovenije";51;40
+" ";" ";" ";"Tuji državljani";27;27
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";142;107
+" ";" ";" ";"Državljani Republike Slovenije";44;48
+" ";" ";" ";"Tuji državljani";98;59
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";598;166
+" ";" ";" ";"Državljani Republike Slovenije";47;48
+" ";" ";" ";"Tuji državljani";551;118
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";609;167
+" ";" ";" ";"Državljani Republike Slovenije";56;54
+" ";" ";" ";"Tuji državljani";553;113
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";581;163
+" ";" ";" ";"Državljani Republike Slovenije";94;82
+" ";" ";" ";"Tuji državljani";487;81
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";502;110
+" ";" ";" ";"Državljani Republike Slovenije";81;62
+" ";" ";" ";"Tuji državljani";421;48
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";424;78
+" ";" ";" ";"Državljani Republike Slovenije";66;31
+" ";" ";" ";"Tuji državljani";358;47
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";262;67
+" ";" ";" ";"Državljani Republike Slovenije";50;45
+" ";" ";" ";"Tuji državljani";212;22
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";131;53
+" ";" ";" ";"Državljani Republike Slovenije";36;28
+" ";" ";" ";"Tuji državljani";95;25
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";100;29
+" ";" ";" ";"Državljani Republike Slovenije";38;24
+" ";" ";" ";"Tuji državljani";62;5
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";64;35
+" ";" ";" ";"Državljani Republike Slovenije";40;26
+" ";" ";" ";"Tuji državljani";24;9
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";40;32
+" ";" ";" ";"Državljani Republike Slovenije";28;24
+" ";" ";" ";"Tuji državljani";12;8
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";20;26
+" ";" ";" ";"Državljani Republike Slovenije";18;22
+" ";" ";" ";"Tuji državljani";2;4
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";9;14
+" ";" ";" ";"Državljani Republike Slovenije";8;6
+" ";" ";" ";"Tuji državljani";1;8
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";2;6
+" ";" ";" ";"Državljani Republike Slovenije";2;5
+" ";" ";" ";"Tuji državljani";0;1
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";4;4
+" ";" ";" ";"Državljani Republike Slovenije";4;4
+" ";" ";" ";"Tuji državljani";0;0
 " ";"2000"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";4397;1788
-" ";" ";" ";"0-4 let";82;93
-" ";" ";" ";"5-9 let";71;82
-" ";" ";" ";"10-14 let";81;65
-" ";" ";" ";"15-19 let";178;129
-" ";" ";" ";"20-24 let";758;288
-" ";" ";" ";"25-29 let";777;289
-" ";" ";" ";"30-34 let";578;210
-" ";" ";" ";"35-39 let";618;152
-" ";" ";" ";"40-44 let";451;106
-" ";" ";" ";"45-49 let";379;101
-" ";" ";" ";"50-54 let";162;77
-" ";" ";" ";"55-59 let";94;51
-" ";" ";" ";"60-64 let";86;44
-" ";" ";" ";"65-69 let";44;39
-" ";" ";" ";"70-74 let";23;23
-" ";" ";" ";"75-79 let";10;16
-" ";" ";" ";"80-84 let";3;14
-" ";" ";" ";"85 + let";2;9
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";509;426
-" ";" ";" ";"0-4 let";17;18
-" ";" ";" ";"5-9 let";22;11
-" ";" ";" ";"10-14 let";15;14
-" ";" ";" ";"15-19 let";26;35
-" ";" ";" ";"20-24 let";40;36
-" ";" ";" ";"25-29 let";38;36
-" ";" ";" ";"30-34 let";30;38
-" ";" ";" ";"35-39 let";50;36
-" ";" ";" ";"40-44 let";44;29
-" ";" ";" ";"45-49 let";51;30
-" ";" ";" ";"50-54 let";30;34
-" ";" ";" ";"55-59 let";33;30
-" ";" ";" ";"60-64 let";58;25
-" ";" ";" ";"65-69 let";37;26
-" ";" ";" ";"70-74 let";14;15
-" ";" ";" ";"75-79 let";2;7
-" ";" ";" ";"80-84 let";1;2
-" ";" ";" ";"85 + let";1;4
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";3888;1362
-" ";" ";" ";"0-4 let";65;75
-" ";" ";" ";"5-9 let";49;71
-" ";" ";" ";"10-14 let";66;51
-" ";" ";" ";"15-19 let";152;94
-" ";" ";" ";"20-24 let";718;252
-" ";" ";" ";"25-29 let";739;253
-" ";" ";" ";"30-34 let";548;172
-" ";" ";" ";"35-39 let";568;116
-" ";" ";" ";"40-44 let";407;77
-" ";" ";" ";"45-49 let";328;71
-" ";" ";" ";"50-54 let";132;43
-" ";" ";" ";"55-59 let";61;21
-" ";" ";" ";"60-64 let";28;19
-" ";" ";" ";"65-69 let";7;13
-" ";" ";" ";"70-74 let";9;8
-" ";" ";" ";"75-79 let";8;9
-" ";" ";" ";"80-84 let";2;12
-" ";" ";" ";"85 + let";1;5
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";4397;1788
+" ";" ";" ";"Državljani Republike Slovenije";509;426
+" ";" ";" ";"Tuji državljani";3888;1362
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";82;93
+" ";" ";" ";"Državljani Republike Slovenije";17;18
+" ";" ";" ";"Tuji državljani";65;75
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";71;82
+" ";" ";" ";"Državljani Republike Slovenije";22;11
+" ";" ";" ";"Tuji državljani";49;71
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";81;65
+" ";" ";" ";"Državljani Republike Slovenije";15;14
+" ";" ";" ";"Tuji državljani";66;51
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";178;129
+" ";" ";" ";"Državljani Republike Slovenije";26;35
+" ";" ";" ";"Tuji državljani";152;94
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";758;288
+" ";" ";" ";"Državljani Republike Slovenije";40;36
+" ";" ";" ";"Tuji državljani";718;252
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";777;289
+" ";" ";" ";"Državljani Republike Slovenije";38;36
+" ";" ";" ";"Tuji državljani";739;253
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";578;210
+" ";" ";" ";"Državljani Republike Slovenije";30;38
+" ";" ";" ";"Tuji državljani";548;172
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";618;152
+" ";" ";" ";"Državljani Republike Slovenije";50;36
+" ";" ";" ";"Tuji državljani";568;116
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";451;106
+" ";" ";" ";"Državljani Republike Slovenije";44;29
+" ";" ";" ";"Tuji državljani";407;77
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";379;101
+" ";" ";" ";"Državljani Republike Slovenije";51;30
+" ";" ";" ";"Tuji državljani";328;71
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";162;77
+" ";" ";" ";"Državljani Republike Slovenije";30;34
+" ";" ";" ";"Tuji državljani";132;43
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";94;51
+" ";" ";" ";"Državljani Republike Slovenije";33;30
+" ";" ";" ";"Tuji državljani";61;21
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";86;44
+" ";" ";" ";"Državljani Republike Slovenije";58;25
+" ";" ";" ";"Tuji državljani";28;19
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";44;39
+" ";" ";" ";"Državljani Republike Slovenije";37;26
+" ";" ";" ";"Tuji državljani";7;13
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";23;23
+" ";" ";" ";"Državljani Republike Slovenije";14;15
+" ";" ";" ";"Tuji državljani";9;8
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";10;16
+" ";" ";" ";"Državljani Republike Slovenije";2;7
+" ";" ";" ";"Tuji državljani";8;9
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";3;14
+" ";" ";" ";"Državljani Republike Slovenije";1;2
+" ";" ";" ";"Tuji državljani";2;12
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";2;9
+" ";" ";" ";"Državljani Republike Slovenije";1;4
+" ";" ";" ";"Tuji državljani";1;5
 " ";"2001"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";5321;2482
-" ";" ";" ";"0-4 let";126;125
-" ";" ";" ";"5-9 let";88;99
-" ";" ";" ";"10-14 let";79;89
-" ";" ";" ";"15-19 let";199;158
-" ";" ";" ";"20-24 let";929;500
-" ";" ";" ";"25-29 let";900;423
-" ";" ";" ";"30-34 let";700;288
-" ";" ";" ";"35-39 let";653;171
-" ";" ";" ";"40-44 let";591;160
-" ";" ";" ";"45-49 let";434;126
-" ";" ";" ";"50-54 let";278;100
-" ";" ";" ";"55-59 let";140;61
-" ";" ";" ";"60-64 let";100;73
-" ";" ";" ";"65-69 let";43;38
-" ";" ";" ";"70-74 let";33;35
-" ";" ";" ";"75-79 let";21;22
-" ";" ";" ";"80-84 let";5;7
-" ";" ";" ";"85 + let";2;7
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";547;483
-" ";" ";" ";"0-4 let";30;36
-" ";" ";" ";"5-9 let";19;22
-" ";" ";" ";"10-14 let";20;28
-" ";" ";" ";"15-19 let";30;20
-" ";" ";" ";"20-24 let";43;39
-" ";" ";" ";"25-29 let";50;45
-" ";" ";" ";"30-34 let";41;53
-" ";" ";" ";"35-39 let";46;24
-" ";" ";" ";"40-44 let";45;26
-" ";" ";" ";"45-49 let";47;33
-" ";" ";" ";"50-54 let";42;38
-" ";" ";" ";"55-59 let";40;28
-" ";" ";" ";"60-64 let";45;40
-" ";" ";" ";"65-69 let";21;18
-" ";" ";" ";"70-74 let";18;15
-" ";" ";" ";"75-79 let";7;13
-" ";" ";" ";"80-84 let";2;3
-" ";" ";" ";"85 + let";1;2
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";4774;1999
-" ";" ";" ";"0-4 let";96;89
-" ";" ";" ";"5-9 let";69;77
-" ";" ";" ";"10-14 let";59;61
-" ";" ";" ";"15-19 let";169;138
-" ";" ";" ";"20-24 let";886;461
-" ";" ";" ";"25-29 let";850;378
-" ";" ";" ";"30-34 let";659;235
-" ";" ";" ";"35-39 let";607;147
-" ";" ";" ";"40-44 let";546;134
-" ";" ";" ";"45-49 let";387;93
-" ";" ";" ";"50-54 let";236;62
-" ";" ";" ";"55-59 let";100;33
-" ";" ";" ";"60-64 let";55;33
-" ";" ";" ";"65-69 let";22;20
-" ";" ";" ";"70-74 let";15;20
-" ";" ";" ";"75-79 let";14;9
-" ";" ";" ";"80-84 let";3;4
-" ";" ";" ";"85 + let";1;5
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";5321;2482
+" ";" ";" ";"Državljani Republike Slovenije";547;483
+" ";" ";" ";"Tuji državljani";4774;1999
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";126;125
+" ";" ";" ";"Državljani Republike Slovenije";30;36
+" ";" ";" ";"Tuji državljani";96;89
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";88;99
+" ";" ";" ";"Državljani Republike Slovenije";19;22
+" ";" ";" ";"Tuji državljani";69;77
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";79;89
+" ";" ";" ";"Državljani Republike Slovenije";20;28
+" ";" ";" ";"Tuji državljani";59;61
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";199;158
+" ";" ";" ";"Državljani Republike Slovenije";30;20
+" ";" ";" ";"Tuji državljani";169;138
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";929;500
+" ";" ";" ";"Državljani Republike Slovenije";43;39
+" ";" ";" ";"Tuji državljani";886;461
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";900;423
+" ";" ";" ";"Državljani Republike Slovenije";50;45
+" ";" ";" ";"Tuji državljani";850;378
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";700;288
+" ";" ";" ";"Državljani Republike Slovenije";41;53
+" ";" ";" ";"Tuji državljani";659;235
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";653;171
+" ";" ";" ";"Državljani Republike Slovenije";46;24
+" ";" ";" ";"Tuji državljani";607;147
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";591;160
+" ";" ";" ";"Državljani Republike Slovenije";45;26
+" ";" ";" ";"Tuji državljani";546;134
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";434;126
+" ";" ";" ";"Državljani Republike Slovenije";47;33
+" ";" ";" ";"Tuji državljani";387;93
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";278;100
+" ";" ";" ";"Državljani Republike Slovenije";42;38
+" ";" ";" ";"Tuji državljani";236;62
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";140;61
+" ";" ";" ";"Državljani Republike Slovenije";40;28
+" ";" ";" ";"Tuji državljani";100;33
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";100;73
+" ";" ";" ";"Državljani Republike Slovenije";45;40
+" ";" ";" ";"Tuji državljani";55;33
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";43;38
+" ";" ";" ";"Državljani Republike Slovenije";21;18
+" ";" ";" ";"Tuji državljani";22;20
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";33;35
+" ";" ";" ";"Državljani Republike Slovenije";18;15
+" ";" ";" ";"Tuji državljani";15;20
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";21;22
+" ";" ";" ";"Državljani Republike Slovenije";7;13
+" ";" ";" ";"Tuji državljani";14;9
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";5;7
+" ";" ";" ";"Državljani Republike Slovenije";2;3
+" ";" ";" ";"Tuji državljani";3;4
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";2;7
+" ";" ";" ";"Državljani Republike Slovenije";1;2
+" ";" ";" ";"Tuji državljani";1;5
 " ";"2002"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";6216;2918
-" ";" ";" ";"0-4 let";167;142
-" ";" ";" ";"5-9 let";104;113
-" ";" ";" ";"10-14 let";90;103
-" ";" ";" ";"15-19 let";290;170
-" ";" ";" ";"20-24 let";1034;547
-" ";" ";" ";"25-29 let";1040;470
-" ";" ";" ";"30-34 let";826;327
-" ";" ";" ";"35-39 let";737;226
-" ";" ";" ";"40-44 let";689;179
-" ";" ";" ";"45-49 let";493;158
-" ";" ";" ";"50-54 let";302;136
-" ";" ";" ";"55-59 let";177;86
-" ";" ";" ";"60-64 let";123;86
-" ";" ";" ";"65-69 let";69;56
-" ";" ";" ";"70-74 let";33;45
-" ";" ";" ";"75-79 let";27;42
-" ";" ";" ";"80-84 let";10;17
-" ";" ";" ";"85 + let";5;15
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";793;639
-" ";" ";" ";"0-4 let";53;48
-" ";" ";" ";"5-9 let";19;31
-" ";" ";" ";"10-14 let";29;27
-" ";" ";" ";"15-19 let";40;20
-" ";" ";" ";"20-24 let";64;50
-" ";" ";" ";"25-29 let";66;71
-" ";" ";" ";"30-34 let";69;55
-" ";" ";" ";"35-39 let";66;47
-" ";" ";" ";"40-44 let";64;36
-" ";" ";" ";"45-49 let";61;40
-" ";" ";" ";"50-54 let";61;52
-" ";" ";" ";"55-59 let";55;34
-" ";" ";" ";"60-64 let";69;50
-" ";" ";" ";"65-69 let";38;31
-" ";" ";" ";"70-74 let";17;17
-" ";" ";" ";"75-79 let";15;17
-" ";" ";" ";"80-84 let";5;9
-" ";" ";" ";"85 + let";2;4
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";5423;2279
-" ";" ";" ";"0-4 let";114;94
-" ";" ";" ";"5-9 let";85;82
-" ";" ";" ";"10-14 let";61;76
-" ";" ";" ";"15-19 let";250;150
-" ";" ";" ";"20-24 let";970;497
-" ";" ";" ";"25-29 let";974;399
-" ";" ";" ";"30-34 let";757;272
-" ";" ";" ";"35-39 let";671;179
-" ";" ";" ";"40-44 let";625;143
-" ";" ";" ";"45-49 let";432;118
-" ";" ";" ";"50-54 let";241;84
-" ";" ";" ";"55-59 let";122;52
-" ";" ";" ";"60-64 let";54;36
-" ";" ";" ";"65-69 let";31;25
-" ";" ";" ";"70-74 let";16;28
-" ";" ";" ";"75-79 let";12;25
-" ";" ";" ";"80-84 let";5;8
-" ";" ";" ";"85 + let";3;11
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";6216;2918
+" ";" ";" ";"Državljani Republike Slovenije";793;639
+" ";" ";" ";"Tuji državljani";5423;2279
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";167;142
+" ";" ";" ";"Državljani Republike Slovenije";53;48
+" ";" ";" ";"Tuji državljani";114;94
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";104;113
+" ";" ";" ";"Državljani Republike Slovenije";19;31
+" ";" ";" ";"Tuji državljani";85;82
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";90;103
+" ";" ";" ";"Državljani Republike Slovenije";29;27
+" ";" ";" ";"Tuji državljani";61;76
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";290;170
+" ";" ";" ";"Državljani Republike Slovenije";40;20
+" ";" ";" ";"Tuji državljani";250;150
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";1034;547
+" ";" ";" ";"Državljani Republike Slovenije";64;50
+" ";" ";" ";"Tuji državljani";970;497
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1040;470
+" ";" ";" ";"Državljani Republike Slovenije";66;71
+" ";" ";" ";"Tuji državljani";974;399
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";826;327
+" ";" ";" ";"Državljani Republike Slovenije";69;55
+" ";" ";" ";"Tuji državljani";757;272
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";737;226
+" ";" ";" ";"Državljani Republike Slovenije";66;47
+" ";" ";" ";"Tuji državljani";671;179
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";689;179
+" ";" ";" ";"Državljani Republike Slovenije";64;36
+" ";" ";" ";"Tuji državljani";625;143
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";493;158
+" ";" ";" ";"Državljani Republike Slovenije";61;40
+" ";" ";" ";"Tuji državljani";432;118
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";302;136
+" ";" ";" ";"Državljani Republike Slovenije";61;52
+" ";" ";" ";"Tuji državljani";241;84
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";177;86
+" ";" ";" ";"Državljani Republike Slovenije";55;34
+" ";" ";" ";"Tuji državljani";122;52
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";123;86
+" ";" ";" ";"Državljani Republike Slovenije";69;50
+" ";" ";" ";"Tuji državljani";54;36
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";69;56
+" ";" ";" ";"Državljani Republike Slovenije";38;31
+" ";" ";" ";"Tuji državljani";31;25
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";33;45
+" ";" ";" ";"Državljani Republike Slovenije";17;17
+" ";" ";" ";"Tuji državljani";16;28
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";27;42
+" ";" ";" ";"Državljani Republike Slovenije";15;17
+" ";" ";" ";"Tuji državljani";12;25
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";10;17
+" ";" ";" ";"Državljani Republike Slovenije";5;9
+" ";" ";" ";"Tuji državljani";5;8
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";5;15
+" ";" ";" ";"Državljani Republike Slovenije";2;4
+" ";" ";" ";"Tuji državljani";3;11
 " ";"2003"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";6229;3050
-" ";" ";" ";"0-4 let";180;164
-" ";" ";" ";"5-9 let";109;121
-" ";" ";" ";"10-14 let";94;100
-" ";" ";" ";"15-19 let";313;181
-" ";" ";" ";"20-24 let";1089;536
-" ";" ";" ";"25-29 let";1050;470
-" ";" ";" ";"30-34 let";875;326
-" ";" ";" ";"35-39 let";742;246
-" ";" ";" ";"40-44 let";668;223
-" ";" ";" ";"45-49 let";442;162
-" ";" ";" ";"50-54 let";237;155
-" ";" ";" ";"55-59 let";176;100
-" ";" ";" ";"60-64 let";116;83
-" ";" ";" ";"65-69 let";69;61
-" ";" ";" ";"70-74 let";38;48
-" ";" ";" ";"75-79 let";16;37
-" ";" ";" ";"80-84 let";11;19
-" ";" ";" ";"85 + let";4;18
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";694;574
-" ";" ";" ";"0-4 let";64;57
-" ";" ";" ";"5-9 let";22;25
-" ";" ";" ";"10-14 let";17;21
-" ";" ";" ";"15-19 let";27;20
-" ";" ";" ";"20-24 let";60;33
-" ";" ";" ";"25-29 let";61;55
-" ";" ";" ";"30-34 let";64;58
-" ";" ";" ";"35-39 let";52;37
-" ";" ";" ";"40-44 let";59;37
-" ";" ";" ";"45-49 let";46;34
-" ";" ";" ";"50-54 let";48;41
-" ";" ";" ";"55-59 let";48;38
-" ";" ";" ";"60-64 let";58;38
-" ";" ";" ";"65-69 let";33;33
-" ";" ";" ";"70-74 let";25;19
-" ";" ";" ";"75-79 let";8;15
-" ";" ";" ";"80-84 let";2;9
-" ";" ";" ";"85 + let";0;4
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";5535;2476
-" ";" ";" ";"0-4 let";116;107
-" ";" ";" ";"5-9 let";87;96
-" ";" ";" ";"10-14 let";77;79
-" ";" ";" ";"15-19 let";286;161
-" ";" ";" ";"20-24 let";1029;503
-" ";" ";" ";"25-29 let";989;415
-" ";" ";" ";"30-34 let";811;268
-" ";" ";" ";"35-39 let";690;209
-" ";" ";" ";"40-44 let";609;186
-" ";" ";" ";"45-49 let";396;128
-" ";" ";" ";"50-54 let";189;114
-" ";" ";" ";"55-59 let";128;62
-" ";" ";" ";"60-64 let";58;45
-" ";" ";" ";"65-69 let";36;28
-" ";" ";" ";"70-74 let";13;29
-" ";" ";" ";"75-79 let";8;22
-" ";" ";" ";"80-84 let";9;10
-" ";" ";" ";"85 + let";4;14
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";6229;3050
+" ";" ";" ";"Državljani Republike Slovenije";694;574
+" ";" ";" ";"Tuji državljani";5535;2476
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";180;164
+" ";" ";" ";"Državljani Republike Slovenije";64;57
+" ";" ";" ";"Tuji državljani";116;107
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";109;121
+" ";" ";" ";"Državljani Republike Slovenije";22;25
+" ";" ";" ";"Tuji državljani";87;96
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";94;100
+" ";" ";" ";"Državljani Republike Slovenije";17;21
+" ";" ";" ";"Tuji državljani";77;79
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";313;181
+" ";" ";" ";"Državljani Republike Slovenije";27;20
+" ";" ";" ";"Tuji državljani";286;161
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";1089;536
+" ";" ";" ";"Državljani Republike Slovenije";60;33
+" ";" ";" ";"Tuji državljani";1029;503
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1050;470
+" ";" ";" ";"Državljani Republike Slovenije";61;55
+" ";" ";" ";"Tuji državljani";989;415
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";875;326
+" ";" ";" ";"Državljani Republike Slovenije";64;58
+" ";" ";" ";"Tuji državljani";811;268
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";742;246
+" ";" ";" ";"Državljani Republike Slovenije";52;37
+" ";" ";" ";"Tuji državljani";690;209
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";668;223
+" ";" ";" ";"Državljani Republike Slovenije";59;37
+" ";" ";" ";"Tuji državljani";609;186
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";442;162
+" ";" ";" ";"Državljani Republike Slovenije";46;34
+" ";" ";" ";"Tuji državljani";396;128
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";237;155
+" ";" ";" ";"Državljani Republike Slovenije";48;41
+" ";" ";" ";"Tuji državljani";189;114
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";176;100
+" ";" ";" ";"Državljani Republike Slovenije";48;38
+" ";" ";" ";"Tuji državljani";128;62
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";116;83
+" ";" ";" ";"Državljani Republike Slovenije";58;38
+" ";" ";" ";"Tuji državljani";58;45
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";69;61
+" ";" ";" ";"Državljani Republike Slovenije";33;33
+" ";" ";" ";"Tuji državljani";36;28
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";38;48
+" ";" ";" ";"Državljani Republike Slovenije";25;19
+" ";" ";" ";"Tuji državljani";13;29
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";16;37
+" ";" ";" ";"Državljani Republike Slovenije";8;15
+" ";" ";" ";"Tuji državljani";8;22
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";11;19
+" ";" ";" ";"Državljani Republike Slovenije";2;9
+" ";" ";" ";"Tuji državljani";9;10
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";4;18
+" ";" ";" ";"Državljani Republike Slovenije";0;4
+" ";" ";" ";"Tuji državljani";4;14
 " ";"2004"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";7485;2686
-" ";" ";" ";"0-4 let";169;153
-" ";" ";" ";"5-9 let";118;112
-" ";" ";" ";"10-14 let";109;98
-" ";" ";" ";"15-19 let";453;201
-" ";" ";" ";"20-24 let";1270;477
-" ";" ";" ";"25-29 let";1226;443
-" ";" ";" ";"30-34 let";1055;265
-" ";" ";" ";"35-39 let";928;219
-" ";" ";" ";"40-44 let";822;186
-" ";" ";" ";"45-49 let";572;123
-" ";" ";" ";"50-54 let";346;106
-" ";" ";" ";"55-59 let";141;81
-" ";" ";" ";"60-64 let";132;87
-" ";" ";" ";"65-69 let";76;60
-" ";" ";" ";"70-74 let";36;37
-" ";" ";" ";"75-79 let";25;16
-" ";" ";" ";"80-84 let";5;15
-" ";" ";" ";"85 + let";2;7
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";936;638
-" ";" ";" ";"0-4 let";50;47
-" ";" ";" ";"5-9 let";41;23
-" ";" ";" ";"10-14 let";34;30
-" ";" ";" ";"15-19 let";39;27
-" ";" ";" ";"20-24 let";68;42
-" ";" ";" ";"25-29 let";106;50
-" ";" ";" ";"30-34 let";100;51
-" ";" ";" ";"35-39 let";73;52
-" ";" ";" ";"40-44 let";60;59
-" ";" ";" ";"45-49 let";78;43
-" ";" ";" ";"50-54 let";60;52
-" ";" ";" ";"55-59 let";51;45
-" ";" ";" ";"60-64 let";77;52
-" ";" ";" ";"65-69 let";52;27
-" ";" ";" ";"70-74 let";25;17
-" ";" ";" ";"75-79 let";16;8
-" ";" ";" ";"80-84 let";4;8
-" ";" ";" ";"85 + let";2;5
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";6549;2048
-" ";" ";" ";"0-4 let";119;106
-" ";" ";" ";"5-9 let";77;89
-" ";" ";" ";"10-14 let";75;68
-" ";" ";" ";"15-19 let";414;174
-" ";" ";" ";"20-24 let";1202;435
-" ";" ";" ";"25-29 let";1120;393
-" ";" ";" ";"30-34 let";955;214
-" ";" ";" ";"35-39 let";855;167
-" ";" ";" ";"40-44 let";762;127
-" ";" ";" ";"45-49 let";494;80
-" ";" ";" ";"50-54 let";286;54
-" ";" ";" ";"55-59 let";90;36
-" ";" ";" ";"60-64 let";55;35
-" ";" ";" ";"65-69 let";24;33
-" ";" ";" ";"70-74 let";11;20
-" ";" ";" ";"75-79 let";9;8
-" ";" ";" ";"80-84 let";1;7
-" ";" ";" ";"85 + let";0;2
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";7485;2686
+" ";" ";" ";"Državljani Republike Slovenije";936;638
+" ";" ";" ";"Tuji državljani";6549;2048
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";169;153
+" ";" ";" ";"Državljani Republike Slovenije";50;47
+" ";" ";" ";"Tuji državljani";119;106
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";118;112
+" ";" ";" ";"Državljani Republike Slovenije";41;23
+" ";" ";" ";"Tuji državljani";77;89
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";109;98
+" ";" ";" ";"Državljani Republike Slovenije";34;30
+" ";" ";" ";"Tuji državljani";75;68
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";453;201
+" ";" ";" ";"Državljani Republike Slovenije";39;27
+" ";" ";" ";"Tuji državljani";414;174
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";1270;477
+" ";" ";" ";"Državljani Republike Slovenije";68;42
+" ";" ";" ";"Tuji državljani";1202;435
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1226;443
+" ";" ";" ";"Državljani Republike Slovenije";106;50
+" ";" ";" ";"Tuji državljani";1120;393
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1055;265
+" ";" ";" ";"Državljani Republike Slovenije";100;51
+" ";" ";" ";"Tuji državljani";955;214
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";928;219
+" ";" ";" ";"Državljani Republike Slovenije";73;52
+" ";" ";" ";"Tuji državljani";855;167
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";822;186
+" ";" ";" ";"Državljani Republike Slovenije";60;59
+" ";" ";" ";"Tuji državljani";762;127
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";572;123
+" ";" ";" ";"Državljani Republike Slovenije";78;43
+" ";" ";" ";"Tuji državljani";494;80
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";346;106
+" ";" ";" ";"Državljani Republike Slovenije";60;52
+" ";" ";" ";"Tuji državljani";286;54
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";141;81
+" ";" ";" ";"Državljani Republike Slovenije";51;45
+" ";" ";" ";"Tuji državljani";90;36
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";132;87
+" ";" ";" ";"Državljani Republike Slovenije";77;52
+" ";" ";" ";"Tuji državljani";55;35
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";76;60
+" ";" ";" ";"Državljani Republike Slovenije";52;27
+" ";" ";" ";"Tuji državljani";24;33
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";36;37
+" ";" ";" ";"Državljani Republike Slovenije";25;17
+" ";" ";" ";"Tuji državljani";11;20
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";25;16
+" ";" ";" ";"Državljani Republike Slovenije";16;8
+" ";" ";" ";"Tuji državljani";9;8
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";5;15
+" ";" ";" ";"Državljani Republike Slovenije";4;8
+" ";" ";" ";"Tuji državljani";1;7
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";2;7
+" ";" ";" ";"Državljani Republike Slovenije";2;5
+" ";" ";" ";"Tuji državljani";0;2
 " ";"2005"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";11130;3911
-" ";" ";" ";"0-4 let";345;293
-" ";" ";" ";"5-9 let";179;146
-" ";" ";" ";"10-14 let";175;147
-" ";" ";" ";"15-19 let";654;305
-" ";" ";" ";"20-24 let";2030;658
-" ";" ";" ";"25-29 let";1880;610
-" ";" ";" ";"30-34 let";1524;448
-" ";" ";" ";"35-39 let";1317;291
-" ";" ";" ";"40-44 let";1105;261
-" ";" ";" ";"45-49 let";830;162
-" ";" ";" ";"50-54 let";512;181
-" ";" ";" ";"55-59 let";244;129
-" ";" ";" ";"60-64 let";145;93
-" ";" ";" ";"65-69 let";90;59
-" ";" ";" ";"70-74 let";53;49
-" ";" ";" ";"75-79 let";31;42
-" ";" ";" ";"80-84 let";12;20
-" ";" ";" ";"85 + let";4;17
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1037;710
-" ";" ";" ";"0-4 let";162;151
-" ";" ";" ";"5-9 let";57;32
-" ";" ";" ";"10-14 let";23;25
-" ";" ";" ";"15-19 let";42;31
-" ";" ";" ";"20-24 let";74;51
-" ";" ";" ";"25-29 let";109;59
-" ";" ";" ";"30-34 let";90;56
-" ";" ";" ";"35-39 let";70;31
-" ";" ";" ";"40-44 let";79;40
-" ";" ";" ";"45-49 let";61;26
-" ";" ";" ";"50-54 let";60;50
-" ";" ";" ";"55-59 let";50;49
-" ";" ";" ";"60-64 let";67;41
-" ";" ";" ";"65-69 let";49;16
-" ";" ";" ";"70-74 let";27;23
-" ";" ";" ";"75-79 let";14;13
-" ";" ";" ";"80-84 let";2;10
-" ";" ";" ";"85 + let";1;6
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";10093;3201
-" ";" ";" ";"0-4 let";183;142
-" ";" ";" ";"5-9 let";122;114
-" ";" ";" ";"10-14 let";152;122
-" ";" ";" ";"15-19 let";612;274
-" ";" ";" ";"20-24 let";1956;607
-" ";" ";" ";"25-29 let";1771;551
-" ";" ";" ";"30-34 let";1434;392
-" ";" ";" ";"35-39 let";1247;260
-" ";" ";" ";"40-44 let";1026;221
-" ";" ";" ";"45-49 let";769;136
-" ";" ";" ";"50-54 let";452;131
-" ";" ";" ";"55-59 let";194;80
-" ";" ";" ";"60-64 let";78;52
-" ";" ";" ";"65-69 let";41;43
-" ";" ";" ";"70-74 let";26;26
-" ";" ";" ";"75-79 let";17;29
-" ";" ";" ";"80-84 let";10;10
-" ";" ";" ";"85 + let";3;11
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";11130;3911
+" ";" ";" ";"Državljani Republike Slovenije";1037;710
+" ";" ";" ";"Tuji državljani";10093;3201
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";345;293
+" ";" ";" ";"Državljani Republike Slovenije";162;151
+" ";" ";" ";"Tuji državljani";183;142
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";179;146
+" ";" ";" ";"Državljani Republike Slovenije";57;32
+" ";" ";" ";"Tuji državljani";122;114
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";175;147
+" ";" ";" ";"Državljani Republike Slovenije";23;25
+" ";" ";" ";"Tuji državljani";152;122
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";654;305
+" ";" ";" ";"Državljani Republike Slovenije";42;31
+" ";" ";" ";"Tuji državljani";612;274
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";2030;658
+" ";" ";" ";"Državljani Republike Slovenije";74;51
+" ";" ";" ";"Tuji državljani";1956;607
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1880;610
+" ";" ";" ";"Državljani Republike Slovenije";109;59
+" ";" ";" ";"Tuji državljani";1771;551
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1524;448
+" ";" ";" ";"Državljani Republike Slovenije";90;56
+" ";" ";" ";"Tuji državljani";1434;392
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";1317;291
+" ";" ";" ";"Državljani Republike Slovenije";70;31
+" ";" ";" ";"Tuji državljani";1247;260
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";1105;261
+" ";" ";" ";"Državljani Republike Slovenije";79;40
+" ";" ";" ";"Tuji državljani";1026;221
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";830;162
+" ";" ";" ";"Državljani Republike Slovenije";61;26
+" ";" ";" ";"Tuji državljani";769;136
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";512;181
+" ";" ";" ";"Državljani Republike Slovenije";60;50
+" ";" ";" ";"Tuji državljani";452;131
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";244;129
+" ";" ";" ";"Državljani Republike Slovenije";50;49
+" ";" ";" ";"Tuji državljani";194;80
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";145;93
+" ";" ";" ";"Državljani Republike Slovenije";67;41
+" ";" ";" ";"Tuji državljani";78;52
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";90;59
+" ";" ";" ";"Državljani Republike Slovenije";49;16
+" ";" ";" ";"Tuji državljani";41;43
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";53;49
+" ";" ";" ";"Državljani Republike Slovenije";27;23
+" ";" ";" ";"Tuji državljani";26;26
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";31;42
+" ";" ";" ";"Državljani Republike Slovenije";14;13
+" ";" ";" ";"Tuji državljani";17;29
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";12;20
+" ";" ";" ";"Državljani Republike Slovenije";2;10
+" ";" ";" ";"Tuji državljani";10;10
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";4;17
+" ";" ";" ";"Državljani Republike Slovenije";1;6
+" ";" ";" ";"Tuji državljani";3;11
 " ";"2006"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";15750;4266
-" ";" ";" ";"0-4 let";464;387
-" ";" ";" ";"5-9 let";190;176
-" ";" ";" ";"10-14 let";198;166
-" ";" ";" ";"15-19 let";900;316
-" ";" ";" ";"20-24 let";3140;647
-" ";" ";" ";"25-29 let";2723;591
-" ";" ";" ";"30-34 let";2098;477
-" ";" ";" ";"35-39 let";1864;368
-" ";" ";" ";"40-44 let";1594;294
-" ";" ";" ";"45-49 let";1254;217
-" ";" ";" ";"50-54 let";695;180
-" ";" ";" ";"55-59 let";292;152
-" ";" ";" ";"60-64 let";138;96
-" ";" ";" ";"65-69 let";87;82
-" ";" ";" ";"70-74 let";58;51
-" ";" ";" ";"75-79 let";32;39
-" ";" ";" ";"80-84 let";18;18
-" ";" ";" ";"85 + let";5;9
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1025;740
-" ";" ";" ";"0-4 let";260;223
-" ";" ";" ";"5-9 let";36;38
-" ";" ";" ";"10-14 let";22;16
-" ";" ";" ";"15-19 let";43;23
-" ";" ";" ";"20-24 let";55;46
-" ";" ";" ";"25-29 let";94;59
-" ";" ";" ";"30-34 let";77;52
-" ";" ";" ";"35-39 let";65;28
-" ";" ";" ";"40-44 let";62;37
-" ";" ";" ";"45-49 let";59;32
-" ";" ";" ";"50-54 let";67;44
-" ";" ";" ";"55-59 let";51;44
-" ";" ";" ";"60-64 let";59;45
-" ";" ";" ";"65-69 let";39;18
-" ";" ";" ";"70-74 let";17;16
-" ";" ";" ";"75-79 let";11;12
-" ";" ";" ";"80-84 let";6;5
-" ";" ";" ";"85 + let";2;2
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";14725;3526
-" ";" ";" ";"0-4 let";204;164
-" ";" ";" ";"5-9 let";154;138
-" ";" ";" ";"10-14 let";176;150
-" ";" ";" ";"15-19 let";857;293
-" ";" ";" ";"20-24 let";3085;601
-" ";" ";" ";"25-29 let";2629;532
-" ";" ";" ";"30-34 let";2021;425
-" ";" ";" ";"35-39 let";1799;340
-" ";" ";" ";"40-44 let";1532;257
-" ";" ";" ";"45-49 let";1195;185
-" ";" ";" ";"50-54 let";628;136
-" ";" ";" ";"55-59 let";241;108
-" ";" ";" ";"60-64 let";79;51
-" ";" ";" ";"65-69 let";48;64
-" ";" ";" ";"70-74 let";41;35
-" ";" ";" ";"75-79 let";21;27
-" ";" ";" ";"80-84 let";12;13
-" ";" ";" ";"85 + let";3;7
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";15750;4266
+" ";" ";" ";"Državljani Republike Slovenije";1025;740
+" ";" ";" ";"Tuji državljani";14725;3526
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";464;387
+" ";" ";" ";"Državljani Republike Slovenije";260;223
+" ";" ";" ";"Tuji državljani";204;164
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";190;176
+" ";" ";" ";"Državljani Republike Slovenije";36;38
+" ";" ";" ";"Tuji državljani";154;138
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";198;166
+" ";" ";" ";"Državljani Republike Slovenije";22;16
+" ";" ";" ";"Tuji državljani";176;150
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";900;316
+" ";" ";" ";"Državljani Republike Slovenije";43;23
+" ";" ";" ";"Tuji državljani";857;293
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";3140;647
+" ";" ";" ";"Državljani Republike Slovenije";55;46
+" ";" ";" ";"Tuji državljani";3085;601
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";2723;591
+" ";" ";" ";"Državljani Republike Slovenije";94;59
+" ";" ";" ";"Tuji državljani";2629;532
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";2098;477
+" ";" ";" ";"Državljani Republike Slovenije";77;52
+" ";" ";" ";"Tuji državljani";2021;425
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";1864;368
+" ";" ";" ";"Državljani Republike Slovenije";65;28
+" ";" ";" ";"Tuji državljani";1799;340
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";1594;294
+" ";" ";" ";"Državljani Republike Slovenije";62;37
+" ";" ";" ";"Tuji državljani";1532;257
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";1254;217
+" ";" ";" ";"Državljani Republike Slovenije";59;32
+" ";" ";" ";"Tuji državljani";1195;185
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";695;180
+" ";" ";" ";"Državljani Republike Slovenije";67;44
+" ";" ";" ";"Tuji državljani";628;136
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";292;152
+" ";" ";" ";"Državljani Republike Slovenije";51;44
+" ";" ";" ";"Tuji državljani";241;108
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";138;96
+" ";" ";" ";"Državljani Republike Slovenije";59;45
+" ";" ";" ";"Tuji državljani";79;51
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";87;82
+" ";" ";" ";"Državljani Republike Slovenije";39;18
+" ";" ";" ";"Tuji državljani";48;64
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";58;51
+" ";" ";" ";"Državljani Republike Slovenije";17;16
+" ";" ";" ";"Tuji državljani";41;35
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";32;39
+" ";" ";" ";"Državljani Republike Slovenije";11;12
+" ";" ";" ";"Tuji državljani";21;27
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";18;18
+" ";" ";" ";"Državljani Republike Slovenije";6;5
+" ";" ";" ";"Tuji državljani";12;13
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";5;9
+" ";" ";" ";"Državljani Republike Slovenije";2;2
+" ";" ";" ";"Tuji državljani";3;7
 " ";"2007"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";23659;5534
-" ";" ";" ";"0-4 let";410;390
-" ";" ";" ";"5-9 let";276;247
-" ";" ";" ";"10-14 let";262;262
-" ";" ";" ";"15-19 let";1100;403
-" ";" ";" ";"20-24 let";4535;832
-" ";" ";" ";"25-29 let";4246;846
-" ";" ";" ";"30-34 let";3457;668
-" ";" ";" ";"35-39 let";2915;500
-" ";" ";" ";"40-44 let";2518;373
-" ";" ";" ";"45-49 let";1897;288
-" ";" ";" ";"50-54 let";1136;185
-" ";" ";" ";"55-59 let";419;176
-" ";" ";" ";"60-64 let";218;131
-" ";" ";" ";"65-69 let";152;81
-" ";" ";" ";"70-74 let";57;74
-" ";" ";" ";"75-79 let";32;39
-" ";" ";" ";"80-84 let";16;22
-" ";" ";" ";"85 + let";13;17
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";920;769
-" ";" ";" ";"0-4 let";125;109
-" ";" ";" ";"5-9 let";20;30
-" ";" ";" ";"10-14 let";26;31
-" ";" ";" ";"15-19 let";36;40
-" ";" ";" ";"20-24 let";54;65
-" ";" ";" ";"25-29 let";73;49
-" ";" ";" ";"30-34 let";78;78
-" ";" ";" ";"35-39 let";75;58
-" ";" ";" ";"40-44 let";58;39
-" ";" ";" ";"45-49 let";62;26
-" ";" ";" ";"50-54 let";61;42
-" ";" ";" ";"55-59 let";58;76
-" ";" ";" ";"60-64 let";92;58
-" ";" ";" ";"65-69 let";68;29
-" ";" ";" ";"70-74 let";20;18
-" ";" ";" ";"75-79 let";6;11
-" ";" ";" ";"80-84 let";4;7
-" ";" ";" ";"85 + let";4;3
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";22739;4765
-" ";" ";" ";"0-4 let";285;281
-" ";" ";" ";"5-9 let";256;217
-" ";" ";" ";"10-14 let";236;231
-" ";" ";" ";"15-19 let";1064;363
-" ";" ";" ";"20-24 let";4481;767
-" ";" ";" ";"25-29 let";4173;797
-" ";" ";" ";"30-34 let";3379;590
-" ";" ";" ";"35-39 let";2840;442
-" ";" ";" ";"40-44 let";2460;334
-" ";" ";" ";"45-49 let";1835;262
-" ";" ";" ";"50-54 let";1075;143
-" ";" ";" ";"55-59 let";361;100
-" ";" ";" ";"60-64 let";126;73
-" ";" ";" ";"65-69 let";84;52
-" ";" ";" ";"70-74 let";37;56
-" ";" ";" ";"75-79 let";26;28
-" ";" ";" ";"80-84 let";12;15
-" ";" ";" ";"85 + let";9;14
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";23659;5534
+" ";" ";" ";"Državljani Republike Slovenije";920;769
+" ";" ";" ";"Tuji državljani";22739;4765
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";410;390
+" ";" ";" ";"Državljani Republike Slovenije";125;109
+" ";" ";" ";"Tuji državljani";285;281
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";276;247
+" ";" ";" ";"Državljani Republike Slovenije";20;30
+" ";" ";" ";"Tuji državljani";256;217
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";262;262
+" ";" ";" ";"Državljani Republike Slovenije";26;31
+" ";" ";" ";"Tuji državljani";236;231
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";1100;403
+" ";" ";" ";"Državljani Republike Slovenije";36;40
+" ";" ";" ";"Tuji državljani";1064;363
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";4535;832
+" ";" ";" ";"Državljani Republike Slovenije";54;65
+" ";" ";" ";"Tuji državljani";4481;767
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";4246;846
+" ";" ";" ";"Državljani Republike Slovenije";73;49
+" ";" ";" ";"Tuji državljani";4173;797
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";3457;668
+" ";" ";" ";"Državljani Republike Slovenije";78;78
+" ";" ";" ";"Tuji državljani";3379;590
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";2915;500
+" ";" ";" ";"Državljani Republike Slovenije";75;58
+" ";" ";" ";"Tuji državljani";2840;442
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";2518;373
+" ";" ";" ";"Državljani Republike Slovenije";58;39
+" ";" ";" ";"Tuji državljani";2460;334
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";1897;288
+" ";" ";" ";"Državljani Republike Slovenije";62;26
+" ";" ";" ";"Tuji državljani";1835;262
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";1136;185
+" ";" ";" ";"Državljani Republike Slovenije";61;42
+" ";" ";" ";"Tuji državljani";1075;143
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";419;176
+" ";" ";" ";"Državljani Republike Slovenije";58;76
+" ";" ";" ";"Tuji državljani";361;100
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";218;131
+" ";" ";" ";"Državljani Republike Slovenije";92;58
+" ";" ";" ";"Tuji državljani";126;73
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";152;81
+" ";" ";" ";"Državljani Republike Slovenije";68;29
+" ";" ";" ";"Tuji državljani";84;52
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";57;74
+" ";" ";" ";"Državljani Republike Slovenije";20;18
+" ";" ";" ";"Tuji državljani";37;56
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";32;39
+" ";" ";" ";"Državljani Republike Slovenije";6;11
+" ";" ";" ";"Tuji državljani";26;28
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";16;22
+" ";" ";" ";"Državljani Republike Slovenije";4;7
+" ";" ";" ";"Tuji državljani";12;15
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";13;17
+" ";" ";" ";"Državljani Republike Slovenije";4;3
+" ";" ";" ";"Tuji državljani";9;14
 " ";"2008"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";23815;6878
-" ";" ";" ";"0-4 let";753;689
-" ";" ";" ";"5-9 let";363;324
-" ";" ";" ";"10-14 let";346;283
-" ";" ";" ";"15-19 let";809;444
-" ";" ";" ";"20-24 let";4134;880
-" ";" ";" ";"25-29 let";4348;1014
-" ";" ";" ";"30-34 let";3354;842
-" ";" ";" ";"35-39 let";2940;611
-" ";" ";" ";"40-44 let";2578;478
-" ";" ";" ";"45-49 let";1907;369
-" ";" ";" ";"50-54 let";1117;218
-" ";" ";" ";"55-59 let";523;196
-" ";" ";" ";"60-64 let";274;159
-" ";" ";" ";"65-69 let";189;125
-" ";" ";" ";"70-74 let";84;104
-" ";" ";" ";"75-79 let";55;62
-" ";" ";" ";"80-84 let";32;43
-" ";" ";" ";"85 + let";9;37
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1515;1116
-" ";" ";" ";"0-4 let";290;264
-" ";" ";" ";"5-9 let";63;40
-" ";" ";" ";"10-14 let";34;35
-" ";" ";" ";"15-19 let";59;57
-" ";" ";" ";"20-24 let";90;55
-" ";" ";" ";"25-29 let";116;86
-" ";" ";" ";"30-34 let";152;104
-" ";" ";" ";"35-39 let";111;64
-" ";" ";" ";"40-44 let";107;62
-" ";" ";" ";"45-49 let";100;59
-" ";" ";" ";"50-54 let";83;44
-" ";" ";" ";"55-59 let";95;74
-" ";" ";" ";"60-64 let";83;46
-" ";" ";" ";"65-69 let";69;52
-" ";" ";" ";"70-74 let";32;36
-" ";" ";" ";"75-79 let";19;15
-" ";" ";" ";"80-84 let";7;13
-" ";" ";" ";"85 + let";5;10
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";22300;5762
-" ";" ";" ";"0-4 let";463;425
-" ";" ";" ";"5-9 let";300;284
-" ";" ";" ";"10-14 let";312;248
-" ";" ";" ";"15-19 let";750;387
-" ";" ";" ";"20-24 let";4044;825
-" ";" ";" ";"25-29 let";4232;928
-" ";" ";" ";"30-34 let";3202;738
-" ";" ";" ";"35-39 let";2829;547
-" ";" ";" ";"40-44 let";2471;416
-" ";" ";" ";"45-49 let";1807;310
-" ";" ";" ";"50-54 let";1034;174
-" ";" ";" ";"55-59 let";428;122
-" ";" ";" ";"60-64 let";191;113
-" ";" ";" ";"65-69 let";120;73
-" ";" ";" ";"70-74 let";52;68
-" ";" ";" ";"75-79 let";36;47
-" ";" ";" ";"80-84 let";25;30
-" ";" ";" ";"85 + let";4;27
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";23815;6878
+" ";" ";" ";"Državljani Republike Slovenije";1515;1116
+" ";" ";" ";"Tuji državljani";22300;5762
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";753;689
+" ";" ";" ";"Državljani Republike Slovenije";290;264
+" ";" ";" ";"Tuji državljani";463;425
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";363;324
+" ";" ";" ";"Državljani Republike Slovenije";63;40
+" ";" ";" ";"Tuji državljani";300;284
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";346;283
+" ";" ";" ";"Državljani Republike Slovenije";34;35
+" ";" ";" ";"Tuji državljani";312;248
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";809;444
+" ";" ";" ";"Državljani Republike Slovenije";59;57
+" ";" ";" ";"Tuji državljani";750;387
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";4134;880
+" ";" ";" ";"Državljani Republike Slovenije";90;55
+" ";" ";" ";"Tuji državljani";4044;825
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";4348;1014
+" ";" ";" ";"Državljani Republike Slovenije";116;86
+" ";" ";" ";"Tuji državljani";4232;928
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";3354;842
+" ";" ";" ";"Državljani Republike Slovenije";152;104
+" ";" ";" ";"Tuji državljani";3202;738
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";2940;611
+" ";" ";" ";"Državljani Republike Slovenije";111;64
+" ";" ";" ";"Tuji državljani";2829;547
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";2578;478
+" ";" ";" ";"Državljani Republike Slovenije";107;62
+" ";" ";" ";"Tuji državljani";2471;416
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";1907;369
+" ";" ";" ";"Državljani Republike Slovenije";100;59
+" ";" ";" ";"Tuji državljani";1807;310
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";1117;218
+" ";" ";" ";"Državljani Republike Slovenije";83;44
+" ";" ";" ";"Tuji državljani";1034;174
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";523;196
+" ";" ";" ";"Državljani Republike Slovenije";95;74
+" ";" ";" ";"Tuji državljani";428;122
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";274;159
+" ";" ";" ";"Državljani Republike Slovenije";83;46
+" ";" ";" ";"Tuji državljani";191;113
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";189;125
+" ";" ";" ";"Državljani Republike Slovenije";69;52
+" ";" ";" ";"Tuji državljani";120;73
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";84;104
+" ";" ";" ";"Državljani Republike Slovenije";32;36
+" ";" ";" ";"Tuji državljani";52;68
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";55;62
+" ";" ";" ";"Državljani Republike Slovenije";19;15
+" ";" ";" ";"Tuji državljani";36;47
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";32;43
+" ";" ";" ";"Državljani Republike Slovenije";7;13
+" ";" ";" ";"Tuji državljani";25;30
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";9;37
+" ";" ";" ";"Državljani Republike Slovenije";5;10
+" ";" ";" ";"Tuji državljani";4;27
 " ";"2009"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";22973;7323
-" ";" ";" ";"0-4 let";557;503
-" ";" ";" ";"5-9 let";403;349
-" ";" ";" ";"10-14 let";349;326
-" ";" ";" ";"15-19 let";762;428
-" ";" ";" ";"20-24 let";3946;1173
-" ";" ";" ";"25-29 let";4402;1148
-" ";" ";" ";"30-34 let";3408;932
-" ";" ";" ";"35-39 let";2700;694
-" ";" ";" ";"40-44 let";2456;498
-" ";" ";" ";"45-49 let";1861;369
-" ";" ";" ";"50-54 let";1102;258
-" ";" ";" ";"55-59 let";483;191
-" ";" ";" ";"60-64 let";229;160
-" ";" ";" ";"65-69 let";154;98
-" ";" ";" ";"70-74 let";75;78
-" ";" ";" ";"75-79 let";41;49
-" ";" ";" ";"80-84 let";25;37
-" ";" ";" ";"85 + let";20;32
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1657;1246
-" ";" ";" ";"0-4 let";209;188
-" ";" ";" ";"5-9 let";52;57
-" ";" ";" ";"10-14 let";40;51
-" ";" ";" ";"15-19 let";64;59
-" ";" ";" ";"20-24 let";115;92
-" ";" ";" ";"25-29 let";137;82
-" ";" ";" ";"30-34 let";157;117
-" ";" ";" ";"35-39 let";129;93
-" ";" ";" ";"40-44 let";146;72
-" ";" ";" ";"45-49 let";111;54
-" ";" ";" ";"50-54 let";112;68
-" ";" ";" ";"55-59 let";116;79
-" ";" ";" ";"60-64 let";98;88
-" ";" ";" ";"65-69 let";80;38
-" ";" ";" ";"70-74 let";44;43
-" ";" ";" ";"75-79 let";27;29
-" ";" ";" ";"80-84 let";13;16
-" ";" ";" ";"85 + let";7;20
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";21316;6077
-" ";" ";" ";"0-4 let";348;315
-" ";" ";" ";"5-9 let";351;292
-" ";" ";" ";"10-14 let";309;275
-" ";" ";" ";"15-19 let";698;369
-" ";" ";" ";"20-24 let";3831;1081
-" ";" ";" ";"25-29 let";4265;1066
-" ";" ";" ";"30-34 let";3251;815
-" ";" ";" ";"35-39 let";2571;601
-" ";" ";" ";"40-44 let";2310;426
-" ";" ";" ";"45-49 let";1750;315
-" ";" ";" ";"50-54 let";990;190
-" ";" ";" ";"55-59 let";367;112
-" ";" ";" ";"60-64 let";131;72
-" ";" ";" ";"65-69 let";74;60
-" ";" ";" ";"70-74 let";31;35
-" ";" ";" ";"75-79 let";14;20
-" ";" ";" ";"80-84 let";12;21
-" ";" ";" ";"85 + let";13;12
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";22973;7323
+" ";" ";" ";"Državljani Republike Slovenije";1657;1246
+" ";" ";" ";"Tuji državljani";21316;6077
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";557;503
+" ";" ";" ";"Državljani Republike Slovenije";209;188
+" ";" ";" ";"Tuji državljani";348;315
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";403;349
+" ";" ";" ";"Državljani Republike Slovenije";52;57
+" ";" ";" ";"Tuji državljani";351;292
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";349;326
+" ";" ";" ";"Državljani Republike Slovenije";40;51
+" ";" ";" ";"Tuji državljani";309;275
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";762;428
+" ";" ";" ";"Državljani Republike Slovenije";64;59
+" ";" ";" ";"Tuji državljani";698;369
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";3946;1173
+" ";" ";" ";"Državljani Republike Slovenije";115;92
+" ";" ";" ";"Tuji državljani";3831;1081
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";4402;1148
+" ";" ";" ";"Državljani Republike Slovenije";137;82
+" ";" ";" ";"Tuji državljani";4265;1066
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";3408;932
+" ";" ";" ";"Državljani Republike Slovenije";157;117
+" ";" ";" ";"Tuji državljani";3251;815
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";2700;694
+" ";" ";" ";"Državljani Republike Slovenije";129;93
+" ";" ";" ";"Tuji državljani";2571;601
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";2456;498
+" ";" ";" ";"Državljani Republike Slovenije";146;72
+" ";" ";" ";"Tuji državljani";2310;426
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";1861;369
+" ";" ";" ";"Državljani Republike Slovenije";111;54
+" ";" ";" ";"Tuji državljani";1750;315
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";1102;258
+" ";" ";" ";"Državljani Republike Slovenije";112;68
+" ";" ";" ";"Tuji državljani";990;190
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";483;191
+" ";" ";" ";"Državljani Republike Slovenije";116;79
+" ";" ";" ";"Tuji državljani";367;112
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";229;160
+" ";" ";" ";"Državljani Republike Slovenije";98;88
+" ";" ";" ";"Tuji državljani";131;72
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";154;98
+" ";" ";" ";"Državljani Republike Slovenije";80;38
+" ";" ";" ";"Tuji državljani";74;60
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";75;78
+" ";" ";" ";"Državljani Republike Slovenije";44;43
+" ";" ";" ";"Tuji državljani";31;35
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";41;49
+" ";" ";" ";"Državljani Republike Slovenije";27;29
+" ";" ";" ";"Tuji državljani";14;20
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";25;37
+" ";" ";" ";"Državljani Republike Slovenije";13;16
+" ";" ";" ";"Tuji državljani";12;21
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";20;32
+" ";" ";" ";"Državljani Republike Slovenije";7;20
+" ";" ";" ";"Tuji državljani";13;12
 " ";"2010"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";9841;5575
-" ";" ";" ";"0-4 let";515;498
-" ";" ";" ";"5-9 let";285;225
-" ";" ";" ";"10-14 let";232;204
-" ";" ";" ";"15-19 let";329;353
-" ";" ";" ";"20-24 let";1261;814
-" ";" ";" ";"25-29 let";1644;851
-" ";" ";" ";"30-34 let";1264;655
-" ";" ";" ";"35-39 let";1096;493
-" ";" ";" ";"40-44 let";1011;374
-" ";" ";" ";"45-49 let";790;281
-" ";" ";" ";"50-54 let";563;210
-" ";" ";" ";"55-59 let";314;188
-" ";" ";" ";"60-64 let";230;136
-" ";" ";" ";"65-69 let";151;89
-" ";" ";" ";"70-74 let";74;73
-" ";" ";" ";"75-79 let";48;49
-" ";" ";" ";"80-84 let";20;41
-" ";" ";" ";"85 + let";14;41
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1553;1158
-" ";" ";" ";"0-4 let";211;183
-" ";" ";" ";"5-9 let";58;47
-" ";" ";" ";"10-14 let";29;38
-" ";" ";" ";"15-19 let";41;39
-" ";" ";" ";"20-24 let";74;52
-" ";" ";" ";"25-29 let";126;75
-" ";" ";" ";"30-34 let";152;112
-" ";" ";" ";"35-39 let";130;79
-" ";" ";" ";"40-44 let";118;66
-" ";" ";" ";"45-49 let";112;76
-" ";" ";" ";"50-54 let";101;64
-" ";" ";" ";"55-59 let";102;92
-" ";" ";" ";"60-64 let";120;76
-" ";" ";" ";"65-69 let";87;53
-" ";" ";" ";"70-74 let";45;39
-" ";" ";" ";"75-79 let";29;32
-" ";" ";" ";"80-84 let";13;18
-" ";" ";" ";"85 + let";5;17
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";8288;4417
-" ";" ";" ";"0-4 let";304;315
-" ";" ";" ";"5-9 let";227;178
-" ";" ";" ";"10-14 let";203;166
-" ";" ";" ";"15-19 let";288;314
-" ";" ";" ";"20-24 let";1187;762
-" ";" ";" ";"25-29 let";1518;776
-" ";" ";" ";"30-34 let";1112;543
-" ";" ";" ";"35-39 let";966;414
-" ";" ";" ";"40-44 let";893;308
-" ";" ";" ";"45-49 let";678;205
-" ";" ";" ";"50-54 let";462;146
-" ";" ";" ";"55-59 let";212;96
-" ";" ";" ";"60-64 let";110;60
-" ";" ";" ";"65-69 let";64;36
-" ";" ";" ";"70-74 let";29;34
-" ";" ";" ";"75-79 let";19;17
-" ";" ";" ";"80-84 let";7;23
-" ";" ";" ";"85 + let";9;24
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";9841;5575
+" ";" ";" ";"Državljani Republike Slovenije";1553;1158
+" ";" ";" ";"Tuji državljani";8288;4417
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";515;498
+" ";" ";" ";"Državljani Republike Slovenije";211;183
+" ";" ";" ";"Tuji državljani";304;315
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";285;225
+" ";" ";" ";"Državljani Republike Slovenije";58;47
+" ";" ";" ";"Tuji državljani";227;178
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";232;204
+" ";" ";" ";"Državljani Republike Slovenije";29;38
+" ";" ";" ";"Tuji državljani";203;166
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";329;353
+" ";" ";" ";"Državljani Republike Slovenije";41;39
+" ";" ";" ";"Tuji državljani";288;314
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";1261;814
+" ";" ";" ";"Državljani Republike Slovenije";74;52
+" ";" ";" ";"Tuji državljani";1187;762
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1644;851
+" ";" ";" ";"Državljani Republike Slovenije";126;75
+" ";" ";" ";"Tuji državljani";1518;776
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1264;655
+" ";" ";" ";"Državljani Republike Slovenije";152;112
+" ";" ";" ";"Tuji državljani";1112;543
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";1096;493
+" ";" ";" ";"Državljani Republike Slovenije";130;79
+" ";" ";" ";"Tuji državljani";966;414
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";1011;374
+" ";" ";" ";"Državljani Republike Slovenije";118;66
+" ";" ";" ";"Tuji državljani";893;308
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";790;281
+" ";" ";" ";"Državljani Republike Slovenije";112;76
+" ";" ";" ";"Tuji državljani";678;205
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";563;210
+" ";" ";" ";"Državljani Republike Slovenije";101;64
+" ";" ";" ";"Tuji državljani";462;146
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";314;188
+" ";" ";" ";"Državljani Republike Slovenije";102;92
+" ";" ";" ";"Tuji državljani";212;96
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";230;136
+" ";" ";" ";"Državljani Republike Slovenije";120;76
+" ";" ";" ";"Tuji državljani";110;60
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";151;89
+" ";" ";" ";"Državljani Republike Slovenije";87;53
+" ";" ";" ";"Tuji državljani";64;36
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";74;73
+" ";" ";" ";"Državljani Republike Slovenije";45;39
+" ";" ";" ";"Tuji državljani";29;34
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";48;49
+" ";" ";" ";"Državljani Republike Slovenije";29;32
+" ";" ";" ";"Tuji državljani";19;17
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";20;41
+" ";" ";" ";"Državljani Republike Slovenije";13;18
+" ";" ";" ";"Tuji državljani";7;23
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";14;41
+" ";" ";" ";"Državljani Republike Slovenije";5;17
+" ";" ";" ";"Tuji državljani";9;24
 " ";"2011"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";8317;5766
-" ";" ";" ";"0-4 let";484;426
-" ";" ";" ";"5-9 let";267;262
-" ";" ";" ";"10-14 let";248;212
-" ";" ";" ";"15-19 let";350;301
-" ";" ";" ";"20-24 let";876;744
-" ";" ";" ";"25-29 let";1168;889
-" ";" ";" ";"30-34 let";1074;695
-" ";" ";" ";"35-39 let";869;558
-" ";" ";" ";"40-44 let";836;375
-" ";" ";" ";"45-49 let";683;291
-" ";" ";" ";"50-54 let";507;252
-" ";" ";" ";"55-59 let";351;210
-" ";" ";" ";"60-64 let";255;233
-" ";" ";" ";"65-69 let";169;116
-" ";" ";" ";"70-74 let";95;69
-" ";" ";" ";"75-79 let";53;61
-" ";" ";" ";"80-84 let";19;40
-" ";" ";" ";"85 + let";13;32
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1781;1537
-" ";" ";" ";"0-4 let";208;163
-" ";" ";" ";"5-9 let";61;48
-" ";" ";" ";"10-14 let";39;24
-" ";" ";" ";"15-19 let";56;51
-" ";" ";" ";"20-24 let";80;55
-" ";" ";" ";"25-29 let";118;109
-" ";" ";" ";"30-34 let";161;148
-" ";" ";" ";"35-39 let";164;150
-" ";" ";" ";"40-44 let";144;106
-" ";" ";" ";"45-49 let";132;91
-" ";" ";" ";"50-54 let";118;90
-" ";" ";" ";"55-59 let";132;142
-" ";" ";" ";"60-64 let";142;164
-" ";" ";" ";"65-69 let";113;77
-" ";" ";" ";"70-74 let";58;34
-" ";" ";" ";"75-79 let";39;42
-" ";" ";" ";"80-84 let";10;22
-" ";" ";" ";"85 + let";6;21
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";6536;4229
-" ";" ";" ";"0-4 let";276;263
-" ";" ";" ";"5-9 let";206;214
-" ";" ";" ";"10-14 let";209;188
-" ";" ";" ";"15-19 let";294;250
-" ";" ";" ";"20-24 let";796;689
-" ";" ";" ";"25-29 let";1050;780
-" ";" ";" ";"30-34 let";913;547
-" ";" ";" ";"35-39 let";705;408
-" ";" ";" ";"40-44 let";692;269
-" ";" ";" ";"45-49 let";551;200
-" ";" ";" ";"50-54 let";389;162
-" ";" ";" ";"55-59 let";219;68
-" ";" ";" ";"60-64 let";113;69
-" ";" ";" ";"65-69 let";56;39
-" ";" ";" ";"70-74 let";37;35
-" ";" ";" ";"75-79 let";14;19
-" ";" ";" ";"80-84 let";9;18
-" ";" ";" ";"85 + let";7;11
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";8317;5766
+" ";" ";" ";"Državljani Republike Slovenije";1781;1537
+" ";" ";" ";"Tuji državljani";6536;4229
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";484;426
+" ";" ";" ";"Državljani Republike Slovenije";208;163
+" ";" ";" ";"Tuji državljani";276;263
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";267;262
+" ";" ";" ";"Državljani Republike Slovenije";61;48
+" ";" ";" ";"Tuji državljani";206;214
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";248;212
+" ";" ";" ";"Državljani Republike Slovenije";39;24
+" ";" ";" ";"Tuji državljani";209;188
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";350;301
+" ";" ";" ";"Državljani Republike Slovenije";56;51
+" ";" ";" ";"Tuji državljani";294;250
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";876;744
+" ";" ";" ";"Državljani Republike Slovenije";80;55
+" ";" ";" ";"Tuji državljani";796;689
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1168;889
+" ";" ";" ";"Državljani Republike Slovenije";118;109
+" ";" ";" ";"Tuji državljani";1050;780
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1074;695
+" ";" ";" ";"Državljani Republike Slovenije";161;148
+" ";" ";" ";"Tuji državljani";913;547
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";869;558
+" ";" ";" ";"Državljani Republike Slovenije";164;150
+" ";" ";" ";"Tuji državljani";705;408
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";836;375
+" ";" ";" ";"Državljani Republike Slovenije";144;106
+" ";" ";" ";"Tuji državljani";692;269
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";683;291
+" ";" ";" ";"Državljani Republike Slovenije";132;91
+" ";" ";" ";"Tuji državljani";551;200
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";507;252
+" ";" ";" ";"Državljani Republike Slovenije";118;90
+" ";" ";" ";"Tuji državljani";389;162
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";351;210
+" ";" ";" ";"Državljani Republike Slovenije";132;142
+" ";" ";" ";"Tuji državljani";219;68
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";255;233
+" ";" ";" ";"Državljani Republike Slovenije";142;164
+" ";" ";" ";"Tuji državljani";113;69
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";169;116
+" ";" ";" ";"Državljani Republike Slovenije";113;77
+" ";" ";" ";"Tuji državljani";56;39
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";95;69
+" ";" ";" ";"Državljani Republike Slovenije";58;34
+" ";" ";" ";"Tuji državljani";37;35
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";53;61
+" ";" ";" ";"Državljani Republike Slovenije";39;42
+" ";" ";" ";"Tuji državljani";14;19
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";19;40
+" ";" ";" ";"Državljani Republike Slovenije";10;22
+" ";" ";" ";"Tuji državljani";9;18
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";13;32
+" ";" ";" ";"Državljani Republike Slovenije";6;21
+" ";" ";" ";"Tuji državljani";7;11
 " ";"2012"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";9102;5920
-" ";" ";" ";"0-4 let";512;476
-" ";" ";" ";"5-9 let";332;288
-" ";" ";" ";"10-14 let";271;240
-" ";" ";" ";"15-19 let";393;345
-" ";" ";" ";"20-24 let";930;864
-" ";" ";" ";"25-29 let";1332;908
-" ";" ";" ";"30-34 let";1236;707
-" ";" ";" ";"35-39 let";1025;582
-" ";" ";" ";"40-44 let";851;430
-" ";" ";" ";"45-49 let";712;263
-" ";" ";" ";"50-54 let";565;210
-" ";" ";" ";"55-59 let";367;147
-" ";" ";" ";"60-64 let";248;197
-" ";" ";" ";"65-69 let";175;96
-" ";" ";" ";"70-74 let";84;65
-" ";" ";" ";"75-79 let";33;37
-" ";" ";" ";"80-84 let";24;34
-" ";" ";" ";"85 + let";12;31
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1540;1201
-" ";" ";" ";"0-4 let";220;197
-" ";" ";" ";"5-9 let";70;51
-" ";" ";" ";"10-14 let";28;23
-" ";" ";" ";"15-19 let";40;38
-" ";" ";" ";"20-24 let";58;44
-" ";" ";" ";"25-29 let";109;69
-" ";" ";" ";"30-34 let";136;114
-" ";" ";" ";"35-39 let";136;115
-" ";" ";" ";"40-44 let";128;77
-" ";" ";" ";"45-49 let";105;53
-" ";" ";" ";"50-54 let";87;58
-" ";" ";" ";"55-59 let";105;88
-" ";" ";" ";"60-64 let";139;135
-" ";" ";" ";"65-69 let";107;57
-" ";" ";" ";"70-74 let";40;33
-" ";" ";" ";"75-79 let";14;17
-" ";" ";" ";"80-84 let";13;17
-" ";" ";" ";"85 + let";5;15
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";7562;4719
-" ";" ";" ";"0-4 let";292;279
-" ";" ";" ";"5-9 let";262;237
-" ";" ";" ";"10-14 let";243;217
-" ";" ";" ";"15-19 let";353;307
-" ";" ";" ";"20-24 let";872;820
-" ";" ";" ";"25-29 let";1223;839
-" ";" ";" ";"30-34 let";1100;593
-" ";" ";" ";"35-39 let";889;467
-" ";" ";" ";"40-44 let";723;353
-" ";" ";" ";"45-49 let";607;210
-" ";" ";" ";"50-54 let";478;152
-" ";" ";" ";"55-59 let";262;59
-" ";" ";" ";"60-64 let";109;62
-" ";" ";" ";"65-69 let";68;39
-" ";" ";" ";"70-74 let";44;32
-" ";" ";" ";"75-79 let";19;20
-" ";" ";" ";"80-84 let";11;17
-" ";" ";" ";"85 + let";7;16
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";9102;5920
+" ";" ";" ";"Državljani Republike Slovenije";1540;1201
+" ";" ";" ";"Tuji državljani";7562;4719
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";512;476
+" ";" ";" ";"Državljani Republike Slovenije";220;197
+" ";" ";" ";"Tuji državljani";292;279
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";332;288
+" ";" ";" ";"Državljani Republike Slovenije";70;51
+" ";" ";" ";"Tuji državljani";262;237
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";271;240
+" ";" ";" ";"Državljani Republike Slovenije";28;23
+" ";" ";" ";"Tuji državljani";243;217
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";393;345
+" ";" ";" ";"Državljani Republike Slovenije";40;38
+" ";" ";" ";"Tuji državljani";353;307
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";930;864
+" ";" ";" ";"Državljani Republike Slovenije";58;44
+" ";" ";" ";"Tuji državljani";872;820
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1332;908
+" ";" ";" ";"Državljani Republike Slovenije";109;69
+" ";" ";" ";"Tuji državljani";1223;839
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1236;707
+" ";" ";" ";"Državljani Republike Slovenije";136;114
+" ";" ";" ";"Tuji državljani";1100;593
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";1025;582
+" ";" ";" ";"Državljani Republike Slovenije";136;115
+" ";" ";" ";"Tuji državljani";889;467
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";851;430
+" ";" ";" ";"Državljani Republike Slovenije";128;77
+" ";" ";" ";"Tuji državljani";723;353
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";712;263
+" ";" ";" ";"Državljani Republike Slovenije";105;53
+" ";" ";" ";"Tuji državljani";607;210
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";565;210
+" ";" ";" ";"Državljani Republike Slovenije";87;58
+" ";" ";" ";"Tuji državljani";478;152
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";367;147
+" ";" ";" ";"Državljani Republike Slovenije";105;88
+" ";" ";" ";"Tuji državljani";262;59
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";248;197
+" ";" ";" ";"Državljani Republike Slovenije";139;135
+" ";" ";" ";"Tuji državljani";109;62
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";175;96
+" ";" ";" ";"Državljani Republike Slovenije";107;57
+" ";" ";" ";"Tuji državljani";68;39
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";84;65
+" ";" ";" ";"Državljani Republike Slovenije";40;33
+" ";" ";" ";"Tuji državljani";44;32
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";33;37
+" ";" ";" ";"Državljani Republike Slovenije";14;17
+" ";" ";" ";"Tuji državljani";19;20
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";24;34
+" ";" ";" ";"Državljani Republike Slovenije";13;17
+" ";" ";" ";"Tuji državljani";11;17
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";12;31
+" ";" ";" ";"Državljani Republike Slovenije";5;15
+" ";" ";" ";"Tuji državljani";7;16
 " ";"2013"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";8465;5406
-" ";" ";" ";"0-4 let";452;391
-" ";" ";" ";"5-9 let";314;288
-" ";" ";" ";"10-14 let";272;231
-" ";" ";" ";"15-19 let";406;342
-" ";" ";" ";"20-24 let";854;745
-" ";" ";" ";"25-29 let";1212;838
-" ";" ";" ";"30-34 let";1089;623
-" ";" ";" ";"35-39 let";953;510
-" ";" ";" ";"40-44 let";773;384
-" ";" ";" ";"45-49 let";759;291
-" ";" ";" ";"50-54 let";542;203
-" ";" ";" ";"55-59 let";329;146
-" ";" ";" ";"60-64 let";220;159
-" ";" ";" ";"65-69 let";144;90
-" ";" ";" ";"70-74 let";80;53
-" ";" ";" ";"75-79 let";34;54
-" ";" ";" ";"80-84 let";21;29
-" ";" ";" ";"85 + let";11;29
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1306;944
-" ";" ";" ";"0-4 let";118;103
-" ";" ";" ";"5-9 let";48;35
-" ";" ";" ";"10-14 let";23;26
-" ";" ";" ";"15-19 let";41;29
-" ";" ";" ";"20-24 let";52;31
-" ";" ";" ";"25-29 let";104;75
-" ";" ";" ";"30-34 let";109;88
-" ";" ";" ";"35-39 let";131;78
-" ";" ";" ";"40-44 let";103;58
-" ";" ";" ";"45-49 let";125;60
-" ";" ";" ";"50-54 let";93;70
-" ";" ";" ";"55-59 let";96;70
-" ";" ";" ";"60-64 let";97;94
-" ";" ";" ";"65-69 let";84;51
-" ";" ";" ";"70-74 let";47;29
-" ";" ";" ";"75-79 let";21;25
-" ";" ";" ";"80-84 let";10;11
-" ";" ";" ";"85 + let";4;11
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";7159;4462
-" ";" ";" ";"0-4 let";334;288
-" ";" ";" ";"5-9 let";266;253
-" ";" ";" ";"10-14 let";249;205
-" ";" ";" ";"15-19 let";365;313
-" ";" ";" ";"20-24 let";802;714
-" ";" ";" ";"25-29 let";1108;763
-" ";" ";" ";"30-34 let";980;535
-" ";" ";" ";"35-39 let";822;432
-" ";" ";" ";"40-44 let";670;326
-" ";" ";" ";"45-49 let";634;231
-" ";" ";" ";"50-54 let";449;133
-" ";" ";" ";"55-59 let";233;76
-" ";" ";" ";"60-64 let";123;65
-" ";" ";" ";"65-69 let";60;39
-" ";" ";" ";"70-74 let";33;24
-" ";" ";" ";"75-79 let";13;29
-" ";" ";" ";"80-84 let";11;18
-" ";" ";" ";"85 + let";7;18
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";8465;5406
+" ";" ";" ";"Državljani Republike Slovenije";1306;944
+" ";" ";" ";"Tuji državljani";7159;4462
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";452;391
+" ";" ";" ";"Državljani Republike Slovenije";118;103
+" ";" ";" ";"Tuji državljani";334;288
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";314;288
+" ";" ";" ";"Državljani Republike Slovenije";48;35
+" ";" ";" ";"Tuji državljani";266;253
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";272;231
+" ";" ";" ";"Državljani Republike Slovenije";23;26
+" ";" ";" ";"Tuji državljani";249;205
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";406;342
+" ";" ";" ";"Državljani Republike Slovenije";41;29
+" ";" ";" ";"Tuji državljani";365;313
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";854;745
+" ";" ";" ";"Državljani Republike Slovenije";52;31
+" ";" ";" ";"Tuji državljani";802;714
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1212;838
+" ";" ";" ";"Državljani Republike Slovenije";104;75
+" ";" ";" ";"Tuji državljani";1108;763
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1089;623
+" ";" ";" ";"Državljani Republike Slovenije";109;88
+" ";" ";" ";"Tuji državljani";980;535
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";953;510
+" ";" ";" ";"Državljani Republike Slovenije";131;78
+" ";" ";" ";"Tuji državljani";822;432
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";773;384
+" ";" ";" ";"Državljani Republike Slovenije";103;58
+" ";" ";" ";"Tuji državljani";670;326
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";759;291
+" ";" ";" ";"Državljani Republike Slovenije";125;60
+" ";" ";" ";"Tuji državljani";634;231
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";542;203
+" ";" ";" ";"Državljani Republike Slovenije";93;70
+" ";" ";" ";"Tuji državljani";449;133
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";329;146
+" ";" ";" ";"Državljani Republike Slovenije";96;70
+" ";" ";" ";"Tuji državljani";233;76
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";220;159
+" ";" ";" ";"Državljani Republike Slovenije";97;94
+" ";" ";" ";"Tuji državljani";123;65
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";144;90
+" ";" ";" ";"Državljani Republike Slovenije";84;51
+" ";" ";" ";"Tuji državljani";60;39
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";80;53
+" ";" ";" ";"Državljani Republike Slovenije";47;29
+" ";" ";" ";"Tuji državljani";33;24
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";34;54
+" ";" ";" ";"Državljani Republike Slovenije";21;25
+" ";" ";" ";"Tuji državljani";13;29
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";21;29
+" ";" ";" ";"Državljani Republike Slovenije";10;11
+" ";" ";" ";"Tuji državljani";11;18
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";11;29
+" ";" ";" ";"Državljani Republike Slovenije";4;11
+" ";" ";" ";"Tuji državljani";7;18
 " ";"2014"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";8242;5604
-" ";" ";" ";"0-4 let";453;394
-" ";" ";" ";"5-9 let";343;297
-" ";" ";" ";"10-14 let";291;248
-" ";" ";" ";"15-19 let";463;376
-" ";" ";" ";"20-24 let";813;749
-" ";" ";" ";"25-29 let";1047;824
-" ";" ";" ";"30-34 let";1083;687
-" ";" ";" ";"35-39 let";938;546
-" ";" ";" ";"40-44 let";775;394
-" ";" ";" ";"45-49 let";681;290
-" ";" ";" ";"50-54 let";534;207
-" ";" ";" ";"55-59 let";322;159
-" ";" ";" ";"60-64 let";193;153
-" ";" ";" ";"65-69 let";139;118
-" ";" ";" ";"70-74 let";77;66
-" ";" ";" ";"75-79 let";61;46
-" ";" ";" ";"80-84 let";22;21
-" ";" ";" ";"85 + let";7;29
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1413;1122
-" ";" ";" ";"0-4 let";130;140
-" ";" ";" ";"5-9 let";45;60
-" ";" ";" ";"10-14 let";34;39
-" ";" ";" ";"15-19 let";49;42
-" ";" ";" ";"20-24 let";63;49
-" ";" ";" ";"25-29 let";106;79
-" ";" ";" ";"30-34 let";134;120
-" ";" ";" ";"35-39 let";176;103
-" ";" ";" ";"40-44 let";123;67
-" ";" ";" ";"45-49 let";114;65
-" ";" ";" ";"50-54 let";98;69
-" ";" ";" ";"55-59 let";90;62
-" ";" ";" ";"60-64 let";92;85
-" ";" ";" ";"65-69 let";74;71
-" ";" ";" ";"70-74 let";37;36
-" ";" ";" ";"75-79 let";37;14
-" ";" ";" ";"80-84 let";7;9
-" ";" ";" ";"85 + let";4;12
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";6829;4482
-" ";" ";" ";"0-4 let";323;254
-" ";" ";" ";"5-9 let";298;237
-" ";" ";" ";"10-14 let";257;209
-" ";" ";" ";"15-19 let";414;334
-" ";" ";" ";"20-24 let";750;700
-" ";" ";" ";"25-29 let";941;745
-" ";" ";" ";"30-34 let";949;567
-" ";" ";" ";"35-39 let";762;443
-" ";" ";" ";"40-44 let";652;327
-" ";" ";" ";"45-49 let";567;225
-" ";" ";" ";"50-54 let";436;138
-" ";" ";" ";"55-59 let";232;97
-" ";" ";" ";"60-64 let";101;68
-" ";" ";" ";"65-69 let";65;47
-" ";" ";" ";"70-74 let";40;30
-" ";" ";" ";"75-79 let";24;32
-" ";" ";" ";"80-84 let";15;12
-" ";" ";" ";"85 + let";3;17
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";8242;5604
+" ";" ";" ";"Državljani Republike Slovenije";1413;1122
+" ";" ";" ";"Tuji državljani";6829;4482
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";453;394
+" ";" ";" ";"Državljani Republike Slovenije";130;140
+" ";" ";" ";"Tuji državljani";323;254
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";343;297
+" ";" ";" ";"Državljani Republike Slovenije";45;60
+" ";" ";" ";"Tuji državljani";298;237
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";291;248
+" ";" ";" ";"Državljani Republike Slovenije";34;39
+" ";" ";" ";"Tuji državljani";257;209
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";463;376
+" ";" ";" ";"Državljani Republike Slovenije";49;42
+" ";" ";" ";"Tuji državljani";414;334
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";813;749
+" ";" ";" ";"Državljani Republike Slovenije";63;49
+" ";" ";" ";"Tuji državljani";750;700
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1047;824
+" ";" ";" ";"Državljani Republike Slovenije";106;79
+" ";" ";" ";"Tuji državljani";941;745
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1083;687
+" ";" ";" ";"Državljani Republike Slovenije";134;120
+" ";" ";" ";"Tuji državljani";949;567
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";938;546
+" ";" ";" ";"Državljani Republike Slovenije";176;103
+" ";" ";" ";"Tuji državljani";762;443
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";775;394
+" ";" ";" ";"Državljani Republike Slovenije";123;67
+" ";" ";" ";"Tuji državljani";652;327
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";681;290
+" ";" ";" ";"Državljani Republike Slovenije";114;65
+" ";" ";" ";"Tuji državljani";567;225
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";534;207
+" ";" ";" ";"Državljani Republike Slovenije";98;69
+" ";" ";" ";"Tuji državljani";436;138
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";322;159
+" ";" ";" ";"Državljani Republike Slovenije";90;62
+" ";" ";" ";"Tuji državljani";232;97
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";193;153
+" ";" ";" ";"Državljani Republike Slovenije";92;85
+" ";" ";" ";"Tuji državljani";101;68
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";139;118
+" ";" ";" ";"Državljani Republike Slovenije";74;71
+" ";" ";" ";"Tuji državljani";65;47
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";77;66
+" ";" ";" ";"Državljani Republike Slovenije";37;36
+" ";" ";" ";"Tuji državljani";40;30
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";61;46
+" ";" ";" ";"Državljani Republike Slovenije";37;14
+" ";" ";" ";"Tuji državljani";24;32
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";22;21
+" ";" ";" ";"Državljani Republike Slovenije";7;9
+" ";" ";" ";"Tuji državljani";15;12
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";7;29
+" ";" ";" ";"Državljani Republike Slovenije";4;12
+" ";" ";" ";"Tuji državljani";3;17
 "Odseljeni v tujino"
 " ";"1995"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";2202;1170
-" ";" ";" ";"0-4 let";56;49
-" ";" ";" ";"5-9 let";92;80
-" ";" ";" ";"10-14 let";61;44
-" ";" ";" ";"15-19 let";132;46
-" ";" ";" ";"20-24 let";162;102
-" ";" ";" ";"25-29 let";238;166
-" ";" ";" ";"30-34 let";252;138
-" ";" ";" ";"35-39 let";269;118
-" ";" ";" ";"40-44 let";280;94
-" ";" ";" ";"45-49 let";201;65
-" ";" ";" ";"50-54 let";136;51
-" ";" ";" ";"55-59 let";124;54
-" ";" ";" ";"60-64 let";84;36
-" ";" ";" ";"65-69 let";48;29
-" ";" ";" ";"70-74 let";33;30
-" ";" ";" ";"75-79 let";10;17
-" ";" ";" ";"80-84 let";12;22
-" ";" ";" ";"85 + let";12;29
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";393;383
-" ";" ";" ";"0-4 let";17;12
-" ";" ";" ";"5-9 let";21;19
-" ";" ";" ";"10-14 let";18;14
-" ";" ";" ";"15-19 let";40;18
-" ";" ";" ";"20-24 let";32;43
-" ";" ";" ";"25-29 let";44;54
-" ";" ";" ";"30-34 let";38;39
-" ";" ";" ";"35-39 let";21;27
-" ";" ";" ";"40-44 let";39;35
-" ";" ";" ";"45-49 let";36;39
-" ";" ";" ";"50-54 let";19;27
-" ";" ";" ";"55-59 let";19;22
-" ";" ";" ";"60-64 let";25;13
-" ";" ";" ";"65-69 let";18;8
-" ";" ";" ";"70-74 let";4;9
-" ";" ";" ";"75-79 let";0;0
-" ";" ";" ";"80-84 let";2;2
-" ";" ";" ";"85 + let";0;2
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1809;787
-" ";" ";" ";"0-4 let";39;37
-" ";" ";" ";"5-9 let";71;61
-" ";" ";" ";"10-14 let";43;30
-" ";" ";" ";"15-19 let";92;28
-" ";" ";" ";"20-24 let";130;59
-" ";" ";" ";"25-29 let";194;112
-" ";" ";" ";"30-34 let";214;99
-" ";" ";" ";"35-39 let";248;91
-" ";" ";" ";"40-44 let";241;59
-" ";" ";" ";"45-49 let";165;26
-" ";" ";" ";"50-54 let";117;24
-" ";" ";" ";"55-59 let";105;32
-" ";" ";" ";"60-64 let";59;23
-" ";" ";" ";"65-69 let";30;21
-" ";" ";" ";"70-74 let";29;21
-" ";" ";" ";"75-79 let";10;17
-" ";" ";" ";"80-84 let";10;20
-" ";" ";" ";"85 + let";12;27
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";2202;1170
+" ";" ";" ";"Državljani Republike Slovenije";393;383
+" ";" ";" ";"Tuji državljani";1809;787
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";56;49
+" ";" ";" ";"Državljani Republike Slovenije";17;12
+" ";" ";" ";"Tuji državljani";39;37
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";92;80
+" ";" ";" ";"Državljani Republike Slovenije";21;19
+" ";" ";" ";"Tuji državljani";71;61
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";61;44
+" ";" ";" ";"Državljani Republike Slovenije";18;14
+" ";" ";" ";"Tuji državljani";43;30
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";132;46
+" ";" ";" ";"Državljani Republike Slovenije";40;18
+" ";" ";" ";"Tuji državljani";92;28
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";162;102
+" ";" ";" ";"Državljani Republike Slovenije";32;43
+" ";" ";" ";"Tuji državljani";130;59
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";238;166
+" ";" ";" ";"Državljani Republike Slovenije";44;54
+" ";" ";" ";"Tuji državljani";194;112
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";252;138
+" ";" ";" ";"Državljani Republike Slovenije";38;39
+" ";" ";" ";"Tuji državljani";214;99
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";269;118
+" ";" ";" ";"Državljani Republike Slovenije";21;27
+" ";" ";" ";"Tuji državljani";248;91
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";280;94
+" ";" ";" ";"Državljani Republike Slovenije";39;35
+" ";" ";" ";"Tuji državljani";241;59
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";201;65
+" ";" ";" ";"Državljani Republike Slovenije";36;39
+" ";" ";" ";"Tuji državljani";165;26
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";136;51
+" ";" ";" ";"Državljani Republike Slovenije";19;27
+" ";" ";" ";"Tuji državljani";117;24
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";124;54
+" ";" ";" ";"Državljani Republike Slovenije";19;22
+" ";" ";" ";"Tuji državljani";105;32
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";84;36
+" ";" ";" ";"Državljani Republike Slovenije";25;13
+" ";" ";" ";"Tuji državljani";59;23
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";48;29
+" ";" ";" ";"Državljani Republike Slovenije";18;8
+" ";" ";" ";"Tuji državljani";30;21
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";33;30
+" ";" ";" ";"Državljani Republike Slovenije";4;9
+" ";" ";" ";"Tuji državljani";29;21
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";10;17
+" ";" ";" ";"Državljani Republike Slovenije";0;0
+" ";" ";" ";"Tuji državljani";10;17
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";12;22
+" ";" ";" ";"Državljani Republike Slovenije";2;2
+" ";" ";" ";"Tuji državljani";10;20
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";12;29
+" ";" ";" ";"Državljani Republike Slovenije";0;2
+" ";" ";" ";"Tuji državljani";12;27
 " ";"1996"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1757;1228
-" ";" ";" ";"0-4 let";100;99
-" ";" ";" ";"5-9 let";84;68
-" ";" ";" ";"10-14 let";67;56
-" ";" ";" ";"15-19 let";122;96
-" ";" ";" ";"20-24 let";257;205
-" ";" ";" ";"25-29 let";286;173
-" ";" ";" ";"30-34 let";271;131
-" ";" ";" ";"35-39 let";186;87
-" ";" ";" ";"40-44 let";117;70
-" ";" ";" ";"45-49 let";90;68
-" ";" ";" ";"50-54 let";71;55
-" ";" ";" ";"55-59 let";45;48
-" ";" ";" ";"60-64 let";38;34
-" ";" ";" ";"65-69 let";9;15
-" ";" ";" ";"70-74 let";7;13
-" ";" ";" ";"75-79 let";4;5
-" ";" ";" ";"80-84 let";3;1
-" ";" ";" ";"85 + let";0;4
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";390;413
-" ";" ";" ";"0-4 let";18;21
-" ";" ";" ";"5-9 let";23;23
-" ";" ";" ";"10-14 let";20;20
-" ";" ";" ";"15-19 let";31;35
-" ";" ";" ";"20-24 let";42;40
-" ";" ";" ";"25-29 let";32;38
-" ";" ";" ";"30-34 let";41;41
-" ";" ";" ";"35-39 let";51;39
-" ";" ";" ";"40-44 let";35;33
-" ";" ";" ";"45-49 let";24;41
-" ";" ";" ";"50-54 let";25;27
-" ";" ";" ";"55-59 let";18;16
-" ";" ";" ";"60-64 let";16;19
-" ";" ";" ";"65-69 let";6;6
-" ";" ";" ";"70-74 let";4;9
-" ";" ";" ";"75-79 let";2;2
-" ";" ";" ";"80-84 let";2;0
-" ";" ";" ";"85 + let";0;3
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1367;815
-" ";" ";" ";"0-4 let";82;78
-" ";" ";" ";"5-9 let";61;45
-" ";" ";" ";"10-14 let";47;36
-" ";" ";" ";"15-19 let";91;61
-" ";" ";" ";"20-24 let";215;165
-" ";" ";" ";"25-29 let";254;135
-" ";" ";" ";"30-34 let";230;90
-" ";" ";" ";"35-39 let";135;48
-" ";" ";" ";"40-44 let";82;37
-" ";" ";" ";"45-49 let";66;27
-" ";" ";" ";"50-54 let";46;28
-" ";" ";" ";"55-59 let";27;32
-" ";" ";" ";"60-64 let";22;15
-" ";" ";" ";"65-69 let";3;9
-" ";" ";" ";"70-74 let";3;4
-" ";" ";" ";"75-79 let";2;3
-" ";" ";" ";"80-84 let";1;1
-" ";" ";" ";"85 + let";0;1
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";1757;1228
+" ";" ";" ";"Državljani Republike Slovenije";390;413
+" ";" ";" ";"Tuji državljani";1367;815
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";100;99
+" ";" ";" ";"Državljani Republike Slovenije";18;21
+" ";" ";" ";"Tuji državljani";82;78
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";84;68
+" ";" ";" ";"Državljani Republike Slovenije";23;23
+" ";" ";" ";"Tuji državljani";61;45
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";67;56
+" ";" ";" ";"Državljani Republike Slovenije";20;20
+" ";" ";" ";"Tuji državljani";47;36
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";122;96
+" ";" ";" ";"Državljani Republike Slovenije";31;35
+" ";" ";" ";"Tuji državljani";91;61
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";257;205
+" ";" ";" ";"Državljani Republike Slovenije";42;40
+" ";" ";" ";"Tuji državljani";215;165
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";286;173
+" ";" ";" ";"Državljani Republike Slovenije";32;38
+" ";" ";" ";"Tuji državljani";254;135
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";271;131
+" ";" ";" ";"Državljani Republike Slovenije";41;41
+" ";" ";" ";"Tuji državljani";230;90
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";186;87
+" ";" ";" ";"Državljani Republike Slovenije";51;39
+" ";" ";" ";"Tuji državljani";135;48
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";117;70
+" ";" ";" ";"Državljani Republike Slovenije";35;33
+" ";" ";" ";"Tuji državljani";82;37
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";90;68
+" ";" ";" ";"Državljani Republike Slovenije";24;41
+" ";" ";" ";"Tuji državljani";66;27
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";71;55
+" ";" ";" ";"Državljani Republike Slovenije";25;27
+" ";" ";" ";"Tuji državljani";46;28
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";45;48
+" ";" ";" ";"Državljani Republike Slovenije";18;16
+" ";" ";" ";"Tuji državljani";27;32
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";38;34
+" ";" ";" ";"Državljani Republike Slovenije";16;19
+" ";" ";" ";"Tuji državljani";22;15
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";9;15
+" ";" ";" ";"Državljani Republike Slovenije";6;6
+" ";" ";" ";"Tuji državljani";3;9
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";7;13
+" ";" ";" ";"Državljani Republike Slovenije";4;9
+" ";" ";" ";"Tuji državljani";3;4
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";4;5
+" ";" ";" ";"Državljani Republike Slovenije";2;2
+" ";" ";" ";"Tuji državljani";2;3
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";3;1
+" ";" ";" ";"Državljani Republike Slovenije";2;0
+" ";" ";" ";"Tuji državljani";1;1
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";0;4
+" ";" ";" ";"Državljani Republike Slovenije";0;3
+" ";" ";" ";"Tuji državljani";0;1
 " ";"1997"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";4174;1273
-" ";" ";" ";"0-4 let";59;28
-" ";" ";" ";"5-9 let";46;50
-" ";" ";" ";"10-14 let";38;24
-" ";" ";" ";"15-19 let";314;78
-" ";" ";" ";"20-24 let";600;196
-" ";" ";" ";"25-29 let";536;217
-" ";" ";" ";"30-34 let";678;171
-" ";" ";" ";"35-39 let";552;107
-" ";" ";" ";"40-44 let";450;88
-" ";" ";" ";"45-49 let";293;93
-" ";" ";" ";"50-54 let";201;57
-" ";" ";" ";"55-59 let";201;48
-" ";" ";" ";"60-64 let";128;58
-" ";" ";" ";"65-69 let";54;19
-" ";" ";" ";"70-74 let";3;11
-" ";" ";" ";"75-79 let";14;9
-" ";" ";" ";"80-84 let";3;13
-" ";" ";" ";"85 + let";4;6
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";443;364
-" ";" ";" ";"0-4 let";18;12
-" ";" ";" ";"5-9 let";25;21
-" ";" ";" ";"10-14 let";22;9
-" ";" ";" ";"15-19 let";51;25
-" ";" ";" ";"20-24 let";76;46
-" ";" ";" ";"25-29 let";38;40
-" ";" ";" ";"30-34 let";39;45
-" ";" ";" ";"35-39 let";42;34
-" ";" ";" ";"40-44 let";30;34
-" ";" ";" ";"45-49 let";29;29
-" ";" ";" ";"50-54 let";18;23
-" ";" ";" ";"55-59 let";17;18
-" ";" ";" ";"60-64 let";19;15
-" ";" ";" ";"65-69 let";12;7
-" ";" ";" ";"70-74 let";3;1
-" ";" ";" ";"75-79 let";3;3
-" ";" ";" ";"80-84 let";0;0
-" ";" ";" ";"85 + let";1;2
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";3731;909
-" ";" ";" ";"0-4 let";41;16
-" ";" ";" ";"5-9 let";21;29
-" ";" ";" ";"10-14 let";16;15
-" ";" ";" ";"15-19 let";263;53
-" ";" ";" ";"20-24 let";524;150
-" ";" ";" ";"25-29 let";498;177
-" ";" ";" ";"30-34 let";639;126
-" ";" ";" ";"35-39 let";510;73
-" ";" ";" ";"40-44 let";420;54
-" ";" ";" ";"45-49 let";264;64
-" ";" ";" ";"50-54 let";183;34
-" ";" ";" ";"55-59 let";184;30
-" ";" ";" ";"60-64 let";109;43
-" ";" ";" ";"65-69 let";42;12
-" ";" ";" ";"70-74 let";0;10
-" ";" ";" ";"75-79 let";11;6
-" ";" ";" ";"80-84 let";3;13
-" ";" ";" ";"85 + let";3;4
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";4174;1273
+" ";" ";" ";"Državljani Republike Slovenije";443;364
+" ";" ";" ";"Tuji državljani";3731;909
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";59;28
+" ";" ";" ";"Državljani Republike Slovenije";18;12
+" ";" ";" ";"Tuji državljani";41;16
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";46;50
+" ";" ";" ";"Državljani Republike Slovenije";25;21
+" ";" ";" ";"Tuji državljani";21;29
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";38;24
+" ";" ";" ";"Državljani Republike Slovenije";22;9
+" ";" ";" ";"Tuji državljani";16;15
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";314;78
+" ";" ";" ";"Državljani Republike Slovenije";51;25
+" ";" ";" ";"Tuji državljani";263;53
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";600;196
+" ";" ";" ";"Državljani Republike Slovenije";76;46
+" ";" ";" ";"Tuji državljani";524;150
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";536;217
+" ";" ";" ";"Državljani Republike Slovenije";38;40
+" ";" ";" ";"Tuji državljani";498;177
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";678;171
+" ";" ";" ";"Državljani Republike Slovenije";39;45
+" ";" ";" ";"Tuji državljani";639;126
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";552;107
+" ";" ";" ";"Državljani Republike Slovenije";42;34
+" ";" ";" ";"Tuji državljani";510;73
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";450;88
+" ";" ";" ";"Državljani Republike Slovenije";30;34
+" ";" ";" ";"Tuji državljani";420;54
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";293;93
+" ";" ";" ";"Državljani Republike Slovenije";29;29
+" ";" ";" ";"Tuji državljani";264;64
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";201;57
+" ";" ";" ";"Državljani Republike Slovenije";18;23
+" ";" ";" ";"Tuji državljani";183;34
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";201;48
+" ";" ";" ";"Državljani Republike Slovenije";17;18
+" ";" ";" ";"Tuji državljani";184;30
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";128;58
+" ";" ";" ";"Državljani Republike Slovenije";19;15
+" ";" ";" ";"Tuji državljani";109;43
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";54;19
+" ";" ";" ";"Državljani Republike Slovenije";12;7
+" ";" ";" ";"Tuji državljani";42;12
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";3;11
+" ";" ";" ";"Državljani Republike Slovenije";3;1
+" ";" ";" ";"Tuji državljani";0;10
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";14;9
+" ";" ";" ";"Državljani Republike Slovenije";3;3
+" ";" ";" ";"Tuji državljani";11;6
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";3;13
+" ";" ";" ";"Državljani Republike Slovenije";0;0
+" ";" ";" ";"Tuji državljani";3;13
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";4;6
+" ";" ";" ";"Državljani Republike Slovenije";1;2
+" ";" ";" ";"Tuji državljani";3;4
 " ";"1998"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";5131;1577
-" ";" ";" ";"0-4 let";41;35
-" ";" ";" ";"5-9 let";85;86
-" ";" ";" ";"10-14 let";112;63
-" ";" ";" ";"15-19 let";191;91
-" ";" ";" ";"20-24 let";645;144
-" ";" ";" ";"25-29 let";890;280
-" ";" ";" ";"30-34 let";866;255
-" ";" ";" ";"35-39 let";644;89
-" ";" ";" ";"40-44 let";630;74
-" ";" ";" ";"45-49 let";435;131
-" ";" ";" ";"50-54 let";292;97
-" ";" ";" ";"55-59 let";156;95
-" ";" ";" ";"60-64 let";78;44
-" ";" ";" ";"65-69 let";29;31
-" ";" ";" ";"70-74 let";19;23
-" ";" ";" ";"75-79 let";10;15
-" ";" ";" ";"80-84 let";4;12
-" ";" ";" ";"85 + let";4;12
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";363;342
-" ";" ";" ";"0-4 let";13;10
-" ";" ";" ";"5-9 let";12;13
-" ";" ";" ";"10-14 let";17;9
-" ";" ";" ";"15-19 let";40;24
-" ";" ";" ";"20-24 let";46;40
-" ";" ";" ";"25-29 let";43;48
-" ";" ";" ";"30-34 let";31;39
-" ";" ";" ";"35-39 let";24;28
-" ";" ";" ";"40-44 let";23;24
-" ";" ";" ";"45-49 let";30;25
-" ";" ";" ";"50-54 let";15;28
-" ";" ";" ";"55-59 let";23;10
-" ";" ";" ";"60-64 let";17;18
-" ";" ";" ";"65-69 let";16;13
-" ";" ";" ";"70-74 let";9;8
-" ";" ";" ";"75-79 let";3;4
-" ";" ";" ";"80-84 let";0;1
-" ";" ";" ";"85 + let";1;0
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";4768;1235
-" ";" ";" ";"0-4 let";28;25
-" ";" ";" ";"5-9 let";73;73
-" ";" ";" ";"10-14 let";95;54
-" ";" ";" ";"15-19 let";151;67
-" ";" ";" ";"20-24 let";599;104
-" ";" ";" ";"25-29 let";847;232
-" ";" ";" ";"30-34 let";835;216
-" ";" ";" ";"35-39 let";620;61
-" ";" ";" ";"40-44 let";607;50
-" ";" ";" ";"45-49 let";405;106
-" ";" ";" ";"50-54 let";277;69
-" ";" ";" ";"55-59 let";133;85
-" ";" ";" ";"60-64 let";61;26
-" ";" ";" ";"65-69 let";13;18
-" ";" ";" ";"70-74 let";10;15
-" ";" ";" ";"75-79 let";7;11
-" ";" ";" ";"80-84 let";4;11
-" ";" ";" ";"85 + let";3;12
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";5131;1577
+" ";" ";" ";"Državljani Republike Slovenije";363;342
+" ";" ";" ";"Tuji državljani";4768;1235
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";41;35
+" ";" ";" ";"Državljani Republike Slovenije";13;10
+" ";" ";" ";"Tuji državljani";28;25
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";85;86
+" ";" ";" ";"Državljani Republike Slovenije";12;13
+" ";" ";" ";"Tuji državljani";73;73
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";112;63
+" ";" ";" ";"Državljani Republike Slovenije";17;9
+" ";" ";" ";"Tuji državljani";95;54
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";191;91
+" ";" ";" ";"Državljani Republike Slovenije";40;24
+" ";" ";" ";"Tuji državljani";151;67
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";645;144
+" ";" ";" ";"Državljani Republike Slovenije";46;40
+" ";" ";" ";"Tuji državljani";599;104
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";890;280
+" ";" ";" ";"Državljani Republike Slovenije";43;48
+" ";" ";" ";"Tuji državljani";847;232
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";866;255
+" ";" ";" ";"Državljani Republike Slovenije";31;39
+" ";" ";" ";"Tuji državljani";835;216
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";644;89
+" ";" ";" ";"Državljani Republike Slovenije";24;28
+" ";" ";" ";"Tuji državljani";620;61
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";630;74
+" ";" ";" ";"Državljani Republike Slovenije";23;24
+" ";" ";" ";"Tuji državljani";607;50
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";435;131
+" ";" ";" ";"Državljani Republike Slovenije";30;25
+" ";" ";" ";"Tuji državljani";405;106
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";292;97
+" ";" ";" ";"Državljani Republike Slovenije";15;28
+" ";" ";" ";"Tuji državljani";277;69
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";156;95
+" ";" ";" ";"Državljani Republike Slovenije";23;10
+" ";" ";" ";"Tuji državljani";133;85
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";78;44
+" ";" ";" ";"Državljani Republike Slovenije";17;18
+" ";" ";" ";"Tuji državljani";61;26
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";29;31
+" ";" ";" ";"Državljani Republike Slovenije";16;13
+" ";" ";" ";"Tuji državljani";13;18
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";19;23
+" ";" ";" ";"Državljani Republike Slovenije";9;8
+" ";" ";" ";"Tuji državljani";10;15
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";10;15
+" ";" ";" ";"Državljani Republike Slovenije";3;4
+" ";" ";" ";"Tuji državljani";7;11
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";4;12
+" ";" ";" ";"Državljani Republike Slovenije";0;1
+" ";" ";" ";"Tuji državljani";4;11
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";4;12
+" ";" ";" ";"Državljani Republike Slovenije";1;0
+" ";" ";" ";"Tuji državljani";3;12
 " ";"1999"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1732;874
-" ";" ";" ";"0-4 let";41;39
-" ";" ";" ";"5-9 let";49;47
-" ";" ";" ";"10-14 let";57;41
-" ";" ";" ";"15-19 let";79;39
-" ";" ";" ";"20-24 let";149;70
-" ";" ";" ";"25-29 let";243;152
-" ";" ";" ";"30-34 let";233;126
-" ";" ";" ";"35-39 let";242;85
-" ";" ";" ";"40-44 let";215;68
-" ";" ";" ";"45-49 let";181;49
-" ";" ";" ";"50-54 let";102;45
-" ";" ";" ";"55-59 let";61;38
-" ";" ";" ";"60-64 let";42;31
-" ";" ";" ";"65-69 let";19;16
-" ";" ";" ";"70-74 let";11;12
-" ";" ";" ";"75-79 let";6;10
-" ";" ";" ";"80-84 let";2;3
-" ";" ";" ";"85 + let";0;3
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";525;438
-" ";" ";" ";"0-4 let";27;28
-" ";" ";" ";"5-9 let";23;29
-" ";" ";" ";"10-14 let";27;19
-" ";" ";" ";"15-19 let";53;20
-" ";" ";" ";"20-24 let";50;44
-" ";" ";" ";"25-29 let";85;71
-" ";" ";" ";"30-34 let";49;49
-" ";" ";" ";"35-39 let";48;37
-" ";" ";" ";"40-44 let";44;28
-" ";" ";" ";"45-49 let";38;28
-" ";" ";" ";"50-54 let";23;27
-" ";" ";" ";"55-59 let";16;19
-" ";" ";" ";"60-64 let";22;16
-" ";" ";" ";"65-69 let";10;9
-" ";" ";" ";"70-74 let";6;6
-" ";" ";" ";"75-79 let";3;6
-" ";" ";" ";"80-84 let";1;2
-" ";" ";" ";"85 + let";0;0
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1207;436
-" ";" ";" ";"0-4 let";14;11
-" ";" ";" ";"5-9 let";26;18
-" ";" ";" ";"10-14 let";30;22
-" ";" ";" ";"15-19 let";26;19
-" ";" ";" ";"20-24 let";99;26
-" ";" ";" ";"25-29 let";158;81
-" ";" ";" ";"30-34 let";184;77
-" ";" ";" ";"35-39 let";194;48
-" ";" ";" ";"40-44 let";171;40
-" ";" ";" ";"45-49 let";143;21
-" ";" ";" ";"50-54 let";79;18
-" ";" ";" ";"55-59 let";45;19
-" ";" ";" ";"60-64 let";20;15
-" ";" ";" ";"65-69 let";9;7
-" ";" ";" ";"70-74 let";5;6
-" ";" ";" ";"75-79 let";3;4
-" ";" ";" ";"80-84 let";1;1
-" ";" ";" ";"85 + let";0;3
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";1732;874
+" ";" ";" ";"Državljani Republike Slovenije";525;438
+" ";" ";" ";"Tuji državljani";1207;436
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";41;39
+" ";" ";" ";"Državljani Republike Slovenije";27;28
+" ";" ";" ";"Tuji državljani";14;11
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";49;47
+" ";" ";" ";"Državljani Republike Slovenije";23;29
+" ";" ";" ";"Tuji državljani";26;18
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";57;41
+" ";" ";" ";"Državljani Republike Slovenije";27;19
+" ";" ";" ";"Tuji državljani";30;22
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";79;39
+" ";" ";" ";"Državljani Republike Slovenije";53;20
+" ";" ";" ";"Tuji državljani";26;19
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";149;70
+" ";" ";" ";"Državljani Republike Slovenije";50;44
+" ";" ";" ";"Tuji državljani";99;26
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";243;152
+" ";" ";" ";"Državljani Republike Slovenije";85;71
+" ";" ";" ";"Tuji državljani";158;81
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";233;126
+" ";" ";" ";"Državljani Republike Slovenije";49;49
+" ";" ";" ";"Tuji državljani";184;77
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";242;85
+" ";" ";" ";"Državljani Republike Slovenije";48;37
+" ";" ";" ";"Tuji državljani";194;48
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";215;68
+" ";" ";" ";"Državljani Republike Slovenije";44;28
+" ";" ";" ";"Tuji državljani";171;40
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";181;49
+" ";" ";" ";"Državljani Republike Slovenije";38;28
+" ";" ";" ";"Tuji državljani";143;21
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";102;45
+" ";" ";" ";"Državljani Republike Slovenije";23;27
+" ";" ";" ";"Tuji državljani";79;18
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";61;38
+" ";" ";" ";"Državljani Republike Slovenije";16;19
+" ";" ";" ";"Tuji državljani";45;19
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";42;31
+" ";" ";" ";"Državljani Republike Slovenije";22;16
+" ";" ";" ";"Tuji državljani";20;15
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";19;16
+" ";" ";" ";"Državljani Republike Slovenije";10;9
+" ";" ";" ";"Tuji državljani";9;7
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";11;12
+" ";" ";" ";"Državljani Republike Slovenije";6;6
+" ";" ";" ";"Tuji državljani";5;6
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";6;10
+" ";" ";" ";"Državljani Republike Slovenije";3;6
+" ";" ";" ";"Tuji državljani";3;4
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";2;3
+" ";" ";" ";"Državljani Republike Slovenije";1;2
+" ";" ";" ";"Tuji državljani";1;1
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";0;3
+" ";" ";" ";"Državljani Republike Slovenije";0;0
+" ";" ";" ";"Tuji državljani";0;3
 " ";"2000"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";2376;1194
-" ";" ";" ";"0-4 let";44;31
-" ";" ";" ";"5-9 let";61;49
-" ";" ";" ";"10-14 let";80;48
-" ";" ";" ";"15-19 let";159;67
-" ";" ";" ";"20-24 let";219;133
-" ";" ";" ";"25-29 let";333;190
-" ";" ";" ";"30-34 let";302;157
-" ";" ";" ";"35-39 let";304;110
-" ";" ";" ";"40-44 let";201;73
-" ";" ";" ";"45-49 let";186;85
-" ";" ";" ";"50-54 let";137;62
-" ";" ";" ";"55-59 let";104;53
-" ";" ";" ";"60-64 let";122;44
-" ";" ";" ";"65-69 let";52;29
-" ";" ";" ";"70-74 let";36;25
-" ";" ";" ";"75-79 let";21;18
-" ";" ";" ";"80-84 let";10;13
-" ";" ";" ";"85 + let";5;7
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";806;753
-" ";" ";" ";"0-4 let";33;24
-" ";" ";" ";"5-9 let";24;23
-" ";" ";" ";"10-14 let";25;19
-" ";" ";" ";"15-19 let";77;29
-" ";" ";" ";"20-24 let";97;96
-" ";" ";" ";"25-29 let";118;136
-" ";" ";" ";"30-34 let";79;99
-" ";" ";" ";"35-39 let";75;61
-" ";" ";" ";"40-44 let";55;47
-" ";" ";" ";"45-49 let";63;62
-" ";" ";" ";"50-54 let";43;48
-" ";" ";" ";"55-59 let";28;33
-" ";" ";" ";"60-64 let";39;33
-" ";" ";" ";"65-69 let";24;20
-" ";" ";" ";"70-74 let";15;9
-" ";" ";" ";"75-79 let";7;8
-" ";" ";" ";"80-84 let";2;3
-" ";" ";" ";"85 + let";2;3
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1570;441
-" ";" ";" ";"0-4 let";11;7
-" ";" ";" ";"5-9 let";37;26
-" ";" ";" ";"10-14 let";55;29
-" ";" ";" ";"15-19 let";82;38
-" ";" ";" ";"20-24 let";122;37
-" ";" ";" ";"25-29 let";215;54
-" ";" ";" ";"30-34 let";223;58
-" ";" ";" ";"35-39 let";229;49
-" ";" ";" ";"40-44 let";146;26
-" ";" ";" ";"45-49 let";123;23
-" ";" ";" ";"50-54 let";94;14
-" ";" ";" ";"55-59 let";76;20
-" ";" ";" ";"60-64 let";83;11
-" ";" ";" ";"65-69 let";28;9
-" ";" ";" ";"70-74 let";21;16
-" ";" ";" ";"75-79 let";14;10
-" ";" ";" ";"80-84 let";8;10
-" ";" ";" ";"85 + let";3;4
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";2376;1194
+" ";" ";" ";"Državljani Republike Slovenije";806;753
+" ";" ";" ";"Tuji državljani";1570;441
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";44;31
+" ";" ";" ";"Državljani Republike Slovenije";33;24
+" ";" ";" ";"Tuji državljani";11;7
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";61;49
+" ";" ";" ";"Državljani Republike Slovenije";24;23
+" ";" ";" ";"Tuji državljani";37;26
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";80;48
+" ";" ";" ";"Državljani Republike Slovenije";25;19
+" ";" ";" ";"Tuji državljani";55;29
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";159;67
+" ";" ";" ";"Državljani Republike Slovenije";77;29
+" ";" ";" ";"Tuji državljani";82;38
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";219;133
+" ";" ";" ";"Državljani Republike Slovenije";97;96
+" ";" ";" ";"Tuji državljani";122;37
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";333;190
+" ";" ";" ";"Državljani Republike Slovenije";118;136
+" ";" ";" ";"Tuji državljani";215;54
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";302;157
+" ";" ";" ";"Državljani Republike Slovenije";79;99
+" ";" ";" ";"Tuji državljani";223;58
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";304;110
+" ";" ";" ";"Državljani Republike Slovenije";75;61
+" ";" ";" ";"Tuji državljani";229;49
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";201;73
+" ";" ";" ";"Državljani Republike Slovenije";55;47
+" ";" ";" ";"Tuji državljani";146;26
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";186;85
+" ";" ";" ";"Državljani Republike Slovenije";63;62
+" ";" ";" ";"Tuji državljani";123;23
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";137;62
+" ";" ";" ";"Državljani Republike Slovenije";43;48
+" ";" ";" ";"Tuji državljani";94;14
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";104;53
+" ";" ";" ";"Državljani Republike Slovenije";28;33
+" ";" ";" ";"Tuji državljani";76;20
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";122;44
+" ";" ";" ";"Državljani Republike Slovenije";39;33
+" ";" ";" ";"Tuji državljani";83;11
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";52;29
+" ";" ";" ";"Državljani Republike Slovenije";24;20
+" ";" ";" ";"Tuji državljani";28;9
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";36;25
+" ";" ";" ";"Državljani Republike Slovenije";15;9
+" ";" ";" ";"Tuji državljani";21;16
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";21;18
+" ";" ";" ";"Državljani Republike Slovenije";7;8
+" ";" ";" ";"Tuji državljani";14;10
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";10;13
+" ";" ";" ";"Državljani Republike Slovenije";2;3
+" ";" ";" ";"Tuji državljani";8;10
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";5;7
+" ";" ";" ";"Državljani Republike Slovenije";2;3
+" ";" ";" ";"Tuji državljani";3;4
 " ";"2001"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";3503;1308
-" ";" ";" ";"0-4 let";39;49
-" ";" ";" ";"5-9 let";57;42
-" ";" ";" ";"10-14 let";64;38
-" ";" ";" ";"15-19 let";120;85
-" ";" ";" ";"20-24 let";589;211
-" ";" ";" ";"25-29 let";698;203
-" ";" ";" ";"30-34 let";559;140
-" ";" ";" ";"35-39 let";424;109
-" ";" ";" ";"40-44 let";350;94
-" ";" ";" ";"45-49 let";194;89
-" ";" ";" ";"50-54 let";140;66
-" ";" ";" ";"55-59 let";92;60
-" ";" ";" ";"60-64 let";92;41
-" ";" ";" ";"65-69 let";48;28
-" ";" ";" ";"70-74 let";13;25
-" ";" ";" ";"75-79 let";13;15
-" ";" ";" ";"80-84 let";9;8
-" ";" ";" ";"85 + let";2;5
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";743;699
-" ";" ";" ";"0-4 let";32;43
-" ";" ";" ";"5-9 let";36;31
-" ";" ";" ";"10-14 let";41;26
-" ";" ";" ";"15-19 let";59;31
-" ";" ";" ";"20-24 let";75;64
-" ";" ";" ";"25-29 let";93;114
-" ";" ";" ";"30-34 let";59;79
-" ";" ";" ";"35-39 let";63;50
-" ";" ";" ";"40-44 let";58;45
-" ";" ";" ";"45-49 let";44;50
-" ";" ";" ";"50-54 let";48;45
-" ";" ";" ";"55-59 let";50;42
-" ";" ";" ";"60-64 let";39;32
-" ";" ";" ";"65-69 let";28;19
-" ";" ";" ";"70-74 let";10;14
-" ";" ";" ";"75-79 let";6;11
-" ";" ";" ";"80-84 let";2;2
-" ";" ";" ";"85 + let";0;1
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";2760;609
-" ";" ";" ";"0-4 let";7;6
-" ";" ";" ";"5-9 let";21;11
-" ";" ";" ";"10-14 let";23;12
-" ";" ";" ";"15-19 let";61;54
-" ";" ";" ";"20-24 let";514;147
-" ";" ";" ";"25-29 let";605;89
-" ";" ";" ";"30-34 let";500;61
-" ";" ";" ";"35-39 let";361;59
-" ";" ";" ";"40-44 let";292;49
-" ";" ";" ";"45-49 let";150;39
-" ";" ";" ";"50-54 let";92;21
-" ";" ";" ";"55-59 let";42;18
-" ";" ";" ";"60-64 let";53;9
-" ";" ";" ";"65-69 let";20;9
-" ";" ";" ";"70-74 let";3;11
-" ";" ";" ";"75-79 let";7;4
-" ";" ";" ";"80-84 let";7;6
-" ";" ";" ";"85 + let";2;4
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";3503;1308
+" ";" ";" ";"Državljani Republike Slovenije";743;699
+" ";" ";" ";"Tuji državljani";2760;609
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";39;49
+" ";" ";" ";"Državljani Republike Slovenije";32;43
+" ";" ";" ";"Tuji državljani";7;6
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";57;42
+" ";" ";" ";"Državljani Republike Slovenije";36;31
+" ";" ";" ";"Tuji državljani";21;11
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";64;38
+" ";" ";" ";"Državljani Republike Slovenije";41;26
+" ";" ";" ";"Tuji državljani";23;12
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";120;85
+" ";" ";" ";"Državljani Republike Slovenije";59;31
+" ";" ";" ";"Tuji državljani";61;54
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";589;211
+" ";" ";" ";"Državljani Republike Slovenije";75;64
+" ";" ";" ";"Tuji državljani";514;147
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";698;203
+" ";" ";" ";"Državljani Republike Slovenije";93;114
+" ";" ";" ";"Tuji državljani";605;89
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";559;140
+" ";" ";" ";"Državljani Republike Slovenije";59;79
+" ";" ";" ";"Tuji državljani";500;61
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";424;109
+" ";" ";" ";"Državljani Republike Slovenije";63;50
+" ";" ";" ";"Tuji državljani";361;59
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";350;94
+" ";" ";" ";"Državljani Republike Slovenije";58;45
+" ";" ";" ";"Tuji državljani";292;49
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";194;89
+" ";" ";" ";"Državljani Republike Slovenije";44;50
+" ";" ";" ";"Tuji državljani";150;39
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";140;66
+" ";" ";" ";"Državljani Republike Slovenije";48;45
+" ";" ";" ";"Tuji državljani";92;21
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";92;60
+" ";" ";" ";"Državljani Republike Slovenije";50;42
+" ";" ";" ";"Tuji državljani";42;18
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";92;41
+" ";" ";" ";"Državljani Republike Slovenije";39;32
+" ";" ";" ";"Tuji državljani";53;9
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";48;28
+" ";" ";" ";"Državljani Republike Slovenije";28;19
+" ";" ";" ";"Tuji državljani";20;9
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";13;25
+" ";" ";" ";"Državljani Republike Slovenije";10;14
+" ";" ";" ";"Tuji državljani";3;11
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";13;15
+" ";" ";" ";"Državljani Republike Slovenije";6;11
+" ";" ";" ";"Tuji državljani";7;4
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";9;8
+" ";" ";" ";"Državljani Republike Slovenije";2;2
+" ";" ";" ";"Tuji državljani";7;6
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";2;5
+" ";" ";" ";"Državljani Republike Slovenije";0;1
+" ";" ";" ";"Tuji državljani";2;4
 " ";"2002"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";4596;2673
-" ";" ";" ";"0-4 let";90;62
-" ";" ";" ";"5-9 let";81;71
-" ";" ";" ";"10-14 let";61;76
-" ";" ";" ";"15-19 let";153;137
-" ";" ";" ";"20-24 let";745;445
-" ";" ";" ";"25-29 let";856;418
-" ";" ";" ";"30-34 let";735;327
-" ";" ";" ";"35-39 let";544;267
-" ";" ";" ";"40-44 let";468;201
-" ";" ";" ";"45-49 let";267;148
-" ";" ";" ";"50-54 let";215;181
-" ";" ";" ";"55-59 let";133;112
-" ";" ";" ";"60-64 let";122;80
-" ";" ";" ";"65-69 let";66;70
-" ";" ";" ";"70-74 let";26;37
-" ";" ";" ";"75-79 let";17;18
-" ";" ";" ";"80-84 let";11;14
-" ";" ";" ";"85 + let";6;9
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1286;1338
-" ";" ";" ";"0-4 let";78;47
-" ";" ";" ";"5-9 let";55;52
-" ";" ";" ";"10-14 let";41;45
-" ";" ";" ";"15-19 let";72;61
-" ";" ";" ";"20-24 let";110;129
-" ";" ";" ";"25-29 let";157;179
-" ";" ";" ";"30-34 let";135;177
-" ";" ";" ";"35-39 let";101;118
-" ";" ";" ";"40-44 let";100;94
-" ";" ";" ";"45-49 let";74;74
-" ";" ";" ";"50-54 let";106;135
-" ";" ";" ";"55-59 let";89;79
-" ";" ";" ";"60-64 let";76;55
-" ";" ";" ";"65-69 let";50;49
-" ";" ";" ";"70-74 let";20;25
-" ";" ";" ";"75-79 let";11;9
-" ";" ";" ";"80-84 let";7;7
-" ";" ";" ";"85 + let";4;3
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";3310;1335
-" ";" ";" ";"0-4 let";12;15
-" ";" ";" ";"5-9 let";26;19
-" ";" ";" ";"10-14 let";20;31
-" ";" ";" ";"15-19 let";81;76
-" ";" ";" ";"20-24 let";635;316
-" ";" ";" ";"25-29 let";699;239
-" ";" ";" ";"30-34 let";600;150
-" ";" ";" ";"35-39 let";443;149
-" ";" ";" ";"40-44 let";368;107
-" ";" ";" ";"45-49 let";193;74
-" ";" ";" ";"50-54 let";109;46
-" ";" ";" ";"55-59 let";44;33
-" ";" ";" ";"60-64 let";46;25
-" ";" ";" ";"65-69 let";16;21
-" ";" ";" ";"70-74 let";6;12
-" ";" ";" ";"75-79 let";6;9
-" ";" ";" ";"80-84 let";4;7
-" ";" ";" ";"85 + let";2;6
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";4596;2673
+" ";" ";" ";"Državljani Republike Slovenije";1286;1338
+" ";" ";" ";"Tuji državljani";3310;1335
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";90;62
+" ";" ";" ";"Državljani Republike Slovenije";78;47
+" ";" ";" ";"Tuji državljani";12;15
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";81;71
+" ";" ";" ";"Državljani Republike Slovenije";55;52
+" ";" ";" ";"Tuji državljani";26;19
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";61;76
+" ";" ";" ";"Državljani Republike Slovenije";41;45
+" ";" ";" ";"Tuji državljani";20;31
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";153;137
+" ";" ";" ";"Državljani Republike Slovenije";72;61
+" ";" ";" ";"Tuji državljani";81;76
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";745;445
+" ";" ";" ";"Državljani Republike Slovenije";110;129
+" ";" ";" ";"Tuji državljani";635;316
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";856;418
+" ";" ";" ";"Državljani Republike Slovenije";157;179
+" ";" ";" ";"Tuji državljani";699;239
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";735;327
+" ";" ";" ";"Državljani Republike Slovenije";135;177
+" ";" ";" ";"Tuji državljani";600;150
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";544;267
+" ";" ";" ";"Državljani Republike Slovenije";101;118
+" ";" ";" ";"Tuji državljani";443;149
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";468;201
+" ";" ";" ";"Državljani Republike Slovenije";100;94
+" ";" ";" ";"Tuji državljani";368;107
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";267;148
+" ";" ";" ";"Državljani Republike Slovenije";74;74
+" ";" ";" ";"Tuji državljani";193;74
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";215;181
+" ";" ";" ";"Državljani Republike Slovenije";106;135
+" ";" ";" ";"Tuji državljani";109;46
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";133;112
+" ";" ";" ";"Državljani Republike Slovenije";89;79
+" ";" ";" ";"Tuji državljani";44;33
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";122;80
+" ";" ";" ";"Državljani Republike Slovenije";76;55
+" ";" ";" ";"Tuji državljani";46;25
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";66;70
+" ";" ";" ";"Državljani Republike Slovenije";50;49
+" ";" ";" ";"Tuji državljani";16;21
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";26;37
+" ";" ";" ";"Državljani Republike Slovenije";20;25
+" ";" ";" ";"Tuji državljani";6;12
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";17;18
+" ";" ";" ";"Državljani Republike Slovenije";11;9
+" ";" ";" ";"Tuji državljani";6;9
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";11;14
+" ";" ";" ";"Državljani Republike Slovenije";7;7
+" ";" ";" ";"Tuji državljani";4;7
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";6;9
+" ";" ";" ";"Državljani Republike Slovenije";4;3
+" ";" ";" ";"Tuji državljani";2;6
 " ";"2003"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";3444;2423
-" ";" ";" ";"0-4 let";87;70
-" ";" ";" ";"5-9 let";69;65
-" ";" ";" ";"10-14 let";62;52
-" ";" ";" ";"15-19 let";136;91
-" ";" ";" ";"20-24 let";452;394
-" ";" ";" ";"25-29 let";550;420
-" ";" ";" ";"30-34 let";622;334
-" ";" ";" ";"35-39 let";450;261
-" ";" ";" ";"40-44 let";366;148
-" ";" ";" ";"45-49 let";263;207
-" ";" ";" ";"50-54 let";118;121
-" ";" ";" ";"55-59 let";85;92
-" ";" ";" ";"60-64 let";58;67
-" ";" ";" ";"65-69 let";72;39
-" ";" ";" ";"70-74 let";29;29
-" ";" ";" ";"75-79 let";17;14
-" ";" ";" ";"80-84 let";7;11
-" ";" ";" ";"85 + let";1;8
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";952;935
-" ";" ";" ";"0-4 let";70;53
-" ";" ";" ";"5-9 let";43;44
-" ";" ";" ";"10-14 let";34;21
-" ";" ";" ";"15-19 let";50;48
-" ";" ";" ";"20-24 let";83;76
-" ";" ";" ";"25-29 let";117;143
-" ";" ";" ";"30-34 let";111;110
-" ";" ";" ";"35-39 let";71;87
-" ";" ";" ";"40-44 let";71;49
-" ";" ";" ";"45-49 let";59;57
-" ";" ";" ";"50-54 let";75;69
-" ";" ";" ";"55-59 let";51;59
-" ";" ";" ";"60-64 let";41;45
-" ";" ";" ";"65-69 let";35;31
-" ";" ";" ";"70-74 let";24;23
-" ";" ";" ";"75-79 let";14;11
-" ";" ";" ";"80-84 let";3;6
-" ";" ";" ";"85 + let";0;3
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";2492;1488
-" ";" ";" ";"0-4 let";17;17
-" ";" ";" ";"5-9 let";26;21
-" ";" ";" ";"10-14 let";28;31
-" ";" ";" ";"15-19 let";86;43
-" ";" ";" ";"20-24 let";369;318
-" ";" ";" ";"25-29 let";433;277
-" ";" ";" ";"30-34 let";511;224
-" ";" ";" ";"35-39 let";379;174
-" ";" ";" ";"40-44 let";295;99
-" ";" ";" ";"45-49 let";204;150
-" ";" ";" ";"50-54 let";43;52
-" ";" ";" ";"55-59 let";34;33
-" ";" ";" ";"60-64 let";17;22
-" ";" ";" ";"65-69 let";37;8
-" ";" ";" ";"70-74 let";5;6
-" ";" ";" ";"75-79 let";3;3
-" ";" ";" ";"80-84 let";4;5
-" ";" ";" ";"85 + let";1;5
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";3444;2423
+" ";" ";" ";"Državljani Republike Slovenije";952;935
+" ";" ";" ";"Tuji državljani";2492;1488
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";87;70
+" ";" ";" ";"Državljani Republike Slovenije";70;53
+" ";" ";" ";"Tuji državljani";17;17
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";69;65
+" ";" ";" ";"Državljani Republike Slovenije";43;44
+" ";" ";" ";"Tuji državljani";26;21
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";62;52
+" ";" ";" ";"Državljani Republike Slovenije";34;21
+" ";" ";" ";"Tuji državljani";28;31
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";136;91
+" ";" ";" ";"Državljani Republike Slovenije";50;48
+" ";" ";" ";"Tuji državljani";86;43
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";452;394
+" ";" ";" ";"Državljani Republike Slovenije";83;76
+" ";" ";" ";"Tuji državljani";369;318
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";550;420
+" ";" ";" ";"Državljani Republike Slovenije";117;143
+" ";" ";" ";"Tuji državljani";433;277
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";622;334
+" ";" ";" ";"Državljani Republike Slovenije";111;110
+" ";" ";" ";"Tuji državljani";511;224
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";450;261
+" ";" ";" ";"Državljani Republike Slovenije";71;87
+" ";" ";" ";"Tuji državljani";379;174
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";366;148
+" ";" ";" ";"Državljani Republike Slovenije";71;49
+" ";" ";" ";"Tuji državljani";295;99
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";263;207
+" ";" ";" ";"Državljani Republike Slovenije";59;57
+" ";" ";" ";"Tuji državljani";204;150
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";118;121
+" ";" ";" ";"Državljani Republike Slovenije";75;69
+" ";" ";" ";"Tuji državljani";43;52
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";85;92
+" ";" ";" ";"Državljani Republike Slovenije";51;59
+" ";" ";" ";"Tuji državljani";34;33
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";58;67
+" ";" ";" ";"Državljani Republike Slovenije";41;45
+" ";" ";" ";"Tuji državljani";17;22
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";72;39
+" ";" ";" ";"Državljani Republike Slovenije";35;31
+" ";" ";" ";"Tuji državljani";37;8
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";29;29
+" ";" ";" ";"Državljani Republike Slovenije";24;23
+" ";" ";" ";"Tuji državljani";5;6
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";17;14
+" ";" ";" ";"Državljani Republike Slovenije";14;11
+" ";" ";" ";"Tuji državljani";3;3
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";7;11
+" ";" ";" ";"Državljani Republike Slovenije";3;6
+" ";" ";" ";"Tuji državljani";4;5
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";1;8
+" ";" ";" ";"Državljani Republike Slovenije";0;3
+" ";" ";" ";"Tuji državljani";1;5
 " ";"2004"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";6061;2208
-" ";" ";" ";"0-4 let";97;84
-" ";" ";" ";"5-9 let";69;69
-" ";" ";" ";"10-14 let";38;56
-" ";" ";" ";"15-19 let";278;106
-" ";" ";" ";"20-24 let";1052;305
-" ";" ";" ";"25-29 let";1160;399
-" ";" ";" ";"30-34 let";959;300
-" ";" ";" ";"35-39 let";753;199
-" ";" ";" ";"40-44 let";521;141
-" ";" ";" ";"45-49 let";446;103
-" ";" ";" ";"50-54 let";273;142
-" ";" ";" ";"55-59 let";126;104
-" ";" ";" ";"60-64 let";114;77
-" ";" ";" ";"65-69 let";89;40
-" ";" ";" ";"70-74 let";43;26
-" ";" ";" ";"75-79 let";27;25
-" ";" ";" ";"80-84 let";10;25
-" ";" ";" ";"85 + let";6;7
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1243;1022
-" ";" ";" ";"0-4 let";70;42
-" ";" ";" ";"5-9 let";38;43
-" ";" ";" ";"10-14 let";21;24
-" ";" ";" ";"15-19 let";47;46
-" ";" ";" ";"20-24 let";117;94
-" ";" ";" ";"25-29 let";208;168
-" ";" ";" ";"30-34 let";190;155
-" ";" ";" ";"35-39 let";104;83
-" ";" ";" ";"40-44 let";89;65
-" ";" ";" ";"45-49 let";71;53
-" ";" ";" ";"50-54 let";75;82
-" ";" ";" ";"55-59 let";62;62
-" ";" ";" ";"60-64 let";56;49
-" ";" ";" ";"65-69 let";44;17
-" ";" ";" ";"70-74 let";30;16
-" ";" ";" ";"75-79 let";16;10
-" ";" ";" ";"80-84 let";3;12
-" ";" ";" ";"85 + let";2;1
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";4818;1186
-" ";" ";" ";"0-4 let";27;42
-" ";" ";" ";"5-9 let";31;26
-" ";" ";" ";"10-14 let";17;32
-" ";" ";" ";"15-19 let";231;60
-" ";" ";" ";"20-24 let";935;211
-" ";" ";" ";"25-29 let";952;231
-" ";" ";" ";"30-34 let";769;145
-" ";" ";" ";"35-39 let";649;116
-" ";" ";" ";"40-44 let";432;76
-" ";" ";" ";"45-49 let";375;50
-" ";" ";" ";"50-54 let";198;60
-" ";" ";" ";"55-59 let";64;42
-" ";" ";" ";"60-64 let";58;28
-" ";" ";" ";"65-69 let";45;23
-" ";" ";" ";"70-74 let";13;10
-" ";" ";" ";"75-79 let";11;15
-" ";" ";" ";"80-84 let";7;13
-" ";" ";" ";"85 + let";4;6
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";6061;2208
+" ";" ";" ";"Državljani Republike Slovenije";1243;1022
+" ";" ";" ";"Tuji državljani";4818;1186
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";97;84
+" ";" ";" ";"Državljani Republike Slovenije";70;42
+" ";" ";" ";"Tuji državljani";27;42
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";69;69
+" ";" ";" ";"Državljani Republike Slovenije";38;43
+" ";" ";" ";"Tuji državljani";31;26
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";38;56
+" ";" ";" ";"Državljani Republike Slovenije";21;24
+" ";" ";" ";"Tuji državljani";17;32
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";278;106
+" ";" ";" ";"Državljani Republike Slovenije";47;46
+" ";" ";" ";"Tuji državljani";231;60
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";1052;305
+" ";" ";" ";"Državljani Republike Slovenije";117;94
+" ";" ";" ";"Tuji državljani";935;211
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1160;399
+" ";" ";" ";"Državljani Republike Slovenije";208;168
+" ";" ";" ";"Tuji državljani";952;231
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";959;300
+" ";" ";" ";"Državljani Republike Slovenije";190;155
+" ";" ";" ";"Tuji državljani";769;145
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";753;199
+" ";" ";" ";"Državljani Republike Slovenije";104;83
+" ";" ";" ";"Tuji državljani";649;116
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";521;141
+" ";" ";" ";"Državljani Republike Slovenije";89;65
+" ";" ";" ";"Tuji državljani";432;76
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";446;103
+" ";" ";" ";"Državljani Republike Slovenije";71;53
+" ";" ";" ";"Tuji državljani";375;50
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";273;142
+" ";" ";" ";"Državljani Republike Slovenije";75;82
+" ";" ";" ";"Tuji državljani";198;60
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";126;104
+" ";" ";" ";"Državljani Republike Slovenije";62;62
+" ";" ";" ";"Tuji državljani";64;42
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";114;77
+" ";" ";" ";"Državljani Republike Slovenije";56;49
+" ";" ";" ";"Tuji državljani";58;28
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";89;40
+" ";" ";" ";"Državljani Republike Slovenije";44;17
+" ";" ";" ";"Tuji državljani";45;23
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";43;26
+" ";" ";" ";"Državljani Republike Slovenije";30;16
+" ";" ";" ";"Tuji državljani";13;10
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";27;25
+" ";" ";" ";"Državljani Republike Slovenije";16;10
+" ";" ";" ";"Tuji državljani";11;15
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";10;25
+" ";" ";" ";"Državljani Republike Slovenije";3;12
+" ";" ";" ";"Tuji državljani";7;13
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";6;7
+" ";" ";" ";"Državljani Republike Slovenije";2;1
+" ";" ";" ";"Tuji državljani";4;6
 " ";"2005"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";6659;1946
-" ";" ";" ";"0-4 let";81;61
-" ";" ";" ";"5-9 let";58;64
-" ";" ";" ";"10-14 let";53;69
-" ";" ";" ";"15-19 let";298;132
-" ";" ";" ";"20-24 let";1274;234
-" ";" ";" ";"25-29 let";1257;303
-" ";" ";" ";"30-34 let";968;257
-" ";" ";" ";"35-39 let";757;187
-" ";" ";" ";"40-44 let";707;153
-" ";" ";" ";"45-49 let";540;101
-" ";" ";" ";"50-54 let";270;123
-" ";" ";" ";"55-59 let";170;94
-" ";" ";" ";"60-64 let";102;62
-" ";" ";" ";"65-69 let";59;35
-" ";" ";" ";"70-74 let";32;32
-" ";" ";" ";"75-79 let";18;21
-" ";" ";" ";"80-84 let";9;12
-" ";" ";" ";"85 + let";6;6
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";982;1095
-" ";" ";" ";"0-4 let";58;46
-" ";" ";" ";"5-9 let";37;51
-" ";" ";" ";"10-14 let";25;42
-" ";" ";" ";"15-19 let";41;57
-" ";" ";" ";"20-24 let";64;83
-" ";" ";" ";"25-29 let";127;176
-" ";" ";" ";"30-34 let";106;153
-" ";" ";" ";"35-39 let";95;100
-" ";" ";" ";"40-44 let";72;74
-" ";" ";" ";"45-49 let";90;55
-" ";" ";" ";"50-54 let";68;72
-" ";" ";" ";"55-59 let";73;68
-" ";" ";" ";"60-64 let";63;47
-" ";" ";" ";"65-69 let";32;27
-" ";" ";" ";"70-74 let";19;22
-" ";" ";" ";"75-79 let";9;13
-" ";" ";" ";"80-84 let";2;6
-" ";" ";" ";"85 + let";1;3
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";5677;851
-" ";" ";" ";"0-4 let";23;15
-" ";" ";" ";"5-9 let";21;13
-" ";" ";" ";"10-14 let";28;27
-" ";" ";" ";"15-19 let";257;75
-" ";" ";" ";"20-24 let";1210;151
-" ";" ";" ";"25-29 let";1130;127
-" ";" ";" ";"30-34 let";862;104
-" ";" ";" ";"35-39 let";662;87
-" ";" ";" ";"40-44 let";635;79
-" ";" ";" ";"45-49 let";450;46
-" ";" ";" ";"50-54 let";202;51
-" ";" ";" ";"55-59 let";97;26
-" ";" ";" ";"60-64 let";39;15
-" ";" ";" ";"65-69 let";27;8
-" ";" ";" ";"70-74 let";13;10
-" ";" ";" ";"75-79 let";9;8
-" ";" ";" ";"80-84 let";7;6
-" ";" ";" ";"85 + let";5;3
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";6659;1946
+" ";" ";" ";"Državljani Republike Slovenije";982;1095
+" ";" ";" ";"Tuji državljani";5677;851
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";81;61
+" ";" ";" ";"Državljani Republike Slovenije";58;46
+" ";" ";" ";"Tuji državljani";23;15
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";58;64
+" ";" ";" ";"Državljani Republike Slovenije";37;51
+" ";" ";" ";"Tuji državljani";21;13
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";53;69
+" ";" ";" ";"Državljani Republike Slovenije";25;42
+" ";" ";" ";"Tuji državljani";28;27
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";298;132
+" ";" ";" ";"Državljani Republike Slovenije";41;57
+" ";" ";" ";"Tuji državljani";257;75
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";1274;234
+" ";" ";" ";"Državljani Republike Slovenije";64;83
+" ";" ";" ";"Tuji državljani";1210;151
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1257;303
+" ";" ";" ";"Državljani Republike Slovenije";127;176
+" ";" ";" ";"Tuji državljani";1130;127
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";968;257
+" ";" ";" ";"Državljani Republike Slovenije";106;153
+" ";" ";" ";"Tuji državljani";862;104
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";757;187
+" ";" ";" ";"Državljani Republike Slovenije";95;100
+" ";" ";" ";"Tuji državljani";662;87
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";707;153
+" ";" ";" ";"Državljani Republike Slovenije";72;74
+" ";" ";" ";"Tuji državljani";635;79
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";540;101
+" ";" ";" ";"Državljani Republike Slovenije";90;55
+" ";" ";" ";"Tuji državljani";450;46
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";270;123
+" ";" ";" ";"Državljani Republike Slovenije";68;72
+" ";" ";" ";"Tuji državljani";202;51
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";170;94
+" ";" ";" ";"Državljani Republike Slovenije";73;68
+" ";" ";" ";"Tuji državljani";97;26
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";102;62
+" ";" ";" ";"Državljani Republike Slovenije";63;47
+" ";" ";" ";"Tuji državljani";39;15
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";59;35
+" ";" ";" ";"Državljani Republike Slovenije";32;27
+" ";" ";" ";"Tuji državljani";27;8
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";32;32
+" ";" ";" ";"Državljani Republike Slovenije";19;22
+" ";" ";" ";"Tuji državljani";13;10
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";18;21
+" ";" ";" ";"Državljani Republike Slovenije";9;13
+" ";" ";" ";"Tuji državljani";9;8
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";9;12
+" ";" ";" ";"Državljani Republike Slovenije";2;6
+" ";" ";" ";"Tuji državljani";7;6
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";6;6
+" ";" ";" ";"Državljani Republike Slovenije";1;3
+" ";" ";" ";"Tuji državljani";5;3
 " ";"2006"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";10725;3024
-" ";" ";" ";"0-4 let";136;126
-" ";" ";" ";"5-9 let";111;97
-" ";" ";" ";"10-14 let";95;98
-" ";" ";" ";"15-19 let";374;153
-" ";" ";" ";"20-24 let";2256;407
-" ";" ";" ";"25-29 let";2001;439
-" ";" ";" ";"30-34 let";1517;397
-" ";" ";" ";"35-39 let";1212;276
-" ";" ";" ";"40-44 let";1000;246
-" ";" ";" ";"45-49 let";815;170
-" ";" ";" ";"50-54 let";553;187
-" ";" ";" ";"55-59 let";322;170
-" ";" ";" ";"60-64 let";167;99
-" ";" ";" ";"65-69 let";93;72
-" ";" ";" ";"70-74 let";36;33
-" ";" ";" ";"75-79 let";15;31
-" ";" ";" ";"80-84 let";13;10
-" ";" ";" ";"85 + let";9;13
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1315;1388
-" ";" ";" ";"0-4 let";80;75
-" ";" ";" ";"5-9 let";55;56
-" ";" ";" ";"10-14 let";57;47
-" ";" ";" ";"15-19 let";55;63
-" ";" ";" ";"20-24 let";97;109
-" ";" ";" ";"25-29 let";180;217
-" ";" ";" ";"30-34 let";159;189
-" ";" ";" ";"35-39 let";123;141
-" ";" ";" ";"40-44 let";119;100
-" ";" ";" ";"45-49 let";79;65
-" ";" ";" ";"50-54 let";75;87
-" ";" ";" ";"55-59 let";86;105
-" ";" ";" ";"60-64 let";59;59
-" ";" ";" ";"65-69 let";50;37
-" ";" ";" ";"70-74 let";19;15
-" ";" ";" ";"75-79 let";8;15
-" ";" ";" ";"80-84 let";9;4
-" ";" ";" ";"85 + let";5;4
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";9410;1636
-" ";" ";" ";"0-4 let";56;51
-" ";" ";" ";"5-9 let";56;41
-" ";" ";" ";"10-14 let";38;51
-" ";" ";" ";"15-19 let";319;90
-" ";" ";" ";"20-24 let";2159;298
-" ";" ";" ";"25-29 let";1821;222
-" ";" ";" ";"30-34 let";1358;208
-" ";" ";" ";"35-39 let";1089;135
-" ";" ";" ";"40-44 let";881;146
-" ";" ";" ";"45-49 let";736;105
-" ";" ";" ";"50-54 let";478;100
-" ";" ";" ";"55-59 let";236;65
-" ";" ";" ";"60-64 let";108;40
-" ";" ";" ";"65-69 let";43;35
-" ";" ";" ";"70-74 let";17;18
-" ";" ";" ";"75-79 let";7;16
-" ";" ";" ";"80-84 let";4;6
-" ";" ";" ";"85 + let";4;9
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";10725;3024
+" ";" ";" ";"Državljani Republike Slovenije";1315;1388
+" ";" ";" ";"Tuji državljani";9410;1636
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";136;126
+" ";" ";" ";"Državljani Republike Slovenije";80;75
+" ";" ";" ";"Tuji državljani";56;51
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";111;97
+" ";" ";" ";"Državljani Republike Slovenije";55;56
+" ";" ";" ";"Tuji državljani";56;41
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";95;98
+" ";" ";" ";"Državljani Republike Slovenije";57;47
+" ";" ";" ";"Tuji državljani";38;51
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";374;153
+" ";" ";" ";"Državljani Republike Slovenije";55;63
+" ";" ";" ";"Tuji državljani";319;90
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";2256;407
+" ";" ";" ";"Državljani Republike Slovenije";97;109
+" ";" ";" ";"Tuji državljani";2159;298
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";2001;439
+" ";" ";" ";"Državljani Republike Slovenije";180;217
+" ";" ";" ";"Tuji državljani";1821;222
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1517;397
+" ";" ";" ";"Državljani Republike Slovenije";159;189
+" ";" ";" ";"Tuji državljani";1358;208
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";1212;276
+" ";" ";" ";"Državljani Republike Slovenije";123;141
+" ";" ";" ";"Tuji državljani";1089;135
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";1000;246
+" ";" ";" ";"Državljani Republike Slovenije";119;100
+" ";" ";" ";"Tuji državljani";881;146
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";815;170
+" ";" ";" ";"Državljani Republike Slovenije";79;65
+" ";" ";" ";"Tuji državljani";736;105
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";553;187
+" ";" ";" ";"Državljani Republike Slovenije";75;87
+" ";" ";" ";"Tuji državljani";478;100
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";322;170
+" ";" ";" ";"Državljani Republike Slovenije";86;105
+" ";" ";" ";"Tuji državljani";236;65
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";167;99
+" ";" ";" ";"Državljani Republike Slovenije";59;59
+" ";" ";" ";"Tuji državljani";108;40
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";93;72
+" ";" ";" ";"Državljani Republike Slovenije";50;37
+" ";" ";" ";"Tuji državljani";43;35
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";36;33
+" ";" ";" ";"Državljani Republike Slovenije";19;15
+" ";" ";" ";"Tuji državljani";17;18
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";15;31
+" ";" ";" ";"Državljani Republike Slovenije";8;15
+" ";" ";" ";"Tuji državljani";7;16
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";13;10
+" ";" ";" ";"Državljani Republike Slovenije";9;4
+" ";" ";" ";"Tuji državljani";4;6
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";9;13
+" ";" ";" ";"Državljani Republike Slovenije";5;4
+" ";" ";" ";"Tuji državljani";4;9
 " ";"2007"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";10696;4247
-" ";" ";" ";"0-4 let";181;167
-" ";" ";" ";"5-9 let";138;142
-" ";" ";" ";"10-14 let";149;154
-" ";" ";" ";"15-19 let";350;226
-" ";" ";" ";"20-24 let";1899;600
-" ";" ";" ";"25-29 let";1858;679
-" ";" ";" ";"30-34 let";1447;539
-" ";" ";" ";"35-39 let";1193;407
-" ";" ";" ";"40-44 let";1015;330
-" ";" ";" ";"45-49 let";924;219
-" ";" ";" ";"50-54 let";643;195
-" ";" ";" ";"55-59 let";399;195
-" ";" ";" ";"60-64 let";221;131
-" ";" ";" ";"65-69 let";146;111
-" ";" ";" ";"70-74 let";64;65
-" ";" ";" ";"75-79 let";39;46
-" ";" ";" ";"80-84 let";24;30
-" ";" ";" ";"85 + let";6;11
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1523;1655
-" ";" ";" ";"0-4 let";76;80
-" ";" ";" ";"5-9 let";62;62
-" ";" ";" ";"10-14 let";85;74
-" ";" ";" ";"15-19 let";102;99
-" ";" ";" ";"20-24 let";121;141
-" ";" ";" ";"25-29 let";188;255
-" ";" ";" ";"30-34 let";179;218
-" ";" ";" ";"35-39 let";119;155
-" ";" ";" ";"40-44 let";128;114
-" ";" ";" ";"45-49 let";108;63
-" ";" ";" ";"50-54 let";84;86
-" ";" ";" ";"55-59 let";96;110
-" ";" ";" ";"60-64 let";68;77
-" ";" ";" ";"65-69 let";58;62
-" ";" ";" ";"70-74 let";31;31
-" ";" ";" ";"75-79 let";10;18
-" ";" ";" ";"80-84 let";4;9
-" ";" ";" ";"85 + let";4;1
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";9173;2592
-" ";" ";" ";"0-4 let";105;87
-" ";" ";" ";"5-9 let";76;80
-" ";" ";" ";"10-14 let";64;80
-" ";" ";" ";"15-19 let";248;127
-" ";" ";" ";"20-24 let";1778;459
-" ";" ";" ";"25-29 let";1670;424
-" ";" ";" ";"30-34 let";1268;321
-" ";" ";" ";"35-39 let";1074;252
-" ";" ";" ";"40-44 let";887;216
-" ";" ";" ";"45-49 let";816;156
-" ";" ";" ";"50-54 let";559;109
-" ";" ";" ";"55-59 let";303;85
-" ";" ";" ";"60-64 let";153;54
-" ";" ";" ";"65-69 let";88;49
-" ";" ";" ";"70-74 let";33;34
-" ";" ";" ";"75-79 let";29;28
-" ";" ";" ";"80-84 let";20;21
-" ";" ";" ";"85 + let";2;10
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";10696;4247
+" ";" ";" ";"Državljani Republike Slovenije";1523;1655
+" ";" ";" ";"Tuji državljani";9173;2592
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";181;167
+" ";" ";" ";"Državljani Republike Slovenije";76;80
+" ";" ";" ";"Tuji državljani";105;87
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";138;142
+" ";" ";" ";"Državljani Republike Slovenije";62;62
+" ";" ";" ";"Tuji državljani";76;80
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";149;154
+" ";" ";" ";"Državljani Republike Slovenije";85;74
+" ";" ";" ";"Tuji državljani";64;80
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";350;226
+" ";" ";" ";"Državljani Republike Slovenije";102;99
+" ";" ";" ";"Tuji državljani";248;127
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";1899;600
+" ";" ";" ";"Državljani Republike Slovenije";121;141
+" ";" ";" ";"Tuji državljani";1778;459
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1858;679
+" ";" ";" ";"Državljani Republike Slovenije";188;255
+" ";" ";" ";"Tuji državljani";1670;424
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1447;539
+" ";" ";" ";"Državljani Republike Slovenije";179;218
+" ";" ";" ";"Tuji državljani";1268;321
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";1193;407
+" ";" ";" ";"Državljani Republike Slovenije";119;155
+" ";" ";" ";"Tuji državljani";1074;252
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";1015;330
+" ";" ";" ";"Državljani Republike Slovenije";128;114
+" ";" ";" ";"Tuji državljani";887;216
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";924;219
+" ";" ";" ";"Državljani Republike Slovenije";108;63
+" ";" ";" ";"Tuji državljani";816;156
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";643;195
+" ";" ";" ";"Državljani Republike Slovenije";84;86
+" ";" ";" ";"Tuji državljani";559;109
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";399;195
+" ";" ";" ";"Državljani Republike Slovenije";96;110
+" ";" ";" ";"Tuji državljani";303;85
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";221;131
+" ";" ";" ";"Državljani Republike Slovenije";68;77
+" ";" ";" ";"Tuji državljani";153;54
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";146;111
+" ";" ";" ";"Državljani Republike Slovenije";58;62
+" ";" ";" ";"Tuji državljani";88;49
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";64;65
+" ";" ";" ";"Državljani Republike Slovenije";31;31
+" ";" ";" ";"Tuji državljani";33;34
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";39;46
+" ";" ";" ";"Državljani Republike Slovenije";10;18
+" ";" ";" ";"Tuji državljani";29;28
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";24;30
+" ";" ";" ";"Državljani Republike Slovenije";4;9
+" ";" ";" ";"Tuji državljani";20;21
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";6;11
+" ";" ";" ";"Državljani Republike Slovenije";4;1
+" ";" ";" ";"Tuji državljani";2;10
 " ";"2008"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";8190;3919
-" ";" ";" ";"0-4 let";108;94
-" ";" ";" ";"5-9 let";139;146
-" ";" ";" ";"10-14 let";168;136
-" ";" ";" ";"15-19 let";201;185
-" ";" ";" ";"20-24 let";881;334
-" ";" ";" ";"25-29 let";1148;511
-" ";" ";" ";"30-34 let";1000;509
-" ";" ";" ";"35-39 let";1078;408
-" ";" ";" ";"40-44 let";984;257
-" ";" ";" ";"45-49 let";825;224
-" ";" ";" ";"50-54 let";567;206
-" ";" ";" ";"55-59 let";399;314
-" ";" ";" ";"60-64 let";307;220
-" ";" ";" ";"65-69 let";195;151
-" ";" ";" ";"70-74 let";104;115
-" ";" ";" ";"75-79 let";57;57
-" ";" ";" ";"80-84 let";15;33
-" ";" ";" ";"85 + let";14;19
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";2316;2450
-" ";" ";" ";"0-4 let";58;61
-" ";" ";" ";"5-9 let";80;79
-" ";" ";" ";"10-14 let";123;91
-" ";" ";" ";"15-19 let";96;110
-" ";" ";" ";"20-24 let";111;128
-" ";" ";" ";"25-29 let";184;269
-" ";" ";" ";"30-34 let";240;275
-" ";" ";" ";"35-39 let";230;264
-" ";" ";" ";"40-44 let";213;163
-" ";" ";" ";"45-49 let";165;139
-" ";" ";" ";"50-54 let";152;156
-" ";" ";" ";"55-59 let";201;263
-" ";" ";" ";"60-64 let";193;181
-" ";" ";" ";"65-69 let";142;122
-" ";" ";" ";"70-74 let";73;81
-" ";" ";" ";"75-79 let";40;37
-" ";" ";" ";"80-84 let";7;23
-" ";" ";" ";"85 + let";8;8
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";5874;1469
-" ";" ";" ";"0-4 let";50;33
-" ";" ";" ";"5-9 let";59;67
-" ";" ";" ";"10-14 let";45;45
-" ";" ";" ";"15-19 let";105;75
-" ";" ";" ";"20-24 let";770;206
-" ";" ";" ";"25-29 let";964;242
-" ";" ";" ";"30-34 let";760;234
-" ";" ";" ";"35-39 let";848;144
-" ";" ";" ";"40-44 let";771;94
-" ";" ";" ";"45-49 let";660;85
-" ";" ";" ";"50-54 let";415;50
-" ";" ";" ";"55-59 let";198;51
-" ";" ";" ";"60-64 let";114;39
-" ";" ";" ";"65-69 let";53;29
-" ";" ";" ";"70-74 let";31;34
-" ";" ";" ";"75-79 let";17;20
-" ";" ";" ";"80-84 let";8;10
-" ";" ";" ";"85 + let";6;11
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";8190;3919
+" ";" ";" ";"Državljani Republike Slovenije";2316;2450
+" ";" ";" ";"Tuji državljani";5874;1469
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";108;94
+" ";" ";" ";"Državljani Republike Slovenije";58;61
+" ";" ";" ";"Tuji državljani";50;33
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";139;146
+" ";" ";" ";"Državljani Republike Slovenije";80;79
+" ";" ";" ";"Tuji državljani";59;67
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";168;136
+" ";" ";" ";"Državljani Republike Slovenije";123;91
+" ";" ";" ";"Tuji državljani";45;45
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";201;185
+" ";" ";" ";"Državljani Republike Slovenije";96;110
+" ";" ";" ";"Tuji državljani";105;75
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";881;334
+" ";" ";" ";"Državljani Republike Slovenije";111;128
+" ";" ";" ";"Tuji državljani";770;206
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1148;511
+" ";" ";" ";"Državljani Republike Slovenije";184;269
+" ";" ";" ";"Tuji državljani";964;242
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1000;509
+" ";" ";" ";"Državljani Republike Slovenije";240;275
+" ";" ";" ";"Tuji državljani";760;234
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";1078;408
+" ";" ";" ";"Državljani Republike Slovenije";230;264
+" ";" ";" ";"Tuji državljani";848;144
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";984;257
+" ";" ";" ";"Državljani Republike Slovenije";213;163
+" ";" ";" ";"Tuji državljani";771;94
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";825;224
+" ";" ";" ";"Državljani Republike Slovenije";165;139
+" ";" ";" ";"Tuji državljani";660;85
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";567;206
+" ";" ";" ";"Državljani Republike Slovenije";152;156
+" ";" ";" ";"Tuji državljani";415;50
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";399;314
+" ";" ";" ";"Državljani Republike Slovenije";201;263
+" ";" ";" ";"Tuji državljani";198;51
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";307;220
+" ";" ";" ";"Državljani Republike Slovenije";193;181
+" ";" ";" ";"Tuji državljani";114;39
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";195;151
+" ";" ";" ";"Državljani Republike Slovenije";142;122
+" ";" ";" ";"Tuji državljani";53;29
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";104;115
+" ";" ";" ";"Državljani Republike Slovenije";73;81
+" ";" ";" ";"Tuji državljani";31;34
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";57;57
+" ";" ";" ";"Državljani Republike Slovenije";40;37
+" ";" ";" ";"Tuji državljani";17;20
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";15;33
+" ";" ";" ";"Državljani Republike Slovenije";7;23
+" ";" ";" ";"Tuji državljani";8;10
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";14;19
+" ";" ";" ";"Državljani Republike Slovenije";8;8
+" ";" ";" ";"Tuji državljani";6;11
 " ";"2009"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";14816;3972
-" ";" ";" ";"0-4 let";169;141
-" ";" ";" ";"5-9 let";195;171
-" ";" ";" ";"10-14 let";173;151
-" ";" ";" ";"15-19 let";294;171
-" ";" ";" ";"20-24 let";2358;509
-" ";" ";" ";"25-29 let";2779;615
-" ";" ";" ";"30-34 let";2168;540
-" ";" ";" ";"35-39 let";1791;383
-" ";" ";" ";"40-44 let";1654;283
-" ";" ";" ";"45-49 let";1330;207
-" ";" ";" ";"50-54 let";861;175
-" ";" ";" ";"55-59 let";443;154
-" ";" ";" ";"60-64 let";226;148
-" ";" ";" ";"65-69 let";160;90
-" ";" ";" ";"70-74 let";98;82
-" ";" ";" ";"75-79 let";54;61
-" ";" ";" ";"80-84 let";29;50
-" ";" ";" ";"85 + let";34;41
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";1984;1733
-" ";" ";" ";"0-4 let";85;75
-" ";" ";" ";"5-9 let";82;78
-" ";" ";" ";"10-14 let";63;76
-" ";" ";" ";"15-19 let";58;53
-" ";" ";" ";"20-24 let";126;142
-" ";" ";" ";"25-29 let";220;229
-" ";" ";" ";"30-34 let";277;215
-" ";" ";" ";"35-39 let";189;164
-" ";" ";" ";"40-44 let";190;118
-" ";" ";" ";"45-49 let";130;91
-" ";" ";" ";"50-54 let";119;79
-" ";" ";" ";"55-59 let";116;101
-" ";" ";" ";"60-64 let";104;97
-" ";" ";" ";"65-69 let";79;56
-" ";" ";" ";"70-74 let";71;52
-" ";" ";" ";"75-79 let";38;45
-" ";" ";" ";"80-84 let";20;34
-" ";" ";" ";"85 + let";17;28
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";12832;2239
-" ";" ";" ";"0-4 let";84;66
-" ";" ";" ";"5-9 let";113;93
-" ";" ";" ";"10-14 let";110;75
-" ";" ";" ";"15-19 let";236;118
-" ";" ";" ";"20-24 let";2232;367
-" ";" ";" ";"25-29 let";2559;386
-" ";" ";" ";"30-34 let";1891;325
-" ";" ";" ";"35-39 let";1602;219
-" ";" ";" ";"40-44 let";1464;165
-" ";" ";" ";"45-49 let";1200;116
-" ";" ";" ";"50-54 let";742;96
-" ";" ";" ";"55-59 let";327;53
-" ";" ";" ";"60-64 let";122;51
-" ";" ";" ";"65-69 let";81;34
-" ";" ";" ";"70-74 let";27;30
-" ";" ";" ";"75-79 let";16;16
-" ";" ";" ";"80-84 let";9;16
-" ";" ";" ";"85 + let";17;13
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";14816;3972
+" ";" ";" ";"Državljani Republike Slovenije";1984;1733
+" ";" ";" ";"Tuji državljani";12832;2239
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";169;141
+" ";" ";" ";"Državljani Republike Slovenije";85;75
+" ";" ";" ";"Tuji državljani";84;66
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";195;171
+" ";" ";" ";"Državljani Republike Slovenije";82;78
+" ";" ";" ";"Tuji državljani";113;93
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";173;151
+" ";" ";" ";"Državljani Republike Slovenije";63;76
+" ";" ";" ";"Tuji državljani";110;75
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";294;171
+" ";" ";" ";"Državljani Republike Slovenije";58;53
+" ";" ";" ";"Tuji državljani";236;118
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";2358;509
+" ";" ";" ";"Državljani Republike Slovenije";126;142
+" ";" ";" ";"Tuji državljani";2232;367
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";2779;615
+" ";" ";" ";"Državljani Republike Slovenije";220;229
+" ";" ";" ";"Tuji državljani";2559;386
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";2168;540
+" ";" ";" ";"Državljani Republike Slovenije";277;215
+" ";" ";" ";"Tuji državljani";1891;325
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";1791;383
+" ";" ";" ";"Državljani Republike Slovenije";189;164
+" ";" ";" ";"Tuji državljani";1602;219
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";1654;283
+" ";" ";" ";"Državljani Republike Slovenije";190;118
+" ";" ";" ";"Tuji državljani";1464;165
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";1330;207
+" ";" ";" ";"Državljani Republike Slovenije";130;91
+" ";" ";" ";"Tuji državljani";1200;116
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";861;175
+" ";" ";" ";"Državljani Republike Slovenije";119;79
+" ";" ";" ";"Tuji državljani";742;96
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";443;154
+" ";" ";" ";"Državljani Republike Slovenije";116;101
+" ";" ";" ";"Tuji državljani";327;53
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";226;148
+" ";" ";" ";"Državljani Republike Slovenije";104;97
+" ";" ";" ";"Tuji državljani";122;51
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";160;90
+" ";" ";" ";"Državljani Republike Slovenije";79;56
+" ";" ";" ";"Tuji državljani";81;34
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";98;82
+" ";" ";" ";"Državljani Republike Slovenije";71;52
+" ";" ";" ";"Tuji državljani";27;30
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";54;61
+" ";" ";" ";"Državljani Republike Slovenije";38;45
+" ";" ";" ";"Tuji državljani";16;16
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";29;50
+" ";" ";" ";"Državljani Republike Slovenije";20;34
+" ";" ";" ";"Tuji državljani";9;16
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";34;41
+" ";" ";" ";"Državljani Republike Slovenije";17;28
+" ";" ";" ";"Tuji državljani";17;13
 " ";"2010"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";11586;4351
-" ";" ";" ";"0-4 let";278;275
-" ";" ";" ";"5-9 let";185;160
-" ";" ";" ";"10-14 let";175;113
-" ";" ";" ";"15-19 let";227;177
-" ";" ";" ";"20-24 let";1549;488
-" ";" ";" ";"25-29 let";2029;634
-" ";" ";" ";"30-34 let";1636;550
-" ";" ";" ";"35-39 let";1382;418
-" ";" ";" ";"40-44 let";1229;305
-" ";" ";" ";"45-49 let";967;255
-" ";" ";" ";"50-54 let";730;225
-" ";" ";" ";"55-59 let";442;209
-" ";" ";" ";"60-64 let";353;156
-" ";" ";" ";"65-69 let";183;115
-" ";" ";" ";"70-74 let";100;84
-" ";" ";" ";"75-79 let";56;68
-" ";" ";" ";"80-84 let";35;54
-" ";" ";" ";"85 + let";30;65
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";2064;1841
-" ";" ";" ";"0-4 let";178;163
-" ";" ";" ";"5-9 let";85;81
-" ";" ";" ";"10-14 let";80;46
-" ";" ";" ";"15-19 let";59;58
-" ";" ";" ";"20-24 let";110;87
-" ";" ";" ";"25-29 let";187;226
-" ";" ";" ";"30-34 let";252;241
-" ";" ";" ";"35-39 let";228;188
-" ";" ";" ";"40-44 let";167;124
-" ";" ";" ";"45-49 let";158;103
-" ";" ";" ";"50-54 let";121;95
-" ";" ";" ";"55-59 let";121;104
-" ";" ";" ";"60-64 let";127;97
-" ";" ";" ";"65-69 let";66;67
-" ";" ";" ";"70-74 let";48;48
-" ";" ";" ";"75-79 let";37;40
-" ";" ";" ";"80-84 let";22;29
-" ";" ";" ";"85 + let";18;44
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";9522;2510
-" ";" ";" ";"0-4 let";100;112
-" ";" ";" ";"5-9 let";100;79
-" ";" ";" ";"10-14 let";95;67
-" ";" ";" ";"15-19 let";168;119
-" ";" ";" ";"20-24 let";1439;401
-" ";" ";" ";"25-29 let";1842;408
-" ";" ";" ";"30-34 let";1384;309
-" ";" ";" ";"35-39 let";1154;230
-" ";" ";" ";"40-44 let";1062;181
-" ";" ";" ";"45-49 let";809;152
-" ";" ";" ";"50-54 let";609;130
-" ";" ";" ";"55-59 let";321;105
-" ";" ";" ";"60-64 let";226;59
-" ";" ";" ";"65-69 let";117;48
-" ";" ";" ";"70-74 let";52;36
-" ";" ";" ";"75-79 let";19;28
-" ";" ";" ";"80-84 let";13;25
-" ";" ";" ";"85 + let";12;21
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";11586;4351
+" ";" ";" ";"Državljani Republike Slovenije";2064;1841
+" ";" ";" ";"Tuji državljani";9522;2510
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";278;275
+" ";" ";" ";"Državljani Republike Slovenije";178;163
+" ";" ";" ";"Tuji državljani";100;112
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";185;160
+" ";" ";" ";"Državljani Republike Slovenije";85;81
+" ";" ";" ";"Tuji državljani";100;79
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";175;113
+" ";" ";" ";"Državljani Republike Slovenije";80;46
+" ";" ";" ";"Tuji državljani";95;67
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";227;177
+" ";" ";" ";"Državljani Republike Slovenije";59;58
+" ";" ";" ";"Tuji državljani";168;119
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";1549;488
+" ";" ";" ";"Državljani Republike Slovenije";110;87
+" ";" ";" ";"Tuji državljani";1439;401
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";2029;634
+" ";" ";" ";"Državljani Republike Slovenije";187;226
+" ";" ";" ";"Tuji državljani";1842;408
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1636;550
+" ";" ";" ";"Državljani Republike Slovenije";252;241
+" ";" ";" ";"Tuji državljani";1384;309
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";1382;418
+" ";" ";" ";"Državljani Republike Slovenije";228;188
+" ";" ";" ";"Tuji državljani";1154;230
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";1229;305
+" ";" ";" ";"Državljani Republike Slovenije";167;124
+" ";" ";" ";"Tuji državljani";1062;181
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";967;255
+" ";" ";" ";"Državljani Republike Slovenije";158;103
+" ";" ";" ";"Tuji državljani";809;152
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";730;225
+" ";" ";" ";"Državljani Republike Slovenije";121;95
+" ";" ";" ";"Tuji državljani";609;130
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";442;209
+" ";" ";" ";"Državljani Republike Slovenije";121;104
+" ";" ";" ";"Tuji državljani";321;105
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";353;156
+" ";" ";" ";"Državljani Republike Slovenije";127;97
+" ";" ";" ";"Tuji državljani";226;59
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";183;115
+" ";" ";" ";"Državljani Republike Slovenije";66;67
+" ";" ";" ";"Tuji državljani";117;48
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";100;84
+" ";" ";" ";"Državljani Republike Slovenije";48;48
+" ";" ";" ";"Tuji državljani";52;36
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";56;68
+" ";" ";" ";"Državljani Republike Slovenije";37;40
+" ";" ";" ";"Tuji državljani";19;28
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";35;54
+" ";" ";" ";"Državljani Republike Slovenije";22;29
+" ";" ";" ";"Tuji državljani";13;25
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";30;65
+" ";" ";" ";"Državljani Republike Slovenije";18;44
+" ";" ";" ";"Tuji državljani";12;21
 " ";"2011"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";8151;3873
-" ";" ";" ";"0-4 let";227;225
-" ";" ";" ";"5-9 let";182;137
-" ";" ";" ";"10-14 let";126;121
-" ";" ";" ";"15-19 let";148;158
-" ";" ";" ";"20-24 let";837;386
-" ";" ";" ";"25-29 let";1159;532
-" ";" ";" ";"30-34 let";1107;522
-" ";" ";" ";"35-39 let";906;399
-" ";" ";" ";"40-44 let";863;269
-" ";" ";" ";"45-49 let";747;222
-" ";" ";" ";"50-54 let";578;203
-" ";" ";" ";"55-59 let";458;168
-" ";" ";" ";"60-64 let";378;184
-" ";" ";" ";"65-69 let";218;101
-" ";" ";" ";"70-74 let";100;94
-" ";" ";" ";"75-79 let";57;59
-" ";" ";" ";"80-84 let";34;44
-" ";" ";" ";"85 + let";26;49
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";2510;2169
-" ";" ";" ";"0-4 let";170;153
-" ";" ";" ";"5-9 let";111;86
-" ";" ";" ";"10-14 let";73;81
-" ";" ";" ";"15-19 let";77;73
-" ";" ";" ";"20-24 let";144;124
-" ";" ";" ";"25-29 let";213;244
-" ";" ";" ";"30-34 let";287;304
-" ";" ";" ";"35-39 let";264;230
-" ";" ";" ";"40-44 let";225;141
-" ";" ";" ";"45-49 let";198;124
-" ";" ";" ";"50-54 let";173;110
-" ";" ";" ";"55-59 let";168;114
-" ";" ";" ";"60-64 let";157;147
-" ";" ";" ";"65-69 let";112;66
-" ";" ";" ";"70-74 let";62;66
-" ";" ";" ";"75-79 let";36;45
-" ";" ";" ";"80-84 let";26;27
-" ";" ";" ";"85 + let";14;34
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";5641;1704
-" ";" ";" ";"0-4 let";57;72
-" ";" ";" ";"5-9 let";71;51
-" ";" ";" ";"10-14 let";53;40
-" ";" ";" ";"15-19 let";71;85
-" ";" ";" ";"20-24 let";693;262
-" ";" ";" ";"25-29 let";946;288
-" ";" ";" ";"30-34 let";820;218
-" ";" ";" ";"35-39 let";642;169
-" ";" ";" ";"40-44 let";638;128
-" ";" ";" ";"45-49 let";549;98
-" ";" ";" ";"50-54 let";405;93
-" ";" ";" ";"55-59 let";290;54
-" ";" ";" ";"60-64 let";221;37
-" ";" ";" ";"65-69 let";106;35
-" ";" ";" ";"70-74 let";38;28
-" ";" ";" ";"75-79 let";21;14
-" ";" ";" ";"80-84 let";8;17
-" ";" ";" ";"85 + let";12;15
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";8151;3873
+" ";" ";" ";"Državljani Republike Slovenije";2510;2169
+" ";" ";" ";"Tuji državljani";5641;1704
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";227;225
+" ";" ";" ";"Državljani Republike Slovenije";170;153
+" ";" ";" ";"Tuji državljani";57;72
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";182;137
+" ";" ";" ";"Državljani Republike Slovenije";111;86
+" ";" ";" ";"Tuji državljani";71;51
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";126;121
+" ";" ";" ";"Državljani Republike Slovenije";73;81
+" ";" ";" ";"Tuji državljani";53;40
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";148;158
+" ";" ";" ";"Državljani Republike Slovenije";77;73
+" ";" ";" ";"Tuji državljani";71;85
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";837;386
+" ";" ";" ";"Državljani Republike Slovenije";144;124
+" ";" ";" ";"Tuji državljani";693;262
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1159;532
+" ";" ";" ";"Državljani Republike Slovenije";213;244
+" ";" ";" ";"Tuji državljani";946;288
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1107;522
+" ";" ";" ";"Državljani Republike Slovenije";287;304
+" ";" ";" ";"Tuji državljani";820;218
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";906;399
+" ";" ";" ";"Državljani Republike Slovenije";264;230
+" ";" ";" ";"Tuji državljani";642;169
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";863;269
+" ";" ";" ";"Državljani Republike Slovenije";225;141
+" ";" ";" ";"Tuji državljani";638;128
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";747;222
+" ";" ";" ";"Državljani Republike Slovenije";198;124
+" ";" ";" ";"Tuji državljani";549;98
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";578;203
+" ";" ";" ";"Državljani Republike Slovenije";173;110
+" ";" ";" ";"Tuji državljani";405;93
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";458;168
+" ";" ";" ";"Državljani Republike Slovenije";168;114
+" ";" ";" ";"Tuji državljani";290;54
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";378;184
+" ";" ";" ";"Državljani Republike Slovenije";157;147
+" ";" ";" ";"Tuji državljani";221;37
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";218;101
+" ";" ";" ";"Državljani Republike Slovenije";112;66
+" ";" ";" ";"Tuji državljani";106;35
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";100;94
+" ";" ";" ";"Državljani Republike Slovenije";62;66
+" ";" ";" ";"Tuji državljani";38;28
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";57;59
+" ";" ";" ";"Državljani Republike Slovenije";36;45
+" ";" ";" ";"Tuji državljani";21;14
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";34;44
+" ";" ";" ";"Državljani Republike Slovenije";26;27
+" ";" ";" ";"Tuji državljani";8;17
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";26;49
+" ";" ";" ";"Državljani Republike Slovenije";14;34
+" ";" ";" ";"Tuji državljani";12;15
 " ";"2012"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";8699;5679
-" ";" ";" ";"0-4 let";265;253
-" ";" ";" ";"5-9 let";240;227
-" ";" ";" ";"10-14 let";197;184
-" ";" ";" ";"15-19 let";266;213
-" ";" ";" ";"20-24 let";656;436
-" ";" ";" ";"25-29 let";1129;692
-" ";" ";" ";"30-34 let";1179;720
-" ";" ";" ";"35-39 let";1002;674
-" ";" ";" ";"40-44 let";861;481
-" ";" ";" ";"45-49 let";844;379
-" ";" ";" ";"50-54 let";586;289
-" ";" ";" ";"55-59 let";480;302
-" ";" ";" ";"60-64 let";447;338
-" ";" ";" ";"65-69 let";281;167
-" ";" ";" ";"70-74 let";133;127
-" ";" ";" ";"75-79 let";74;85
-" ";" ";" ";"80-84 let";42;61
-" ";" ";" ";"85 + let";17;51
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";4214;3977
-" ";" ";" ";"0-4 let";203;185
-" ";" ";" ";"5-9 let";182;169
-" ";" ";" ";"10-14 let";148;137
-" ";" ";" ";"15-19 let";182;157
-" ";" ";" ";"20-24 let";215;214
-" ";" ";" ";"25-29 let";404;398
-" ";" ";" ";"30-34 let";524;503
-" ";" ";" ";"35-39 let";468;480
-" ";" ";" ";"40-44 let";372;328
-" ";" ";" ";"45-49 let";363;271
-" ";" ";" ";"50-54 let";270;200
-" ";" ";" ";"55-59 let";227;242
-" ";" ";" ";"60-64 let";255;301
-" ";" ";" ";"65-69 let";190;141
-" ";" ";" ";"70-74 let";95;106
-" ";" ";" ";"75-79 let";66;66
-" ";" ";" ";"80-84 let";37;45
-" ";" ";" ";"85 + let";13;34
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";4485;1702
-" ";" ";" ";"0-4 let";62;68
-" ";" ";" ";"5-9 let";58;58
-" ";" ";" ";"10-14 let";49;47
-" ";" ";" ";"15-19 let";84;56
-" ";" ";" ";"20-24 let";441;222
-" ";" ";" ";"25-29 let";725;294
-" ";" ";" ";"30-34 let";655;217
-" ";" ";" ";"35-39 let";534;194
-" ";" ";" ";"40-44 let";489;153
-" ";" ";" ";"45-49 let";481;108
-" ";" ";" ";"50-54 let";316;89
-" ";" ";" ";"55-59 let";253;60
-" ";" ";" ";"60-64 let";192;37
-" ";" ";" ";"65-69 let";91;26
-" ";" ";" ";"70-74 let";38;21
-" ";" ";" ";"75-79 let";8;19
-" ";" ";" ";"80-84 let";5;16
-" ";" ";" ";"85 + let";4;17
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";8699;5679
+" ";" ";" ";"Državljani Republike Slovenije";4214;3977
+" ";" ";" ";"Tuji državljani";4485;1702
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";265;253
+" ";" ";" ";"Državljani Republike Slovenije";203;185
+" ";" ";" ";"Tuji državljani";62;68
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";240;227
+" ";" ";" ";"Državljani Republike Slovenije";182;169
+" ";" ";" ";"Tuji državljani";58;58
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";197;184
+" ";" ";" ";"Državljani Republike Slovenije";148;137
+" ";" ";" ";"Tuji državljani";49;47
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";266;213
+" ";" ";" ";"Državljani Republike Slovenije";182;157
+" ";" ";" ";"Tuji državljani";84;56
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";656;436
+" ";" ";" ";"Državljani Republike Slovenije";215;214
+" ";" ";" ";"Tuji državljani";441;222
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1129;692
+" ";" ";" ";"Državljani Republike Slovenije";404;398
+" ";" ";" ";"Tuji državljani";725;294
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1179;720
+" ";" ";" ";"Državljani Republike Slovenije";524;503
+" ";" ";" ";"Tuji državljani";655;217
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";1002;674
+" ";" ";" ";"Državljani Republike Slovenije";468;480
+" ";" ";" ";"Tuji državljani";534;194
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";861;481
+" ";" ";" ";"Državljani Republike Slovenije";372;328
+" ";" ";" ";"Tuji državljani";489;153
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";844;379
+" ";" ";" ";"Državljani Republike Slovenije";363;271
+" ";" ";" ";"Tuji državljani";481;108
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";586;289
+" ";" ";" ";"Državljani Republike Slovenije";270;200
+" ";" ";" ";"Tuji državljani";316;89
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";480;302
+" ";" ";" ";"Državljani Republike Slovenije";227;242
+" ";" ";" ";"Tuji državljani";253;60
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";447;338
+" ";" ";" ";"Državljani Republike Slovenije";255;301
+" ";" ";" ";"Tuji državljani";192;37
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";281;167
+" ";" ";" ";"Državljani Republike Slovenije";190;141
+" ";" ";" ";"Tuji državljani";91;26
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";133;127
+" ";" ";" ";"Državljani Republike Slovenije";95;106
+" ";" ";" ";"Tuji državljani";38;21
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";74;85
+" ";" ";" ";"Državljani Republike Slovenije";66;66
+" ";" ";" ";"Tuji državljani";8;19
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";42;61
+" ";" ";" ";"Državljani Republike Slovenije";37;45
+" ";" ";" ";"Tuji državljani";5;16
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";17;51
+" ";" ";" ";"Državljani Republike Slovenije";13;34
+" ";" ";" ";"Tuji državljani";4;17
 " ";"2013"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";7902;5482
-" ";" ";" ";"0-4 let";312;300
-" ";" ";" ";"5-9 let";259;257
-" ";" ";" ";"10-14 let";198;181
-" ";" ";" ";"15-19 let";222;190
-" ";" ";" ";"20-24 let";612;484
-" ";" ";" ";"25-29 let";1057;777
-" ";" ";" ";"30-34 let";1072;759
-" ";" ";" ";"35-39 let";967;591
-" ";" ";" ";"40-44 let";750;432
-" ";" ";" ";"45-49 let";634;334
-" ";" ";" ";"50-54 let";524;276
-" ";" ";" ";"55-59 let";462;235
-" ";" ";" ";"60-64 let";385;286
-" ";" ";" ";"65-69 let";191;141
-" ";" ";" ";"70-74 let";143;96
-" ";" ";" ";"75-79 let";62;61
-" ";" ";" ";"80-84 let";34;42
-" ";" ";" ";"85 + let";18;40
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";4059;3730
-" ";" ";" ";"0-4 let";238;238
-" ";" ";" ";"5-9 let";182;198
-" ";" ";" ";"10-14 let";145;130
-" ";" ";" ";"15-19 let";146;118
-" ";" ";" ";"20-24 let";276;234
-" ";" ";" ";"25-29 let";479;466
-" ";" ";" ";"30-34 let";516;517
-" ";" ";" ";"35-39 let";484;410
-" ";" ";" ";"40-44 let";360;288
-" ";" ";" ";"45-49 let";286;228
-" ";" ";" ";"50-54 let";249;204
-" ";" ";" ";"55-59 let";221;178
-" ";" ";" ";"60-64 let";188;237
-" ";" ";" ";"65-69 let";122;117
-" ";" ";" ";"70-74 let";91;66
-" ";" ";" ";"75-79 let";38;43
-" ";" ";" ";"80-84 let";24;29
-" ";" ";" ";"85 + let";14;29
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";3843;1752
-" ";" ";" ";"0-4 let";74;62
-" ";" ";" ";"5-9 let";77;59
-" ";" ";" ";"10-14 let";53;51
-" ";" ";" ";"15-19 let";76;72
-" ";" ";" ";"20-24 let";336;250
-" ";" ";" ";"25-29 let";578;311
-" ";" ";" ";"30-34 let";556;242
-" ";" ";" ";"35-39 let";483;181
-" ";" ";" ";"40-44 let";390;144
-" ";" ";" ";"45-49 let";348;106
-" ";" ";" ";"50-54 let";275;72
-" ";" ";" ";"55-59 let";241;57
-" ";" ";" ";"60-64 let";197;49
-" ";" ";" ";"65-69 let";69;24
-" ";" ";" ";"70-74 let";52;30
-" ";" ";" ";"75-79 let";24;18
-" ";" ";" ";"80-84 let";10;13
-" ";" ";" ";"85 + let";4;11
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";7902;5482
+" ";" ";" ";"Državljani Republike Slovenije";4059;3730
+" ";" ";" ";"Tuji državljani";3843;1752
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";312;300
+" ";" ";" ";"Državljani Republike Slovenije";238;238
+" ";" ";" ";"Tuji državljani";74;62
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";259;257
+" ";" ";" ";"Državljani Republike Slovenije";182;198
+" ";" ";" ";"Tuji državljani";77;59
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";198;181
+" ";" ";" ";"Državljani Republike Slovenije";145;130
+" ";" ";" ";"Tuji državljani";53;51
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";222;190
+" ";" ";" ";"Državljani Republike Slovenije";146;118
+" ";" ";" ";"Tuji državljani";76;72
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";612;484
+" ";" ";" ";"Državljani Republike Slovenije";276;234
+" ";" ";" ";"Tuji državljani";336;250
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1057;777
+" ";" ";" ";"Državljani Republike Slovenije";479;466
+" ";" ";" ";"Tuji državljani";578;311
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1072;759
+" ";" ";" ";"Državljani Republike Slovenije";516;517
+" ";" ";" ";"Tuji državljani";556;242
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";967;591
+" ";" ";" ";"Državljani Republike Slovenije";484;410
+" ";" ";" ";"Tuji državljani";483;181
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";750;432
+" ";" ";" ";"Državljani Republike Slovenije";360;288
+" ";" ";" ";"Tuji državljani";390;144
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";634;334
+" ";" ";" ";"Državljani Republike Slovenije";286;228
+" ";" ";" ";"Tuji državljani";348;106
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";524;276
+" ";" ";" ";"Državljani Republike Slovenije";249;204
+" ";" ";" ";"Tuji državljani";275;72
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";462;235
+" ";" ";" ";"Državljani Republike Slovenije";221;178
+" ";" ";" ";"Tuji državljani";241;57
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";385;286
+" ";" ";" ";"Državljani Republike Slovenije";188;237
+" ";" ";" ";"Tuji državljani";197;49
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";191;141
+" ";" ";" ";"Državljani Republike Slovenije";122;117
+" ";" ";" ";"Tuji državljani";69;24
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";143;96
+" ";" ";" ";"Državljani Republike Slovenije";91;66
+" ";" ";" ";"Tuji državljani";52;30
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";62;61
+" ";" ";" ";"Državljani Republike Slovenije";38;43
+" ";" ";" ";"Tuji državljani";24;18
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";34;42
+" ";" ";" ";"Državljani Republike Slovenije";24;29
+" ";" ";" ";"Tuji državljani";10;13
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";18;40
+" ";" ";" ";"Državljani Republike Slovenije";14;29
+" ";" ";" ";"Tuji državljani";4;11
 " ";"2014"
-" ";" ";"Selitve - SKUPAJ"
-" ";" ";" ";"Starostne skupine - SKUPAJ";8609;5727
-" ";" ";" ";"0-4 let";389;337
-" ";" ";" ";"5-9 let";315;302
-" ";" ";" ";"10-14 let";246;212
-" ";" ";" ";"15-19 let";231;195
-" ";" ";" ";"20-24 let";642;597
-" ";" ";" ";"25-29 let";1214;939
-" ";" ";" ";"30-34 let";1181;829
-" ";" ";" ";"35-39 let";1001;574
-" ";" ";" ";"40-44 let";812;428
-" ";" ";" ";"45-49 let";715;312
-" ";" ";" ";"50-54 let";520;257
-" ";" ";" ";"55-59 let";439;183
-" ";" ";" ";"60-64 let";414;191
-" ";" ";" ";"65-69 let";212;122
-" ";" ";" ";"70-74 let";145;99
-" ";" ";" ";"75-79 let";67;64
-" ";" ";" ";"80-84 let";38;48
-" ";" ";" ";"85 + let";28;38
-" ";" ";"Državljani Republike Slovenije"
-" ";" ";" ";"Starostne skupine - SKUPAJ";4376;3753
-" ";" ";" ";"0-4 let";300;275
-" ";" ";" ";"5-9 let";240;240
-" ";" ";" ";"10-14 let";170;149
-" ";" ";" ";"15-19 let";131;117
-" ";" ";" ";"20-24 let";292;294
-" ";" ";" ";"25-29 let";607;603
-" ";" ";" ";"30-34 let";621;549
-" ";" ";" ";"35-39 let";507;369
-" ";" ";" ";"40-44 let";375;258
-" ";" ";" ";"45-49 let";315;199
-" ";" ";" ";"50-54 let";215;162
-" ";" ";" ";"55-59 let";182;123
-" ";" ";" ";"60-64 let";172;152
-" ";" ";" ";"65-69 let";97;94
-" ";" ";" ";"70-74 let";70;76
-" ";" ";" ";"75-79 let";42;42
-" ";" ";" ";"80-84 let";22;30
-" ";" ";" ";"85 + let";18;21
-" ";" ";"Tuji državljani"
-" ";" ";" ";"Starostne skupine - SKUPAJ";4233;1974
-" ";" ";" ";"0-4 let";89;62
-" ";" ";" ";"5-9 let";75;62
-" ";" ";" ";"10-14 let";76;63
-" ";" ";" ";"15-19 let";100;78
-" ";" ";" ";"20-24 let";350;303
-" ";" ";" ";"25-29 let";607;336
-" ";" ";" ";"30-34 let";560;280
-" ";" ";" ";"35-39 let";494;205
-" ";" ";" ";"40-44 let";437;170
-" ";" ";" ";"45-49 let";400;113
-" ";" ";" ";"50-54 let";305;95
-" ";" ";" ";"55-59 let";257;60
-" ";" ";" ";"60-64 let";242;39
-" ";" ";" ";"65-69 let";115;28
-" ";" ";" ";"70-74 let";75;23
-" ";" ";" ";"75-79 let";25;22
-" ";" ";" ";"80-84 let";16;18
-" ";" ";" ";"85 + let";10;17
+" ";" ";"Starostne skupine - SKUPAJ"
+" ";" ";" ";"Selitve - SKUPAJ";8609;5727
+" ";" ";" ";"Državljani Republike Slovenije";4376;3753
+" ";" ";" ";"Tuji državljani";4233;1974
+" ";" ";"0-4 let"
+" ";" ";" ";"Selitve - SKUPAJ";389;337
+" ";" ";" ";"Državljani Republike Slovenije";300;275
+" ";" ";" ";"Tuji državljani";89;62
+" ";" ";"5-9 let"
+" ";" ";" ";"Selitve - SKUPAJ";315;302
+" ";" ";" ";"Državljani Republike Slovenije";240;240
+" ";" ";" ";"Tuji državljani";75;62
+" ";" ";"10-14 let"
+" ";" ";" ";"Selitve - SKUPAJ";246;212
+" ";" ";" ";"Državljani Republike Slovenije";170;149
+" ";" ";" ";"Tuji državljani";76;63
+" ";" ";"15-19 let"
+" ";" ";" ";"Selitve - SKUPAJ";231;195
+" ";" ";" ";"Državljani Republike Slovenije";131;117
+" ";" ";" ";"Tuji državljani";100;78
+" ";" ";"20-24 let"
+" ";" ";" ";"Selitve - SKUPAJ";642;597
+" ";" ";" ";"Državljani Republike Slovenije";292;294
+" ";" ";" ";"Tuji državljani";350;303
+" ";" ";"25-29 let"
+" ";" ";" ";"Selitve - SKUPAJ";1214;939
+" ";" ";" ";"Državljani Republike Slovenije";607;603
+" ";" ";" ";"Tuji državljani";607;336
+" ";" ";"30-34 let"
+" ";" ";" ";"Selitve - SKUPAJ";1181;829
+" ";" ";" ";"Državljani Republike Slovenije";621;549
+" ";" ";" ";"Tuji državljani";560;280
+" ";" ";"35-39 let"
+" ";" ";" ";"Selitve - SKUPAJ";1001;574
+" ";" ";" ";"Državljani Republike Slovenije";507;369
+" ";" ";" ";"Tuji državljani";494;205
+" ";" ";"40-44 let"
+" ";" ";" ";"Selitve - SKUPAJ";812;428
+" ";" ";" ";"Državljani Republike Slovenije";375;258
+" ";" ";" ";"Tuji državljani";437;170
+" ";" ";"45-49 let"
+" ";" ";" ";"Selitve - SKUPAJ";715;312
+" ";" ";" ";"Državljani Republike Slovenije";315;199
+" ";" ";" ";"Tuji državljani";400;113
+" ";" ";"50-54 let"
+" ";" ";" ";"Selitve - SKUPAJ";520;257
+" ";" ";" ";"Državljani Republike Slovenije";215;162
+" ";" ";" ";"Tuji državljani";305;95
+" ";" ";"55-59 let"
+" ";" ";" ";"Selitve - SKUPAJ";439;183
+" ";" ";" ";"Državljani Republike Slovenije";182;123
+" ";" ";" ";"Tuji državljani";257;60
+" ";" ";"60-64 let"
+" ";" ";" ";"Selitve - SKUPAJ";414;191
+" ";" ";" ";"Državljani Republike Slovenije";172;152
+" ";" ";" ";"Tuji državljani";242;39
+" ";" ";"65-69 let"
+" ";" ";" ";"Selitve - SKUPAJ";212;122
+" ";" ";" ";"Državljani Republike Slovenije";97;94
+" ";" ";" ";"Tuji državljani";115;28
+" ";" ";"70-74 let"
+" ";" ";" ";"Selitve - SKUPAJ";145;99
+" ";" ";" ";"Državljani Republike Slovenije";70;76
+" ";" ";" ";"Tuji državljani";75;23
+" ";" ";"75-79 let"
+" ";" ";" ";"Selitve - SKUPAJ";67;64
+" ";" ";" ";"Državljani Republike Slovenije";42;42
+" ";" ";" ";"Tuji državljani";25;22
+" ";" ";"80-84 let"
+" ";" ";" ";"Selitve - SKUPAJ";38;48
+" ";" ";" ";"Državljani Republike Slovenije";22;30
+" ";" ";" ";"Tuji državljani";16;18
+" ";" ";"85 + let"
+" ";" ";" ";"Selitve - SKUPAJ";28;38
+" ";" ";" ";"Državljani Republike Slovenije";18;21
+" ";" ";" ";"Tuji državljani";10;17
