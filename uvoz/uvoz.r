@@ -83,6 +83,30 @@ tidytabela1 <- p.minus.o %>% filter(starostna.skupina != "Starostne skupine - SK
 
 
 
+
+
+# Za napredno analizo:
+
+stolpcii<-c("priseljeni.ali.odseljeni","leto","starostna.skupina","državljanstvo","moski","zenske")
+
+uvozi<-function(){
+  return(read.csv2(file="podatki/za napredno analizo",
+                   skip=4,
+                   col.names=stolpcii,
+                   header=FALSE,
+                   fileEncoding = "UTF-8"))
+}
+
+tabelanapr<-uvozi()
+
+tabelanapr <- uredimo(tabelanapr, 1, 1, 1540)
+tabelanapr <- uredimo(tabelanapr, 1, 2, 76)
+tabelanapr <- uredimo(tabelanapr, 1, 3, 3)
+
+prinapr<-filter(tabelanapr,priseljeni.ali.odseljeni=="Priseljeni iz tujine")
+odsnapr<-filter(tabelanapr,priseljeni.ali.odseljeni=="Odseljeni v tujino")
+
+
 # PRISELJENI:
 ## po letih:
 pri.1995 <- razberi(1995,"leto",priseljeni)
