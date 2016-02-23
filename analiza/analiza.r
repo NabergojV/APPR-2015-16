@@ -1,6 +1,7 @@
 # 4. faza: Analiza podatkov
 
 library(mgcv)
+library(RColorBrewer)
 
 ## Priseljeni, starost 25-29 let, državljanstvo skupaj, ločeno po spolu:
 
@@ -28,7 +29,8 @@ print(mgam)
 priseljenispol <- prinapr %>% filter(starostna.skupina == "Starostne skupine - SKUPAJ") %>%
   filter(državljanstvo=="Selitve - SKUPAJ") 
 
-h <- ggplot(priseljenispol, aes(x=zenske, y=moski,color=leto)) + geom_point(size=6,colorRampPalette())
+h <- ggplot(priseljenispol, aes(x=zenske, y=moski,color=leto)) + geom_point(size=10)+ 
+                            scale_color_distiller(palette = "RdPu")
 print(h)
 
 mls2 <- loess(data = priseljenispol, moski ~ zenske)
