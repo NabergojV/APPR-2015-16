@@ -9,4 +9,5 @@ runApp("shiny")
 
 runApp("shiny2")
 
+runApp("shiny3")
 
