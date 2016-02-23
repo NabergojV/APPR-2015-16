@@ -6,11 +6,11 @@ if ("server.R" %in% dir()) {
 
 shinyServer(function(input, output){
   output$grafiregije <- renderPlot({
-    title <- "Graf"
     regijeleto <- razberi(input$izberi,"leto",tabela2)
-    ggplot(data=regijeleto,
-    aes(regija,input$izberi2))+ geom_bar(stat="identity",fill="deeppink3",size=10)+
-    coord_flip()
+    podatek <-input$izb
+    ggplot(data=regijeleto,aes(regija,podatek))+ 
+        geom_bar(stat="identity",fill="deeppink3",size=10)+
+        coord_flip()
 
   })
   
