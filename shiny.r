@@ -7,4 +7,6 @@ source("analiza/analiza.r", encoding = "UTF-8")
 
 runApp("shiny")
 
+runApp("shiny2")
+
 
