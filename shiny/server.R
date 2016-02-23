@@ -14,7 +14,6 @@ shinyServer(function(input, output){
       coord_flip()
 
   })
-  
 })
 
 
