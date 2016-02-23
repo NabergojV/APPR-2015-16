@@ -14,7 +14,7 @@ library(extrafont)
 
 # Poimenujemo stolpce:
 
-stolpci<-c("priseljeni.ali.odseljeni","leto","starostna.skupina","državljanstvo","spol","stevilka")
+stolpci<-c("priseljeni.ali.odseljeni","leto","starostna.skupina","drzavljanstvo","spol","stevilka")
 
 # Uvozimo podatke:
 
@@ -77,7 +77,7 @@ p.minus.o <- p.minus.o1[,-7]
 
 # TIDY DATA oblika:
 tidytabela1 <- p.minus.o %>% filter(starostna.skupina != "Starostne skupine - SKUPAJ") %>% 
-  filter(državljanstvo != "Selitve - SKUPAJ") %>%
+  filter(drzavljanstvo != "Selitve - SKUPAJ") %>%
   filter(spol != "Spol - SKUPAJ")
 
 
@@ -87,7 +87,7 @@ tidytabela1 <- p.minus.o %>% filter(starostna.skupina != "Starostne skupine - SK
 
 # Za napredno analizo:
 
-stolpcii<-c("priseljeni.ali.odseljeni","leto","starostna.skupina","državljanstvo","moski","zenske")
+stolpcii<-c("priseljeni.ali.odseljeni","leto","starostna.skupina","drzavljanstvo","moski","zenske")
 
 uvozi<-function(){
   return(read.csv2(file="podatki/za napredno analizo",
@@ -131,26 +131,26 @@ pri.2013 <- razberi(2013,"leto",priseljeni)
 pri.2014 <- razberi(2014,"leto",priseljeni)
 
 ## po državljanstvu:
-slo.p.1995 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.1995)
-slo.p.1996 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.1996)
-slo.p.1997 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.1997)
-slo.p.1998 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.1998)
-slo.p.1999 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.1999)
-slo.p.2000 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2000)
-slo.p.2001 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2001)
-slo.p.2002 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2002)
-slo.p.2003 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2003)
-slo.p.2004 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2004)
-slo.p.2005 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2005)
-slo.p.2006 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2006)
-slo.p.2007 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2007)
-slo.p.2008 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2008)
-slo.p.2009 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2009)
-slo.p.2010 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2010)
-slo.p.2011 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2011)
-slo.p.2012 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2012)
-slo.p.2013 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2013)
-slo.p.2014 <- razberi("Državljani Republike Slovenije","državljanstvo",pri.2014)
+slo.p.1995 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.1995)
+slo.p.1996 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.1996)
+slo.p.1997 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.1997)
+slo.p.1998 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.1998)
+slo.p.1999 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.1999)
+slo.p.2000 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2000)
+slo.p.2001 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2001)
+slo.p.2002 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2002)
+slo.p.2003 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2003)
+slo.p.2004 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2004)
+slo.p.2005 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2005)
+slo.p.2006 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2006)
+slo.p.2007 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2007)
+slo.p.2008 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2008)
+slo.p.2009 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2009)
+slo.p.2010 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2010)
+slo.p.2011 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2011)
+slo.p.2012 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2012)
+slo.p.2013 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2013)
+slo.p.2014 <- razberi("Državljani Republike Slovenije","drzavljanstvo",pri.2014)
 
 # ODSELJENI:
 ## po letih:
@@ -176,30 +176,30 @@ ods.2013 <- razberi(2013,"leto",odseljeni)
 ods.2014 <- razberi(2014,"leto",odseljeni)
 
 ## po državljanstvu:
-slo.o.1995 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.1995)
-slo.o.1996 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.1996)
-slo.o.1997 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.1997)
-slo.o.1998 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.1998)
-slo.o.1999 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.1999)
-slo.o.2000 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2000)
-slo.o.2001 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2001)
-slo.o.2002 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2002)
-slo.o.2003 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2003)
-slo.o.2004 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2004)
-slo.o.2005 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2005)
-slo.o.2006 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2006)
-slo.o.2007 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2007)
-slo.o.2008 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2008)
-slo.o.2009 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2009)
-slo.o.2010 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2010)
-slo.o.2011 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2011)
-slo.o.2012 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2012)
-slo.o.2013 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2013)
-slo.o.2014 <- razberi("Državljani Republike Slovenije","državljanstvo",ods.2014)
+slo.o.1995 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.1995)
+slo.o.1996 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.1996)
+slo.o.1997 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.1997)
+slo.o.1998 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.1998)
+slo.o.1999 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.1999)
+slo.o.2000 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2000)
+slo.o.2001 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2001)
+slo.o.2002 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2002)
+slo.o.2003 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2003)
+slo.o.2004 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2004)
+slo.o.2005 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2005)
+slo.o.2006 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2006)
+slo.o.2007 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2007)
+slo.o.2008 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2008)
+slo.o.2009 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2009)
+slo.o.2010 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2010)
+slo.o.2011 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2011)
+slo.o.2012 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2012)
+slo.o.2013 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2013)
+slo.o.2014 <- razberi("Državljani Republike Slovenije","drzavljanstvo",ods.2014)
 
 # RAZLIKA MED PRISELJENIMI IN ODSELJENIMI (gledano samo državljani Republike Slovenije):
-priseljeni.slo <- razberi("Državljani Republike Slovenije","državljanstvo",priseljeni)
-odseljeni.slo <- razberi("Državljani Republike Slovenije","državljanstvo",odseljeni)
+priseljeni.slo <- razberi("Državljani Republike Slovenije","drzavljanstvo",priseljeni)
+odseljeni.slo <- razberi("Državljani Republike Slovenije","drzavljanstvo",odseljeni)
 
 ## razlika:
 razlika.slo <- as.numeric(priseljeni.slo[,5]-odseljeni.slo[,5])
@@ -233,11 +233,11 @@ ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne s
 # Graf za odseljene prebivalce leta 2014 po državljanstvu in vsi skupaj:
 ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ")%>%filter(spol=="Spol - SKUPAJ"),
        aes(starostna.skupina,stevilka))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
-       coord_flip()+ facet_wrap(~ državljanstvo)
+       coord_flip()+ facet_wrap(~ drzavljanstvo)
 
 odseljeni2 <- filter(odseljeni,starostna.skupina =="Starostne skupine - SKUPAJ")
 odseljeni3 <- filter(odseljeni2,spol != "Spol - SKUPAJ")
-odseljeni4 <- filter(odseljeni3,državljanstvo =="Selitve - SKUPAJ")
+odseljeni4 <- filter(odseljeni3,drzavljanstvo =="Selitve - SKUPAJ")
 
 maxodseljeni <- sort(filter(odseljeni4,"stevilka">0),"stevilka",decreasing = TRUE)
 
@@ -245,12 +245,12 @@ maxodseljeni <- sort(filter(odseljeni4,"stevilka">0),"stevilka",decreasing = TRU
 ggplot(data=odseljeni4,
        aes(leto,stevilka,fill=spol))+ geom_bar(stat="identity",size=6) + coord_flip()
 
-odseljeni5 <- filter(odseljeni3,državljanstvo!="Selitve - SKUPAJ")
+odseljeni5 <- filter(odseljeni3,drzavljanstvo!="Selitve - SKUPAJ")
 
 # Graf za odseljene prebivalce po starostnih skupinah skupaj in spolu in državljanstvu:
 ggplot(data=odseljeni5,
        aes(leto,stevilka,fill=spol))+ geom_bar(stat="identity",size=6) + coord_flip()+
-       facet_wrap(~ državljanstvo)
+       facet_wrap(~ drzavljanstvo)
 
 
 
