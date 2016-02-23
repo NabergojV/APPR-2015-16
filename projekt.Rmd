@@ -88,7 +88,7 @@ Stolpci v tabeli 1:
 * priseljeni.ali.odseljeni: _imenska spremenljivka_
 * leto: _številska spremenljivka_
 * starostna.skupina: _imenska spremenljivka_
-* državljanstvo: _imenska spremenljivka_
+* drzavljanstvo: _imenska spremenljivka_
 * spol: _imenska spremenljivka_
 * stevilka: _številska spremenljivka_
 * priseljeni.minus.odseljeni.prirast: _urejenostna spremenljivka_
@@ -124,7 +124,7 @@ Stolpci v tabeli 2 imajo sledeče značilnosti:
 
 ***
 
-#### Graf razlike priseljenih Slovencev in odseljenih Slovencev
+### Graf razlike priseljenih Slovencev in odseljenih Slovencev
 
 Slika \ref{fig:graf} prikazuje razliko med priseljenimi Slovenci in odseljenimi Slovenci po letih in starostnih skupinah (te so prikazane z različnimi barvami) ter prirast (oblika), ki je očiten, saj je lahko pozitiven, negativen ali enak 0.
 
@@ -136,17 +136,45 @@ ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne s
  
 Iz grafa je razvidno da je največji negativen prirast postajal vedno bolj negativen in je 2014 tudi dosegel največjo stopnjo izseljevanja. Če pogledamo še starostne skupine, padejo v kategorijo **25-29 let** in kategorijo **30-35 let**. 
 
-#### Graf odseljenih prebivalcev ločenih po državljanstvu za leto 2014
+### Graf odseljenih ali priseljenih prebivalcev ločenih po državljanstvu za izbrano leto
 
-Slika \ref{fig:graf2} nam predstavi 3 grafe odseljenih prebivalcev, ki jih ločimo po državljanstvu. V grafih vidimo da so prebivalci nato ločeni še po starostnih skupinah. Vsi podatki so za leto 2014.
 
-```{r graf2, echo=FALSE, fig.align='center', fig.cap='Graf odseljenih prebivalcev ločenih po državljanstvu za leto 2014'}
-ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ")%>%filter(spol=="Spol - SKUPAJ"),
-       aes(starostna.skupina,stevilka))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
-       coord_flip()+ facet_wrap(~ državljanstvo)
+```{r shiny2, echo=FALSE, fig.align='center', fig.cap='Graf odseljenih ali priseljenih prebivalcev ločenih po državljanstvu za izbrano leto'}
+shinyApp(
+  shinyUI(fluidPage(
+  
+  titlePanel(""),
+  
+  fluidRow(
+    
+    column(width=7, sliderInput(inputId ="izbleto",label="Izberi leto:", value=1995, min=1995, max=2014,width='500px')),
+  
+    column(width=4,selectInput(inputId="Izbpris",label="Izberi priseljevanje ali odseljevanje:",
+                         choices = list("Priseljeni" = "Priseljeni iz tujine", 
+                                        "Odseljeni" = "Odseljeni v tujino"), 
+                         selected = "Priseljeni iz tujine"))
+  
+  ),
+  
+  hr(),
+  
+  plotOutput(outputId="podrzavljanstvu",width = "700", height = "400px")
+)),
+
+shinyServer(function(input, output){
+  output$podrzavljanstvu <- renderPlot({
+    prialiod<-filter(tabela,priseljeni.ali.odseljeni== input$Izbpris)
+    tabelca <-razberi(input$izbleto,"leto",prialiod)
+    ggplot(data=tabelca%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ")%>%filter(spol=="Spol - SKUPAJ"),
+           aes(starostna.skupina,stevilka))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
+      coord_flip()+ facet_wrap(~ drzavljanstvo)
+  })
+}),
+options=list(width="100%", height=570))
+
 ```
 
-#### Graf za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj
+### Graf za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj
 
 Tu \ref{fig:graf3} vidimo je bilo odseljevanje najmočnejše leta 2009.
 
@@ -155,18 +183,46 @@ ggplot(data=odseljeni4,
        aes(leto,stevilka,fill=spol))+ geom_bar(stat="identity",size=6) + coord_flip()
 ```
 
-#### Graf za priseljene skupaj za vse regije za leto 2014
+### Graf za priseljene ali odseljene za izbrano leto po spolu:
 
-Na sliki \ref{fig:graf4} je opaziti da je največ priseljenih v Osrednjeslovensko regijo. Razlog za to je najverjetneje v največji ponudbi služb in možosti za šolanje, kariero, družine,...
 
-```{r graf4, echo=FALSE, fig.align='center', fig.cap='Graf za priseljene skupaj za vse regije za leto 2014'}
-ggplot(data=regije2014,
-       aes(regija,Priseljeni.iz.tujine.skupaj))+ geom_bar(stat="identity",fill="deeppink3",size=10)+
-       coord_flip() 
+```{r shiny, echo=FALSE, fig.align='center', fig.cap='Graf za priseljene ali odseljene za izbrano leto'}
+shinyApp(
+  shinyUI(fluidPage(
+  titlePanel(""),
+  
+  sidebarLayout(
+    
+    sidebarPanel(
+        sliderInput(inputId ="izberi",label="Izberi leto:", value=1995, min=1995, max=2014),
+  
+        radioButtons(inputId="izb",label="Izberi željeno:", choices = list("Priseljeni iz tujine skupaj" = "Priseljeni.iz.tujine.skupaj", 
+                                                                               "Priseljeni iz tujine-ženske" = "Priseljeni.iz.tujine.ženske",
+                                                                               "Priseljeni iz tujine-moški" = "Priseljeni.iz.tujine.moški",
+                                                                               "Odseljeni v tujino skupaj"="Odseljeni.v.tujino.skupaj" ,
+                                                                               "Odseljeni v tujino-ženske"= "Odseljeni.v.tujino.ženske",
+                                                                               "Odseljeni v tujino-moški"="Odseljeni.v.tujino.moški" ),
+                                                                               selected = "Priseljeni.iz.tujine.skupaj")),
+  mainPanel(
+  plotOutput(outputId="grafiregije")
+  )
+)))        ,
+shinyServer(function(input, output){
+  output$grafiregije <- renderPlot({
+    title <- "Graf za leto : "
+    regijeleto <- razberi(input$izberi,"leto",tabela2)
+    podatek <-input$izb
+    ggplot(data=regijeleto,aes_string("regija", podatek))+ 
+      geom_bar(stat="identity",fill="deeppink3",size=10)+
+      coord_flip()
+
+  })
+}),
+  options=list(width="100%", height=460))
 ```
 
 
-#### Graf za odseljene v tujino za Goriško regijo po letih:
+### Graf za odseljene v tujino za Goriško regijo po letih:
 
 Ta slika \ref{fig:graf5} nam predstavi odseljene prebivalce Goriške regije v letih od 1995-2014. Razvidno je bilo leta 2009 največje odseljevanje. V _Grafu za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj_ smo prav tako omenili, da je bilo preseljevanje najmočnejše leta 2009.
 
