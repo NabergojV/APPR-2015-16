@@ -6,7 +6,7 @@ library(RColorBrewer)
 ## Priseljeni, starost 25-29 let, državljanstvo skupaj, ločeno po spolu:
 
 priseljenimoski <- priseljeni %>% filter(starostna.skupina == "25-29 let") %>% 
-                    filter(državljanstvo=="Selitve - SKUPAJ")  %>%
+                    filter(drzavljanstvo=="Selitve - SKUPAJ")  %>%
                     filter(spol=="Moški")
 
 g <- ggplot(priseljenimoski, aes(x=leto, y=stevilka)) + geom_point()
@@ -27,7 +27,7 @@ print(mgam)
 # Priseljeni, državljanstvo skupaj, po spolu, po letih:
 
 priseljenispol <- prinapr %>% filter(starostna.skupina == "Starostne skupine - SKUPAJ") %>%
-  filter(državljanstvo=="Selitve - SKUPAJ") 
+  filter(drzavljanstvo=="Selitve - SKUPAJ") 
 
 h <- ggplot(priseljenispol, aes(x=zenske, y=moski,color=leto)) + geom_point(size=10)+ 
                             scale_color_distiller(palette = "RdPu")
