@@ -23,10 +23,19 @@ shinyServer(function(input, output){
              odseljeni.v.tujino.na.1000.prebivalcev = Odseljeni.v.tujino.na.1000.prebivalcev)
     zeml$priseljeni.minus.odseljeni <-zeml$priseljeni.skupaj-zeml$odseljeni.skupaj
     
-    ggplot() + geom_polygon(data = končnipodatki, 
-                            aes_string(x="long", y="lat", group="group",
-                                       fill=input$priods),
-                            color = "grey35") +
-      scale_fill_gradient(low="violetred4", high="violet")
+    
+    if((input$prosojnost)=="nič" ) {ggplot() + geom_polygon(data = končnipodatki, 
+                                                                        aes_string(x="long", y="lat",
+                                                                                  group="group",
+                                                                                  fill=input$priods),
+                                                                                  color = "grey35") +
+                                                          scale_fill_gradient(low="aquamarine4", high="aquamarine")}
+    else{ggplot() + geom_polygon(data = končnipodatki, 
+                                 aes_string(x="long", y="lat", group="group",
+                                            fill=input$priods,
+                                            alpha=input$prosojnost),
+                                            color = "grey35") +
+                    scale_fill_gradient(low="aquamarine4", high="aquamarine")}
+      
   })
 })

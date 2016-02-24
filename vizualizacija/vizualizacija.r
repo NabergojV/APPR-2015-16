@@ -50,7 +50,6 @@ zem.reg2014.priseljeni2 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=l
   guides(fill = guide_colorbar(title = "Priseljeni iz tujine v letu 2014"))
 #print(zem.reg2014.priseljeni2)
 
-
 # Zemljevid 2:
 zem.reg2014.odseljeni <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
                                                         fill=odseljeni.skupaj),
@@ -62,7 +61,7 @@ zem.reg2014.odseljeni <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat
 # Zemljevid 2.2, dodan še alpha:
 zem.reg2014.odseljeni2 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
                                                                    fill=odseljeni.skupaj,
-                                                                   alpha=priseljeni.iz.tujine.na.1000.prebivalcev),
+                                                                   alpha=odseljeni.iz.tujine.na.1000.prebivalcev),
                                                                    color = "grey35") +
   scale_fill_gradient(low="aquamarine4", high="aquamarine") +
   guides(fill = guide_colorbar(title = "Odseljeni v tujino v letu 2014"))
