@@ -141,7 +141,7 @@ Iz grafa je razvidno da je največji negativen prirast postajal vedno bolj negat
 
 
 ```{r shiny2, echo=FALSE, fig.align='center', fig.cap='Graf odseljenih ali priseljenih prebivalcev ločenih po državljanstvu za izbrano leto'}
-shinyAppDir("shiny2", options=list(width="100%", height=570))
+shinyAppDir("shiny2", options=list(width="100%", height=590))
 ```
 
 ### Graf za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj
@@ -157,7 +157,7 @@ ggplot(data=odseljeni4,
 
 
 ```{r shiny, echo=FALSE, fig.align='center', fig.cap='Graf za priseljene ali odseljene za izbrano leto'}
-shinyAppDir("shiny", options=list(width="100%", height=465))
+shinyAppDir("shiny", options=list(width="100%", height=475))
 ```
 
 
