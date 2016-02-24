@@ -290,6 +290,7 @@ tabela2<-podvoji(tabela2,1,1,19)
 # Oblika izpisa:
 tabela2[2:10]<-apply(tabela2[2:10], 2, as.numeric)
 
+tabela2$regija <- factor(tabela2$regija)
 
 
 # TIDY DATA oblika:

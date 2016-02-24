@@ -5,31 +5,28 @@ if ("server.r" %in% dir()) {
 }
 
 shinyServer(function(input, output){
+  zeml <- pretvori.zemljevid(zemljevid)
   
   output$zemljevid <- renderPlot({
     
     letozem <- razberi(input$letoizberi,"leto",tabela2)
     
-    rownames(letozem) <- letozem$regija
-    regleto <- preuredi(letozem, zemljevid, "NAME_1")
-    
-    zeml$priseljeni.skupaj <- regleto$Priseljeni.iz.tujine.skupaj
-    zeml$priseljeni.iz.tujine.na.1000.prebivalcev <-regleto$Priseljeni.iz.tujine.na.1000.prebivalcev
-    zeml$priseljeni.ženske <- regleto$Priseljeni.iz.tujine.ženske
-    zeml$priseljeni.moški <- regleto$Priseljeni.iz.tujine.moški
-    zeml$odseljeni.skupaj <- regleto$Odseljeni.v.tujino.skupaj
-    zeml$odseljeni.ženske <- regleto$Odseljeni.v.tujino.ženske
-    zeml$odseljeni.moški <- regleto$Odseljeni.v.tujino.moški
-    zeml$odseljeni.v.tujino.na.1000.prebivalcev <- regleto$Odseljeni.v.tujino.na.1000.prebivalcev
+    končnipodatki <- letozem %>%
+      right_join(zeml, by = c("regija" = "NAME_1")) %>%
+      rename(priseljeni.skupaj = Priseljeni.iz.tujine.skupaj,
+             priseljeni.iz.tujine.na.1000.prebivalcev = Priseljeni.iz.tujine.na.1000.prebivalcev,
+             priseljeni.ženske = Priseljeni.iz.tujine.ženske,
+             priseljeni.moški = Priseljeni.iz.tujine.moški,
+             odseljeni.skupaj = Odseljeni.v.tujino.skupaj,
+             odseljeni.ženske = Odseljeni.v.tujino.ženske,
+             odseljeni.moški = Odseljeni.v.tujino.moški,
+             odseljeni.v.tujino.na.1000.prebivalcev = Odseljeni.v.tujino.na.1000.prebivalcev)
     zeml$priseljeni.minus.odseljeni <-zeml$priseljeni.skupaj-zeml$odseljeni.skupaj
     
-    končnipodatki <- pretvori.zemljevid(zeml)
-    
     ggplot() + geom_polygon(data = končnipodatki, 
-                            aes(x=long, y=lat, group=group,
-                            fill=input$priods),
+                            aes_string(x="long", y="lat", group="group",
+                                       fill=input$priods),
                             color = "grey35") +
-                            scale_fill_gradient(low="violetred4", high="violet")
- })
+      scale_fill_gradient(low="violetred4", high="violet")
+  })
 })
-
