@@ -7,6 +7,7 @@ output:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
+runtime: shiny
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE,warning=FALSE}
@@ -140,38 +141,7 @@ Iz grafa je razvidno da je največji negativen prirast postajal vedno bolj negat
 
 
 ```{r shiny2, echo=FALSE, fig.align='center', fig.cap='Graf odseljenih ali priseljenih prebivalcev ločenih po državljanstvu za izbrano leto'}
-shinyApp(
-  shinyUI(fluidPage(
-  
-  titlePanel(""),
-  
-  fluidRow(
-    
-    column(width=7, sliderInput(inputId ="izbleto",label="Izberi leto:", value=1995, min=1995, max=2014,width='500px')),
-  
-    column(width=4,selectInput(inputId="Izbpris",label="Izberi priseljevanje ali odseljevanje:",
-                         choices = list("Priseljeni" = "Priseljeni iz tujine", 
-                                        "Odseljeni" = "Odseljeni v tujino"), 
-                         selected = "Priseljeni iz tujine"))
-  
-  ),
-  
-  hr(),
-  
-  plotOutput(outputId="podrzavljanstvu",width = "700", height = "400px")
-)),
-
-shinyServer(function(input, output){
-  output$podrzavljanstvu <- renderPlot({
-    prialiod<-filter(tabela,priseljeni.ali.odseljeni== input$Izbpris)
-    tabelca <-razberi(input$izbleto,"leto",prialiod)
-    ggplot(data=tabelca%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ")%>%filter(spol=="Spol - SKUPAJ"),
-           aes(starostna.skupina,stevilka))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
-      coord_flip()+ facet_wrap(~ drzavljanstvo)
-  })
-}),
-options=list(width="100%", height=570))
-
+shinyAppDir("shiny2", options=list(width="100%", height=570))
 ```
 
 ### Graf za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj
@@ -187,38 +157,7 @@ ggplot(data=odseljeni4,
 
 
 ```{r shiny, echo=FALSE, fig.align='center', fig.cap='Graf za priseljene ali odseljene za izbrano leto'}
-shinyApp(
-  shinyUI(fluidPage(
-  titlePanel(""),
-  
-  sidebarLayout(
-    
-    sidebarPanel(
-        sliderInput(inputId ="izberi",label="Izberi leto:", value=1995, min=1995, max=2014),
-  
-        radioButtons(inputId="izb",label="Izberi željeno:", choices = list("Priseljeni iz tujine skupaj" = "Priseljeni.iz.tujine.skupaj", 
-                                                                               "Priseljeni iz tujine-ženske" = "Priseljeni.iz.tujine.ženske",
-                                                                               "Priseljeni iz tujine-moški" = "Priseljeni.iz.tujine.moški",
-                                                                               "Odseljeni v tujino skupaj"="Odseljeni.v.tujino.skupaj" ,
-                                                                               "Odseljeni v tujino-ženske"= "Odseljeni.v.tujino.ženske",
-                                                                               "Odseljeni v tujino-moški"="Odseljeni.v.tujino.moški" ),
-                                                                               selected = "Priseljeni.iz.tujine.skupaj")),
-  mainPanel(
-  plotOutput(outputId="grafiregije")
-  )
-)))        ,
-shinyServer(function(input, output){
-  output$grafiregije <- renderPlot({
-    title <- "Graf za leto : "
-    regijeleto <- razberi(input$izberi,"leto",tabela2)
-    podatek <-input$izb
-    ggplot(data=regijeleto,aes_string("regija", podatek))+ 
-      geom_bar(stat="identity",fill="deeppink3",size=10)+
-      coord_flip()
-
-  })
-}),
-  options=list(width="100%", height=460))
+shinyAppDir("shiny", options=list(width="100%", height=460))
 ```
 
 
@@ -303,4 +242,12 @@ zem.reg2014.odsteto<- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, g
   scale_fill_gradient(low="olivedrab4", high="olivedrab1") +
   guides(fill = guide_colorbar(title = "Priseljeni minus odseljeni v letu 2014"))
 print(zem.reg2014.odsteto)
+```
+
+***
+
+# Napredna analiza
+
+```{r napanaliza, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+source("analiza/analiza.r", encoding = "UTF-8")
 ```
