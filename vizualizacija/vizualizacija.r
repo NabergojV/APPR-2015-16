@@ -29,7 +29,9 @@ zemljevid$odseljeni.skupaj <- reg2014$Odseljeni.v.tujino.skupaj
 zemljevid$odseljeni.ženske <- reg2014$Odseljeni.v.tujino.ženske
 zemljevid$odseljeni.moški <- reg2014$Odseljeni.v.tujino.moški
 zemljevid$odseljeni.v.tujino.na.1000.prebivalcev <- reg2014$Odseljeni.v.tujino.na.1000.prebivalcev
-zemljevid$priseljeni.minus.odseljeni <-zemljevid$priseljeni.skupaj-zemljevid$odseljeni.skupaj
+zemljevid$prise.min.odse.sku <-zemljevid$priseljeni.skupaj-zemljevid$odseljeni.skupaj
+zemljevid$prise.min.odse.z <-zemljevid$priseljeni.ženske-zemljevid$odseljeni.ženske
+zemljevid$prise.min.odse.m <-zemljevid$priseljeni.moški-zemljevid$odseljeni.moški
 
 reg14 <- pretvori.zemljevid(zemljevid)
 
@@ -69,7 +71,7 @@ zem.reg2014.odseljeni2 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=la
 
 # Zemljevid 3: odšteto priseljeni-odseljeni
 zem.reg2014.odsteto<- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
-                                                                   fill=priseljeni.minus.odseljeni),
+                                                                   fill=prise.min.odse),
                                                  color = "grey35") +
   scale_fill_gradient(low="olivedrab4", high="olivedrab1") +
   guides(fill = guide_colorbar(title = "Priseljeni minus odseljeni v letu 2014"))
