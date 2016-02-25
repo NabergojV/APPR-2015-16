@@ -7,7 +7,7 @@ if ("server.R" %in% dir()) {
 shinyServer(function(input, output){
   output$grafiregije <- renderPlot({
     
-    regijeleto <- razberi(input$izberi,"leto",tabela2)
+    regijeleto <- razberi(input$izberi,"leto",tabela2.2)
     
     podatek <-input$izb
     
