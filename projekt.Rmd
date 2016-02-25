@@ -127,7 +127,7 @@ Stolpci v tabeli 2 imajo sledeče značilnosti:
 
 ### Graf razlike priseljenih Slovencev in odseljenih Slovencev
 
-Slika \ref{fig:graf} prikazuje razliko med priseljenimi Slovenci in odseljenimi Slovenci po letih in starostnih skupinah (te so prikazane z različnimi barvami) ter prirast (oblika), ki je očiten, saj je lahko pozitiven, negativen ali enak 0.
+Slika \ref{fig:graf} prikazuje razliko med priseljenimi Slovenci in odseljenimi Slovenci po letih in starostnih skupinah (te so prikazane z različnimi barvami) ter prirast, ki je očiten, saj je lahko pozitiven, negativen ali enak 0.
 
 ```{r graf, echo=FALSE, fig.align='center', fig.cap='Graf razlike priseljenih Slovencev in odseljenih Slovencev'}
 ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
@@ -157,11 +157,11 @@ ggplot(data=odseljeni4,
 
 
 ```{r shiny, echo=FALSE, fig.align='center', fig.cap='Graf za priseljene ali odseljene za izbrano leto'}
-shinyAppDir("shiny", options=list(width="100%", height=475))
+shinyAppDir("shiny", options=list(width="100%", height=450))
 ```
 
 
-### Graf za odseljene v tujino za Goriško regijo po letih:
+### Graf po regijah za odseljene v tujino za Goriško regijo po letih:
 
 Ta slika \ref{fig:graf5} nam predstavi odseljene prebivalce Goriške regije v letih od 1995-2014. Razvidno je bilo leta 2009 največje odseljevanje. V _Grafu za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj_ smo prav tako omenili, da je bilo preseljevanje najmočnejše leta 2009.
 

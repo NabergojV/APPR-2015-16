@@ -1,11 +1,13 @@
 library(shiny)
 
 shinyUI(fluidPage(
-  titlePanel("Graf izbranega leta za izbrane priseljene ali odseljene po spolu"),
   
   sidebarLayout(
     
     sidebarPanel(
+      
+        helpText("Izberi kategorije in za animacijo, ki pokaže pregled čez vsa leta klikni play."),
+      
         sliderInput(inputId ="izberi",label="Izberi leto:", value=1995, min=1995, max=2014,
                     animate = animationOptions(interval = 1500, loop = FALSE, playButton = NULL)),
   
@@ -16,9 +18,8 @@ shinyUI(fluidPage(
                                    "Odseljeni v tujino skupaj"="Odseljeni.v.tujino.skupaj" ,
                                    "Odseljeni v tujino - ženske"= "Odseljeni.v.tujino.ženske",
                                    "Odseljeni v tujino - moški"="Odseljeni.v.tujino.moški" ),
-                                    selected = "Priseljeni.iz.tujine.skupaj"),
+                                    selected = "Priseljeni.iz.tujine.skupaj")
     
-        helpText("Izberi katergorije in za pregled čez vsa leta klikni play.")
     ),
   mainPanel(
   plotOutput(outputId="grafiregije")
