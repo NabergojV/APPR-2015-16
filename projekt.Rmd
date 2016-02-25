@@ -92,7 +92,7 @@ Stolpci v tabeli 1:
 * drzavljanstvo: _imenska spremenljivka_
 * spol: _imenska spremenljivka_
 * stevilka: _številska spremenljivka_
-* priseljeni.minus.odseljeni.prirast: _urejenostna spremenljivka_
+* prise.min.odse.prirast: _urejenostna spremenljivka_
 
 ### Tabela 2
 
@@ -130,46 +130,64 @@ Stolpci v tabeli 2 imajo sledeče značilnosti:
 Slika \ref{fig:graf} prikazuje razliko med priseljenimi Slovenci in odseljenimi Slovenci po letih in starostnih skupinah (te so prikazane z različnimi barvami) ter prirast, ki je očiten, saj je lahko pozitiven, negativen ali enak 0.
 
 ```{r graf, echo=FALSE, fig.align='center', fig.cap='Graf razlike priseljenih Slovencev in odseljenih Slovencev'}
-ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
+ggplot(data=prise.min.odse%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
        aes(x=leto, y=razlika,color=starostna.skupina)) + geom_point(size=6) +
        coord_flip() 
 ```
  
-Iz grafa je razvidno da je največji negativen prirast postajal vedno bolj negativen in je 2014 tudi dosegel največjo stopnjo izseljevanja. Če pogledamo še starostne skupine, padejo v kategorijo **25-29 let** in kategorijo **30-35 let**. 
+Iz grafa je razvidno da je največji negativen prirast postajal vedno bolj negativen in je 2014 tudi dosegel največjo stopnjo izseljevanja. Če pogledamo še starostne skupine, padejo v kategorijo **25-29 let** in kategorijo **30-35 let**, to pa so najbolj produktivna leta in najbolj izobražena populacija. To je poimenovano _beg možganov._
 
 ### Graf odseljenih ali priseljenih prebivalcev ločenih po državljanstvu za izbrano leto
 
+_V teh treh grafih, ki so ločeni po državljanstvu, so prikazani podatki za izbrano leto. Tako lahko primerjamo priseljevanje in izseljevanje. Z animacijo pa takoj vidimo katera starostna skupina je najbolj aktivna pri priseljevanju ali izseljevanju._
 
 ```{r shiny2, echo=FALSE, fig.align='center', fig.cap='Graf odseljenih ali priseljenih prebivalcev ločenih po državljanstvu za izbrano leto'}
-shinyAppDir("shiny2", options=list(width="100%", height=590))
+shinyAppDir("shiny2", options=list(width="100%", height="590"))
 ```
+
+_Priseljevanje:_ Očitno je, da je priseljevanje slovenskih državljanov nazaj v Slovenijo skoraj neznatno v primerjavi s priseljevanjem tujih državljanov. Bolj znatno postane leta 2011 in je prisotno do leta 2014.
+
+_Odseljevanje:_ Slovenski državljani so se odseljevali zelo malo z izjemo leta 2002, ko je odseljevanje rahlo naraslo. Leta 2008 je odseljevanje močno naraslo, najverjetneje zaradi bližajoče se krize, upadlo 2009, kasneje v letih 2012, 2013, 2014 pa opazno poskočilo.
+
 
 ### Graf za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj
 
-Tu \ref{fig:graf3} vidimo je bilo odseljevanje najmočnejše leta 2009.
+Tu \ref{fig:graf3} vidimo je bilo odseljevanje najmočnejše leta 2009. Po zgornjih grafih pa vidimo da se je odselilo več tujih državljanov kot pa Slovencev. Močnejše izseljevanje Slovencev je prisotno od leta 2012 naprej.
 
 ```{r graf3, echo=FALSE, fig.align='center', fig.cap='Graf za odseljene prebivalce po starostnih skupinah skupaj, državljanstvu skupaj in spolu'}
 ggplot(data=odseljeni4,
        aes(leto,stevilka,fill=spol))+ geom_bar(stat="identity",size=6) + coord_flip()
 ```
 
-### Graf za priseljene ali odseljene za izbrano leto po spolu:
+### Graf vseh regij za priseljene ali odseljene za izbrano leto:
 
+_Ta graf nam simultano prikazuje potek priseljevanja in odseljevanja za vse regije. Izbiramo lahko med kategorijami ki so ločene po spolu._
 
 ```{r shiny, echo=FALSE, fig.align='center', fig.cap='Graf za priseljene ali odseljene za izbrano leto'}
-shinyAppDir("shiny", options=list(width="100%", height=450))
+shinyAppDir("shiny", options=list(width="100%", height=510))
 ```
 
+_Odseljevanje:_ Očitno je odseljevanje najmočnejše v osrednjeslovenski regiji skozi vsa leta. Regiji ki izstopata sta še podravska in savinjska 1995 pa je odseljevanje v podravski regiji posledica osamosvojitve Slovenije, ko je v Mariboru propadla velika večina podjetij. Odseljevanje iz podravske regije skokoma naraste še leta 2008 in celo preseže odseljevanje iz osrednjeslovenske regije.
 
-### Graf po regijah za odseljene v tujino za Goriško regijo po letih:
+_Priseljevanje:_ Tukaj je prav tako najmočnejše v osrednjeslovenski regiji, zaradi največje in najbolj raznolike ponudbe zaposlitve.
 
-Ta slika \ref{fig:graf5} nam predstavi odseljene prebivalce Goriške regije v letih od 1995-2014. Razvidno je bilo leta 2009 največje odseljevanje. V _Grafu za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj_ smo prav tako omenili, da je bilo preseljevanje najmočnejše leta 2009.
+Najboljšo sliko glede priseljevanja dobimo če si pogledamo prirast. Tako je očitno da je v osrednjeslovenski regiji le ta pozitiven skozi vsa leta, v Podravski regiji pa je negativen od leta 2010 - 2014 z izjemo leta 2011. Nasplošno rečeno imajo SV regije od časa finančne krize naprej negativen prirast, prav tako pa tudi nekatere severne.
 
-```{r graf5, echo=FALSE, fig.align='center', fig.cap='Graf za odseljene v tujino za Goriško regijo po letih'}
-ggplot(data=Goriska,
-       aes(x=leto, y=Odseljeni.v.tujino.skupaj,alpha=Odseljeni.v.tujino.na.1000.prebivalcev)) + 
-       geom_point(size=10,color="firebrick3")
+### Graf za odseljene ali priseljene za izbrano regijo po letih:
+
+_V tem grafu si lahko za poljubno regijo ogledamo kako je potekalo priseljevanje in odseljevanje ločeno po spolu._
+
+```{r graf5, echo=FALSE, fig.align='center', fig.cap='Graf za odseljene ali priseljene za izbrano regijo po letih'}
+shinyAppDir("shiny4", options=list(width="100%", height=465))
 ```
+
+Podrobneje bom pogledala regijo v kateri živim, ter osrednjeslovensko.
+
+_Osrednjeslovenska regija:_ Kot je bilo navedeno pri prejšnjem grafu je prirast tekom let pozitiven, z izjemo leta 1998 in 2010. Vrhunec pa je prirast dosegel leta 2008, potem pa z letom 2010 strmo upadel.
+
+_Goriška regija:_ Vidimo da je prirast konstantno pozitiven, razen leta 1998.
+
+Ta slika nam predstavi odseljene prebivalce Goriške regije v letih od 1995-2014. Razvidno je bilo leta 2009 največje odseljevanje.
 
 ***
 
@@ -182,40 +200,11 @@ source("vizualizacija/vizualizacija.r", encoding = "UTF-8")
 
 ### Zemljevid regij Slovenije obarvan glede na izbrano kategorijo in v izbranem letu:
 
+_Na tem zemljevidu vidimo priseljevanje ali odseljevanje v slovenskih regijah od leta 1995 do leta 2014._
+
 ```{r shiny3, echo=FALSE, fig.align='center', fig.cap='Zemljevid regij Slovenije obarvan glede na izbrano kategorijo in v izbranem letu:'}
-shinyAppDir("shiny3", options=list(width="100%", height=450))
+shinyAppDir("shiny3", options=list(width="100%", height=505))
 ```
-
-
-### Zemljevid regij Slovenije obarvanih glede na intenzivnost priseljevanje iz tujine leta 2014:
-
-Zemljevid nam prikazuje priseljevanje iz tujine, skupaj po spolu, za leto 2014. Kot je razvidno se največ priseljevanja kot nam je že pokazal graf 5, dogaja v Osrednjeslovenski regiji. S prosojnostjo barv pa je prikazano, koliko je priseljenih iz tujine na 1000 prebivalcev.
-
-
-S prosojnostjo barv pa je prikazano, koliko je priseljenih iz tujine na 1000 prebivalcev.
- 
-
-
-### Zemljevid regij Slovenije obarvanih glede na intenzivnost odseljevanja v tujino leta 2014:
-
-Zemljevid nam prikazuje odseljevanje v tujino, skupaj po spolu, za leto 2014. Kot je razvidno se največ odseljevanja dogaja v Osrednjeslovenski regiji. 
-
-
-Tu pa nam je še s prosojnostjo barv je prikazano, koliko je odseljenih v tujino na 1000 prebivalcev.
-
-```{r zemljevid2_2,echo=FALSE, fig.align='center', fig.cap='Zemljevid odseljevanja v tujino leta 2014'}
-zem.reg2014.odseljeni2 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
-                                                    fill=odseljeni.skupaj,
-                                                    alpha=odseljeni.v.tujino.na.1000.prebivalcev),
-                                       color = "grey35") +
-  scale_fill_gradient(low="aquamarine4", high="aquamarine") +
-  guides(fill = guide_colorbar(title = "Odseljeni v tujino v letu 2014"))
-print(zem.reg2014.odseljeni2)
-```
-
-### Zemljevid regij Slovenije obarvanih glede na prirast leta 2014:
-
-Tu vidimo zemljevi prirasta v letu 2014. Kot je razvidno je najbolj negativen prirast v severnih regijah. 
 
 
 ***
