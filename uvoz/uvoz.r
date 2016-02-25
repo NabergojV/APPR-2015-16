@@ -61,14 +61,14 @@ razberi <- function(x,y,podatki){
 
 # Dodamo stolpec prirast priseljeni-odseljeni:
 p.minus.o1 <-filter(tabela,priseljeni.ali.odseljeni=="Priseljeni iz tujine")
-p.minus.o1$priseljeni.minus.odseljeni.st <- priseljeni[,6] - odseljeni[,6]
+p.minus.o1$prise.min.odse.st <- priseljeni[,6] - odseljeni[,6]
 povrsti<-c("pozitiven","ga ni","negativen")
 prir<-factor(rep("ga ni",length(p.minus.o1)),
                                    levels=povrsti,ordered=TRUE)
 prir[p.minus.o1[,7]<0] <- "negativen"
 prir[p.minus.o1[,7]>0] <- "pozitiven"
 prir[p.minus.o1[,7]==0] <- "ga ni"
-p.minus.o1$priseljeni.minus.odseljeni.prirast<-prir
+p.minus.o1$prise.min.odse.prirast<-prir
 
 p.minus.o <- p.minus.o1[,-7]
 
@@ -213,20 +213,20 @@ prirastslo[razlika.slo>0] <- "pozitiven"
 prirastslo[razlika.slo==0] <- "ga ni"
 
 # Tabela razlike priseljenih-odseljenih:
-priseljeni.minus.odseljeni <- data.frame(leto=(priseljeni.slo[,2]),
+prise.min.odse <- data.frame(leto=(priseljeni.slo[,2]),
                                          starostna.skupina=priseljeni.slo[,3],
                                          spol=priseljeni.slo[,4],
                                          razlika=razlika.slo,
                                          prirast=prirastslo)
 
-priseljeni.minus.odseljeni.order <- priseljeni.minus.odseljeni[order(priseljeni.minus.odseljeni$razlika),]
+prise.min.odse.order <- prise.min.odse[order(prise.min.odse$razlika),]
 
-priseljeni.slovenci <- data.frame("leto"=as.numeric(priseljeni.minus.odseljeni [,1]),
-                                "starostna.skupina"=as.character(priseljeni.minus.odseljeni [,2]),
-                                "razlika skupaj"=as.numeric(priseljeni.minus.odseljeni [,5]))
+priseljeni.slovenci <- data.frame("leto"=as.numeric(prise.min.odse [,1]),
+                                "starostna.skupina"=as.character(prise.min.odse [,2]),
+                                "razlika skupaj"=as.numeric(prise.min.odse [,5]))
 
 # Graf za negativen prirast slovenskega prebivalstva:
-ggplot(data=priseljeni.minus.odseljeni%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
+ggplot(data=prise.min.odse%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
        aes(x=leto, y=razlika,color=starostna.skupina)) + geom_point(size=6) +
        coord_flip() 
 
@@ -313,4 +313,11 @@ ggplot(data=regije2014,
 ggplot(data=Goriska,
        aes(x=leto, y=Odseljeni.v.tujino.skupaj, alpha=Odseljeni.v.tujino.na.1000.prebivalcev)) + 
         geom_histogram(stat="identity", fill="firebrick3")
+
+# Tabela2.2: Tabela2 + dodani še stolpci za prirast za shiny:
+
+tabela2.2 <- tabela2
+tabela2.2$prise.min.odse.sku <- tabela2.2$Priseljeni.iz.tujine.skupaj -tabela2.2$Odseljeni.v.tujino.skupaj
+tabela2.2$prise.min.odse.z <- tabela2.2$Priseljeni.iz.tujine.ženske -tabela2.2$Odseljeni.v.tujino.ženske
+tabela2.2$prise.min.odse.m <- tabela2.2$Priseljeni.iz.tujine.moški -tabela2.2$Odseljeni.v.tujino.moški
 
