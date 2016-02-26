@@ -8,6 +8,8 @@ library(labeling)
 library(rvest)
 library(extrafont)
 library(shiny)
+library(mgcv)
+library(RColorBrewer)
 
 # Uvozimo funkcije za delo z datotekami XML.
 source("lib/xml.r", encoding = "UTF-8")
