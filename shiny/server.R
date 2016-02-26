@@ -11,8 +11,14 @@ shinyServer(function(input, output){
     
     podatek <-input$izb
     
-    ggplot(data=regijeleto,aes_string("regija", podatek))+ 
-      geom_bar(stat="identity",fill="deeppink3",size=10)+
+    reg1 <- subset(regijeleto,podatek >= 0)
+    reg2 <- subset(regijeleto,podatek < 0)
+    
+    ggplot()+ 
+      geom_bar(data=reg1,aes_string("regija", podatek), 
+               stat="identity",fill="deeppink3",size=10)+
+      geom_bar(data=reg2,aes_string("regija", podatek), 
+               stat="identity",fill="deeppink3",size=10)+
       coord_flip()
 
   })
