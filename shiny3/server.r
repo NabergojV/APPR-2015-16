@@ -5,6 +5,7 @@ if ("server.r" %in% dir()) {
 }
 
 shinyServer(function(input, output){
+  
   zeml <- pretvori.zemljevid(zemljevid)
   
   output$zemljevid <- renderPlot({
@@ -21,9 +22,10 @@ shinyServer(function(input, output){
              odseljeni.ženske = Odseljeni.v.tujino.ženske,
              odseljeni.moški = Odseljeni.v.tujino.moški,
              odseljeni.v.tujino.na.1000.prebivalcev = Odseljeni.v.tujino.na.1000.prebivalcev)
-    zeml$prise.min.odse.sku <-zeml$priseljeni.skupaj-zeml$odseljeni.skupaj
-    zeml$prise.min.odse.z <-zeml$priseljeni.ženske-zeml$odseljeni.ženske
-    zeml$prise.min.odse.m <-zeml$priseljeni.moški-zeml$odseljeni.moški
+    
+    končnipodatki$prise.min.odse.sku <-končnipodatki$priseljeni.skupaj-končnipodatki$odseljeni.skupaj
+    končnipodatki$prise.min.odse.z <-končnipodatki$priseljeni.ženske-končnipodatki$odseljeni.ženske
+    končnipodatki$prise.min.odse.m <-končnipodatki$priseljeni.moški-končnipodatki$odseljeni.moški
     
     
     if((input$prosojnost)=="nič" ) {ggplot() + geom_polygon(data = končnipodatki, 
