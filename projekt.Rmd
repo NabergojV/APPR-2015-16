@@ -131,7 +131,7 @@ Slika \ref{fig:graf} prikazuje razliko med priseljenimi Slovenci in odseljenimi 
 
 ```{r graf, echo=FALSE, fig.align='center', fig.cap='Graf razlike priseljenih Slovencev in odseljenih Slovencev'}
 ggplot(data=prise.min.odse%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
-       aes(x=leto, y=razlika,color=starostna.skupina)) + geom_point(size=6) +
+       aes(x=leto, y=razlika,color=starostna.skupina)) + geom_point(size=3) +
        coord_flip() 
 ```
  
@@ -139,7 +139,7 @@ Iz grafa je razvidno da je največji negativen prirast postajal vedno bolj negat
 
 ### Graf odseljenih ali priseljenih prebivalcev ločenih po državljanstvu za izbrano leto
 
-_V teh treh grafih, ki so ločeni po državljanstvu, so prikazani podatki za izbrano leto. Tako lahko primerjamo priseljevanje in izseljevanje. Z animacijo pa takoj vidimo katera starostna skupina je najbolj aktivna pri priseljevanju ali izseljevanju._
+_V teh treh grafih, ki so ločeni po državljanstvu, so prikazani podatki za izbrano leto. Tako lahko primerjamo priseljevanje in izseljevanje. Stolpci so obarvani glede na spol. Z animacijo pa takoj vidimo katera starostna skupina je najbolj aktivna pri priseljevanju ali izseljevanju._
 
 ```{r shiny2, echo=FALSE, fig.align='center', fig.cap='Graf odseljenih ali priseljenih prebivalcev ločenih po državljanstvu za izbrano leto'}
 shinyAppDir("shiny2", options=list(width="100%", height="590"))
@@ -149,14 +149,10 @@ _Priseljevanje:_ Očitno je, da je priseljevanje slovenskih državljanov nazaj v
 
 _Odseljevanje:_ Slovenski državljani so se odseljevali zelo malo z izjemo leta 2002, ko je odseljevanje rahlo naraslo. Leta 2008 je odseljevanje močno naraslo, najverjetneje zaradi bližajoče se krize, upadlo 2009, kasneje v letih 2012, 2013, 2014 pa opazno poskočilo.
 
+### Graf za izbrano starostno skupino obarvan po spolu ali po državljanstvu:
 
-### Graf za odseljene prebivalce po starostnih skupinah skupaj in državljanstvu skupaj
-
-Tu \ref{fig:graf3} vidimo je bilo odseljevanje najmočnejše leta 2009. Po zgornjih grafih pa vidimo da se je odselilo več tujih državljanov kot pa Slovencev. Močnejše izseljevanje Slovencev je prisotno od leta 2012 naprej.
-
-```{r graf3, echo=FALSE, fig.align='center', fig.cap='Graf za odseljene prebivalce po starostnih skupinah skupaj, državljanstvu skupaj in spolu'}
-ggplot(data=odseljeni4,
-       aes(leto,stevilka,fill=spol))+ geom_bar(stat="identity",size=6) + coord_flip()
+```{r shiny5, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Graf za izbrano starostno skupino obarvan po spolu ali po državljanstvu'}
+shinyAppDir("shiny5", options=list(width="100%", height=510))
 ```
 
 ### Graf vseh regij za priseljene ali odseljene za izbrano leto:

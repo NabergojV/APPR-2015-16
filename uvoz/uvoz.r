@@ -230,9 +230,9 @@ ggplot(data=prise.min.odse%>%filter(starostna.skupina !="Starostne skupine - SKU
        aes(x=leto, y=razlika,color=starostna.skupina)) + geom_point(size=6) +
        coord_flip() 
 
-# Graf za odseljene prebivalce leta 2014 po državljanstvu in vsi skupaj:
-ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ")%>%filter(spol=="Spol - SKUPAJ"),
-       aes(starostna.skupina,stevilka))+ geom_bar(stat="identity",fill="seagreen3",size=3) + 
+# Graf za odseljene prebivalce leta 2014 po državljanstvu in vsi skupaj:  
+ggplot(data=ods.2014%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ")%>%filter(spol!="Spol - SKUPAJ"),
+       aes(starostna.skupina,stevilka,fill=spol))+ geom_bar(stat="identity",size=3) + 
        coord_flip()+ facet_wrap(~ drzavljanstvo)
 
 odseljeni2 <- filter(odseljeni,starostna.skupina =="Starostne skupine - SKUPAJ")
