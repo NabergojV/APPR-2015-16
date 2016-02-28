@@ -6,11 +6,13 @@ if ("server.r" %in% dir()) {
 
 shinyServer(function(input, output){
   
-  output$naprednaanliza <- renderPlot({
+  output$naprednaanaliza <- renderPlot({
     
-    priseljeniizb <- input$palio %>% filter(starostna.skupina == input$starost) %>% 
-      filter(drzavljanstvo=="Selitve - SKUPAJ")  %>%
-      filter(spol== input$spol)
+    tabelazapo <- filter(tabela,priseljeni.ali.odseljeni == input$palio)
+    
+    priseljeniizb <- tabelazapo %>% filter(starostna.skupina == input$starost) %>% 
+      filter(drzavljanstvo == input$drzavlj)  %>%
+      filter(spol == input$spol)
     
     gam <- gam(data = priseljeniizb, stevilka ~ s(leto))
     

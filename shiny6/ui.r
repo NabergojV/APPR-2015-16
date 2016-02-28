@@ -35,7 +35,13 @@ shinyUI(fluidPage(
                    choices = list("Moški" = "Moški", 
                                   "Ženske" = "Ženske",
                                   "Spol - SKUPAJ" ="Spol - SKUPAJ" ),
-                   selected = "Moški")
+                   selected = "Moški"),
+      
+      radioButtons(inputId="drzavlj",label="Izberi državljanstvo:", 
+                   choices = list("Državljani Republike Slovenije" = "Državljani Republike Slovenije", 
+                                  "Tuji državljani" = "Tuji državljani",
+                                  "Selitve - SKUPAJ" ="Selitve - SKUPAJ" ),
+                   selected = "Selitve - SKUPAJ")
       
     ),
   
