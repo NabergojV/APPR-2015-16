@@ -145,9 +145,9 @@ _V teh treh grafih, ki so ločeni po državljanstvu, so prikazani podatki za izb
 shinyAppDir("shiny2", options=list(width="100%", height="590"))
 ```
 
-_Priseljevanje:_ Očitno je, da je priseljevanje slovenskih državljanov nazaj v Slovenijo skoraj neznatno v primerjavi s priseljevanjem tujih državljanov. Bolj znatno postane leta 2011 in je prisotno do leta 2014.
+**Priseljevanje:** Očitno je, da je priseljevanje slovenskih državljanov nazaj v Slovenijo skoraj neznatno v primerjavi s priseljevanjem tujih državljanov. Bolj znatno postane leta 2011 in je prisotno do leta 2014.
 
-_Odseljevanje:_ Slovenski državljani so se odseljevali zelo malo z izjemo leta 2002, ko je odseljevanje rahlo naraslo. Leta 2008 je odseljevanje močno naraslo, najverjetneje zaradi bližajoče se krize, upadlo 2009, kasneje v letih 2012, 2013, 2014 pa opazno poskočilo.
+**Odseljevanje:** Slovenski državljani so se odseljevali zelo malo z izjemo leta 2002, ko je odseljevanje rahlo naraslo. Leta 2008 je odseljevanje močno naraslo, najverjetneje zaradi bližajoče se krize, upadlo 2009, kasneje v letih 2012, 2013, 2014 pa opazno poskočilo.
 
 ### Graf za izbrano starostno skupino obarvan po spolu ali po državljanstvu:
 
@@ -157,9 +157,9 @@ _S tem grafom si lahko pogledamo za vsako starostno skupino posebej priseljevanj
 shinyAppDir("shiny5", options=list(width="100%", height=530))
 ```
 
-_Priseljevanje:_ Kot je pričakovati so najbolj na udaru starostne skupine: **25-29 let** ter **30-34 let**. To so najbolj izobražene starostne skupine, ki zaposlitev iščejo izven Slovenije, saj je tu ne dobijo ali pa so priložnosti ter tudi plača mnogo boljše v tujini.
+**Priseljevanje:** Kot je pričakovati so najbolj na udaru starostne skupine: **25-29 let** ter **30-34 let**. To so najbolj izobražene starostne skupine, ki zaposlitev iščejo izven Slovenije, saj je tu ne dobijo ali pa so priložnosti ter tudi plača mnogo boljše v tujini.
 
-_Odseljevanje:_ tudi tu so starstne skupine, ki so najbolj izpostavljene enake kot pri priseljevanju. To so najbolj izobražene starostne skupine, ki zaposlitev iščejo izven Slovenije, saj je tu ne dobijo ali pa so priložnosti ter tudi plača mnogo boljše v tujini.
+**Odseljevanje:** Tudi tu so starstne skupine, ki so najbolj izpostavljene enake kot pri priseljevanju. To so najbolj izobražene starostne skupine, ki zaposlitev iščejo izven Slovenije, saj je tu ne dobijo ali pa so priložnosti ter tudi plača mnogo boljše v tujini.
 
 ### Graf vseh regij za priseljene ali odseljene za izbrano leto:
 
@@ -169,9 +169,9 @@ _Ta graf nam simultano prikazuje potek priseljevanja in odseljevanja za vse regi
 shinyAppDir("shiny", options=list(width="100%", height=510))
 ```
 
-_Odseljevanje:_ Očitno je odseljevanje najmočnejše v osrednjeslovenski regiji skozi vsa leta. Regiji ki izstopata sta še podravska in savinjska 1995 pa je odseljevanje v podravski regiji posledica osamosvojitve Slovenije, ko je v Mariboru propadla velika večina podjetij. Odseljevanje iz podravske regije skokoma naraste še leta 2008 in celo preseže odseljevanje iz osrednjeslovenske regije.
+**Odseljevanje:** Očitno je odseljevanje najmočnejše v osrednjeslovenski regiji skozi vsa leta. Regiji ki izstopata sta še podravska in savinjska 1995 pa je odseljevanje v podravski regiji posledica osamosvojitve Slovenije, ko je v Mariboru propadla velika večina podjetij. Odseljevanje iz podravske regije skokoma naraste še leta 2008 in celo preseže odseljevanje iz osrednjeslovenske regije.
 
-_Priseljevanje:_ Tukaj je prav tako najmočnejše v osrednjeslovenski regiji, zaradi največje in najbolj raznolike ponudbe zaposlitve.
+**Priseljevanje:** Tukaj je prav tako najmočnejše v osrednjeslovenski regiji, zaradi največje in najbolj raznolike ponudbe zaposlitve.
 
 Najboljšo sliko glede priseljevanja dobimo če si pogledamo prirast. Tako je očitno da je v osrednjeslovenski regiji le ta pozitiven skozi vsa leta, v Podravski regiji pa je negativen od leta 2010 - 2014 z izjemo leta 2011. Nasplošno rečeno imajo SV regije od časa finančne krize naprej negativen prirast, prav tako pa tudi nekatere severne.
 
@@ -185,9 +185,9 @@ shinyAppDir("shiny4", options=list(width="100%", height=465))
 
 Podrobneje bom pogledala regijo v kateri živim, ter osrednjeslovensko.
 
-_Osrednjeslovenska regija:_ Kot je bilo navedeno pri prejšnjem grafu je prirast tekom let pozitiven, z izjemo leta 1998 in 2010. Vrhunec pa je prirast dosegel leta 2008, potem pa z letom 2010 strmo upadel.
+**Osrednjeslovenska regija:** Kot je bilo navedeno pri prejšnjem grafu je prirast tekom let pozitiven, z izjemo leta 1998 in 2010. Vrhunec pa je prirast dosegel leta 2008, potem pa z letom 2010 strmo upadel.
 
-_Goriška regija:_ Vidimo da je prirast konstantno pozitiven, razen leta 1998.
+**Goriška regija:** Vidimo da je prirast konstantno pozitiven, razen leta 1998.
 
 Ta slika nam predstavi odseljene prebivalce Goriške regije v letih od 1995-2014. Razvidno je bilo leta 2009 največje odseljevanje.
 

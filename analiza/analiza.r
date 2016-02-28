@@ -10,19 +10,19 @@ priseljenimoski <- priseljeni %>% filter(starostna.skupina == "25-29 let") %>%
                     filter(spol=="Moški")
 
 g <- ggplot(priseljenimoski, aes(x=leto, y=stevilka)) + geom_point()
-print(g)
+#print(g)
 
 z <- lowess(priseljenimoski$leto, priseljenimoski$stevilka)
 z <- g + geom_line(data=as.data.frame(z), aes(x=x, y=y), color="green")
-print(z)
+#print(z)
 
 mls <- loess(data = priseljenimoski, stevilka ~ leto)
 mls <- g + geom_smooth(method = "loess")
-print(mls)
+#print(mls)
 
 mgam <- gam(data = priseljenimoski, stevilka ~ s(leto))
 mgam <- g + geom_smooth(method = "gam", formula = y ~ s(x))
-print(mgam)
+#print(mgam)
 
 # Priseljeni, državljanstvo skupaj, po spolu, po letih:
 
