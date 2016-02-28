@@ -202,9 +202,9 @@ source("vizualizacija/vizualizacija.r", encoding = "UTF-8")
 
 ### Zemljevid regij Slovenije obarvan glede na izbrano kategorijo in v izbranem letu:
 
-_Na tem zemljevidu vidimo priseljevanje ali odseljevanje v slovenskih regijah od leta 1995 do leta 2014._
+_Zemljevid nam prikazuje priseljevanje ali odseljevanje v slovenskih regijah od leta 1995 do leta 2014._
 
-```{r shiny3, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Zemljevid regij Slovenije obarvan glede na izbrano kategorijo in v izbranem letu:'}
+```{r shiny3, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Zemljevid regij Slovenije obarvan glede na izbrano kategorijo in v izbranem letu'}
 shinyAppDir("shiny3", options=list(width="100%", height=505))
 ```
 
@@ -216,3 +216,21 @@ shinyAppDir("shiny3", options=list(width="100%", height=505))
 ```{r napanaliza, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 source("analiza/analiza.r", encoding = "UTF-8")
 ```
+
+### Graf napovedi za izbran spol, smer preseljevanja, državljanstvo in starostno skupino po letih:
+
+_Graf lahko prilagodimo svojim željam glede smeri preseljevanja, državljanstva, starostne skupine ter spola. Pri določenih skupinah se lahko prihodnje preseljevanje napove z večjo gotovostjo kot drugje. Nekaj takih skupin je izpostavljenih pod grafom._
+
+```{r shiny6, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Graf napovedi za izbran spol, smer preseljevanja in starostno skupino po letih'}
+shinyAppDir("shiny6", options=list(width="100%", height=505))
+```
+
+**Odseljene ženske:** Tukaj je napoved lahko dokaj točna, saj je pri skoraj vseh starostnih skupinah napoved naraščajoča premica. Tudi če pogledamo za tuje državljanke ali Slovenke je pri obeh napoved da bo odseljevanje še naprej naraščalo.
+
+**Odseljeni moški:** ij
+
+
+
+
+
+
