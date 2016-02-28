@@ -11,10 +11,10 @@ shinyServer(function(input, output){
     
     if((input$pozelji)=="nič" ) {ggplot(data=regizberi,
                                   aes_string("leto", input$izberikat)) + 
-                                  geom_histogram(stat="identity", fill = "firebrick3")}
+                                  geom_bar(stat="identity", fill = "firebrick3")}
     else{ggplot(data=regizberi,
                 aes_string("leto", input$izberikat, alpha= input$pozelji)) + 
-        geom_histogram(stat="identity", fill = "firebrick3")}
+        geom_bar(stat="identity", fill = "firebrick3")}
     
   })
   
