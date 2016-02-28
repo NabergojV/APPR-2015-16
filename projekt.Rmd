@@ -151,9 +151,15 @@ _Odseljevanje:_ Slovenski državljani so se odseljevali zelo malo z izjemo leta 
 
 ### Graf za izbrano starostno skupino obarvan po spolu ali po državljanstvu:
 
+_S tem grafom si lahko pogledamo za vsako starostno skupino posebej priseljevanje in odseljevanje po letih. Izberemo si pa lahko polnilo glede na državljanstvo ali glede na spol._
+
 ```{r shiny5, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Graf za izbrano starostno skupino obarvan po spolu ali po državljanstvu'}
-shinyAppDir("shiny5", options=list(width="100%", height=510))
+shinyAppDir("shiny5", options=list(width="100%", height=530))
 ```
+
+_Priseljevanje:_ Kot je pričakovati so najbolj na udaru starostne skupine: **25-29 let** ter **30-34 let**. To so najbolj izobražene starostne skupine, ki zaposlitev iščejo izven Slovenije, saj je tu ne dobijo ali pa so priložnosti ter tudi plača mnogo boljše v tujini.
+
+_Odseljevanje:_ tudi tu so starstne skupine, ki so najbolj izpostavljene enake kot pri priseljevanju. To so najbolj izobražene starostne skupine, ki zaposlitev iščejo izven Slovenije, saj je tu ne dobijo ali pa so priložnosti ter tudi plača mnogo boljše v tujini.
 
 ### Graf vseh regij za priseljene ali odseljene za izbrano leto:
 

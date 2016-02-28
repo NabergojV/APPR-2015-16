@@ -1,9 +1,6 @@
 library(shiny)
 
 shinyUI(fluidPage(
-  sidebarLayout(
-    
-    titlePanel(""),
     
     fluidRow(
       
@@ -12,7 +9,7 @@ shinyUI(fluidPage(
                                  "Odseljeni" = "Odseljeni v tujino"), 
                   selected = "Priseljeni iz tujine")),
       
-      column(width=5, selectInput(inputId="izbstarost", label = "Izberi starostno skupino:", 
+      column(width=4, selectInput(inputId="izbstarost", label = "Izberi starostno skupino:", 
                   choices = list("0-4 let" = "0-4 let",
                                  "5-9 let" = "5-9 let",
                                  "10-14 let" = "10-14 let",
@@ -40,6 +37,6 @@ shinyUI(fluidPage(
     
     hr(),
     
-    plotOutput(outputId="obratno")
+    plotOutput(outputId="obratno",width = "700", height = "400px")
    
-)))
+))
