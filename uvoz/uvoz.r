@@ -50,6 +50,10 @@ tabela[,2]<-as.integer(tabela[,2])
 tabela[,3]<-as.character(tabela[,3])
 tabela[,4]<-as.character(tabela[,4])
 
+tabela$starostna.skupina <- factor(tabela$starostna.skupina,
+                                   levels = unique(tabela$starostna.skupina),
+                                   ordered = TRUE)
+
 # Filtriramo podatke po smeri preseljevanja:
 priseljeni<-filter(tabela,priseljeni.ali.odseljeni=="Priseljeni iz tujine")
 odseljeni<-filter(tabela,priseljeni.ali.odseljeni=="Odseljeni v tujino")
@@ -312,7 +316,7 @@ ggplot(data=regije2014,
 # Graf za odseljene v tujino za regijo Goriška:
 ggplot(data=Goriska,
        aes(x=leto, y=Odseljeni.v.tujino.skupaj, alpha=Odseljeni.v.tujino.na.1000.prebivalcev)) + 
-        geom_histogram(stat="identity", fill="firebrick3")
+        geom_bar(stat="identity", fill="firebrick3")
 
 # Tabela2.2: Tabela2 + dodani še stolpci za prirast za shiny:
 

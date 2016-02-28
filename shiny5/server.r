@@ -12,9 +12,12 @@ shinyServer(function(input, output){
     
     tabelc <-razberi(input$izbstarost,"starostna.skupina",prod)
     
-    ggplot(data=tabelc %>% filter(spol!="Spol - SKUPAJ") %>% filter(drzavljanstvo != "Selitve - SKUPAJ"),
-           aes_string("leto","stevilka",fill=input$držspol))+ 
-           geom_bar(stat="identity",size=4) 
+    ggplot(data=tabelc %>% filter(spol!="Spol - SKUPAJ") %>%
+             filter(drzavljanstvo != "Selitve - SKUPAJ") %>%
+             group_by_("leto", input$držspol) %>%
+             summarise(stevilo = sum(stevilka)),
+           aes_string("leto","stevilo",fill=input$držspol))+ 
+      geom_bar(stat="identity",size=4)
     
   })
 })
