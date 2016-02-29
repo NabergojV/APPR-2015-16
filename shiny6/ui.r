@@ -31,12 +31,6 @@ shinyUI(fluidPage(
                                  "Odseljeni" = "Odseljeni v tujino"), 
                   selected = "Priseljeni iz tujine"),
       
-      radioButtons(inputId="spol",label="Izberi spol:", 
-                   choices = list("Moški" = "Moški", 
-                                  "Ženske" = "Ženske",
-                                  "Spol - SKUPAJ" ="Spol - SKUPAJ" ),
-                   selected = "Moški"),
-      
       radioButtons(inputId="drzavlj",label="Izberi državljanstvo:", 
                    choices = list("Državljani Republike Slovenije" = "Državljani Republike Slovenije", 
                                   "Tuji državljani" = "Tuji državljani",

@@ -165,8 +165,8 @@ shinyAppDir("shiny5", options=list(width="100%", height=530))
 
 _Ta graf nam simultano prikazuje potek priseljevanja in odseljevanja za vse regije. Izbiramo lahko med kategorijami ki so ločene po spolu._
 
-```{r shiny, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Graf za priseljene ali odseljene za izbrano leto'}
-shinyAppDir("shiny", options=list(width="100%", height=510))
+```{r shiny1, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Graf za priseljene ali odseljene za izbrano leto'}
+shinyAppDir("shiny1", options=list(width="100%", height=510))
 ```
 
 **Odseljevanje:** Očitno je odseljevanje najmočnejše v osrednjeslovenski regiji skozi vsa leta. Regiji ki izstopata sta še podravska in savinjska 1995 pa je odseljevanje v podravski regiji posledica osamosvojitve Slovenije, ko je v Mariboru propadla velika večina podjetij. Odseljevanje iz podravske regije skokoma naraste še leta 2008 in celo preseže odseljevanje iz osrednjeslovenske regije.
@@ -208,6 +208,7 @@ _Zemljevid nam prikazuje priseljevanje ali odseljevanje v slovenskih regijah od 
 shinyAppDir("shiny3", options=list(width="100%", height=505))
 ```
 
+Izbrala sem si regije, saj me je zanimalo na splošno kje je preseljevanje najmočnejše.
 
 ***
 
@@ -219,18 +220,34 @@ source("analiza/analiza.r", encoding = "UTF-8")
 
 ### Graf napovedi za izbran spol, smer preseljevanja, državljanstvo in starostno skupino po letih:
 
-_Graf lahko prilagodimo svojim željam glede smeri preseljevanja, državljanstva, starostne skupine ter spola. Pri določenih skupinah se lahko prihodnje preseljevanje napove z večjo gotovostjo kot drugje. Nekaj takih skupin je izpostavljenih pod grafom._
+_Tri prikazane grafe ločene po spolu lahko prilagodimo svojim željam glede smeri preseljevanja, državljanstva in starostne skupine. Pri določenih skupinah se lahko prihodnje preseljevanje napove z večjo gotovostjo kot drugje. Nekaj takih skupin je izpostavljenih pod grafom._
 
 ```{r shiny6, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Graf napovedi za izbran spol, smer preseljevanja in starostno skupino po letih'}
-shinyAppDir("shiny6", options=list(width="100%", height=505))
+shinyAppDir("shiny6", options=list(width="100%", height=440))
 ```
 
 **Odseljene ženske:** Tukaj je napoved lahko dokaj točna, saj je pri skoraj vseh starostnih skupinah napoved naraščajoča premica. Tudi če pogledamo za tuje državljanke ali Slovenke je pri obeh napoved da bo odseljevanje še naprej naraščalo.
 
-**Odseljeni moški:** ij
+**Odseljeni moški:** Napovedati prihodnje gibanje odseljevanja je tu težje, saj so krivulje raznolike za vsako starosto skupino.Če se pogleda pobližje starostni skupini **25-29 let** ter **30-34 let** pa je vidno da je leta 2010 pričelo upadati število odseljenih. Tak graf ima tudi nekaj drugih starostnih skupin.
+
+Pri večini grafov se je okrog leta 2010 začelo priseljevanje in odseljevanje umirjati ter upadati. Razen pri pri zgoraj omenjeni skupini odseljenih žensk.
+
+### Graf moških v odvisnosti od žensk:
+
+_Ta graf si lahko ogledamo za željeno starostno skupino. Z barvo so prikazana leta._
+
+```{r shiny7, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Graf moških v odvisnosti od žensk'}
+shinyAppDir("shiny7", options=list(width="100%", height=440))
+```
+
+Vsi grafi, za katerkoli starostno skupino so monotono naraščajoči. Vidimo povezavo pri preseljevanju žensk in moških. Če si podrobneje ogledamo graf **Starostne skupine - SKUPAJ** za **priseljene** vidimo, da se npr na približno 2000 žensk priseli okoli 4000 moških. Izkaže se da se večinoma odseli ali priseli več moških kot žensk in da lahko razmerje približno sklepamo iz grafa. 
+
+**Starost 0-14 let:** je graf za priseljene in odseljene skoraj premica in razmerje _moški : ženske_ je skoraj 1:1.   
+**Starost 15-69 let:** je razmerje vsaj 2:1 ali več, na določenih odsekih.   
+**Starost 70-79 let:** je razmerje ponovno 1:1. Izenačenje razmerja morda izhaja zaradi upokojitve parov.   
+**Starost 80+ let:** pa se preseljuje več žensk kot moških, kar lahko pripišemo višji življenski dobi žensk.   
 
 
 
 
-
-
+Napovedovanje preseljevanja je težko oziroma skoraj nemogoče, saj se ne da napovedati dogodkov, ki sprožijo ta proces. Razlogi za preseljevanje so lahko osebni (iskanje boljše zaposlitve, ambicije, kariera,..), taki in drugačni pritiski na ljudi na določenem območju, iskanje azila, beg pred skrajneži,... Vseeno pa vidimo da sledi nekim vzorcem pogojenimi z spolom, starostjo,...
