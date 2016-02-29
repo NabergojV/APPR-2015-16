@@ -89,26 +89,6 @@ tidytabela1 <- p.minus.o %>% filter(starostna.skupina != "Starostne skupine - SK
 
 
 
-# Za napredno analizo:
-
-stolpcii<-c("priseljeni.ali.odseljeni","leto","starostna.skupina","drzavljanstvo","moski","zenske")
-
-uvozi<-function(){
-  return(read.csv2(file="podatki/za napredno analizo",
-                   skip=4,
-                   col.names=stolpcii,
-                   header=FALSE,
-                   fileEncoding = "UTF-8"))
-}
-
-tabelanapr<-uvozi()
-
-tabelanapr <- uredimo(tabelanapr, 1, 1, 1540)
-tabelanapr <- uredimo(tabelanapr, 1, 2, 76)
-tabelanapr <- uredimo(tabelanapr, 1, 3, 3)
-
-prinapr<-filter(tabelanapr,priseljeni.ali.odseljeni=="Priseljeni iz tujine")
-odsnapr<-filter(tabelanapr,priseljeni.ali.odseljeni=="Odseljeni v tujino")
 
 
 # PRISELJENI:
@@ -229,6 +209,8 @@ priseljeni.slovenci <- data.frame("leto"=as.numeric(prise.min.odse [,1]),
                                 "starostna.skupina"=as.character(prise.min.odse [,2]),
                                 "razlika skupaj"=as.numeric(prise.min.odse [,5]))
 
+##############################################################################################################
+
 # Graf za negativen prirast slovenskega prebivalstva:
 ggplot(data=prise.min.odse%>%filter(starostna.skupina !="Starostne skupine - SKUPAJ"),
        aes(x=leto, y=razlika,color=starostna.skupina)) + geom_point(size=6) +
@@ -256,6 +238,7 @@ ggplot(data=odseljeni5,
        aes(leto,stevilka,fill=spol))+ geom_bar(stat="identity",size=6) + coord_flip()+
        facet_wrap(~ drzavljanstvo)
 
+##############################################################################################################
 
 
 
@@ -304,9 +287,12 @@ tidytabela2 <- tidytabela[,-5]
 
 
 
+
 # Tabele:
 regije2014 <- razberi(2014,"leto",tabela2)
 Goriska <- razberi("Goriška","regija",tabela2)
+
+##############################################################################################################
 
 # Graf za leto 2014 za vse regije, priseljeni skupaj:
 ggplot(data=regije2014,
@@ -318,6 +304,8 @@ ggplot(data=Goriska,
        aes(x=leto, y=Odseljeni.v.tujino.skupaj, alpha=Odseljeni.v.tujino.na.1000.prebivalcev)) + 
         geom_bar(stat="identity", fill="firebrick3")
 
+#####################################################################################################
+
 # Tabela2.2: Tabela2 + dodani še stolpci za prirast za shiny:
 
 tabela2.2 <- tabela2
@@ -325,3 +313,76 @@ tabela2.2$prise.min.odse.sku <- tabela2.2$Priseljeni.iz.tujine.skupaj -tabela2.2
 tabela2.2$prise.min.odse.z <- tabela2.2$Priseljeni.iz.tujine.ženske -tabela2.2$Odseljeni.v.tujino.ženske
 tabela2.2$prise.min.odse.m <- tabela2.2$Priseljeni.iz.tujine.moški -tabela2.2$Odseljeni.v.tujino.moški
 
+
+
+
+
+# Za napredno analizo:
+
+stolpcii<-c("priseljeni.ali.odseljeni","leto","starostna.skupina","drzavljanstvo","moski","zenske")
+
+uvozi<-function(){
+  return(read.csv2(file="podatki/za napredno analizo",
+                   skip=4,
+                   col.names=stolpcii,
+                   header=FALSE,
+                   fileEncoding = "UTF-8"))
+}
+
+
+
+# Tabela za napredno analizo:
+tabelanapr<-uvozi()
+
+tabelanapr <- uredimo(tabelanapr, 1, 1, 1540)
+tabelanapr <- uredimo(tabelanapr, 1, 2, 76)
+tabelanapr <- uredimo(tabelanapr, 1, 3, 3)
+
+prinapr<-filter(tabelanapr,priseljeni.ali.odseljeni=="Priseljeni iz tujine")
+odsnapr<-filter(tabelanapr,priseljeni.ali.odseljeni=="Odseljeni v tujino")
+
+# TIDY DATA oblika:
+
+tidytabelanapr <- tabelanapr %>% filter(starostna.skupina != "Starostne skupine - SKUPAJ") %>% 
+  filter(drzavljanstvo != "Selitve - SKUPAJ") 
+
+
+# Tabela za napredno analizo za grupiranje podatkov:
+
+# Poimenujemo stolpce:
+
+stolpza<-c("občina","leto","Priseljeni.iz.tujine.skupaj","Priseljeni.iz.tujine.moški",
+           "Priseljeni.iz.tujine.ženske","Odseljeni.v.tujino.skupaj","Odseljeni.v.tujino.moški","Odseljeni.v.tujino.ženske")
+
+# Uvozimo podatke:
+
+uvozi<-function(){
+  return(read.csv2(file="podatki/novi podatki za napredno analizo",
+                   skip=3,
+                   col.names=stolpza,
+                   header=FALSE,
+                   fileEncoding = "UTF-8"))
+}
+
+tabelanapr2<-uvozi()
+
+# Uredimo prazna mesta:
+tabelanapr2 <- uredimo(tabelanapr2, 1, 1,20)
+
+# Uredimo vrstice brez podatkov:
+tabelanapr2[tabelanapr2 == "-"] <- NA
+
+# Oblika izpisa:
+tabelanapr2[,2]<-as.integer(tabelanapr2[,2])
+tabelanapr2[,3]<-as.integer(tabelanapr2[,3])
+tabelanapr2[,4]<-as.integer(tabelanapr2[,4])
+tabelanapr2[,5]<-as.integer(tabelanapr2[,5])
+tabelanapr2[,6]<-as.integer(tabelanapr2[,6])
+tabelanapr2[,7]<-as.integer(tabelanapr2[,7])
+tabelanapr2[,8]<-as.integer(tabelanapr2[,8])
+tabelanapr2[,9]<-as.integer(tabelanapr2[,9])
+
+# TIDY DATA tabela:
+
+tidytabelanapr2 <- tabelanapr2[,-3]
+tidytabelanapr2 <- tidytabelanapr2[,-5]
