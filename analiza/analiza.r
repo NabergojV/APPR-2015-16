@@ -9,6 +9,17 @@ priseljenimoski <- priseljeni %>% filter(starostna.skupina == "25-29 let") %>%
                     filter(drzavljanstvo=="Selitve - SKUPAJ")  %>%
                     filter(spol=="Moški")
 
+leto <-priseljenimoski$leto
+
+g <- plot(leto, priseljenimoski$stevilka, xlim=c(1995,2020),ylim=c(-1000,4000),
+     xlab="Leto",ylab="priseljeni moški",
+     pch=20,col="lightblue",type="p",lwd=3.5)
+print(g)
+
+loep<-loess(priseljenimoski$stevilka~leto)
+curve(predict(loep, data.frame(leto=x)),add=TRUE,col="blue")
+
+
 g <- ggplot(priseljenimoski, aes(x=leto, y=stevilka)) + geom_point()
 #print(g)
 
@@ -48,25 +59,21 @@ podatki <- tabelanapr2 %>% filter(leto==2014)
 podatki <- podatki[,-2]
 
 obcine <- uvozi.zemljevid("http://e-prostor.gov.si/fileadmin/BREZPLACNI_POD/RPE/OB.zip",
-                          "OB/OB", encoding = "UTF-8")
+                          "OB/OB", encoding = "Windows-1250")
 obcine <- obcine[order(as.character(obcine$OB_UIME)),]
 
 podatki.normalizirani <- scale(podatki[-1])
-names(podatki.normalizirani) <- podatki[,1]
+row.names(podatki.normalizirani) <- podatki[,1]
 k <- kmeans(podatki.normalizirani, 5)
 
 head(k$cluster, n = 15)
 table(k$cluster)
 
-k <- kmeans(podatki.normalizirani, 5)
-k$tot.withinss
-
 k <- kmeans(podatki.normalizirani, 5, nstart = 1000)
 k$tot.withinss
 
-slovenija <- row.names(podatki)
-m <- match(obcine$OB_UIME, slovenija)
-obcine$skupina <- factor(k$cluster[slovenija[m]])
+obcine$skupina <- factor(preuredi(k$cluster, obcine, "OB_UIME", novi = "Ankaran"))
 slov <- pretvori.zemljevid(obcine)
-zemlj <- ggplot(slov, aes(x=long, y=lat, group=group, fill=skupina)) + geom_polygon(color="grey")
-print(zemlj)
+zemlj <- ggplot(slov, aes(x=long, y=lat, group=group, fill=skupina)) + geom_polygon(color="grey55")
+#print(zemlj)
+
