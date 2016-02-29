@@ -380,9 +380,10 @@ tabelanapr2[,5]<-as.integer(tabelanapr2[,5])
 tabelanapr2[,6]<-as.integer(tabelanapr2[,6])
 tabelanapr2[,7]<-as.integer(tabelanapr2[,7])
 tabelanapr2[,8]<-as.integer(tabelanapr2[,8])
-tabelanapr2[,9]<-as.integer(tabelanapr2[,9])
+
 
 # TIDY DATA tabela:
 
 tidytabelanapr2 <- tabelanapr2[,-3]
 tidytabelanapr2 <- tidytabelanapr2[,-5]
+
