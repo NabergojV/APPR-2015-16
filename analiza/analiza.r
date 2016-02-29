@@ -51,10 +51,22 @@ obcine <- uvozi.zemljevid("http://e-prostor.gov.si/fileadmin/BREZPLACNI_POD/RPE/
                           "OB/OB", encoding = "UTF-8")
 obcine <- obcine[order(as.character(obcine$OB_UIME)),]
 
-podatki.normalizirani <- scale(podatki)
-k <- kmeans(podatki, 5)
+podatki.normalizirani <- scale(podatki[-1])
+names(podatki.normalizirani) <- podatki[,1]
+k <- kmeans(podatki.normalizirani, 5)
 
 head(k$cluster, n = 15)
 table(k$cluster)
 
+k <- kmeans(podatki.normalizirani, 5)
+k$tot.withinss
 
+k <- kmeans(podatki.normalizirani, 5, nstart = 1000)
+k$tot.withinss
+
+slovenija <- row.names(podatki)
+m <- match(obcine$OB_UIME, slovenija)
+obcine$skupina <- factor(k$cluster[slovenija[m]])
+slov <- pretvori.zemljevid(obcine)
+zemlj <- ggplot(slov, aes(x=long, y=lat, group=group, fill=skupina)) + geom_polygon(color="grey")
+print(zemlj)

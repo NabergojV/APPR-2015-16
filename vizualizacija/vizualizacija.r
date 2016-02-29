@@ -39,8 +39,8 @@ reg14 <- pretvori.zemljevid(zemljevid)
 zem.reg2014.priseljeni<- ggplot() + geom_polygon(data = reg14, aes(x=long, y=lat, group=group,
                                               fill=priseljeni.skupaj),
                                               color = "grey35") +
-  scale_fill_gradient(low="violetred4", high="violet") +
-  guides(fill = guide_colorbar(title = "Priseljeni iz tujine v letu 2014"))
+                        scale_fill_gradient(low="violetred4", high="violet") +
+                        guides(fill = guide_colorbar(title = "Priseljeni iz tujine v letu 2014"))
 #print(zem.reg2014.priseljeni)
 
 # Zemljevid 1:
@@ -48,8 +48,8 @@ zem.reg2014.priseljeni2 <- ggplot() + geom_polygon(data = reg14, aes(x=long, y=l
                                                   fill=priseljeni.skupaj,
                                                   alpha=priseljeni.iz.tujine.na.1000.prebivalcev),
                                                   color = "grey35") +
-  scale_fill_gradient(low="violetred4", high="violet") +
-  guides(fill = guide_colorbar(title = "Priseljeni iz tujine v letu 2014"))
+                        scale_fill_gradient(low="violetred4", high="violet") +
+                        guides(fill = guide_colorbar(title = "Priseljeni iz tujine v letu 2014"))
 #print(zem.reg2014.priseljeni2)
 
 # Zemljevid 2:
