@@ -48,7 +48,7 @@ V tej tabeli so v zadnjem, šestem stolpcu številske spremenljivke, v preostali
 
 Najprej sem morala tabelo očistiti praznih vrstic, ki jih je uvozilo iz spletne strani, zato sem uporabila sledečo funkcijo:
 
-##### Funkcija za urejanje tabel:
+##### **Funkcija za urejanje tabel:**
 ```{r uredimo}
 uredimo <- function(tabela, x, y, z, max = nrow(tabela)) {
   s <- seq(x, max, z+1)
@@ -65,7 +65,7 @@ Ko je bila tabela urejena in so bili vsi podatki zbrani, sem najprej fitrirala t
 
 Da bi nato lažje in učinkoviteje filtrirala tabele po različnih spremenljivkah sem sestavila sledečo funkcijo _razberi_:
 
-##### Funkcija za filtriranje podatkov iz tabel
+##### **Funkcija za filtriranje podatkov iz tabel**
 ```{r razberi}
 razberi <- function(x,y,podatki){
   return(podatki[podatki[y] == x, names(podatki) != y])
@@ -157,23 +157,23 @@ _S tem grafom si lahko pogledamo za vsako starostno skupino posebej priseljevanj
 shinyAppDir("shiny5", options=list(width="100%", height=530))
 ```
 
-**Priseljevanje:** Kot je pričakovati so najbolj na udaru starostne skupine: **25-29 let** ter **30-34 let**. To so najbolj izobražene starostne skupine, ki zaposlitev iščejo izven Slovenije, saj je tu ne dobijo ali pa so priložnosti ter tudi plača mnogo boljše v tujini.
+**Priseljevanje:** Kot je pričakovati so najbolj na udaru starostne skupine **25-29 let** ter **30-34 let**.
 
-**Odseljevanje:** Tudi tu so starstne skupine, ki so najbolj izpostavljene enake kot pri priseljevanju. To so najbolj izobražene starostne skupine, ki zaposlitev iščejo izven Slovenije, saj je tu ne dobijo ali pa so priložnosti ter tudi plača mnogo boljše v tujini.
+**Odseljevanje:** Tudi tu so starostne skupine, ki so najbolj izpostavljene enake kot pri priseljevanju. To so najbolj izobražene starostne skupine, ki zaposlitev iščejo izven Slovenije, saj je tu ne dobijo ali pa so priložnosti ter tudi plača mnogo boljše v tujini.
 
 ### Graf vseh regij za priseljene ali odseljene za izbrano leto:
 
-_Ta graf nam simultano prikazuje potek priseljevanja in odseljevanja za vse regije. Izbiramo lahko med kategorijami ki so ločene po spolu._
+_Ta graf nam simultano prikazuje potek priseljevanja in odseljevanja za vse regije. Izbiramo lahko med kategorijami, ki so ločene po spolu._
 
 ```{r shiny1, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Graf za priseljene ali odseljene za izbrano leto'}
 shinyAppDir("shiny1", options=list(width="100%", height=510))
 ```
 
-**Odseljevanje:** Očitno je odseljevanje najmočnejše v osrednjeslovenski regiji skozi vsa leta. Regiji ki izstopata sta še podravska in savinjska 1995 pa je odseljevanje v podravski regiji posledica osamosvojitve Slovenije, ko je v Mariboru propadla velika večina podjetij. Odseljevanje iz podravske regije skokoma naraste še leta 2008 in celo preseže odseljevanje iz osrednjeslovenske regije.
+**Odseljevanje:** Očitno je odseljevanje najmočnejše v osrednjeslovenski regiji skozi vsa leta. Regiji ki izstopata sta še podravska in savinjska. Leta 1995 pa je odseljevanje v podravski regiji posledica osamosvojitve Slovenije, ko je v Mariboru propadla velika večina podjetij. Odseljevanje iz podravske regije skokoma naraste še leta 2008 in celo preseže odseljevanje iz osrednjeslovenske regije.
 
 **Priseljevanje:** Tukaj je prav tako najmočnejše v osrednjeslovenski regiji, zaradi največje in najbolj raznolike ponudbe zaposlitve.
 
-Najboljšo sliko glede priseljevanja dobimo če si pogledamo prirast. Tako je očitno da je v osrednjeslovenski regiji le ta pozitiven skozi vsa leta, v Podravski regiji pa je negativen od leta 2010 - 2014 z izjemo leta 2011. Nasplošno rečeno imajo SV regije od časa finančne krize naprej negativen prirast, prav tako pa tudi nekatere severne.
+**Prirast:** Najboljšo sliko glede priseljevanja dobimo če si pogledamo prirast. Tako je očitno da je v osrednjeslovenski regiji le ta pozitiven skozi vsa leta, v Podravski regiji pa je negativen od leta 2010 - 2014 z izjemo leta 2011. Nasplošno rečeno imajo SV regije od časa finančne krize naprej negativen prirast, prav tako pa tudi nekatere severne.
 
 ### Graf za odseljene ali priseljene za izbrano regijo po letih:
 
@@ -188,8 +188,6 @@ Podrobneje bom pogledala regijo v kateri živim, ter osrednjeslovensko.
 **Osrednjeslovenska regija:** Kot je bilo navedeno pri prejšnjem grafu je prirast tekom let pozitiven, z izjemo leta 1998 in 2010. Vrhunec pa je prirast dosegel leta 2008, potem pa z letom 2010 strmo upadel.
 
 **Goriška regija:** Vidimo da je prirast konstantno pozitiven, razen leta 1998.
-
-Ta slika nam predstavi odseljene prebivalce Goriške regije v letih od 1995-2014. Razvidno je bilo leta 2009 največje odseljevanje.
 
 ***
 
@@ -223,7 +221,7 @@ source("analiza/analiza.r", encoding = "UTF-8")
 _Tri prikazane grafe ločene po spolu lahko prilagodimo svojim željam glede smeri preseljevanja, državljanstva in starostne skupine. Pri določenih skupinah se lahko prihodnje preseljevanje napove z večjo gotovostjo kot drugje. Nekaj takih skupin je izpostavljenih pod grafom._
 
 ```{r shiny6, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Graf napovedi za izbran spol, smer preseljevanja in starostno skupino po letih'}
-shinyAppDir("shiny6", options=list(width="100%", height=440))
+shinyAppDir("shiny6", options=list(width="100%", height=400))
 ```
 
 **Odseljene ženske:** Tukaj je napoved lahko dokaj točna, saj je pri skoraj vseh starostnih skupinah napoved naraščajoča premica. Tudi če pogledamo za tuje državljanke ali Slovenke je pri obeh napoved da bo odseljevanje še naprej naraščalo.
@@ -232,12 +230,28 @@ shinyAppDir("shiny6", options=list(width="100%", height=440))
 
 Pri večini grafov se je okrog leta 2010 začelo priseljevanje in odseljevanje umirjati ter upadati. Razen pri pri zgoraj omenjeni skupini odseljenih žensk.
 
+### Graf napovedi za odseljene ženske starosti 25-29 let:
+
+_Tu si poglejmo napoved do leta 2020 za odseljevanje žensk za starostno skupino 25-29 let._
+
+```{r grafnapoved, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Graf napovedi za odseljene ženske starosti 25-29 let'}
+g <- plot(leto, odseljenezenske$stevilka, xlim=c(1995,2020),ylim=c(0,1300),
+     xlab="Leto",ylab="Odseljene zenske",
+     pch=20,col="black",type="p",lwd=1)
+loep<-loess(odseljenezenske$stevilka~leto)
+curve(predict(loep, data.frame(leto=x)),add=TRUE,col="slateblue3")
+kvadratna<-lm(odseljenezenske$stevilka~I(leto^2)+leto)
+curve(predict(kvadratna, data.frame(leto=x)), add = TRUE, col = "deeppink")
+```
+
+**Napoved:** Rožnat graf je narisan s spomočjo funkcije _loess_, moder graf pa je narisan s funkcijo lm (kvadratna funkcija). Vidimo, da nam napoveduje kar močan porast odseljevanja žensk do leta 2020.
+
 ### Graf moških v odvisnosti od žensk:
 
 _Ta graf si lahko ogledamo za željeno starostno skupino. Z barvo so prikazana leta._
 
 ```{r shiny7, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Graf moških v odvisnosti od žensk'}
-shinyAppDir("shiny7", options=list(width="100%", height=440))
+shinyAppDir("shiny7", options=list(width="100%", height=400))
 ```
 
 Vsi grafi, za katerkoli starostno skupino so monotono naraščajoči. Vidimo povezavo pri preseljevanju žensk in moških. Če si podrobneje ogledamo graf **Starostne skupine - SKUPAJ** za **priseljene** vidimo, da se npr na približno 2000 žensk priseli okoli 4000 moških. Izkaže se da se večinoma odseli ali priseli več moških kot žensk in da lahko razmerje približno sklepamo iz grafa. 
@@ -251,9 +265,11 @@ Napovedovanje preseljevanja je težko oziroma skoraj nemogoče, saj se ne da nap
 
 ### Zemljevid občin:
 
-_Zemljevid nam prikazuje ..._
+_Zemljevid nam prikazuje občine v Sloveniji, ki so združene v 5 skupin po podobnosti preseljevanja._
 
 ```{r shiny8, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Zemljevid občin'}
-shinyAppDir("shiny8", options=list(width="100%", height=440))
+shinyAppDir("shiny8", options=list(width="100%", height=420))
 ```
 
+Za napredno analizo sem uvozila podatke za preseljevanje za občine. Te sem zgrupirala v 5 skupin po podobnosti. Napisana so tudi imena nekaterih večjih mest.
+Opazimo, da občine skozi leta pogosto menjujejo skupine. 
