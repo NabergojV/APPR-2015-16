@@ -28,12 +28,14 @@ shinyServer(function(input, output){
     končnipodatki$prise.min.odse.m <-končnipodatki$priseljeni.moški-končnipodatki$odseljeni.moški
     
     
-    if((input$prosojnost)=="nič" ) {ggplot() + geom_polygon(data = končnipodatki, 
-                                                                        aes_string(x="long", y="lat",
-                                                                                  group="group",
-                                                                                  fill=input$priods),
-                                                                                  color = "grey35") +
-                                                          scale_fill_gradient(low="aquamarine4", high="aquamarine")}
+    if((input$prosojnost)=="nič" ) {ggplot() + 
+                                    geom_polygon(data = končnipodatki, 
+                                                        aes_string(x="long", y="lat",
+                                                                  group="group",
+                                                                  fill=input$priods),
+                                                                  color = "grey35") +
+                                                scale_fill_gradient(low="aquamarine4", high="aquamarine")}
+    
     else{ggplot() + geom_polygon(data = končnipodatki, 
                                  aes_string(x="long", y="lat", group="group",
                                             fill=input$priods,

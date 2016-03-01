@@ -9,7 +9,7 @@ shinyUI(fluidPage(
         helpText("Izberi kategorije in za animacijo, ki pokaže pregled čez vsa leta klikni play."),
       
         sliderInput(inputId ="izberi",label="Izberi leto:", value=1995, min=1995, max=2014,
-                    animate = animationOptions(interval = 1500, loop = FALSE, playButton = NULL)),
+                    animate = animationOptions(interval = 2000, loop = FALSE, playButton = NULL)),
   
         radioButtons(inputId="izb",label="Izberi željeno kategorijo:", 
                     choices = list("Priseljeni iz tujine skupaj" = "Priseljeni.iz.tujine.skupaj", 

@@ -6,7 +6,7 @@ shinyUI(fluidPage(
   sidebarPanel(
     
     sliderInput(inputId ="letoizberi",label="Izberi leto:", value=1995, min=1995, max=2014,
-                animate = animationOptions(interval = 1500, loop = FALSE, playButton = NULL)),
+                animate = animationOptions(interval = 3000, loop = FALSE, playButton = NULL)),
     
     selectInput(inputId="priods",label="Izberi željeno kategorijo:", 
                 choices = list("Priseljeni iz tujine skupaj" = "priseljeni.skupaj", 
