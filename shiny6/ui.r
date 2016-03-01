@@ -35,7 +35,10 @@ shinyUI(fluidPage(
                    choices = list("Državljani Republike Slovenije" = "Državljani Republike Slovenije", 
                                   "Tuji državljani" = "Tuji državljani",
                                   "Selitve - SKUPAJ" ="Selitve - SKUPAJ" ),
-                   selected = "Selitve - SKUPAJ")
+                   selected = "Selitve - SKUPAJ"),
+      
+      helpText("Rdeča krivulja je kvadratna metoda,", 
+               "modra pa je metoda loess.")
       
     ),
   

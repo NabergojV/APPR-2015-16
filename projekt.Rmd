@@ -247,7 +247,13 @@ Vsi grafi, za katerkoli starostno skupino so monotono naraščajoči. Vidimo pov
 **Starost 70-79 let:** je razmerje ponovno 1:1. Izenačenje razmerja morda izhaja zaradi upokojitve parov.   
 **Starost 80+ let:** pa se preseljuje več žensk kot moških, kar lahko pripišemo višji življenski dobi žensk.   
 
-
-
-
 Napovedovanje preseljevanja je težko oziroma skoraj nemogoče, saj se ne da napovedati dogodkov, ki sprožijo ta proces. Razlogi za preseljevanje so lahko osebni (iskanje boljše zaposlitve, ambicije, kariera,..), politični, taki in drugačni pritiski na ljudi na določenem območju, iskanje azila, beg pred skrajneži,... Vseeno pa vidimo da sledi nekim vzorcem pogojenimi s spolom, starostjo,...
+
+### Zemljevid občin:
+
+_Zemljevid nam prikazuje ..._
+
+```{r shiny8, echo=FALSE, fig.align='center', warning=FALSE, fig.cap='Zemljevid občin'}
+shinyAppDir("shiny8", options=list(width="100%", height=440))
+```
+
