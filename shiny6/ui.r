@@ -6,7 +6,8 @@ shinyUI(fluidPage(
     sidebarPanel(
       
       selectInput(inputId="starost", label = "Izberi starostno skupino:", 
-                  choices = list("0-4 let" = "0-4 let",
+                  choices = list("Starostne skupine - SKUPAJ" = "Starostne skupine - SKUPAJ",
+                                 "0-4 let" = "0-4 let",
                                  "5-9 let" = "5-9 let",
                                  "10-14 let" = "10-14 let",
                                  "15-19 let" ="15-19 let" ,
@@ -23,7 +24,7 @@ shinyUI(fluidPage(
                                  "70-74 let"="70-74 let",
                                  "75-79 let"="75-79 let",
                                  "80-84 let"="80-84 let",
-                                 "85 + let"="85 + let"), selected = "0-4 let"),
+                                 "85 + let"="85 + let"), selected = "Starostne skupine - SKUPAJ"),
       
       
       radioButtons(inputId="palio",label="Izberi: ",

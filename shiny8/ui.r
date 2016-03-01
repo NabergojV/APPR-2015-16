@@ -5,8 +5,8 @@ shinyUI(fluidPage(
     
     sidebarPanel(
       
-      sliderInput(inputId ="leto",label="Izberi leto:", value=2014, min=1995, max=2014,
-                  animate = animationOptions(interval = 1800, loop = FALSE, playButton = NULL))
+      sliderInput(inputId ="leto",label="Izberi leto:", value=1995, min=1995, max=2014,
+                  animate = animationOptions(interval = 15000, loop = FALSE, playButton = NULL))
     ),
     
     mainPanel(

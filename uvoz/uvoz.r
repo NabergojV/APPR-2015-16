@@ -387,3 +387,12 @@ tabelanapr2[,8]<-as.integer(tabelanapr2[,8])
 tidytabelanapr2 <- tabelanapr2[,-3]
 tidytabelanapr2 <- tidytabelanapr2[,-5]
 
+# Tabele potrebne za shiny:
+
+tabelc <- tabela %>% filter(spol!="Spol - SKUPAJ") %>%
+  filter(drzavljanstvo != "Selitve - SKUPAJ")
+
+tabelc2 <- tabela %>% filter(starostna.skupina != "Starostne skupine - SKUPAJ") %>% 
+                      filter(spol!="Spol - SKUPAJ")
+
+tabelazan <- tabelanapr %>% filter(drzavljanstvo=="Selitve - SKUPAJ")
