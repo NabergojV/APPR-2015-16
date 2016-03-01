@@ -25,15 +25,22 @@ g <- ggplot(priseljenimoski, aes(x=leto, y=stevilka)) + geom_point()
 
 z <- lowess(priseljenimoski$leto, priseljenimoski$stevilka)
 z <- g + geom_line(data=as.data.frame(z), aes(x=x, y=y), color="green")
-#print(z)
+print(z)
+
+kv <- lm(data = priseljenimoski, stevilka ~ leto + I(leto^2))
+kv <- g + geom_smooth(method = "lm", formula = y ~ x + I(x^2))
+print(kv) 
 
 mls <- loess(data = priseljenimoski, stevilka ~ leto)
 mls <- g + geom_smooth(method = "loess")
-#print(mls)
+print(mls)
 
 mgam <- gam(data = priseljenimoski, stevilka ~ s(leto))
 mgam <- g + geom_smooth(method = "gam", formula = y ~ s(x))
-#print(mgam)
+print(mgam)
+
+sapply(list(kv,mls, mgam), function(x) sum(x$residuals^2))
+
 
 # Priseljeni, državljanstvo skupaj, po spolu, po letih:
 

@@ -29,9 +29,11 @@ shinyUI(fluidPage(
                                      "70-74 let"="70-74 let",
                                      "75-79 let"="75-79 let",
                                      "80-84 let"="80-84 let",
-                                     "85 + let"="85 + let"), selected = "Starostne skupine - SKUPAJ")
+                                     "85 + let"="85 + let"), selected = "Starostne skupine - SKUPAJ"),
 
-      ),
+          helpText("Rdeča krivulja je kvadratna metoda,", 
+                   "modra pa je metoda loess.")
+    ),
 
     mainPanel(
       
